@@ -2,7 +2,7 @@
 # Javascipts!!!
 ---
 
-// Vender JS
+// Vendor JS
  -{% include_relative vendor/jquery.min.js %}
  -{% include_relative vendor/uswds.min.js %}
  -{% include_relative vendor/quill.js %}
