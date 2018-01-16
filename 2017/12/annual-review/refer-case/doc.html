@@ -6,9 +6,9 @@ is_a_form: yes
 body_class: hide-local-nav
 
 # Page Content
-step_text: Send Deficiency Letter&#58; Step 1 of 2
-page_h1: Write Deficiency Letter
-lead_text: Write or paste your message to tell the firm what they need to change in their Annual Review. Provide clear instructions about which sections need edits and how to correct any errors.
+step_text: Refer case
+page_h1: Attach documents
+lead_text: Add any documents that are relavent to the purpose of your referral.
 cta_text: Next
 secondary_action_text: Go back
 
@@ -21,8 +21,17 @@ messages_link: messages.html
 activity_log_link: activity-log.html
 ---
 
-{% include widgets/_message-form--workflows.html %}
+<div class="sba-c-document-prompt">
+  <p class="sba-c-document-prompt__header">Please attach your analysis</p>
+  <button class="sba-c-button" type="button" aria-controls="doc_selector1" aria-expanded="false">
+    <svg aria-hidden="true" class="sba-c-icon sba-u-margin-right--1">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/img/svg-sprite/sprite.svg#file"></use>
+    </svg>Add document(s)
+  </button>
+</div>
 
+
+<!-- This script will mimic the interaction we want to see -->
 <script>
   $(document).ready(function() {
     $('form').on('submit', function() {

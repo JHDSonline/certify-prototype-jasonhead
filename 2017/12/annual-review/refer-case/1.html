@@ -26,6 +26,10 @@ activity_log_link: activity-log.html
   <h4>Refer case to…</h4>
   <ul id="response" class="usa-unstyled-list">
     <li>
+      <input id="refer_someone_else" type="radio" name="currently_with" value="Someone else in your district office">
+      <label for="refer_someone_else">A BOS in your district office</label>
+    </li>
+    <li>
       <input id="refer_district_office" type="radio" name="currently_with" value="District Office">
       <label for="refer_district_office">Another District Office</label>
     </li>
@@ -72,8 +76,11 @@ activity_log_link: activity-log.html
         else if (currently_with == "HQ Program") {
           nextPage("forward.html");
         }
+        else if (currently_with == "Someone else in your district office") {
+          nextPage("bos.html");
+        }
         else {
-          nextPage("2.html");
+          nextPage("doc.html");
         }
         return false;
       }
