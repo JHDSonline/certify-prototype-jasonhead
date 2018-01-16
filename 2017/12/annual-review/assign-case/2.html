@@ -5,8 +5,8 @@ layout: layout--workflow
 body_class: hide-local-nav
 
 # Page Content
-page_h1: This firm has been reassigned to <span data-print="currently_with"></span>
-lead_text: The firm is no longer in your workload.
+page_h1: Review your selections
+lead_text: Please review the information below and complete the voluntary withdrawal.
 
 # Tab Links
 application_link: application.html
@@ -17,7 +17,14 @@ messages_link: messages.html
 activity_log_link: activity-log.html
 ---
 
-<p>
-  <a href="../dashboard.html" class="sba-c-button">View dashboard</a>
-  <a href="../optional-note/1.html" type="button" class="sba-c-button sba-c-button--inverse">Add SBA Note</a>
-</p>
+<div class="review-info">
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Reassigning to:</h2>
+      <p data-filter-reassignment_option="Differentdistrictoffice" data-print="ew_district_office">different office</p>
+      <p data-filter-reassignment_option="Currentdistrictoffice" data-print="currently_with">current office</p>
+    </div>
+  </div>
+</div>
+
+<p><a href="3.html" class="sba-c-button sba-u-sm-margin-right--3">Reassign case</a> <a href="#">Start over</a></p>
