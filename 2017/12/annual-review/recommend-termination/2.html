@@ -3,11 +3,14 @@ layout: layout--workflow
 
 #Page Settings
 body_class: hide-local-nav
+is_a_form: yes
 
 # Page Content
 step_text: Recommend Termination&#58; Step 2 of 2
 page_h1: Review your letter
 lead_text: Please review the information below and complete your recommendation.
+cta_text: Send termination letter
+secondary_action_text: Start over
 
 # Tab Links
 application_link: application.html
@@ -31,4 +34,27 @@ activity_log_link: activity-log.html
   </div>
 </div>
 
-<p><a href="3.html" class="sba-c-button sba-u-sm-margin-right--3">Send termination letter</a> <a href="#">Start over</a></p>
+<div class="sba-u-margin-bottom--3">
+  <ul class="sba-c-unstyled-list">
+    <li>
+      <input class="sba-c-checkbox" id="assert_approval" type="checkbox" name="approval" value="Has approval" required>
+      <label class="sba-c-label" for="assert_approval">I have approval, which can be found in this case’s SBA notes, to perform this task</label>
+    </li>
+  </ul>
+
+</div>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+    $('button[type="submit"]').on('click', function() {
+      validateFields('form');
+      if (!has_validation_errors) {
+        updateStoredData();
+        nextPage('3.html')
+      }
+
+      return false;
+    });
+  });
+</script>
