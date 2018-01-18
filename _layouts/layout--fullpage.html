@@ -32,6 +32,9 @@
 
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
+            {% if page.back_link %}
+              <p class="sba-u-margin-top--0"><a href="javascript:window.history.back();">« {{ page.back_link }}</a></p>
+            {% endif %}
             <h1>{{ page.page_h1 }}</h1>
           </div>
           {% if page.header_button_text %}
