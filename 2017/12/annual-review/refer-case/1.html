@@ -8,7 +8,7 @@ body_class: hide-local-nav
 # Page Content
 step_text: Refer case
 page_h1: Refer Case Within SBA
-lead_text: When you refer a case within the SBA, you will be changing who the case is "currently with." The case will remain in your workload.
+lead_text: Referring a case changes who the case is "currently with," but the case stays in your dashboard.
 cta_text: Next
 secondary_action_text: Cancel
 
@@ -23,15 +23,15 @@ activity_log_link: activity-log.html
 
 <input type="hidden" id="sme_review" value="true">
 <fieldset class="questions">
-  <h4>Refer case to…</h4>
+  <h4>Refer this case to</h4>
   <ul id="response" class="usa-unstyled-list">
     <li>
       <input id="refer_someone_else" type="radio" name="currently_with" value="Someone else in your district office">
-      <label for="refer_someone_else">Someone else in your district office</label>
+      <label for="refer_someone_else">Someone in your district office</label>
     </li>
     <li>
-      <input id="refer_district_office" type="radio" name="currently_with" value="District Office">
-      <label for="refer_district_office">Another District Office</label>
+      <input id="refer_district_office" type="radio" name="currently_with" value="District office">
+      <label for="refer_district_office">Another district office</label>
     </li>
     <li>
       <input id="refer_area_office" type="radio" name="currently_with" value="Size">
@@ -46,8 +46,8 @@ activity_log_link: activity-log.html
       <label for="refer_oig">Inspector General</label>
     </li>
     <li>
-      <input id="refer_hq" type="radio" name="currently_with" value="HQ Program">
-      <label for="refer_hq">HQ Program</label>
+      <input id="refer_hq" type="radio" name="currently_with" value="HQ program">
+      <label for="refer_hq">HQ program</label>
     </li>
   </ul>
 </fieldset>
@@ -70,10 +70,10 @@ activity_log_link: activity-log.html
         if ((currently_with == "Size") || (currently_with == "District Counsel") || (currently_with == "OIG")) {
           nextPage("area-office.html");
         }
-        else if (currently_with == "District Office") {
+        else if (currently_with == "District office") {
           nextPage("district-office.html");
         }
-        else if (currently_with == "HQ Program") {
+        else if (currently_with == "HQ program") {
           nextPage("forward.html");
         }
         else if (currently_with == "Someone else in your district office") {
