@@ -8,7 +8,11 @@
     {{ page.body_class }}{% endif %}">
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 
-  {% include _analyst_masthead_full.html %}
+  {% if page.firm_view %}
+    {% include _vendor_masthead_full.html %}
+  {% else %}
+    {% include _analyst_masthead_full.html %}
+  {% endif %}
 
   <div class="sba-l-container">
 
@@ -63,6 +67,10 @@
         </form>
         {% else %}
           {{ content }}
+        {% endif %}
+
+        {% if page.bottom_content %}
+          {{ page.bottom_content }}
         {% endif %}
       </div>
     </div>

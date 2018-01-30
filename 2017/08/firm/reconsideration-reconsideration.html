@@ -1,0 +1,63 @@
+---
+layout: vendor_program
+messages_link: messages.html
+overview_link: application.html
+---
+
+<section class="usa-width-one-whole">
+  <aside class="usa-width-one-third questionnaire-sidenav">
+    <ul class="usa-sidenav-list">
+      <li>
+        <a class="usa-current use-section-name" href="javascript:void(0)">Request reconsideration</a>
+        <ul class="usa-sidenav-sub_list" data-filter-appeal_rights="true">
+          <li data-filter-choice="reconsideration"><a href="#" class="usa-current">Request reconsideration</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="" href="javascript:void(0)">Review</a>
+      </li>
+    </ul>
+  </aside>
+  <article class="usa-width-two-thirds" >
+    <h2>Request reconsideration</h2>
+    <form id="questionnaire_form" class="section_form" enctype="multipart/form-data" action="#" accept-charset="UTF-8" method="post" novalidate="novalidate">
+
+      <div class="sba-c-question-container">
+        <div class="sba-c-question" id="q1" aria-details="q1_footnote">
+          <h3 class="sba-c-question__primary-text">Please attach all items listed in your decline letter under “Steps for Reconsideration,” plus any other information that shows your firm’s eligibility for the 8(a) program.</h3>
+          <div class="sba-c-question__support-text">
+            <p>You must provide this information within 45 days of the date of your decline letter. See your decline letter under the <a href="messages.html" target="_blank">Messages</a> tab of your 8(a) Initial Application.</p>
+          </div>
+        </div>
+        <div class="sba-c-response">
+          <p class="add-req-doc" id="add-req-doc-button"><a href="javascript:void(0)"><i class="fa fa-plus-circle">&nbsp;</i>Add required documents</a></p>
+        </div>
+        <div class="sba-c-question-footnote" id="q1_footnote">
+          <h4 class="sba-c-question-footnote__heading">Details</h4>
+          <p>If you don’t submit your request for reconsideration in Certify, you have other options for delivering your request to SBA. See your decline letter for details.</p>
+        </div>
+      </div>
+      <input type="submit" name="commit" value="Next" class="usa-button" id="section_submit_button">
+    </form>
+    </article>
+  </section>
+
+
+  <!-- This script will mimic the interaction we want to see -->
+  <script>
+    $(document).ready(function() {
+
+
+      $('form').on('submit', function() {
+        if (!checkValidityIfSupported($('form').get(0))) {
+          return false;
+        }
+        else {
+          updateStoredData();
+          nextPage("reconsideration-review.html");
+
+          return false;
+        }
+      });
+    });
+  </script>

@@ -1,0 +1,69 @@
+---
+layout: layout--workflow
+
+#Page Settings
+is_a_form: yes
+firm_view: true
+
+# Page Content
+page_h1: Appeal the SBA’s decision
+lead_text: The Office of Hearings and Appeals (OHA) will decide your appeal. You can’t apply for reconsideration if you lose the appeal.
+cta_text: Next
+secondary_action_text: Go back
+
+# Tab Links
+application_link: application.html
+firm_documents_link: firm-documents.html
+analyst_documents_link: analyst-documents.html
+notes_link: notes.html
+messages_link: messages.html
+activity_log_link: activity-log.html
+
+# Content
+bottom_content: <p>If you don’t email your appeal, you have other options for delivering your appeal to SBA. See your decline letter for details.</p><p>Your <strong>certificate of service</strong> must say how, when, and to whom you sent copies of your appeal. Your certificate of service should state:</p><p class="sba-u-margin-x--3">“I certify that on [date], I served the foregoing [type of submission] by [email, mail, Express Mail, personal delivery, commercial delivery service, fax] upon the following.” Next list the name and address of each party served and the fax number or email. You must sign the certificate and print or type your name and title.</p><p>For important instructions, including how to format and length of your appeal, read <a href="#" target="_blank">13 CFR § 124.206</a>, <a href="#" target="_blank">13 CFR § 134.203</a>, <a href="#" target="_blank">13 CFR § 134.402</a>, and <a href="#" target="_blank">13 CFR § 134.204(d)</a>.</p>
+
+---
+
+<p><strong>To appeal, SBA must receive the following information within 45 days of the date of your decline letter.</strong> See your decline letter under the <a href="messages.html" target="_blank">Messages</a> tab of your 8(a) Initial Application.</p>
+
+<ol>
+  <li>The basis of OHA’s jurisdiction in handling your appeal. Look in your decline letter for the reason your firm was denied entry into the 8(a) program. If your firm was denied entry based on any reason other than social disadvantage, economic disadvantage, ownership, or control, then OHA can’t process your appeal.</li>
+  <li>A copy of your decline letter and the date you received it</li>
+  <li>A brief description of your case and the legal arguments that your firm meets the requirements of the 8(a) program</li>
+  <li>The outcome you wish to see from your appeal</li>
+  <li>Your name, address, phone, fax (if you have one), email, and signature (or your lawyer’s name, contact information, and signature if your lawyer is handling the appeal)</li>
+  <li>A statement of why you believe the SBA’s decision is arbitrary, unreasonable, or contrary to law. Refer to specific parts of your decline letter and related documents or emails.</li>
+  <li>Your submission to OHA must include a certificate of service stating how, when, and to whom your appeal was sent. (See below for how to prepare the certificate.)</li>
+</ol>
+
+<h3>Email your appeal to  all 3 of these offices</h3>
+<ol>
+  <li>Office of Hearings and Appeals: <a href="mailto:OHAFilings@sba.gov">OHAFilings@sba.gov</a></li>
+  <li>Director, Office of Business Development: <a href="mailto:8aBD2@sba.gov">8aBD2@sba.gov</a></li>
+  <li>Associate General Counsel for Procurement Law: <a href="mailto:mailto:8aBD2@sba.gov">OPLService@sba.gov</a></li>
+</ol>
+
+<div class="sba-u-margin-bottom--3 sba-u-border--1 sba-u-padding-x--2 sba-u-padding-bottom--1 sba-u-bgcolor--primary-alt-lightest">
+  <ul class="sba-c-unstyled-list">
+    <li>
+      <input class="sba-c-checkbox" id="assert_appeal" type="checkbox" name="assert_appeal" value="Asset appeal" required>
+      <label class="sba-c-label" for="assert_appeal">I intend to appeal the SBA’s decision not to let my firm participate in the 8(a) program.</label>
+    </li>
+  </ul>
+
+</div>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+    $('button[type="submit"]').on('click', function() {
+      validateFields('form');
+      if (!has_validation_errors) {
+        updateStoredData();
+        nextPage('appeal2.html')
+      }
+
+      return false;
+    });
+  });
+</script>
