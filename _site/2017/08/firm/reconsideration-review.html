@@ -72,7 +72,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav vendor-global-nav">
@@ -168,9 +168,9 @@
   <aside class="usa-width-one-third questionnaire-sidenav">
     <ul class="usa-sidenav-list">
       <li>
-        <a class="use-section-name completed" href="javascript:void(0)">Request reconsideration</a>
+        <a class="use-section-name completed" href="javascript:void(0)">Request for reconsideration</a>
         <ul class="usa-sidenav-sub_list" data-filter-appeal_rights="true">
-          <li data-filter-choice="reconsideration"><a href="#" class="completed">Request reconsideration</a></li>
+          <li data-filter-choice="reconsideration"><a href="#" class="completed">Request for reconsideration</a></li>
         </ul>
       </li>
       <li>
@@ -182,17 +182,7 @@
   <article class="usa-width-two-thirds">
 
 
-<div class="sba-c-alert sba-c-alert--warn">
-  <div class="sba-c-alert__icon">
-    <svg aria-hidden="true" class="sba-c-icon">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype/assets/svg-sprite/sprite.svg#exclamation-triangle"></use>
-    </svg>
-  </div>
-  <div class="sba-c-alert__body">
-    <h3 class="sba-c-alert__heading">Warning</h3>
-    <p class="sba-c-alert__text">If you request reconsideration, you should not appeal. If you appeal, OHA’s decision on your appeal will be the final decision.</p>
-  </div>
-</div>
+
 
     <h2>Review</h2>
     <p>Please review below answers and Submit.</p>
@@ -230,7 +220,7 @@
             <a class="tab-link is-active" href="#">Summary</a>
             <div class="tab-content is-open" style="display: block;">
               <div class="review_questions question-separator">
-                <h3>Request reconsideration</h3>
+                <h3>Request for reconsideration</h3>
                 <div class="usa-one-whole" id="outside_consultant">
                   <div class="usa-grid-full">
                     <div class="usa-width-three-fourths">
@@ -263,6 +253,17 @@
             </div>
           </li>
         </ul>
+        <div class="sba-c-alert sba-c-alert--warn" data-filter-when_declined_choice="reconsideration">
+          <div class="sba-c-alert__icon">
+            <svg aria-hidden="true" class="sba-c-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg-sprite/sprite.svg#exclamation-triangle"></use>
+            </svg>
+          </div>
+          <div class="sba-c-alert__body">
+            <h3 class="sba-c-alert__heading">Warning</h3>
+            <p class="sba-c-alert__text">Once you submit, do not appeal until your request for reconsideration is decided because OHA’s decision on your appeal will be the final decision.</p>
+          </div>
+        </div>
         <input type="submit" name="commit" value="Submit" class="review"></form></div><p>If unable to proceed, please scroll up to find error message.</p>
       </article>
 </div>
