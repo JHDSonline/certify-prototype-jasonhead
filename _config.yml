@@ -26,8 +26,6 @@ cods_analyst: Philip Barambani
 # Build settings
 markdown: kramdown
 theme: cds
-gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -45,3 +43,16 @@ exclude:
   - /css
   - /screenshots
   - /sketch-files
+
+plugins:
+  - jekyll-assets
+  - bourbon
+
+assets:
+  digest: false
+  sources:
+    - app/assets/javascripts
+    - app/assets/stylesheets
+    - app/assets/fonts
+    - app/assets/images
+    - core
