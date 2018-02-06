@@ -6,9 +6,11 @@ is_a_form: yes
 
 # Page Content
 step_text: Voluntary Withdrawal&#58; Step 2 of 3
-page_h1: Forward the case
-lead_text: Select the person who will process the withdrawal.
+page_h1: Add SBA Note
+lead_text: Write a note for the person who will process the withdrawal. This note is optional.
 cta_text: Next
+skip_text: skip
+skip_url: 3.html
 secondary_action_text: Cancel
 
 # Tab Links
@@ -21,42 +23,19 @@ activity_log_link: ../activity-log.html
 ---
 
 
-<fieldset class="questions sba-u-border-top--1">
-  <h4>8(a) Director</h4>
-  <ul id="response" class="usa-unstyled-list">
-    <li>
-      <input id="reassigned_VanTran" type="radio" name="currently_with" value="Van Tran">
-      <label for="reassigned_VanTran">Van Tran</label>
-    </li>
-    <li>
-      <input id="reassigned_SandraBarrett" type="radio" name="currently_with" value="Sandra Barrett">
-      <label for="reassigned_SandraBarrett">Sandra Barrett</label>
-    </li>
-  </ul>
-</fieldset>
+{% include widgets/_note-form--workflows.html %}
 
-<fieldset class="questions sba-u-border-top--1">
-  <h4>AA/BD</h4>
-  <ul id="response" class="usa-unstyled-list">
-    <li>
-      <input id="reassigned_Ajoy Singh" type="radio" name="currently_with" value="Ajoy Singh">
-      <label for="reassigned_Ajoy Singh">Ajoy Singh</label>
-    </li>
-  </ul>
-</fieldset>
-
-<!-- This script will mimic the interaction we want to see -->
 <script>
-  $(document).ready(function() {
-    $('form').on('submit', function() {
-      if (!checkValidityIfSupported($('form').get(0))) {
-        return false;
-      }
-      else {
-        updateStoredData();
-        nextPage("3.html");
-        return false;
-      }
-    });
+$(document).ready(function() {
+  $('form').on('submit', function() {
+    if (!checkValidityIfSupported($('form').get(0))) {
+      return false;
+    }
+    else {
+      updateStoredData();
+      nextPage("3.html");
+      return false;
+    }
   });
+});
 </script>

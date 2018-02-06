@@ -72,7 +72,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -257,22 +257,36 @@ $(document).ready(function() {
       <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--8 sba-u-padding-x--2">
 
         
+        <div class="sba-c-alert">
+          <div class="sba-c-alert__icon">
+            <svg aria-hidden="true" class="sba-c-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg-sprite/sprite.svg#info-circle"></use>
+            </svg>
+          </div>
+          <div class="sba-c-alert__body">
+            
+            
+            <p class="sba-c-alert__text">Please be sure to have already uploaded and obtained approval for all related documents/analysis through Certify's Refer Case within SBA workflow prior to proceeding.</p>
+            
+          </div>
+        </div>
+        
 
         
         <form action="#">
-          <div class="review-info">
+          <div class="review-info sba-u-margin-top--3">
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Send case to:</h2>
+      <p data-print="currently_with"></p>
+    </div>
+  </div>
   <div class="review-info__item">
     <div class="review-info__content">
       <h2 class="review-info__heading">Your note</h2>
       <p><strong data-print="note_form_title"></strong></p>
       <p data-print="note_form"></p>
       <p>Tags: <span data-print="note-form-tags"></span></p>
-    </div>
-  </div>
-  <div class="review-info__item">
-    <div class="review-info__content">
-      <h2 class="review-info__heading">Send case to:</h2>
-      <p data-print="currently_with"></p>
     </div>
   </div>
 </div>

@@ -72,7 +72,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -166,7 +166,7 @@
             -->
             <li>
               <a class="usa-nav-link " href="
-                ../overview.html
+                application.html
               ">
                 <span>Annual Review</span>
               </a>
@@ -179,33 +179,33 @@
               <ul id="side-nav-3" class="usa-nav-submenu">
                 <li>
                   <a href="
-                    ../firm-documents.html
+                    firm-documents.html
                   ">Firm Documents</a>
                 </li>
                 <li>
                   <a href="
-                    ../analyst-documents.html
+                    analyst-documents.html
                   ">Analyst Documents</a>
                 </li>
               </ul>
             </li>
             <li>
               <a class="usa-nav-link " href="
-                ../notes.html
+                notes.html
               ">
                 <span>SBA Notes</span>
               </a>
             </li>
             <li>
               <a class="usa-nav-link " href="
-                ../messages.html
+                messages.html
               ">
                 <span>Messages</span>
               </a>
             </li>
             <li>
               <a class="usa-nav-link " href="
-                ../activity-log.html
+                activity-log.html
               ">
                 <span>Activity Log</span>
               </a>
@@ -245,11 +245,11 @@ $(document).ready(function() {
       <div class="sba-l-col--12 sba-u-padding-x--2">
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
-            
-            <h1>HQ Termination has been started</h1>
+            <span class="subheading--large">Final HQ Termination&#58; Step 1 of 2</span>
+            <h1>Review your selections</h1>
           </div>
         </div>
-        
+        <p class="usa-font-lead">Please review the information below and complete your recommendation.</p>
       </div>
     </div>
 
@@ -257,13 +257,74 @@ $(document).ready(function() {
       <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--8 sba-u-padding-x--2">
 
         
+        <div class="sba-c-alert">
+          <div class="sba-c-alert__icon">
+            <svg aria-hidden="true" class="sba-c-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg-sprite/sprite.svg#info-circle"></use>
+            </svg>
+          </div>
+          <div class="sba-c-alert__body">
+            
+            
+            <p class="sba-c-alert__text">Please be sure to have already uploaded and obtained approval for all related documents/analysis through Certify's Refer Case within SBA workflow prior to proceeding.</p>
+            
+          </div>
+        </div>
+        
 
         
-          <p>
-  <a href="../dashboard.html" class="sba-c-button">View dashboard</a>
-  <a href="../optional-note/1.html" type="button" class="sba-c-button sba-c-button--inverse">Add SBA Note</a>
-</p>
+        <form action="#">
+          <div class="review-info sba-u-margin-top--3">
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Send case to:</h2>
+      <p data-print="currently_with"></p>
+    </div>
+  </div>
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Your note</h2>
+      <p><strong data-print="note_form_title"></strong></p>
+      <p data-print="note_form"></p>
+      <p>Tags: <span data-print="note-form-tags"></span></p>
+    </div>
+  </div>
+</div>
 
+<div class="sba-u-margin-bottom--3">
+  <ul class="sba-c-unstyled-list">
+    <li>
+      <input class="sba-c-checkbox" id="assert_approval" type="checkbox" name="approval" value="Has approval" required>
+      <label class="sba-c-label" for="assert_approval">I have approval, which can be found in this case’s SBA notes, to perform this task</label>
+    </li>
+  </ul>
+
+</div>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+    $('button[type="submit"]').on('click', function() {
+      validateFields('form');
+      if (!has_validation_errors) {
+        updateStoredData();
+        nextPage('4.html')
+      }
+
+      return false;
+    });
+  });
+</script>
+
+          <div class="actions">
+            <div class="actions__main">
+              <button type="submit" class="sba-c-button sba-u-sm-margin-right--3">Initiate HQ termination</button>
+              <a href="javascript:window.history.back();">Start over</a>
+              <p><em></em></p>
+            </div>
+            
+          </div>
+        </form>
         
 
         

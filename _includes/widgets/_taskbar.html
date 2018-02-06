@@ -109,19 +109,13 @@
         <div id="task-panel1" class="task-panel-content">
           <ul class="task-panel-menu">
             <li class="task-panel-menu__item">
-              <a href="{% if page.recommendation_link %}
-                {{ page.recommendation_link }}
+              <a href="{% if page.retain_link %}
+                {{ page.retain_link }}
               {% else %}
                 #
-              {% endif %}" class="task-panel-menu__link"><strong>Make a recommendation</strong></a>
+              {% endif %}" class="task-panel-menu__link"><strong>Retain this firm</strong></a>
             </li>
-            <li class="task-panel-menu__item">
-              <a href="{% if page.letter_of_intent_link %}
-                {{ page.letter_of_intent_link }}
-              {% else %}
-                #
-              {% endif %}" class="task-panel-menu__link">Send letter of intent</a>
-            </li>
+
             <li class="task-panel-menu__item">
               <a href="{% if page.assign_link %}
                 {{ page.assign_link }}
@@ -160,19 +154,34 @@
           </ul>
           <hr>
           <ul class="task-panel-menu">
+            <h6 class="sba-c-task-panel__menu-header">Make recommendation for:</h6>
             <li class="task-panel-menu__item">
-              <a href="{% if page.exit_interview_link %}
-                {{ page.exit_interview_link }}
+              <a href="{% if page.termination_link %}
+                {{ page.termination_link }}
               {% else %}
                 #
-              {% endif %}" class="task-panel-menu__link">Send exit interview</a>
+              {% endif %}" class="task-panel-menu__link">Termination</a>
             </li>
             <li class="task-panel-menu__item">
-              <a href="{% if page.suspension_link %}
-                {{ page.suspension_link }}
+              <a href="{% if page.hq_termination_link %}
+                {{ page.hq_termination_link }}
               {% else %}
                 #
-              {% endif %}" class="task-panel-menu__link--emergency">Suspend the firm</a>
+              {% endif %}" class="task-panel-menu__link">Final termination by HQ</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="{% if page.voluntary_withdrawal_link %}
+                {{ page.voluntary_withdrawal_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Voluntary withdrawal</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="{% if page.early_graduation_link %}
+                {{ page.early_graduation_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Early graduation</a>
             </li>
           </ul>
         </div>
