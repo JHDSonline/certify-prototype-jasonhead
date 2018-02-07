@@ -38,13 +38,19 @@
               {% endif %}" class="task-panel-menu__link"><strong>Accept for processing</strong></a>
             </li>
             <li class="task-panel-menu__item">
+              <a href="{% if page.refer_link %}
+                {{ page.refer_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Refer case within SBA </a>
+            </li>
+            <li class="task-panel-menu__item">
               <a href="{% if page.deficiency_letter_link %}
                 {{ page.deficiency_letter_link }}
               {% else %}
                 #
               {% endif %}" class="task-panel-menu__link">Send deficiency letter</a>
             </li>
-
             <li class="task-panel-menu__item">
               <a id="add_note" href="{% if page.notes_link %}
                 {{ page.notes_link }}?new_note=true
@@ -60,16 +66,16 @@
               {% endif %}" class="task-panel-menu__link">Reassign case</a>
             </li>
             <li class="task-panel-menu__item">
-              <a href="{% if page.refer_link %}
-                {{ page.refer_link }}
+              <a href="{% if page.upload_document_link %}
+                {{ page.upload_document_link }}
               {% else %}
                 #
-              {% endif %}" class="task-panel-menu__link">Refer case within SBA </a>
+              {% endif %}" class="task-panel-menu__link">Upload a document</a>
             </li>
           </ul>
           <hr>
           <ul class="task-panel-menu">
-            <h6 class="sba-c-task-panel__menu-header">Make recommendation for:</h6>
+            <h6 class="sba-c-task-panel__menu-header">Make a recommendation:</h6>
             <li class="task-panel-menu__item">
               <a href="{% if page.termination_link %}
                 {{ page.termination_link }}
@@ -109,19 +115,11 @@
         <div id="task-panel1" class="task-panel-content">
           <ul class="task-panel-menu">
             <li class="task-panel-menu__item">
-              <a href="{% if page.retain_link %}
-                {{ page.retain_link }}
+              <a href="{% if page.refer_link %}
+                {{ page.refer_link }}
               {% else %}
                 #
-              {% endif %}" class="task-panel-menu__link"><strong>Retain this firm</strong></a>
-            </li>
-
-            <li class="task-panel-menu__item">
-              <a href="{% if page.assign_link %}
-                {{ page.assign_link }}
-              {% else %}
-                #
-              {% endif %}" class="task-panel-menu__link">Reassign firm</a>
+              {% endif %}" class="task-panel-menu__link">Refer case within SBA </a>
             </li>
             <li class="task-panel-menu__item">
               <a href="{% if page.upload_document_link %}
@@ -138,16 +136,23 @@
               {% endif %}" class="task-panel-menu__link">Add SBA note</a>
             </li>
             <li class="task-panel-menu__item">
-              <a href="{% if page.refer_link %}
-                {{ page.refer_link }}
+              <a href="{% if page.assign_link %}
+                {{ page.assign_link }}
               {% else %}
                 #
-              {% endif %}" class="task-panel-menu__link">Refer case within SBA </a>
+              {% endif %}" class="task-panel-menu__link">Reassign firm</a>
             </li>
           </ul>
           <hr>
           <ul class="task-panel-menu">
-            <h6 class="sba-c-task-panel__menu-header">Make recommendation for:</h6>
+            <h6 class="sba-c-task-panel__menu-header">Make a recommendation:</h6>
+            <li class="task-panel-menu__item">
+              <a href="{% if page.retain_link %}
+                {{ page.retain_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Retain this firm</a>
+            </li>
             <li class="task-panel-menu__item">
               <a href="{% if page.termination_link %}
                 {{ page.termination_link }}

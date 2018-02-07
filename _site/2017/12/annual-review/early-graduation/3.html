@@ -72,7 +72,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -246,10 +246,10 @@ $(document).ready(function() {
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
             <span class="subheading--large">Early Graduation&#58; Step 3 of 3</span>
-            <h1>Review your selections</h1>
+            <h1>Review and complete</h1>
           </div>
         </div>
-        <p class="usa-font-lead">Please review the information below and complete the early graduation.</p>
+        <p class="usa-font-lead">Please review the information below and complete your recommendation.</p>
       </div>
     </div>
 
@@ -257,24 +257,10 @@ $(document).ready(function() {
       <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--8 sba-u-padding-x--2">
 
         
-        <div class="sba-c-alert">
-          <div class="sba-c-alert__icon">
-            <svg aria-hidden="true" class="sba-c-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype/assets/svg-sprite/sprite.svg#info-circle"></use>
-            </svg>
-          </div>
-          <div class="sba-c-alert__body">
-            
-            
-            <p class="sba-c-alert__text">Please be sure to have already uploaded and obtained approval for all related documents/analysis through Certify's Refer Case within SBA workflow prior to proceeding.</p>
-            
-          </div>
-        </div>
-        
 
         
         <form action="#">
-          <div class="review-info sba-u-margin-top--3">
+          <div class="review-info">
   <div class="review-info__item">
     <div class="review-info__content">
       <h2 class="review-info__heading">Send case to:</h2>
@@ -295,7 +281,7 @@ $(document).ready(function() {
   <ul class="sba-c-unstyled-list">
     <li>
       <input class="sba-c-checkbox" id="assert_approval" type="checkbox" name="approval" value="Has approval" required>
-      <label class="sba-c-label" for="assert_approval">I have approval, which can be found in this case’s SBA notes, to perform this task</label>
+      <label class="sba-c-label" for="assert_approval">I used the referral workflow to get the necessary approvals to perform this task. Approvals can be found in this case’s notes</label>
     </li>
   </ul>
 </div>
@@ -420,48 +406,68 @@ $(document).ready(function() {
 
     <fieldset class="question tags">
       <h4>Tags</h4>
-        <div class="usa-width-one-third">
-          <ul class="tag-selection-list">
-            <li>
-              <input id="note-tag--BOS-Analysis" type="checkbox" name="note-tags" value="BOS Analysis">
-              <label for="note-tag--BOS-Analysis">BOS Analysis</label>
-            </li>
-            <li>
-              <input id="note-tag--Ownership" type="checkbox" name="note-tags" value="Ownership">
-              <label for="note-tag--Ownership">Ownership</label>
-            </li>
-            <li>
-              <input id="note-tag--Control" type="checkbox" name="note-tags" value="Control">
-              <label for="note-tag--Control">Control</label>
-            </li>
+      <div class="usa-width-one-third">
+        <ul class="tag-selection-list">
+          <li>
+            <input id="note-tag--Review_Complete" type="checkbox" name="note-form-tags" value="Review Complete">
+            <label for="note-tag--Review_Complete">Review Complete</label>
+          </li>
+          <li>
+            <input id="note-tag--Termination" type="checkbox" name="note-form-tags" value="Termination">
+            <label for="note-tag--Termination">Termination</label>
+          </li>
+          <li>
+            <input id="note-tag--Retain_Firm" type="checkbox" name="note-form-tags" value="Retain firm">
+            <label for="note-tag--Retain_Firm">Retain firm</label>
+          </li>
+          <li>
+            <input id="note-tag--Early_graudation" type="checkbox" name="note-form-tags" value="Early graudation">
+            <label for="note-tag--Early_graudation">Early graudation</label>
+          </li>
 
-          </ul>
-        </div>
-        <div class="usa-width-one-third">
-          <ul class="tag-selection-list">
-            <li>
-              <input id="note-tag--Size" type="checkbox" name="note-tags" value="Size">
-              <label for="note-tag--Size">Size</label>
-            </li>
-            <li>
-              <input id="note-tag--Business-Development" type="checkbox" name="note-tags" value="Business Development">
-              <label for="note-tag--Business-Development">Business Development</label>
-            </li>
-            </li>
-          </ul>
-        </div>
-        <div class="usa-width-one-third">
-          <ul class="tag-selection-list">
-            <li>
-              <input id="note-tag--Economic-Disadvantage" type="checkbox" name="note-tags" value="Economic Disadvantage">
-              <label for="note-tag--Economic-Disadvantage">Economic Disadvantage</label>
-            </li>
-            <li>
-              <input id="note-tag--Social-Disadvantage" type="checkbox" name="note-tags" value="Social Disadvantage">
-              <label for="note-tag--Social-Disadvantage">Social Disadvantage</label>
-            </li>
-          </ul>
-        </div>
+        </ul>
+      </div>
+      <div class="usa-width-one-third">
+        <ul class="tag-selection-list">
+
+          <li>
+            <input id="note-tag--Voluntary_Withdrawal" type="checkbox" name="note-form-tags" value="Voluntary Withdrawal">
+            <label for="note-tag--Voluntary_Withdrawal">Voluntary Withdrawal</label>
+          </li>
+          <li>
+            <input id="note-tag--BOS-Analysis" type="checkbox" name="note-form-tags" value="BOS Analysis">
+            <label for="note-tag--BOS-Analysis">BOS Analysis</label>
+          </li>
+          <li>
+            <input id="note-tag--Ownership" type="checkbox" name="note-form-tags" value="Ownership">
+            <label for="note-tag--Ownership">Ownership</label>
+          </li>
+          <li>
+            <input id="note-tag--Control" type="checkbox" name="note-form-tags" value="Control">
+            <label for="note-tag--Control">Control</label>
+          </li>
+        </ul>
+      </div>
+      <div class="usa-width-one-third">
+        <ul class="tag-selection-list">
+          <li>
+            <input id="note-tag--Size" type="checkbox" name="note-form-tags" value="Size">
+            <label for="note-tag--Size">Size</label>
+          </li>
+          <li>
+            <input id="note-tag--Business-Development" type="checkbox" name="note-form-tags" value="Business Development">
+            <label for="note-tag--Business-Development">Business Development</label>
+          </li>
+          <li>
+            <input id="note-tag--Economic-Disadvantage" type="checkbox" name="note-form-tags" value="Economic Disadvantage">
+            <label for="note-tag--Economic-Disadvantage">Economic Disadvantage</label>
+          </li>
+          <li>
+            <input id="note-tag--Social-Disadvantage" type="checkbox" name="note-form-tags" value="Social Disadvantage">
+            <label for="note-tag--Social-Disadvantage">Social Disadvantage</label>
+          </li>
+        </ul>
+      </div>
       </fieldset>
       <button type="submit">Add SBA note</button>
   </form>

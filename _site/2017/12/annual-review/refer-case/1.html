@@ -72,7 +72,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -249,7 +249,7 @@ $(document).ready(function() {
             <h1>Refer Case Within SBA</h1>
           </div>
         </div>
-        <p class="usa-font-lead">Referring a case changes who the case is "currently with," but the case stays in your dashboard.</p>
+        <p class="usa-font-lead">Refer the case to get approvals prior to making a recommendation. While this case is referred, it will remain in the case owner’s dashboard.</p>
       </div>
     </div>
 
@@ -266,7 +266,7 @@ $(document).ready(function() {
   <ul id="response" class="usa-unstyled-list">
     <li>
       <input id="refer_someone_else" type="radio" name="currently_with" value="Someone else in your district office">
-      <label for="refer_someone_else">Someone in your district office</label>
+      <label for="refer_someone_else">Someone in the firm’s district office</label>
     </li>
     <li>
       <input id="refer_district_office" type="radio" name="currently_with" value="District office">
@@ -432,48 +432,68 @@ $(document).ready(function() {
 
     <fieldset class="question tags">
       <h4>Tags</h4>
-        <div class="usa-width-one-third">
-          <ul class="tag-selection-list">
-            <li>
-              <input id="note-tag--BOS-Analysis" type="checkbox" name="note-tags" value="BOS Analysis">
-              <label for="note-tag--BOS-Analysis">BOS Analysis</label>
-            </li>
-            <li>
-              <input id="note-tag--Ownership" type="checkbox" name="note-tags" value="Ownership">
-              <label for="note-tag--Ownership">Ownership</label>
-            </li>
-            <li>
-              <input id="note-tag--Control" type="checkbox" name="note-tags" value="Control">
-              <label for="note-tag--Control">Control</label>
-            </li>
+      <div class="usa-width-one-third">
+        <ul class="tag-selection-list">
+          <li>
+            <input id="note-tag--Review_Complete" type="checkbox" name="note-form-tags" value="Review Complete">
+            <label for="note-tag--Review_Complete">Review Complete</label>
+          </li>
+          <li>
+            <input id="note-tag--Termination" type="checkbox" name="note-form-tags" value="Termination">
+            <label for="note-tag--Termination">Termination</label>
+          </li>
+          <li>
+            <input id="note-tag--Retain_Firm" type="checkbox" name="note-form-tags" value="Retain firm">
+            <label for="note-tag--Retain_Firm">Retain firm</label>
+          </li>
+          <li>
+            <input id="note-tag--Early_graudation" type="checkbox" name="note-form-tags" value="Early graudation">
+            <label for="note-tag--Early_graudation">Early graudation</label>
+          </li>
 
-          </ul>
-        </div>
-        <div class="usa-width-one-third">
-          <ul class="tag-selection-list">
-            <li>
-              <input id="note-tag--Size" type="checkbox" name="note-tags" value="Size">
-              <label for="note-tag--Size">Size</label>
-            </li>
-            <li>
-              <input id="note-tag--Business-Development" type="checkbox" name="note-tags" value="Business Development">
-              <label for="note-tag--Business-Development">Business Development</label>
-            </li>
-            </li>
-          </ul>
-        </div>
-        <div class="usa-width-one-third">
-          <ul class="tag-selection-list">
-            <li>
-              <input id="note-tag--Economic-Disadvantage" type="checkbox" name="note-tags" value="Economic Disadvantage">
-              <label for="note-tag--Economic-Disadvantage">Economic Disadvantage</label>
-            </li>
-            <li>
-              <input id="note-tag--Social-Disadvantage" type="checkbox" name="note-tags" value="Social Disadvantage">
-              <label for="note-tag--Social-Disadvantage">Social Disadvantage</label>
-            </li>
-          </ul>
-        </div>
+        </ul>
+      </div>
+      <div class="usa-width-one-third">
+        <ul class="tag-selection-list">
+
+          <li>
+            <input id="note-tag--Voluntary_Withdrawal" type="checkbox" name="note-form-tags" value="Voluntary Withdrawal">
+            <label for="note-tag--Voluntary_Withdrawal">Voluntary Withdrawal</label>
+          </li>
+          <li>
+            <input id="note-tag--BOS-Analysis" type="checkbox" name="note-form-tags" value="BOS Analysis">
+            <label for="note-tag--BOS-Analysis">BOS Analysis</label>
+          </li>
+          <li>
+            <input id="note-tag--Ownership" type="checkbox" name="note-form-tags" value="Ownership">
+            <label for="note-tag--Ownership">Ownership</label>
+          </li>
+          <li>
+            <input id="note-tag--Control" type="checkbox" name="note-form-tags" value="Control">
+            <label for="note-tag--Control">Control</label>
+          </li>
+        </ul>
+      </div>
+      <div class="usa-width-one-third">
+        <ul class="tag-selection-list">
+          <li>
+            <input id="note-tag--Size" type="checkbox" name="note-form-tags" value="Size">
+            <label for="note-tag--Size">Size</label>
+          </li>
+          <li>
+            <input id="note-tag--Business-Development" type="checkbox" name="note-form-tags" value="Business Development">
+            <label for="note-tag--Business-Development">Business Development</label>
+          </li>
+          <li>
+            <input id="note-tag--Economic-Disadvantage" type="checkbox" name="note-form-tags" value="Economic Disadvantage">
+            <label for="note-tag--Economic-Disadvantage">Economic Disadvantage</label>
+          </li>
+          <li>
+            <input id="note-tag--Social-Disadvantage" type="checkbox" name="note-form-tags" value="Social Disadvantage">
+            <label for="note-tag--Social-Disadvantage">Social Disadvantage</label>
+          </li>
+        </ul>
+      </div>
       </fieldset>
       <button type="submit">Add SBA note</button>
   </form>
