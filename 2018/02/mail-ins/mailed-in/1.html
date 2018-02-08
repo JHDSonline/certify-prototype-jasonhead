@@ -1,0 +1,51 @@
+---
+layout: layout--workflow
+
+#Page Settings
+is_a_form: yes
+body_class: hide-local-nav
+
+# Page Content
+step_text: Received package by mail&#58; Step 1 of 3
+page_h1: What did the firm mail in?
+lead_text: If the firm submitted a request for reconsideration, you will need to reassign this case after you complete this workflow. If the firm is asking for an appeal, [COPY NEEDED].
+cta_text: Next
+secondary_action_text: Cancel
+
+# Tab Links
+application_link: application.html
+firm_documents_link: firm-documents.html
+analyst_documents_link: analyst-documents.html
+notes_link: notes.html
+messages_link: messages.html
+activity_log_link: activity-log.html
+---
+
+<fieldset class="questions">
+  <h4>Select what the firm opted to do by mail</h4>
+  <ul id="response" class="usa-unstyled-list">
+    <li>
+      <input id="mailed_in_reconsideration" type="radio" name="mailed_in" value="Request for reconsideration" required>
+      <label for="mailed_in_reconsideration">Request for reconsideration</label>
+    </li>
+    <li>
+      <input id="mailed_in_appeal" type="radio" name="mailed_in" value="Appeal" required>
+      <label for="mailed_in_appeal">Appeal</label>
+    </li>
+  </ul>
+</fieldset>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+    $('button[type="submit"]').on('click', function() {
+      validateFields('form');
+      if (!has_validation_errors) {
+        updateStoredData();
+        nextPage('2.html')
+      }
+
+      return false;
+    });
+  });
+</script>

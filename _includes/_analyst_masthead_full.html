@@ -74,7 +74,11 @@
               {% else %}
                 #
               {% endif %}">
+              {% if page.application_name contains "Annual Review" %}
                 <span>Annual Review</span>
+              {% else %}
+                <span>Application</span>
+              {% endif %}
               </a>
             </li>
             <li>

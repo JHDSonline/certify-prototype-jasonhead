@@ -1,0 +1,54 @@
+---
+layout: layout--workflow
+
+#Page Settings
+body_class: hide-local-nav
+is_a_form: yes
+
+# Page Content
+step_text: Received package by mail&#58; Step 3 of 3
+page_h1: Review and complete
+lead_text: Please review the information below and complete your recommendation.
+cta_text: Acknowledge receipt
+secondary_action_text: Start over
+
+# Tab Links
+application_link: application.html
+firm_documents_link: firm-documents.html
+analyst_documents_link: analyst-documents.html
+notes_link: notes.html
+messages_link: messages.html
+activity_log_link: activity-log.html
+---
+
+<div class="review-info">
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Request mailed in:</h2>
+      <p data-print="mailed_in"></p>
+    </div>
+  </div>
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Your note</h2>
+      <p><strong data-print="note_form_title"></strong></p>
+      <p data-print="note_form"></p>
+      <p>Tags: <span data-print="note-form-tags"></span></p>
+    </div>
+  </div>
+</div>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+    $('button[type="submit"]').on('click', function() {
+      validateFields('form');
+      if (!has_validation_errors) {
+        updateStoredData();
+        nextPage('4.html')
+      }
+
+      return false;
+    });
+  });
+</script>

@@ -72,7 +72,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -168,7 +168,9 @@
               <a class="usa-nav-link " href="
                 #
               ">
-                <span>Annual Review</span>
+              
+                <span>Application</span>
+              
               </a>
             </li>
             <li>
@@ -263,12 +265,12 @@ $(document).ready(function() {
     </div>
     <div class="taskbar-section hide-mobile">
       <p class="taskbar-section__text">
-        <span class="taskbar-section__subhead">Case owner</span> <span>Philip Barambani</span>
+        <span class="taskbar-section__subhead">Case owner</span> <span id="case_owner">Philip Barambani</span>
       </p>
     </div>
-    <div class="taskbar-section hide-mobile">
+    <div class="taskbar-section hide-mobile" id="currentlyWith">
       <p class="taskbar-section__text">
-        <span class="taskbar-section__subhead">Currently with</span> <span data-print="currently_with">Philip Barambani</span>
+        <span class="taskbar-section__subhead">Currently with</span> <span id="currently-with-name" data-print="currently_with">Philip Barambani</span>
       </p>
     </div>
     <div class="taskbar-actions">
@@ -392,6 +394,29 @@ $(document).ready(function() {
           </ul>
         </div>
       </div>
+
+      <div class="task-panel" id="declined_task_panel">
+        <button type="button" class="usa-button-unstyled task-panel-toggle" aria-expanded="false" aria-controls="task-panel1">Actions</button>
+        <div id="task-panel1" class="task-panel-content">
+          <ul class="task-panel-menu">
+            <li class="task-panel-menu__item">
+              <a href="mailed-in/1.html" class="task-panel-menu__link">Reconsideration / appeal received by mail</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="#" class="task-panel-menu__link">Refer case within SBA </a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="#" class="task-panel-menu__link">Upload a document</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a id="add_note" href="#" class="task-panel-menu__link">Add SBA note</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="#" class="task-panel-menu__link">Reassign firm</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -402,13 +427,24 @@ $(document).ready(function() {
   if (typeof applicationstatus !== "undefined") {
     if (applicationstatus == "Processing") {
       $('#screening_task_panel').remove();
+      $('#declined_task_panel').remove();
+    }
+    else if (applicationstatus == "Screening") {
+      $('#processing_task_panel').remove();
+      $('#declined_task_panel').remove();
     }
     else {
+      $('#screening_task_panel').remove();
       $('#processing_task_panel').remove();
     }
   }
   else {
+    $('#declined_task_panel').remove();
     $('#processing_task_panel').remove();
+  }
+
+  if ($("#currently-with-name").text() == "Philip Barambani" ) {
+    $("#currentlyWith").remove();
   }
 
 

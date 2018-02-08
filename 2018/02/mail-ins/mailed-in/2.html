@@ -1,0 +1,33 @@
+---
+layout: layout--workflow
+
+# Page Settings
+is_a_form: yes
+
+# Page Content
+step_text: Received package by mail&#58; Step 2 of 3
+page_h1: Add a note about this
+lead_text: Provide details about the reconsideration or appeal.
+cta_text: Next
+skip_text: skip
+skip_url: 3.html
+secondary_action_text: Cancel
+---
+
+
+{% include widgets/_note-form--workflows.html %}
+
+<script>
+$(document).ready(function() {
+  $('form').on('submit', function() {
+    if (!checkValidityIfSupported($('form').get(0))) {
+      return false;
+    }
+    else {
+      updateStoredData();
+      nextPage("3.html");
+      return false;
+    }
+  });
+});
+</script>
