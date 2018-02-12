@@ -72,7 +72,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -481,40 +481,56 @@ $(document).ready(function() {
       <legend class="certify-facets__heading">Tags</legend>
       <ul class="certify-facets__list">
         <li>
-          <input type="checkbox" name="category" id="bos_analysis" value="BOS Analysis">
-          <label for="bos_analysis">BOS Analysis</label>
+          <input id="tag--Review_Complete" type="checkbox" name="note-form-tags" value="Review Complete">
+          <label for="tag--Review_Complete">Review Complete</label>
         </li>
         <li>
-          <input type="checkbox" name="category" id="eligiblity" value="Eligibility">
-          <label for="ownership">Eligibility</label>
+          <input id="tag--Termination" type="checkbox" name="note-form-tags" value="Termination">
+          <label for="tag--Termination">Termination</label>
         </li>
         <li>
-          <input type="checkbox" name="category" id="ownership" value="Ownership">
-          <label for="ownership">Ownership</label>
+          <input id="tag--Retain_Firm" type="checkbox" name="note-form-tags" value="Retain firm">
+          <label for="tag--Retain_Firm">Retain firm</label>
         </li>
         <li>
-          <input type="checkbox" name="category" id="control" value="Control">
-          <label for="control">Control</label>
+          <input id="tag--Early_graudation" type="checkbox" name="note-form-tags" value="Early graudation">
+          <label for="tag--Early_graudation">Early graudation</label>
         </li>
         <li>
-          <input type="checkbox" name="category" id="size" value="Size">
-          <label for="size">Size</label>
+          <input id="tag--Letter-of-Intent" type="checkbox" name="note-form-tags" value="Letter of Intent">
+          <label for="tag--Letter-of-Intent">Letter of Intent</label>
         </li>
         <li>
-          <input type="checkbox" name="category" id="character" value="Character">
-          <label for="character">Character</label>
+          <input id="tag--Voluntary_Withdrawal" type="checkbox" name="note-form-tags" value="Voluntary Withdrawal">
+          <label for="tag--Voluntary_Withdrawal">Voluntary Withdrawal</label>
         </li>
         <li>
-          <input type="checkbox" name="category" id="potential_for_success" value="Potential for Success">
-          <label for="potential_for_success">Potential for Success</label>
+          <input id="tag--BOS-Analysis" type="checkbox" name="note-form-tags" value="BOS Analysis">
+          <label for="tag--BOS-Analysis">BOS Analysis</label>
         </li>
         <li>
-          <input type="checkbox" name="category" id="economic_disadvantage" value="Economic Disadvantage">
-          <label for="economic_disadvantage">Economic Disadvantage</label>
+          <input id="tag--Ownership" type="checkbox" name="note-form-tags" value="Ownership">
+          <label for="tag--Ownership">Ownership</label>
         </li>
         <li>
-          <input type="checkbox" name="category" id="social_disadvantage" value="Social Disadvantage">
-          <label for="social_disadvantage">Social Disadvantage</label>
+          <input id="tag--Control" type="checkbox" name="note-form-tags" value="Control">
+          <label for="tag--Control">Control</label>
+        </li>
+        <li>
+          <input id="tag--Size" type="checkbox" name="note-form-tags" value="Size">
+          <label for="tag--Size">Size</label>
+        </li>
+        <li>
+          <input id="tag--Business-Development" type="checkbox" name="note-form-tags" value="Business Development">
+          <label for="tag--Business-Development">Business Development</label>
+        </li>
+        <li>
+          <input id="tag--Economic-Disadvantage" type="checkbox" name="note-form-tags" value="Economic Disadvantage">
+          <label for="tag--Economic-Disadvantage">Economic Disadvantage</label>
+        </li>
+        <li>
+          <input id="tag--Social-Disadvantage" type="checkbox" name="note-form-tags" value="Social Disadvantage">
+          <label for="tag--Social-Disadvantage">Social Disadvantage</label>
         </li>
       </ul>
     </fieldset>
@@ -779,12 +795,14 @@ $(document).ready(function() {
             <input id="note-tag--Early_graudation" type="checkbox" name="note-form-tags" value="Early graudation">
             <label for="note-tag--Early_graudation">Early graudation</label>
           </li>
-
+          <li>
+            <input id="note-tag--Letter-of-Intent" type="checkbox" name="note-form-tags" value="Letter of Intent">
+            <label for="note-tag--Letter-of-Intent">Letter of Intent</label>
+          </li>
         </ul>
       </div>
       <div class="usa-width-one-third">
         <ul class="tag-selection-list">
-
           <li>
             <input id="note-tag--Voluntary_Withdrawal" type="checkbox" name="note-form-tags" value="Voluntary Withdrawal">
             <label for="note-tag--Voluntary_Withdrawal">Voluntary Withdrawal</label>
