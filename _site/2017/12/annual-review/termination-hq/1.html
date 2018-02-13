@@ -72,7 +72,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -262,14 +262,24 @@ $(document).ready(function() {
 
         
         <form action="#">
-          <h3>Select a person</h3>
-
-<fieldset class="questions sba-u-border-top--1">
-  <h4>8(a) Director</h4>
+          <fieldset class="questions">
+  <h4>Select a person</h4>
   <ul id="response" class="usa-unstyled-list">
     <li>
       <input id="reassigned_VanTran" type="radio" name="currently_with" value="Van Tran">
       <label for="reassigned_VanTran">Van Tran</label>
+    </li>
+    <li>
+      <input id="reassigned_Teresa_Tyhurst" type="radio" name="currently_with" value="Teresa Tyhurst">
+      <label for="reassigned_Teresa_Tyhurst">Teresa Tyhurst</label>
+    </li>
+    <li>
+      <input id="reassigned_Vincent_Mazzotta" type="radio" name="currently_with" value="Vincent Mazzotta">
+      <label for="reassigned_Vincent_Mazzotta">Vincent Mazzotta</label>
+    </li>
+    <li>
+      <input id="reassigned_Richard Blum" type="radio" name="currently_with" value="Richard Blum">
+      <label for="reassigned_Richard Blum">Richard Blum</label>
     </li>
     <li>
       <input id="reassigned_SandraBarrett" type="radio" name="currently_with" value="Sandra Barrett">
@@ -278,15 +288,6 @@ $(document).ready(function() {
   </ul>
 </fieldset>
 
-<fieldset class="questions sba-u-border-top--1">
-  <h4>AA/BD</h4>
-  <ul id="response" class="usa-unstyled-list">
-    <li>
-      <input id="reassigned_Ajoy Singh" type="radio" name="currently_with" value="Ajoy Singh">
-      <label for="reassigned_Ajoy Singh">Ajoy Singh</label>
-    </li>
-  </ul>
-</fieldset>
 
 <!-- This script will mimic the interaction we want to see -->
 <script>
