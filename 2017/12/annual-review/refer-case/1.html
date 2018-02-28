@@ -42,7 +42,7 @@ activity_log_link: activity-log.html
       <label for="refer_district_counsel">District Counsel</label>
     </li>
     <li>
-      <input id="refer_oig" type="radio" name="currently_with" value="OIG">
+      <input id="refer_oig" type="radio" name="currently_with" value="Inspector General">
       <label for="refer_oig">Inspector General</label>
     </li>
     <li>
@@ -67,7 +67,7 @@ activity_log_link: activity-log.html
       else {
         updateStoredData();
 
-        if ((currently_with == "Size") || (currently_with == "District Counsel") || (currently_with == "OIG")) {
+        if ((currently_with == "Size") || (currently_with == "District Counsel") || (currently_with == "Inspector General")) {
           nextPage("area-office.html");
         }
         else if (currently_with == "District office") {

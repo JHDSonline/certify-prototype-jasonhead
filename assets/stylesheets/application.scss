@@ -41,7 +41,4 @@
 // overrides
 @import "prototype/certify-overrides/style";
 
-// Styles from the gem
-@import "{{ site.theme }}";
-
 $output-bourbon-deprecation-warnings: false !default;

@@ -10,6 +10,7 @@
 
 
 <link rel="stylesheet" href="../../../../assets/stylesheets/application.css">
+<link rel="stylesheet" href="../../../../assets/cds.css">
 <script src="../../../../assets/javascripts/application.js"></script>
 <script src="../../../../assets/cds.js"></script>
 <meta name="robots" content="noindex">
@@ -72,7 +73,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -262,7 +263,7 @@ $(document).ready(function() {
         <div class="sba-c-alert">
           <div class="sba-c-alert__icon">
             <svg aria-hidden="true" class="sba-c-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype/assets/svg-sprite/sprite.svg#info-circle"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg-sprite/sprite.svg#info-circle"></use>
             </svg>
           </div>
           <div class="sba-c-alert__body">
@@ -284,7 +285,7 @@ $(document).ready(function() {
   </ul>
   <button class="sba-c-button" type="button" aria-controls="doc_selector1" aria-expanded="false">
     <svg aria-hidden="true" class="sba-c-icon sba-u-margin-right--1">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype/assets/svg-sprite/sprite.svg#file"></use>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg-sprite/sprite.svg#file"></use>
     </svg>Add document(s)
   </button>
 </div>
@@ -411,70 +412,55 @@ $(document).ready(function() {
 
     <fieldset class="question tags">
       <h4>Tags</h4>
-      <div class="usa-width-one-third">
-        <ul class="tag-selection-list">
-          <li>
-            <input id="note-tag--Review_Complete" type="checkbox" name="note-form-tags" value="Review Complete">
-            <label for="note-tag--Review_Complete">Review Complete</label>
-          </li>
-          <li>
-            <input id="note-tag--Termination" type="checkbox" name="note-form-tags" value="Termination">
-            <label for="note-tag--Termination">Termination</label>
-          </li>
-          <li>
-            <input id="note-tag--Retain_Firm" type="checkbox" name="note-form-tags" value="Retain firm">
-            <label for="note-tag--Retain_Firm">Retain firm</label>
-          </li>
-          <li>
-            <input id="note-tag--Early_graudation" type="checkbox" name="note-form-tags" value="Early graudation">
-            <label for="note-tag--Early_graudation">Early graudation</label>
-          </li>
-          <li>
-            <input id="note-tag--Letter-of-Intent" type="checkbox" name="note-form-tags" value="Letter of Intent">
-            <label for="note-tag--Letter-of-Intent">Letter of Intent</label>
-          </li>
-        </ul>
-      </div>
-      <div class="usa-width-one-third">
-        <ul class="tag-selection-list">
-          <li>
-            <input id="note-tag--Voluntary_Withdrawal" type="checkbox" name="note-form-tags" value="Voluntary Withdrawal">
-            <label for="note-tag--Voluntary_Withdrawal">Voluntary Withdrawal</label>
-          </li>
-          <li>
-            <input id="note-tag--BOS-Analysis" type="checkbox" name="note-form-tags" value="BOS Analysis">
-            <label for="note-tag--BOS-Analysis">BOS Analysis</label>
-          </li>
-          <li>
-            <input id="note-tag--Ownership" type="checkbox" name="note-form-tags" value="Ownership">
-            <label for="note-tag--Ownership">Ownership</label>
-          </li>
-          <li>
-            <input id="note-tag--Control" type="checkbox" name="note-form-tags" value="Control">
-            <label for="note-tag--Control">Control</label>
-          </li>
-        </ul>
-      </div>
-      <div class="usa-width-one-third">
-        <ul class="tag-selection-list">
-          <li>
-            <input id="note-tag--Size" type="checkbox" name="note-form-tags" value="Size">
-            <label for="note-tag--Size">Size</label>
-          </li>
-          <li>
-            <input id="note-tag--Business-Development" type="checkbox" name="note-form-tags" value="Business Development">
-            <label for="note-tag--Business-Development">Business Development</label>
-          </li>
-          <li>
-            <input id="note-tag--Economic-Disadvantage" type="checkbox" name="note-form-tags" value="Economic Disadvantage">
-            <label for="note-tag--Economic-Disadvantage">Economic Disadvantage</label>
-          </li>
-          <li>
-            <input id="note-tag--Social-Disadvantage" type="checkbox" name="note-form-tags" value="Social Disadvantage">
-            <label for="note-tag--Social-Disadvantage">Social Disadvantage</label>
-          </li>
-        </ul>
-      </div>
+        <div class="usa-width-one-third">
+          <ul class="tag-selection-list">
+            <li>
+              <input id="note-tag--BOS-Analysis" type="checkbox" name="note-tags" value="BOS Analysis">
+              <label for="note-tag--BOS-Analysis">BOS Analysis</label>
+            </li>
+            <li>
+              <input id="note-tag--Ownership" type="checkbox" name="note-tags" value="Ownership">
+              <label for="note-tag--Ownership">Ownership</label>
+            </li>
+            <li>
+              <input id="note-tag--Control" type="checkbox" name="note-tags" value="Control">
+              <label for="note-tag--Control">Control</label>
+            </li>
+
+          </ul>
+        </div>
+        <div class="usa-width-one-third">
+          <ul class="tag-selection-list">
+            <li>
+              <input id="note-tag--Size" type="checkbox" name="note-tags" value="Size">
+              <label for="note-tag--Size">Size</label>
+            </li>
+            <li>
+              <input id="note-tag--Business-Development" type="checkbox" name="note-tags" value="Business Development">
+              <label for="note-tag--Business-Development">Business Development</label>
+            </li>
+            <li>
+              <input id="note-tag--Character" type="checkbox" name="note-tags" value="Character">
+              <label for="note-tag--Character">Character</label>
+            </li>
+          </ul>
+        </div>
+        <div class="usa-width-one-third">
+          <ul class="tag-selection-list">
+            <li>
+              <input id="note-tag--Economic-Disadvantage" type="checkbox" name="note-tags" value="Economic Disadvantage">
+              <label for="note-tag--Economic-Disadvantage">Economic Disadvantage</label>
+            </li>
+            <li>
+              <input id="note-tag--Social-Disadvantage" type="checkbox" name="note-tags" value="Social Disadvantage">
+              <label for="note-tag--Social-Disadvantage">Social Disadvantage</label>
+            </li>
+            <li>
+              <input id="note-tag--Potential-for-Success" type="checkbox" name="note-tags" value="Potential for Success">
+              <label for="note-tag--Potential-for-Success">Potential for Success</label>
+            </li>
+          </ul>
+        </div>
       </fieldset>
       <button type="submit">Add SBA note</button>
   </form>

@@ -1,7 +1,7 @@
 PATH
-  remote: /Users/jaredcunha/work/cds-gem-prototype
+  remote: /Users/jaredcunha/work/certify_design_system_gem
   specs:
-    cds (0.2.2)
+    certify_design_system (1.1.0)
       bourbon (~> 4.3, <= 5)
       sass (~> 3.5)
 
@@ -118,7 +118,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cds!
+  certify_design_system!
   jekyll (= 3.7.2)
   jekyll-assets
   jekyll-babel
@@ -129,4 +129,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.16.0.pre.3
+   1.16.1
