@@ -73,7 +73,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -252,7 +252,7 @@ $(document).ready(function() {
             <h1>Forward this case to HQ</h1>
           </div>
         </div>
-        <p class="usa-font-lead">Before sending this case to HQ, you must get the necessary approvals using “Refer case within SBA.”</p>
+        <p class="usa-font-lead">Before sending this case to HQ, you must&#58;</p>
       </div>
     </div>
 
@@ -263,7 +263,14 @@ $(document).ready(function() {
 
         
         <form action="#">
-          <fieldset class="questions">
+          <div class="usa-font-lead">
+  <ul class="sba-u-margin-top--0">
+    <li>Upload the relevant documentation to Analyst Documents</li>
+    <li>Get the necessary approvals using “Refer case within SBA”</li>
+  </ul>
+</div>
+
+<fieldset class="questions">
   <h4>Select a person</h4>
   <ul id="response" class="usa-unstyled-list">
     <li>
