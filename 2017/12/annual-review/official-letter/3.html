@@ -1,0 +1,56 @@
+---
+layout: layout--workflow
+
+#Page Settings
+body_class: hide-local-nav
+is_a_form: yes
+
+# Page Content
+step_text: Send offical letter&#58; Step 3 of 3
+page_h1: Review your letter
+lead_text: Please review the information below.
+cta_text: Send letter
+secondary_action_text: Start over
+
+# Tab Links
+application_link: application.html
+firm_documents_link: firm-documents.html
+analyst_documents_link: analyst-documents.html
+notes_link: notes.html
+messages_link: messages.html
+activity_log_link: activity-log.html
+---
+
+<div class="review-info">
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Letter type:</h2>
+      <p data-print="letter"></p>
+    </div>
+  </div>
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Send letter to:</h2>
+      <p data-print="message_to"></p>
+      <h2 class="review-info__heading">Letter subject:</h2>
+      <p data-print="message_subject"></p>
+      <h2 class="review-info__heading">Letter content:</h2>
+      <p data-print="message_text"></p>
+    </div>
+  </div>
+</div>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+    $('button[type="submit"]').on('click', function() {
+      validateFields('form');
+      if (!has_validation_errors) {
+        updateStoredData();
+        nextPage('4.html')
+      }
+
+      return false;
+    });
+  });
+</script>

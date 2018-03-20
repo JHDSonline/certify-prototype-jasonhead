@@ -73,8 +73,8 @@
               {% endif %}" class="task-panel-menu__link">Upload a document</a>
             </li>
           </ul>
-          <hr>
-          <ul class="task-panel-menu">
+          <hr class="no-hq">
+          <ul class="task-panel-menu no-hq">
             <h6 class="sba-c-task-panel__menu-header">Make a recommendation:</h6>
             <li class="task-panel-menu__item">
               <a href="{% if page.termination_link %}
@@ -207,6 +207,84 @@
           </ul>
         </div>
       </div>
+
+
+      <div class="task-panel" id="adverse_task_panel">
+        <button type="button" class="usa-button-unstyled task-panel-toggle" aria-expanded="false" aria-controls="task-panel1">Actions</button>
+        <div id="task-panel1" class="task-panel-content">
+          <ul class="task-panel-menu">
+            <li class="task-panel-menu__item">
+              <a href="{% if page.official_letter_link %}
+                {{ page.official_letter_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Send official letter</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="{% if page.refer_link %}
+                {{ page.refer_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Refer case within SBA </a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="{% if page.upload_document_link %}
+                {{ page.upload_document_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Upload a document</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a id="add_note" href="{% if page.notes_link %}
+                {{ page.notes_link }}?new_note=true
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Add SBA note</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="{% if page.assign_link %}
+                {{ page.assign_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Reassign firm</a>
+            </li>
+          </ul>
+
+          <hr>
+          <ul class="task-panel-menu">
+            <h6 class="sba-c-task-panel__menu-header">Make a recommendation:</h6>
+            <li class="task-panel-menu__item">
+              <a href="{% if page.retain_link %}
+                {{ page.retain_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Retain this firm</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="{% if page.hq_termination_link %}
+                {{ page.hq_termination_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Send Termination to HQ</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="{% if page.voluntary_withdrawal_link %}
+                {{ page.voluntary_withdrawal_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Voluntary withdrawal</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="{% if page.early_graduation_link %}
+                {{ page.early_graduation_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Early graduation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -215,26 +293,39 @@
 $(document).ready(function() {
 
   if (typeof applicationstatus !== "undefined") {
-    if (applicationstatus == "Processing") {
+    if ((applicationstatus == "Processing") && (typeof prototype == "undefined") ) {
       $('#screening_task_panel').remove();
       $('#declined_task_panel').remove();
+      $('#adverse_task_panel').remove();
+    }
+    else if ((applicationstatus == "Processing") && (prototype == "adverse")) {
+      $('#processing_task_panel').remove();
+      $('#declined_task_panel').remove();
+      $('#screening_task_panel').remove();
     }
     else if (applicationstatus == "Screening") {
       $('#processing_task_panel').remove();
       $('#declined_task_panel').remove();
+      $('#adverse_task_panel').remove();
     }
     else {
       $('#screening_task_panel').remove();
       $('#processing_task_panel').remove();
+      $('#adverse_task_panel').remove();
     }
   }
   else {
     $('#declined_task_panel').remove();
     $('#processing_task_panel').remove();
+    $('#adverse_task_panel').remove();
   }
 
   if ($("#currently-with-name").text() == "{{ site.cods_analyst }}" ) {
     $("#currentlyWith").remove();
+  }
+
+  if ((applicationstatus == "Screening") && (prototype == "adverse")) {
+    $('.no-hq').remove();
   }
 
 

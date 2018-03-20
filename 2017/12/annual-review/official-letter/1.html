@@ -1,0 +1,63 @@
+---
+layout: layout--workflow
+
+#Page Settings
+is_a_form: yes
+body_class: hide-local-nav
+
+# Page Content
+step_text: Send offical letter&#58; Step 1 of 3
+page_h1: Send Official Letter
+lead_text: Select the type of letter you would like to send to the firm.
+cta_text: Next
+secondary_action_text: Cancel
+
+# Tab Links
+application_link: application.html
+firm_documents_link: firm-documents.html
+analyst_documents_link: analyst-documents.html
+notes_link: notes.html
+messages_link: messages.html
+activity_log_link: activity-log.html
+---
+
+<input type="hidden" id="sme_review" value="true">
+<fieldset class="questions">
+  <h4 class="sba-u-visibility--screen-reader">Refer this case to</h4>
+  <ul id="response" class="usa-unstyled-list">
+    <li>
+      <input id="letter_early_graduate" type="radio" name="letter" value="Letter of Intent to Early Graduate">
+      <label for="letter_early_graduate">Letter of Intent to Early Graduate</label>
+    </li>
+    <li>
+      <input id="letter_terminate" type="radio" name="letter" value="Letter of Intent to Terminate">
+      <label for="letter_terminate">Letter of Intent to Terminate</label>
+    </li>
+    <li>
+      <input id="letter_suspension" type="radio" name="letter" value="Letter of Suspension">
+      <label for="letter_suspension">Letter of Suspension</label>
+    </li>
+  </ul>
+</fieldset>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else if($(':radio:checked').length == 0) {
+        $('#response').prepend('<span id="error" aria-atomic="true" class="usa-input-error-message" role="alert">Please choose an option.</span>');
+        return false;
+      }
+      else {
+        updateStoredData();
+
+        nextPage("2.html");
+        return false;
+      }
+    });
+  });
+</script>

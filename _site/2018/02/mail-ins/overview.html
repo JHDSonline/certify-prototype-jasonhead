@@ -73,7 +73,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -310,8 +310,8 @@ $(document).ready(function() {
               " class="task-panel-menu__link">Upload a document</a>
             </li>
           </ul>
-          <hr>
-          <ul class="task-panel-menu">
+          <hr class="no-hq">
+          <ul class="task-panel-menu no-hq">
             <h6 class="sba-c-task-panel__menu-header">Make a recommendation:</h6>
             <li class="task-panel-menu__item">
               <a href="
@@ -418,6 +418,66 @@ $(document).ready(function() {
           </ul>
         </div>
       </div>
+
+
+      <div class="task-panel" id="adverse_task_panel">
+        <button type="button" class="usa-button-unstyled task-panel-toggle" aria-expanded="false" aria-controls="task-panel1">Actions</button>
+        <div id="task-panel1" class="task-panel-content">
+          <ul class="task-panel-menu">
+            <li class="task-panel-menu__item">
+              <a href="
+                #
+              " class="task-panel-menu__link">Send official letter</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="
+                #
+              " class="task-panel-menu__link">Refer case within SBA </a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="
+                #
+              " class="task-panel-menu__link">Upload a document</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a id="add_note" href="
+                notes.html?new_note=true
+              " class="task-panel-menu__link">Add SBA note</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="
+                #
+              " class="task-panel-menu__link">Reassign firm</a>
+            </li>
+          </ul>
+
+          <hr>
+          <ul class="task-panel-menu">
+            <h6 class="sba-c-task-panel__menu-header">Make a recommendation:</h6>
+            <li class="task-panel-menu__item">
+              <a href="
+                #
+              " class="task-panel-menu__link">Retain this firm</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="
+                #
+              " class="task-panel-menu__link">Send Termination to HQ</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="
+                #
+              " class="task-panel-menu__link">Voluntary withdrawal</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="
+                #
+              " class="task-panel-menu__link">Early graduation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -426,26 +486,39 @@ $(document).ready(function() {
 $(document).ready(function() {
 
   if (typeof applicationstatus !== "undefined") {
-    if (applicationstatus == "Processing") {
+    if ((applicationstatus == "Processing") && (typeof prototype == "undefined") ) {
       $('#screening_task_panel').remove();
       $('#declined_task_panel').remove();
+      $('#adverse_task_panel').remove();
+    }
+    else if ((applicationstatus == "Processing") && (prototype == "adverse")) {
+      $('#processing_task_panel').remove();
+      $('#declined_task_panel').remove();
+      $('#screening_task_panel').remove();
     }
     else if (applicationstatus == "Screening") {
       $('#processing_task_panel').remove();
       $('#declined_task_panel').remove();
+      $('#adverse_task_panel').remove();
     }
     else {
       $('#screening_task_panel').remove();
       $('#processing_task_panel').remove();
+      $('#adverse_task_panel').remove();
     }
   }
   else {
     $('#declined_task_panel').remove();
     $('#processing_task_panel').remove();
+    $('#adverse_task_panel').remove();
   }
 
   if ($("#currently-with-name").text() == "Philip Barambani" ) {
     $("#currentlyWith").remove();
+  }
+
+  if ((applicationstatus == "Screening") && (prototype == "adverse")) {
+    $('.no-hq').remove();
   }
 
 

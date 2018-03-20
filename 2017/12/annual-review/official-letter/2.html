@@ -1,0 +1,39 @@
+---
+layout: layout--workflow
+
+#Page Settings
+is_a_form: yes
+body_class: hide-local-nav
+
+# Page Content
+step_text: Send offical letter&#58; Step 1 of 3
+page_h1: <span data-print="letter"></span>
+lead_text: Paste the contents of the letter into field below. The letter will be sent after you confirm your selections.
+cta_text: Next
+secondary_action_text: Go back
+
+# Tab Links
+application_link: application.html
+firm_documents_link: firm-documents.html
+analyst_documents_link: analyst-documents.html
+notes_link: notes.html
+messages_link: messages.html
+activity_log_link: activity-log.html
+---
+
+{% include widgets/_message-form--workflows.html %}
+
+<script>
+  $(document).ready(function() {
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("3.html");
+        return false;
+      }
+    });
+  });
+</script>
