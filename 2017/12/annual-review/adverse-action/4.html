@@ -3,21 +3,70 @@ layout: layout--workflow
 
 #Page Settings
 body_class: hide-local-nav
-is_a_form: false
 
 # Page Content
-page_h1: Your recommendation has been submitted
+step_text: <span id="step"></span>&#58; Step 4 of 4
+page_h1: Review your choices
+lead_text: Please review your choices
+cta_text: Send Deficiency Letter
+secondary_action_text: Cancel
 
 # Tab Links
-application_link: ../overview.html
-firm_documents_link: ../firm-documents.html
-analyst_documents_link: ../analyst-documents.html
-notes_link: ../notes.html
-messages_link: ../messages.html
-activity_log_link: ../activity-log.html
+application_link: application.html
+firm_documents_link: firm-documents.html
+analyst_documents_link: analyst-documents.html
+notes_link: notes.html
+messages_link: messages.html
+activity_log_link: activity-log.html
 ---
 
-<p>
-  <a href="../dashboard.html" class="sba-c-button">View dashboard</a>
-  <a href="../optional-note/1.html" type="button" class="sba-c-button sba-c-button--inverse">Add SBA Note</a>
-</p>
+<div class="review-info sba-u-margin-top--6">
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Send case to:</h2>
+      <p data-print="currently_with"></p>
+    </div>
+  </div>
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Your note</h2>
+      <p><strong data-print="note_form_title"></strong></p>
+      <p data-print="note_form"></p>
+      <p>Tags: <span data-print="note-form-tags"></span></p>
+    </div>
+  </div>
+</div>
+
+<p><a href="5.html" class="sba-c-button sba-u-sm-margin-right--3">Submit recommendation</a> <a href="#">Start over</a></p>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+
+    var $step = $('#step'),
+        $page_title = $('#page_title'),
+        $lead_text = $('#lead_text');
+
+
+    if ((action == "Retain")) {
+      $step.text('Retain this firm');
+      //$page_title.text('Retain This Firm');
+    }
+
+    else if ((action == "Terminate")) {
+      $step.text('Terminate this firm');
+      //$page_title.text('Terminate This Firm');
+    }
+
+    else if ((action == "VW")) {
+      $step.text('Withdraw this firm');
+      //$page_title.text('Withdraw This Firm');
+    }
+
+    else if ((action == "EG")) {
+      $step.text('Early Graduate this firm');
+      //$page_title.text('Early Graduate This Firm');
+    }
+
+  });
+</script>

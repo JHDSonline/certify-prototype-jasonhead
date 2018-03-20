@@ -5,8 +5,8 @@ layout: layout--workflow
 is_a_form: yes
 
 # Page Content
-step_text: <span id="step"></span>&#58; Step 1 of 3
-page_h1: Write a note
+step_text: <span id="step"></span>&#58; Step 2 of 4
+page_h1: Please upload your documents
 lead_text: <span id="lead_text"></span>
 cta_text: Next
 secondary_action_text: Cancel
@@ -20,8 +20,14 @@ messages_link: ../messages.html
 activity_log_link: ../activity-log.html
 ---
 
-{% include widgets/_note-form--workflows.html %}
-
+<div class="sba-c-document-prompt">
+  <p class="sba-c-document-prompt__header">Attach required documents</p>
+  <button class="sba-c-button" type="button" aria-controls="doc_selector1" aria-expanded="false">
+    <svg aria-hidden="true" class="sba-c-icon sba-u-margin-right--1">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#file"></use>
+    </svg>Add documents
+  </button>
+</div>
 
 <!-- This script will mimic the interaction we want to see -->
 <script>

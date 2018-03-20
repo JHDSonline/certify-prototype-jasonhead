@@ -1,43 +1,27 @@
 ---
 layout: layout--workflow
 
-#Page Settings
-body_class: hide-local-nav
+# Page Settings
+is_a_form: yes
 
 # Page Content
-step_text: <span id="step"></span>&#58; Step 2 of 2
-page_h1: Review your choices
-lead_text: Please review your choices
-cta_text: Send Deficiency Letter
+step_text: <span id="step"></span>&#58; Step 3 of 4
+page_h1: Write a note
+lead_text: <span id="lead_text"></span>
+cta_text: Next
 secondary_action_text: Cancel
 
 # Tab Links
-application_link: application.html
-firm_documents_link: firm-documents.html
-analyst_documents_link: analyst-documents.html
-notes_link: notes.html
-messages_link: messages.html
-activity_log_link: activity-log.html
+application_link: ../overview.html
+firm_documents_link: ../firm-documents.html
+analyst_documents_link: ../analyst-documents.html
+notes_link: ../notes.html
+messages_link: ../messages.html
+activity_log_link: ../activity-log.html
 ---
 
-<div class="review-info sba-u-margin-top--6">
-  <div class="review-info__item">
-    <div class="review-info__content">
-      <h2 class="review-info__heading">Send case to:</h2>
-      <p data-print="currently_with"></p>
-    </div>
-  </div>
-  <div class="review-info__item">
-    <div class="review-info__content">
-      <h2 class="review-info__heading">Your note</h2>
-      <p><strong data-print="note_form_title"></strong></p>
-      <p data-print="note_form"></p>
-      <p>Tags: <span data-print="note-form-tags"></span></p>
-    </div>
-  </div>
-</div>
+{% include widgets/_note-form--workflows.html %}
 
-<p><a href="4.html" class="sba-c-button sba-u-sm-margin-right--3">Submit recommendation</a> <a href="#">Start over</a></p>
 
 <!-- This script will mimic the interaction we want to see -->
 <script>
@@ -45,7 +29,7 @@ activity_log_link: activity-log.html
 
     var $step = $('#step'),
         $page_title = $('#page_title'),
-        $lead_text = $('#lead_text');
+        $lead_text = $('#lead_text')
 
 
     if ((action == "Retain")) {
@@ -68,5 +52,16 @@ activity_log_link: activity-log.html
       //$page_title.text('Early Graduate This Firm');
     }
 
+
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("4.html");
+        return false;
+      }
+    });
   });
 </script>
