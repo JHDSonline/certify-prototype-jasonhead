@@ -1,0 +1,92 @@
+---
+layout: layout--workflow
+
+# Page Settings
+is_a_form: yes
+
+# Page Content
+step_text: <span id="step"></span>&#58; Step 1 of 3
+page_h1: <span id="page_title"></span>
+lead_text: <span id="lead_text"></span>
+cta_text: Next
+secondary_action_text: Cancel
+
+# Tab Links
+application_link: ../overview.html
+firm_documents_link: ../firm-documents.html
+analyst_documents_link: ../analyst-documents.html
+notes_link: ../notes.html
+messages_link: ../messages.html
+activity_log_link: ../activity-log.html
+---
+
+
+<fieldset class="questions">
+  <h4>Select a person</h4>
+  <ul id="response" class="usa-unstyled-list">
+    <li>
+      <input id="reassigned_VanTran" type="radio" name="currently_with" value="Van Tran">
+      <label for="reassigned_VanTran">Van Tran</label>
+    </li>
+    <li>
+      <input id="reassigned_Teresa_Tyhurst" type="radio" name="currently_with" value="Teresa Tyhurst">
+      <label for="reassigned_Teresa_Tyhurst">Teresa Tyhurst</label>
+    </li>
+    <li>
+      <input id="reassigned_Vincent_Mazzotta" type="radio" name="currently_with" value="Vincent Mazzotta">
+      <label for="reassigned_Vincent_Mazzotta">Vincent Mazzotta</label>
+    </li>
+    <li>
+      <input id="reassigned_Richard Blum" type="radio" name="currently_with" value="Richard Blum">
+      <label for="reassigned_Richard Blum">Richard Blum</label>
+    </li>
+    <li>
+      <input id="reassigned_SandraBarrett" type="radio" name="currently_with" value="Sandra Barrett">
+      <label for="reassigned_SandraBarrett">Sandra Barrett</label>
+    </li>
+  </ul>
+</fieldset>
+
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+
+    var $step = $('#step'),
+        $page_title = $('#page_title'),
+        $lead_text = $('#lead_text')
+
+
+    if ((action == "Retain")) {
+      $step.text('Retain this firm');
+      $page_title.text('Retain This Firm');
+    }
+
+    else if ((action == "Terminate")) {
+      $step.text('Terminate this firm');
+      $page_title.text('Terminate This Firm');
+    }
+
+    else if ((action == "VW")) {
+      $step.text('Withdraw this firm');
+      $page_title.text('Withdraw This Firm');
+    }
+
+    else if ((action == "EG")) {
+      $step.text('Early Graduate this firm');
+      $page_title.text('Early Graduate This Firm');
+    }
+
+
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("2.html");
+        return false;
+      }
+    });
+  });
+</script>
