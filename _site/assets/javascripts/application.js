@@ -11929,7 +11929,8 @@ $(document).ready(function(){
     // for other things on the page to load.
     //setTimeout(function(){
       var taskbar_height = $taskbar_wrap.height(),
-      placeholder = '<div class="taskbar-placeholder" style="height:'+taskbar_height+'px"></div>';
+      //placeholder = '<div class="taskbar-placeholder" style="height:'+taskbar_height+'px"></div>';
+      placeholder = '<div class="taskbar-placeholder" style="height:56px"></div>';
     //}, 20);
 
     $(window).on('scroll', function () {
