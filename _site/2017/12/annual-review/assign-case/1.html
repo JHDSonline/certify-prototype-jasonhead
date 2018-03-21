@@ -73,7 +73,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -263,148 +263,201 @@ $(document).ready(function() {
 
         
         <form action="#">
-          <fieldset class="questions">
-    <legend class="usa-sr-only">Please select a BOS or supervisor</legend>
-    <h4>Please select a BOS or supervisor</h4>
-    <div class="sba-l-row">
-      <div class="sba-l-col">
-        <ul class="usa-unstyled-list">
-          <li>
-            <input id="Frank_Apple" type="radio" name="currently_with" value="Frank Apple " >
-            <label for="Frank_Apple">Frank Apple <small>(21 cases)</small></label>
-          </li>
-          <li>
-            <input id="Alana_Butterfield" type="radio" name="currently_with" value="Alana Butterfield " >
-            <label for="Alana_Butterfield">Alana Butterfield <small>(17 cases)</small></label>
-          </li>
-          <li>
-            <input id="Sally_Christiansen" type="radio" name="currently_with" value="Sally Christiansen " >
-            <label for="Sally_Christiansen">Sally Christiansen <small>(9 cases)</small></label>
-          </li>
-          <li>
-            <input id="Bud_Dvorak" type="radio" name="currently_with" value="Bud Dvorak " >
-            <label for="Bud_Dvorak">Bud Dvorak <small>(15 cases)</small></label>
-          </li>
-          <li>
-            <input id="Sam_Ecker" type="radio" name="currently_with" value="Sam Ecker " >
-            <label for="Sam_Ecker">Sam Ecker <small>(34 cases)</small></label>
-          </li>
-        </ul>
-      </div>
-      <div class="sba-l-col">
-        <ul class="usa-unstyled-list">
-          <li>
-            <input id="Kris_Kerfuffle" type="radio" name="currently_with" value="Kris Kerfuffle " >
-            <label for="Kris_Kerfuffle">Kris Kerfuffle <small>(27 cases)</small></label>
-          </li>
-          <li>
-            <input id="Bart_Limey" type="radio" name="currently_with" value="Bart Limey " >
-            <label for="Bart_Limey">Bart Limey <small>(32 cases)</small></label>
-          </li>
-          <li>
-            <input id="Allie_Melver" type="radio" name="currently_with" value="Allie Melver " >
-            <label for="Allie_Melver">Allie Melver <small>(18 cases)</small></label>
-          </li>
-          <li>
-            <input id="John_Nickleson" type="radio" name="currently_with" value="John Nickleson " >
-            <label for="John_Nickleson">John Nickleson <small>(33 cases)</small></label>
-          </li>
-          <li>
-            <input id="Teresa_Tyhurst" type="radio" name="currently_with" value="Teresa Tyhurst " >
-            <label for="Teresa_Tyhurst">Teresa Tyhurst <small>(25 cases)</small></label>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div>
-      <div class="sba-l-col sba-u-bgcolor--gray-lightest sba-u-padding--2 sba-u-margin-top--2">
-        <ul class="usa-unstyled-list">
-          <li>
-            <input id="Another" type="radio" name="currently_with" value="Another" aria-controls="followup1" data-follow-up="followup1" aria-expanded="false">
-            <label for="Another" class="sba-u-margin-top--0">Choose someone from another district office</label>
-          </li>
-        </ul>
-        <div class="sba-c-follow-up" id="followup1" hidden>
-          <label for="new_district_office" class="sba-u-margin-top--0">District offices</label>
-          <select name="new_district_office" id="new_district_office" required>
-            <option value="" selected disabled></option>
-            <option value="Alabama">Alabama </option>
-            <option value="Alaska">Alaska </option>
-            <option value="Arizona">Arizona </option>
-            <option value="Arkansas">Arkansas </option>
-            <option value="Baltimore">Baltimore </option>
-            <option value="Boise">Boise </option>
-            <option value="Buffalo">Buffalo </option>
-            <option value="Cleveland">Cleveland </option>
-            <option value="Colorado">Colorado </option>
-            <option value="Columbus">Columbus </option>
-            <option value="Connecticut">Connecticut </option>
-            <option value="Delaware">Delaware </option>
-            <option value="Des Moines">Des Moines </option>
-            <option value="El Paso">El Paso </option>
-            <option value="Fresno">Fresno </option>
-            <option value="Georgia">Georgia </option>
-            <option value="Hawaii">Hawaii </option>
-            <option value="Houston">Houston </option>
-            <option value="Illinois">Illinois </option>
-            <option value="Indiana">Indiana </option>
-            <option value="Kansas City">Kansas City </option>
-            <option value="Kentucky">Kentucky </option>
-            <option value="Los Angeles">Los Angeles </option>
-            <option value=">Louisiana">Louisiana </option>
-            <option value="Lower Rio G V">Lower Rio G V </option>
-            <option value="Lubbock">Lubbock </option>
-            <option value=">Maine">Maine </option>
-            <option value="Massachusetts">Massachusetts </option>
-            <option value="Michigan">Michigan </option>
-            <option value="Minnesota">Minnesota </option>
-            <option value="Mississippi">Mississippi </option>
-            <option value="Montana">Montana </option>
-            <option value=">New Hampshire">New Hampshire </option>
-            <option value=">North Carolina">North Carolina </option>
-            <option value="North Dakota ">North Dakota </option>
-            <option value="North Florida">North Florida </option>
-            <option value="Nebraska">Nebraska </option>
-            <option value=">Nevada">Nevada </option>
-            <option value="New Jersey">New Jersey </option>
-            <option value="New Mexico">New Mexico </option>
-            <option value="New York">New York </option>
-            <option value="Oklahoma">Oklahoma </option>
-            <option value="Philadelphia">Philadelphia </option>
-            <option value="Pittsburgh">Pittsburgh </option>
-            <option value="Portland">Portland </option>
-            <option value="Puerto Rico & U.S. Virgin Islands">Puerto Rico & U.S. Virgin Islands </option>
-            <option value="Rhode Island">Rhode Island </option>
-            <option value="Richmond">Richmond </option>
-            <option value="South Carolina">South Carolina </option>
-            <option value="South Dakota">South Dakota </option>
-            <option value="South Florida">South Florida </option>
-            <option value="Sacramento">Sacramento </option>
-            <option value="San Antonio">San Antonio </option>
-            <option value="San Diego">San Diego </option>
-            <option value="San Francisco">San Francisco </option>
-            <option value="Santa Ana">Santa Ana </option>
-            <option value="Seattle">Seattle </option>
-            <option value="St. Louis">St. Louis </option>
-            <option value="Syracuse">Syracuse </option>
-            <option value="Tennessee">Tennessee </option>
-            <option value="Utah">Utah </option>
-            <option value="Vermont">Vermont </option>
-            <option value="Washington">Washington </option>
-            <option value="West Virginia">West Virginia </option>
-            <option value="Wichita">Wichita </option>
-            <option value="Wisconsin">Wisconsin </option>
-            <option value="Wyoming">Wyoming </option>
-          </select>
-          <p>Note: When you assign the case to another district office, it will be assigned to the supervisor of that office.</p>
+          <div class="no-hq">
+  <fieldset class="questions">
+      <legend class="usa-sr-only">Please select a BOS or supervisor</legend>
+      <h4>Please select a BOS or supervisor</h4>
+      <div class="sba-l-row">
+        <div class="sba-l-col">
+          <ul class="usa-unstyled-list">
+            <li>
+              <input id="Frank_Apple" type="radio" name="currently_with" value="Frank Apple " >
+              <label for="Frank_Apple">Frank Apple <small>(21 cases)</small></label>
+            </li>
+            <li>
+              <input id="Alana_Butterfield" type="radio" name="currently_with" value="Alana Butterfield " >
+              <label for="Alana_Butterfield">Alana Butterfield <small>(17 cases)</small></label>
+            </li>
+            <li>
+              <input id="Sally_Christiansen" type="radio" name="currently_with" value="Sally Christiansen " >
+              <label for="Sally_Christiansen">Sally Christiansen <small>(9 cases)</small></label>
+            </li>
+            <li>
+              <input id="Bud_Dvorak" type="radio" name="currently_with" value="Bud Dvorak " >
+              <label for="Bud_Dvorak">Bud Dvorak <small>(15 cases)</small></label>
+            </li>
+            <li>
+              <input id="Sam_Ecker" type="radio" name="currently_with" value="Sam Ecker " >
+              <label for="Sam_Ecker">Sam Ecker <small>(34 cases)</small></label>
+            </li>
+          </ul>
+        </div>
+        <div class="sba-l-col">
+          <ul class="usa-unstyled-list">
+            <li>
+              <input id="Kris_Kerfuffle" type="radio" name="currently_with" value="Kris Kerfuffle " >
+              <label for="Kris_Kerfuffle">Kris Kerfuffle <small>(27 cases)</small></label>
+            </li>
+            <li>
+              <input id="Bart_Limey" type="radio" name="currently_with" value="Bart Limey " >
+              <label for="Bart_Limey">Bart Limey <small>(32 cases)</small></label>
+            </li>
+            <li>
+              <input id="Allie_Melver" type="radio" name="currently_with" value="Allie Melver " >
+              <label for="Allie_Melver">Allie Melver <small>(18 cases)</small></label>
+            </li>
+            <li>
+              <input id="John_Nickleson" type="radio" name="currently_with" value="John Nickleson " >
+              <label for="John_Nickleson">John Nickleson <small>(33 cases)</small></label>
+            </li>
+            <li>
+              <input id="Teresa_Tyhurst" type="radio" name="currently_with" value="Teresa Tyhurst " >
+              <label for="Teresa_Tyhurst">Teresa Tyhurst <small>(25 cases)</small></label>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </fieldset>
+      <div>
+        <div class="sba-l-col sba-u-bgcolor--gray-lightest sba-u-padding--2 sba-u-margin-top--2">
+          <ul class="usa-unstyled-list">
+            <li>
+              <input id="Another" type="radio" name="currently_with" value="Another" aria-controls="followup1" data-follow-up="followup1" aria-expanded="false">
+              <label for="Another" class="sba-u-margin-top--0">Choose someone from another district office</label>
+            </li>
+          </ul>
+          <div class="sba-c-follow-up" id="followup1" hidden>
+            <label for="new_district_office" class="sba-u-margin-top--0">District offices</label>
+            <select name="new_district_office" id="new_district_office" required>
+              <option value="" selected disabled></option>
+              <option value="Alabama">Alabama </option>
+              <option value="Alaska">Alaska </option>
+              <option value="Arizona">Arizona </option>
+              <option value="Arkansas">Arkansas </option>
+              <option value="Baltimore">Baltimore </option>
+              <option value="Boise">Boise </option>
+              <option value="Buffalo">Buffalo </option>
+              <option value="Cleveland">Cleveland </option>
+              <option value="Colorado">Colorado </option>
+              <option value="Columbus">Columbus </option>
+              <option value="Connecticut">Connecticut </option>
+              <option value="Delaware">Delaware </option>
+              <option value="Des Moines">Des Moines </option>
+              <option value="El Paso">El Paso </option>
+              <option value="Fresno">Fresno </option>
+              <option value="Georgia">Georgia </option>
+              <option value="Hawaii">Hawaii </option>
+              <option value="Houston">Houston </option>
+              <option value="Illinois">Illinois </option>
+              <option value="Indiana">Indiana </option>
+              <option value="Kansas City">Kansas City </option>
+              <option value="Kentucky">Kentucky </option>
+              <option value="Los Angeles">Los Angeles </option>
+              <option value=">Louisiana">Louisiana </option>
+              <option value="Lower Rio G V">Lower Rio G V </option>
+              <option value="Lubbock">Lubbock </option>
+              <option value=">Maine">Maine </option>
+              <option value="Massachusetts">Massachusetts </option>
+              <option value="Michigan">Michigan </option>
+              <option value="Minnesota">Minnesota </option>
+              <option value="Mississippi">Mississippi </option>
+              <option value="Montana">Montana </option>
+              <option value=">New Hampshire">New Hampshire </option>
+              <option value=">North Carolina">North Carolina </option>
+              <option value="North Dakota ">North Dakota </option>
+              <option value="North Florida">North Florida </option>
+              <option value="Nebraska">Nebraska </option>
+              <option value=">Nevada">Nevada </option>
+              <option value="New Jersey">New Jersey </option>
+              <option value="New Mexico">New Mexico </option>
+              <option value="New York">New York </option>
+              <option value="Oklahoma">Oklahoma </option>
+              <option value="Philadelphia">Philadelphia </option>
+              <option value="Pittsburgh">Pittsburgh </option>
+              <option value="Portland">Portland </option>
+              <option value="Puerto Rico & U.S. Virgin Islands">Puerto Rico & U.S. Virgin Islands </option>
+              <option value="Rhode Island">Rhode Island </option>
+              <option value="Richmond">Richmond </option>
+              <option value="South Carolina">South Carolina </option>
+              <option value="South Dakota">South Dakota </option>
+              <option value="South Florida">South Florida </option>
+              <option value="Sacramento">Sacramento </option>
+              <option value="San Antonio">San Antonio </option>
+              <option value="San Diego">San Diego </option>
+              <option value="San Francisco">San Francisco </option>
+              <option value="Santa Ana">Santa Ana </option>
+              <option value="Seattle">Seattle </option>
+              <option value="St. Louis">St. Louis </option>
+              <option value="Syracuse">Syracuse </option>
+              <option value="Tennessee">Tennessee </option>
+              <option value="Utah">Utah </option>
+              <option value="Vermont">Vermont </option>
+              <option value="Washington">Washington </option>
+              <option value="West Virginia">West Virginia </option>
+              <option value="Wichita">Wichita </option>
+              <option value="Wisconsin">Wisconsin </option>
+              <option value="Wyoming">Wyoming </option>
+            </select>
+            <p>Note: When you assign the case to another district office, it will be assigned to the supervisor of that office.</p>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <div class="yes-hq">
+    <fieldset class="questions sba-u-border-top--1">
+      <h4>8(a) Supervisor</h4>
+      <ul id="response" class="usa-unstyled-list">
+        <li>
+          <input id="reassigned_VinceAlvarez" type="radio" name="currently_with" value="Vince Alvarez">
+          <label for="reassigned_VinceAlvarez">Vince Alvarez</label>
+        </li>
+        <li>
+          <input id="reassigned_TeresaTyhurst" type="radio" name="currently_with" value="Teresa Tyhurst">
+          <label for="reassigned_TeresaTyhurst">Teresa Tyhurst</label>
+        </li>
+        <li>
+          <input id="reassigned_RickBlum" type="radio" name="currently_with" value="Rick Blum">
+          <label for="reassigned_RickBlum">Rick Blum</label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="questions sba-u-border-top--1">
+      <h4>8(a) Director</h4>
+      <ul id="response" class="usa-unstyled-list">
+        <li>
+          <input id="reassigned_VanTran" type="radio" name="currently_with" value="Van Tran">
+          <label for="reassigned_VanTran">Van Tran</label>
+        </li>
+        <li>
+          <input id="reassigned_SandraBarrett" type="radio" name="currently_with" value="Sandra Barrett">
+          <label for="reassigned_SandraBarrett">Sandra Barrett</label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset class="questions sba-u-border-top--1">
+      <h4>AA/BD</h4>
+      <ul id="response" class="usa-unstyled-list">
+        <li>
+          <input id="reassigned_AjoySinha" type="radio" name="currently_with" value="Ajoy Sinha">
+          <label for="reassigned_AjoySinha">Ajoy Sinha</label>
+        </li>
+      </ul>
+    </fieldset>
+  </div>
 
   <!-- This script will mimic the interaction we want to see -->
   <script>
     $(document).ready(function() {
+
+      if ((typeof prototype != "undefined") && (prototype == "adverse")) {
+        $('.no-hq').remove();
+      }
+
+      else {
+        $('.yes-hq').remove();
+      }
 
       $('form').on('submit', function() {
         if (!checkValidityIfSupported($('form').get(0))) {

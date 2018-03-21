@@ -6,9 +6,9 @@ is_a_form: yes
 body_class: hide-local-nav
 
 # Page Content
-step_text: Return to case owner
-page_h1: Return to case owner
-lead_text: This case will be returned to [PERSON]. Please leave a note to explain why the case is being returned.
+step_text: Return to field office
+page_h1: Return to field office
+lead_text: This case will be returned to the [DISTRICT OFFICE]. Please leave a note to explain why the case is being returned.
 cta_text: Next
 secondary_action_text: Go back
 
@@ -32,7 +32,7 @@ $(document).ready(function() {
     }
     else {
       updateStoredData();
-      nextPage("2.html");
+      nextPage("3.html");
       return false;
     }
   });

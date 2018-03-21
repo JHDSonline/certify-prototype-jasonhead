@@ -5,7 +5,7 @@ layout: layout--workflow
 body_class: hide-local-nav
 
 # Page Content
-step_text: Return to case owner
+step_text: Return to field office
 page_h1: Review and complete return
 cta_text: Next
 secondary_action_text: Cancel
@@ -25,6 +25,12 @@ activity_log_link: activity-log.html
     <div class="review-info">
       <div class="review-info__item">
         <div class="review-info__content">
+          <h2 class="review-info__heading">BOS or supervisor</h2>
+          <p data-print="case_owner"></p>
+        </div>
+      </div>
+      <div class="review-info__item">
+        <div class="review-info__content">
           <h2 class="review-info__heading">Note</h2>
           <p><strong>Topic: </strong><span data-print="refer_note_subject"></span></p>
           <p data-print="refer_note_text"></p>
@@ -33,6 +39,6 @@ activity_log_link: activity-log.html
       </div>
     </div>
 
-    <p><a href="3.html" class="usa-button">Return case</a> <a href="#">Start over</a></p>
+    <p><a href="4.html" class="usa-button">Return case</a> <a href="#">Start over</a></p>
   </div>
 </div>

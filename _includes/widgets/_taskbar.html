@@ -38,13 +38,13 @@
               {% endif %}" class="task-panel-menu__link"><strong>Accept for processing</strong></a>
             </li>
             <li class="task-panel-menu__item" data-filter-prototype="adverse">
-              <a href="{% if page.return_to_case_owner_link %}
-                {{ page.return_to_case_owner_link }}
+              <a href="{% if page.return_to_field_office_link %}
+                {{ page.return_to_field_office_link }}
               {% else %}
                 #
-              {% endif %}" class="task-panel-menu__link">Return to case owner</a>
+              {% endif %}" class="task-panel-menu__link">Return to field office</a>
             </li>
-            <li class="task-panel-menu__item">
+            <li class="task-panel-menu__item no-hq">
               <a href="{% if page.refer_link %}
                 {{ page.refer_link }}
               {% else %}
@@ -147,7 +147,7 @@
                 {{ page.assign_link }}
               {% else %}
                 #
-              {% endif %}" class="task-panel-menu__link">Reassign firm</a>
+              {% endif %}" class="task-panel-menu__link">Reassign this case</a>
             </li>
           </ul>
           <hr>
@@ -209,7 +209,7 @@
               <a id="add_note" href="#" class="task-panel-menu__link">Add SBA note</a>
             </li>
             <li class="task-panel-menu__item">
-              <a href="#" class="task-panel-menu__link">Reassign firm</a>
+              <a href="#" class="task-panel-menu__link">Reassign this case</a>
             </li>
           </ul>
         </div>
@@ -253,7 +253,7 @@
                 {{ page.assign_link }}
               {% else %}
                 #
-              {% endif %}" class="task-panel-menu__link">Reassign firm</a>
+              {% endif %}" class="task-panel-menu__link">Reassign this case</a>
             </li>
           </ul>
 

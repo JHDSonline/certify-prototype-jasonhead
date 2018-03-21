@@ -73,7 +73,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -263,20 +263,24 @@ $(document).ready(function() {
 
         
         <form action="#">
-          <p>Once you accept this case for processing, the firm can’t add contributors. For the first year in Certify, these people must provide their information during screening:</p>
+          <div class="no-hq">
+  <p>Once you accept this case for processing, the firm can’t add contributors. For the first year in Certify, these people must provide their information during screening:</p>
 
-<ul>
-  <li>Owners claiming disadvantage</li>
-  <li>Spouses of all owners claiming disadvantage</li>
-  <li>Everyone who owns at least 10% of the firm</li>
-  <li>Officers</li>
-  <li>Directors</li>
-  <li>Board members</li>
-  <li>Managers</li>
-  <li>Partners</li>
-</ul>
+  <ul>
+    <li>Owners claiming disadvantage</li>
+    <li>Spouses of all owners claiming disadvantage</li>
+    <li>Everyone who owns at least 10% of the firm</li>
+    <li>Officers</li>
+    <li>Directors</li>
+    <li>Board members</li>
+    <li>Managers</li>
+    <li>Partners</li>
+  </ul>
+</div>
 
-
+<div class="yes-hq">
+  <p class="usa-font-lead">Before you accept this case for processing, please make sure that you have all the necessary documentation from the district office. If you need the district office to change their recommendation, please return this case to the district office before you accept it for processing.</p>
+</div>
 
 
 <input type="hidden" id="applicationstatus" value="Processing">
@@ -284,6 +288,14 @@ $(document).ready(function() {
 
 <script>
 $(document).ready(function() {
+  if ((typeof prototype != "undefined") && (prototype == "adverse")) {
+    $('.no-hq').remove();
+  }
+
+  else {
+    $('.yes-hq').remove();
+  }
+
   $('form').on('submit', function() {
     if (!checkValidityIfSupported($('form').get(0))) {
       return false;

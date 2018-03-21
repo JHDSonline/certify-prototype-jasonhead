@@ -167,7 +167,7 @@
             -->
             <li>
               <a class="usa-nav-link " href="
-                ../overview.html
+                application.html
               ">
               
                 <span>Application</span>
@@ -182,33 +182,33 @@
               <ul id="side-nav-3" class="usa-nav-submenu">
                 <li>
                   <a href="
-                    ../firm-documents.html
+                    firm-documents.html
                   ">Firm Documents</a>
                 </li>
                 <li>
                   <a href="
-                    ../analyst-documents.html
+                    analyst-documents.html
                   ">Analyst Documents</a>
                 </li>
               </ul>
             </li>
             <li>
               <a class="usa-nav-link " href="
-                ../notes.html
+                notes.html
               ">
                 <span>SBA Notes</span>
               </a>
             </li>
             <li>
               <a class="usa-nav-link " href="
-                ../messages.html
+                messages.html
               ">
                 <span>Messages</span>
               </a>
             </li>
             <li>
               <a class="usa-nav-link " href="
-                ../activity-log.html
+                activity-log.html
               ">
                 <span>Activity Log</span>
               </a>
@@ -248,11 +248,11 @@ $(document).ready(function() {
       <div class="sba-l-col--12 sba-u-padding-x--2">
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
-            
-            <h1>This action has been logged in Certify</h1>
+            <span class="subheading--large">Return to field office</span>
+            <h1>Return to field office</h1>
           </div>
         </div>
-        
+        <p class="usa-font-lead">Please select a BOS or supervisor in the [DISTRICT OFFICE] district office</p>
       </div>
     </div>
 
@@ -262,11 +262,86 @@ $(document).ready(function() {
         
 
         
-          <p>
-  <a href="../dashboard.html" class="sba-c-button">View dashboard</a>
-  <a href="../optional-note/1.html" type="button" class="sba-c-button sba-c-button--inverse">Add SBA Note</a>
-</p>
+        <form action="#">
+          <fieldset class="questions">
+    <legend class="usa-sr-only">[DISTRICT OFFICE] district office</legend>
+    <h4>[DISTRICT OFFICE] district office</h4>
+    <div class="usa-width-one-half">
+      <ul class="usa-unstyled-list">
+        <li>
+          <input id="Frank_Apple" type="radio" name="currently_with" value="Frank Apple " >
+          <label for="Frank_Apple">Frank Apple <small>(21 cases)</small></label>
+        </li>
+        <li>
+          <input id="Alana_Butterfield" type="radio" name="currently_with" value="Alana Butterfield " >
+          <label for="Alana_Butterfield">Alana Butterfield <small>(17 cases)</small></label>
+        </li>
+        <li>
+          <input id="Sally_Christiansen" type="radio" name="currently_with" value="Sally Christiansen " >
+          <label for="Sally_Christiansen">Sally Christiansen <small>(9 cases)</small></label>
+        </li>
+        <li>
+          <input id="Bud_Dvorak" type="radio" name="currently_with" value="Bud Dvorak " >
+          <label for="Bud_Dvorak">Bud Dvorak <small>(15 cases)</small></label>
+        </li>
+        <li>
+          <input id="Sam_Ecker" type="radio" name="currently_with" value="Sam Ecker " >
+          <label for="Sam_Ecker">Sam Ecker <small>(34 cases)</small></label>
+        </li>
+      </ul>
+    </div>
+    <div class="usa-width-one-half">
+      <ul class="usa-unstyled-list">
+        <li>
+          <input id="Kris_Kerfuffle" type="radio" name="currently_with" value="Kris Kerfuffle " >
+          <label for="Kris_Kerfuffle">Kris Kerfuffle <small>(27 cases)</small></label>
+        </li>
+        <li>
+          <input id="Bart_Limey" type="radio" name="currently_with" value="Bart Limey " >
+          <label for="Bart_Limey">Bart Limey <small>(32 cases)</small></label>
+        </li>
+        <li>
+          <input id="Allie_Melver" type="radio" name="currently_with" value="Allie Melver " >
+          <label for="Allie_Melver">Allie Melver <small>(18 cases)</small></label>
+        </li>
+        <li>
+          <input id="John_Nickleson" type="radio" name="currently_with" value="John Nickleson " >
+          <label for="John_Nickleson">John Nickleson <small>(33 cases)</small></label>
+        </li>
+        <li>
+          <input id="Teresa_Tyhurst" type="radio" name="currently_with" value="Teresa Tyhurst " >
+          <label for="Teresa_Tyhurst">Teresa Tyhurst <small>(25 cases)</small></label>
+        </li>
+      </ul>
+    </div>
+  </fieldset>
 
+  <!-- This script will mimic the interaction we want to see -->
+  <script>
+    $(document).ready(function() {
+
+      $('form').on('submit', function() {
+        if (!checkValidityIfSupported($('form').get(0))) {
+          return false;
+        }
+        else {
+          updateStoredData();
+          nextPage("2.html");
+          return false;
+        }
+      });
+    });
+  </script>
+
+          <div class="actions">
+            <div class="actions__main">
+              <button type="submit" class="sba-c-button sba-u-sm-margin-right--3">Next</button>
+              <a href="javascript:window.history.back();">Cancel</a>
+              <p><em></em></p>
+            </div>
+            
+          </div>
+        </form>
         
 
         
