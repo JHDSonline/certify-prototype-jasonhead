@@ -23,6 +23,17 @@ body_class: hide-local-nav
 <div class="certify-grid-wrap">
   <div class="certify-width-two-thirds">
 
+    <div class="sba-c-alert">
+      <div class="sba-c-alert__icon">
+        <svg aria-hidden="true" class="sba-c-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#info-circle"></use>
+        </svg>
+      </div>
+      <div class="sba-c-alert__body">
+        <p class="sba-c-alert__text">If the firm has not been responsive, you must recommend the firm to be ineligible.</p>
+      </div>
+    </div>
+
     <p>You will be able to review all of the information you entered before you complete closing this case.</p>
 
     <form action="#">
@@ -33,21 +44,12 @@ body_class: hide-local-nav
             <input id="close_withdrawal" type="radio" name="close" value="Yes" required>
             <label for="close_withdrawal">Firm requested withdrawal</label>
           </li>
-          <li>
-            <input id="close_unresponsive" type="radio" name="close" data-followup="followup" value="No" required >
-            <label for="close_unresponsive">Firm has not been responsive</label>
-            <div id="followup" class="usa-extend--hidden form-followup" aria-hidden="true">
-              <p>If the firm has not been responsive, you need to follow the recommendation process to indicate the firm as ineligible. Please mention that you are closing the case in the note.</p>
-              <p><strong><a href="recommendation1.html" class="usa-button">Continue closing this case</a></strong></p>
-            </div>
-          </li>
         </ul>
       </fieldset>
       <div class="actions">
         <div class="actions__main">
-          <button type="submit">Next</button>
+          <button type="submit" class="sba-c-button">Next</button>
           <a href="javascript:window.history.back();">Cancel</a>
-          <p><em>Next step: Write a note</em></p>
         </div>
       </div>
     </form>
