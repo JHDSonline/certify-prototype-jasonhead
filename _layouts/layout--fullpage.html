@@ -12,7 +12,11 @@
     {% include _vendor_masthead_full.html %}
   {% else %}
     {% unless page.hide_case_masthead %}
-      {% include _analyst_masthead_full.html %}
+      {% if page.new_sba_nav %}
+       {% include _analyst_masthead_new_full.html %}
+      {% else %}
+        {% include _analyst_masthead_full.html %}
+      {% endif %}
     {% else %}
       {% include _analyst_masthead_global_only.html %}
     {% endunless %}

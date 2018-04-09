@@ -1,0 +1,39 @@
+---
+layout: card
+---
+
+<article>
+  <h1>Servicing BOS</h1>
+
+  <p>This prototype will include a method to add and change a servicing BOS. In order for the UI to support this new information, a new header needs to be supplied.</p>
+
+  <h2>Important!</h2>
+  <p>This prototype is limited. The user should change the district office to Louisiana, and then select a servicing BOS from the Alabama district office.</p>
+
+  <h3>Some rules</h3>
+  <ul>
+    <li>Servicing BOS is set to "None" by default</li>
+    <li>The list of servicing BOS that appears by default would be the BOS's that correpsond with the firm's current district office.</li>
+  </ul>
+
+  <h3>Dev note</h3>
+  <ul>
+    <li>All lists of BOS's for all field offices are included on the page, but hidden with a <code>hidden</code> attribute.</li>
+    <li>The list filters by adding a <code>hidden</code> attirbute to all sets of BOS's and then removing the <code>hidden</code> attribute for only the corresponding field office selected in the drop down.</li>
+  </ul>
+
+  <p>This is not set in stone. AJAX would also be acceptable for loading the BOS lists on the page.</p>
+
+  <h2>The prototype</h2>
+
+  <p>
+    <a href="overview.html?applicationstatus=Processing" class="sba-c-button">
+      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--lg">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#bolt"></use>
+      </svg> View prototype
+    </a>
+  </p>
+</article>
+<script>
+sessionStorage.clear();
+</script>

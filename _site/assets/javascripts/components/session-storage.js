@@ -102,7 +102,7 @@ $(document).ready(function() {
       }
       else if ($(element_type).is('select')) {
         if ((printed_text != "[object HTMLInputElement]") && (printed_text != "[object HTMLSelectElement]")) {
-          $(this).find('option[value='+ printed_text +']').prop('selected', true);
+          $(this).find('option[value="'+ printed_text +'"]').prop('selected', true);
         }
       }
       else {
