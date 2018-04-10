@@ -3,21 +3,62 @@ layout: layout--workflow
 
 #Page Settings
 body_class: hide-local-nav
-is_a_form: false
+is_a_form: yes
 
 # Page Content
-page_h1: This firm has been recommended for suspension
+step_text: Recommend Suspension&#58; Step 3 of 3
+page_h1: Review and complete
+lead_text: Please review the information below and complete your recommendation.
+cta_text: Send to HQ
+secondary_action_text: Start over
 
 # Tab Links
-application_link: ../overview.html
-firm_documents_link: ../firm-documents.html
-analyst_documents_link: ../analyst-documents.html
-notes_link: ../notes.html
-messages_link: ../messages.html
-activity_log_link: ../activity-log.html
+application_link: application.html
+firm_documents_link: firm-documents.html
+analyst_documents_link: analyst-documents.html
+notes_link: notes.html
+messages_link: messages.html
+activity_log_link: activity-log.html
 ---
 
-<p>
-  <a href="../dashboard.html" class="sba-c-button">View dashboard</a>
-  <a href="../optional-note/1.html" type="button" class="sba-c-button sba-c-button--inverse">Add SBA Note</a>
-</p>
+<div class="review-info">
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Send case to:</h2>
+      <p data-print="currently_with"></p>
+    </div>
+  </div>
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Your note</h2>
+      <p><strong data-print="note_form_title"></strong></p>
+      <p data-print="note_form"></p>
+      <p>Tags: <span data-print="note-form-tags"></span></p>
+    </div>
+  </div>
+</div>
+
+<div class="sba-u-margin-bottom--3">
+  <ul class="sba-c-unstyled-list">
+    <li>
+      <input class="sba-c-checkbox" id="assert_approval" type="checkbox" name="approval" value="Has approval" required>
+      <label class="sba-c-label" for="assert_approval">I used “Refer case within SBA” to get approval for this action.</label>
+    </li>
+  </ul>
+
+</div>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+    $('button[type="submit"]').on('click', function() {
+      validateFields('form');
+      if (!has_validation_errors) {
+        updateStoredData();
+        nextPage('4.html')
+      }
+
+      return false;
+    });
+  });
+</script>

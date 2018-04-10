@@ -73,7 +73,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -248,11 +248,11 @@ $(document).ready(function() {
       <div class="sba-l-col--12 sba-u-padding-x--2">
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
-            <span class="subheading--large">Suspending the case</span>
-            <h1>Forward this case</h1>
+            <span class="subheading--large">Recommend Suspension&#58; Step 2 of 3</span>
+            <h1>Add a note</h1>
           </div>
         </div>
-        <p class="usa-font-lead">Please select who to forward the case to.</p>
+        <p class="usa-font-lead">Provide details about your recommendation to suspend</p>
       </div>
     </div>
 
@@ -263,129 +263,89 @@ $(document).ready(function() {
 
         
         <form action="#">
-          <fieldset class="questions">
-  <h4>BOS</h4>
-  <ul id="response" class="usa-unstyled-list">
-    <li>
-      <input id="reassigned_LaraHilton" type="radio" name="currently_with" value="Lara Hilton">
-      <label for="reassigned_LaraHilton">Lara Hilton</label>
-    </li>
-    <li>
-      <input id="reassigned_RichardSmith" type="radio" name="currently_with" value="Richard Smith">
-      <label for="reassigned_RichardSmith">Richard Smith</label>
-    </li>
-    <li>
-      <input id="reassigned_SaraZiggler" type="radio" name="currently_with" value="Sara Ziggler">
-      <label for="reassigned_SaraZiggler">Sara Ziggler</label>
-    </li>
-  </ul>
-</fieldset>
+          
+  <fieldset class="questions">
+    <legend class="usa-sr-only">New Note</legend>
+    <label for="note_form_title">Title</label>
+    <input type="text" id="note_form_title">
+    <label for="note_form">Note</label>
+    <textarea name="" id="note_form"></textarea>
+  </fieldset>
 
-<fieldset class="questions sba-u-border-top--1">
-  <h4>Lead BOS</h4>
-  <ul id="response" class="usa-unstyled-list">
-    <li>
-      <input id="reassigned_BJHolkum" type="radio" name="currently_with" value="BJ Holkum">
-      <label for="reassigned_BJHolkum">BJ Holkum</label>
-    </li>
-  </ul>
-</fieldset>
-
-<fieldset class="questions sba-u-border-top--1">
-  <h4>Supervisor BOS</h4>
-  <ul id="response" class="usa-unstyled-list">
-    <li>
-      <input id="reassigned_ShivaniDubey" type="radio" name="currently_with" value="Shivani Dubey">
-      <label for="reassigned_ShivaniDubey">Shivani Dubey</label>
-    </li>
-  </ul>
-</fieldset>
-
-<fieldset class="questions sba-u-border-top--1">
-  <h4>Deputy District Director (DDD)</h4>
-  <ul id="response" class="usa-unstyled-list">
-    <li>
-      <input id="reassigned_DianaJohnson" type="radio" name="currently_with" value="Diana Johnson">
-      <label for="reassigned_DianaJohnson">Diana Johnson</label>
-    </li>
-  </ul>
-</fieldset>
-
-<fieldset class="questions sba-u-border-top--1">
-  <h4>District Director (DD)</h4>
-  <ul id="response" class="usa-unstyled-list">
-    <li>
-      <input id="reassigned_CarltonRemedy" type="radio" name="currently_with" value="Carlton Remedy">
-      <label for="reassigned_CarltonRemedy">Carlton Remedy</label>
-    </li>
-  </ul>
-</fieldset>
-
-<fieldset class="questions sba-u-border-top--1" data-filter-recommendation="EarlyGraduation Termination Withdrawal">
-  <h4>8(a) Supervisor</h4>
-  <ul id="response" class="usa-unstyled-list">
-    <li>
-      <input id="reassigned_VinceAlvarez" type="radio" name="currently_with" value="Vince Alvarez">
-      <label for="reassigned_VinceAlvarez">Vince Alvarez</label>
-    </li>
-    <li>
-      <input id="reassigned_TeresaTyhurst" type="radio" name="currently_with" value="Teresa Tyhurst">
-      <label for="reassigned_TeresaTyhurst">Teresa Tyhurst</label>
-    </li>
-    <li>
-      <input id="reassigned_RickBlum" type="radio" name="currently_with" value="Rick Blum">
-      <label for="reassigned_RickBlum">Rick Blum</label>
-    </li>
-  </ul>
-</fieldset>
-
-<fieldset class="questions sba-u-border-top--1" data-filter-recommendation="EarlyGraduation Termination Withdrawal">
-  <h4>8(a) Director</h4>
-  <ul id="response" class="usa-unstyled-list">
-    <li>
-      <input id="reassigned_VanTran" type="radio" name="currently_with" value="Van Tran">
-      <label for="reassigned_VanTran">Van Tran</label>
-    </li>
-    <li>
-      <input id="reassigned_SandraBarrett" type="radio" name="currently_with" value="Sandra Barrett">
-      <label for="reassigned_SandraBarrett">Sandra Barrett</label>
-    </li>
-  </ul>
-</fieldset>
-
-<fieldset class="questions sba-u-border-top--1" data-filter-recommendation="EarlyGraduation Termination Withdrawal">
-  <h4>AA/BD</h4>
-  <ul id="response" class="usa-unstyled-list">
-    <li>
-      <input id="reassigned_Ajoy Sinha" type="radio" name="currently_with" value="Ajoy Sinha">
-      <label for="reassigned_Ajoy Sinha">Ajoy Sinha</label>
-    </li>
-  </ul>
-</fieldset>
-
+  <fieldset class="question tags">
+    <h4>Tags</h4>
+      <div class="usa-width-one-half">
+        <ul class="tag-selection-list">
+          <li>
+            <input id="note-tag--BOS-Analysis" type="checkbox" name="note-tags" value="BOS Analysis">
+            <label for="note-tag--BOS-Analysis">BOS Analysis</label>
+          </li>
+          <li>
+            <input id="note-tag--Ownership" type="checkbox" name="note-tags" value="Ownership">
+            <label for="note-tag--Ownership">Ownership</label>
+          </li>
+          <li>
+            <input id="note-tag--Control" type="checkbox" name="note-tags" value="Control">
+            <label for="note-tag--Control">Control</label>
+          </li>
+          <li>
+            <input id="note-tag--Size" type="checkbox" name="note-tags" value="Size">
+            <label for="note-tag--Size">Size</label>
+          </li>
+          <li>
+            <input id="note-tag--Character" type="checkbox" name="note-tags" value="Character">
+            <label for="note-tag--Character">Character</label>
+          </li>
+        </ul>
+      </div>
+      <div class="usa-width-one-half">
+        <ul class="tag-selection-list">
+          <li>
+            <input id="note-tag--Business-Development" type="checkbox" name="note-tags" value="Business Development">
+            <label for="note-tag--Business-Development">Business Development</label>
+          </li>
+          <li>
+            <input id="note-tag--Potential-for-Success" type="checkbox" name="note-tags" value="Potential for Success">
+            <label for="note-tag--Potential-for-Success">Potential for Success</label>
+          </li>
+          <li>
+            <input id="note-tag--Economic-Disadvantage" type="checkbox" name="note-tags" value="Economic Disadvantage">
+            <label for="note-tag--Economic-Disadvantage">Economic Disadvantage</label>
+          </li>
+          <li>
+            <input id="note-tag--Social-Disadvantage" type="checkbox" name="note-tags" value="Social Disadvantage">
+            <label for="note-tag--Social-Disadvantage">Social Disadvantage</label>
+          </li>
+        </ul>
+      </div>
+    </fieldset>
 
 
 <!-- This script will mimic the interaction we want to see -->
 <script>
-  $(document).ready(function() {
-    $('form').on('submit', function() {
-      if (!checkValidityIfSupported($('form').get(0))) {
-        return false;
-      }
-      else {
-        updateStoredData();
-        nextPage("3.html");
-        return false;
-      }
-    });
+$(document).ready(function() {
+  $('form').on('submit', function() {
+    if (!checkValidityIfSupported($('form').get(0))) {
+      return false;
+    }
+    else {
+      updateStoredData();
+      nextPage("3.html");
+      return false;
+    }
   });
+});
 </script>
 
           <div class="actions">
             <div class="actions__main">
               <button type="submit" class="sba-c-button sba-u-sm-margin-right--3">Next</button>
-              <a href="javascript:window.history.back();">Go back</a>
+              <a href="javascript:window.history.back();">Cancel</a>
               <p><em></em></p>
+            </div>
+            
+            <div class="actions__secondary">
+              <a href="3.html" class="sba-c-button sba-c-button--inverse">Skip</a>
             </div>
             
           </div>

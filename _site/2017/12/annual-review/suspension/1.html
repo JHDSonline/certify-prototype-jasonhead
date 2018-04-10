@@ -73,7 +73,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -248,11 +248,11 @@ $(document).ready(function() {
       <div class="sba-l-col--12 sba-u-padding-x--2">
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
-            <span class="subheading--large">Suspending the case</span>
-            <h1>Upload Suspension Package</h1>
+            <span class="subheading--large">Recommend Suspension&#58; Step 1 of 3</span>
+            <h1>Forward this case to HQ</h1>
           </div>
         </div>
-        <p class="usa-font-lead">Please upload the package</p>
+        <p class="usa-font-lead">Before you recommend suspsending this firm, you must&#58;</p>
       </div>
     </div>
 
@@ -263,20 +263,39 @@ $(document).ready(function() {
 
         
         <form action="#">
-          <div class="sba-c-document-prompt">
-  <p class="sba-c-document-prompt__header">Please attach the following documents</p>
-  <ul>
-    <li>Suspension package</li>
-    <li data-filter-recommendation="Approval">Sole source restriction (optional)</li>
+          <div class="usa-font-lead">
+  <ul class="sba-u-margin-top--0">
+    <li>Upload the relevant documentation to Analyst Documents</li>
+    <li>Get the necessary approvals using “Refer case within SBA”</li>
   </ul>
-  <button class="sba-c-button" type="button" aria-controls="doc_selector1" aria-expanded="false">
-    <svg aria-hidden="true" class="sba-c-icon sba-u-margin-right--1">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype/assets/svg-sprite/sprite.svg#file"></use>
-    </svg>Add document(s)
-  </button>
 </div>
 
-<p><strong>Note:</strong> BOS are required to draft a Letter of Intent to Terminate through the <a href="../letter-of-intent/1.html">Letter of Intent workflow</a> prior to recommending suspension.</p>
+<fieldset class="questions">
+  <h4>Select a person</h4>
+  <ul id="response" class="usa-unstyled-list">
+    <li>
+      <input id="reassigned_VanTran" type="radio" name="currently_with" value="Van Tran">
+      <label for="reassigned_VanTran">Van Tran</label>
+    </li>
+    <li>
+      <input id="reassigned_Teresa_Tyhurst" type="radio" name="currently_with" value="Teresa Tyhurst">
+      <label for="reassigned_Teresa_Tyhurst">Teresa Tyhurst</label>
+    </li>
+    <li>
+      <input id="reassigned_Vincent_Mazzotta" type="radio" name="currently_with" value="Vincent Mazzotta">
+      <label for="reassigned_Vincent_Mazzotta">Vincent Mazzotta</label>
+    </li>
+    <li>
+      <input id="reassigned_Richard Blum" type="radio" name="currently_with" value="Richard Blum">
+      <label for="reassigned_Richard Blum">Richard Blum</label>
+    </li>
+    <li>
+      <input id="reassigned_SandraBarrett" type="radio" name="currently_with" value="Sandra Barrett">
+      <label for="reassigned_SandraBarrett">Sandra Barrett</label>
+    </li>
+  </ul>
+</fieldset>
+
 
 <!-- This script will mimic the interaction we want to see -->
 <script>

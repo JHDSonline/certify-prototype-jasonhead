@@ -111,6 +111,13 @@
                 #
               {% endif %}" class="task-panel-menu__link">Early graduation</a>
             </li>
+            <li class="task-panel-menu__item">
+              <a href="{% if page.suspension_link %}
+                {{ page.suspension_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Suspension</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -187,6 +194,13 @@
               {% else %}
                 #
               {% endif %}" class="task-panel-menu__link">Early graduation</a>
+            </li>
+            <li class="task-panel-menu__item">
+              <a href="{% if page.suspension_link %}
+                {{ page.suspension_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Suspension</a>
             </li>
           </ul>
         </div>
