@@ -73,7 +73,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -263,7 +263,7 @@ $(document).ready(function() {
         <div class="sba-c-alert">
           <div class="sba-c-alert__icon">
             <svg aria-hidden="true" class="sba-c-icon">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype/assets/svg-sprite/sprite.svg#info-circle"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg-sprite/sprite.svg#info-circle"></use>
             </svg>
           </div>
           <div class="sba-c-alert__body">
@@ -278,7 +278,6 @@ $(document).ready(function() {
         
 
         
-        <form action="#">
           <div class="review-info sba-u-margin-top--6">
   <div class="review-info__item">
     <div class="review-info__content">
@@ -289,39 +288,8 @@ $(document).ready(function() {
   </div>
 </div>
 
-<div class="sba-u-margin-bottom--3">
-  <ul class="sba-c-unstyled-list">
-    <li>
-      <input class="sba-c-checkbox" id="assert_approval" type="checkbox" name="approval" value="Has approval" required>
-      <label class="sba-c-label" for="assert_approval">I used “Refer case within SBA” to get approval for this action.</label>
-    </li>
-  </ul>
-</div>
+<p><a href="3.html" class="sba-c-button sba-u-sm-margin-right--3">Send Deficiency Letter</a> <a href="#">Start over</a></p>
 
-<!-- This script will mimic the interaction we want to see -->
-<script>
-  $(document).ready(function() {
-    $('button[type="submit"]').on('click', function() {
-      validateFields('form');
-      if (!has_validation_errors) {
-        updateStoredData();
-        nextPage('3.html')
-      }
-
-      return false;
-    });
-  });
-</script>
-
-          <div class="actions">
-            <div class="actions__main">
-              <button type="submit" class="sba-c-button sba-u-sm-margin-right--3">Send Deficiency Letter</button>
-              <a href="javascript:window.history.back();">Go back</a>
-              <p><em></em></p>
-            </div>
-            
-          </div>
-        </form>
         
 
         
