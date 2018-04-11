@@ -5,7 +5,7 @@ layout: layout--workflow
 is_a_form: yes
 
 # Page Content
-step_text: <span id="step"></span>&#58; Step 2 of 4
+step_text: <span id="step"></span>&#58; Step <span id="stepnum"></span>
 page_h1: Please upload your documents
 lead_text: <span id="lead_text"></span>
 cta_text: Next
@@ -35,27 +35,18 @@ activity_log_link: ../activity-log.html
 
     var $step = $('#step'),
         $page_title = $('#page_title'),
-        $lead_text = $('#lead_text')
+        $lead_text = $('#lead_text'),
+        $stepnum = $('#stepnum');
 
 
     if ((action == "Retain")) {
       $step.text('Retain this firm');
-      //$page_title.text('Retain This Firm');
+      $stepnum.text('2 of 4');
     }
 
-    else if ((action == "Terminate")) {
-      $step.text('Terminate this firm');
-      //$page_title.text('Terminate This Firm');
-    }
-
-    else if ((action == "VW")) {
-      $step.text('Withdraw this firm');
-      //$page_title.text('Withdraw This Firm');
-    }
-
-    else if ((action == "EG")) {
-      $step.text('Early Graduate this firm');
-      //$page_title.text('Early Graduate This Firm');
+    else {
+      $step.text('Initiate adverse action');
+      $stepnum.text('3 of 5');
     }
 
 

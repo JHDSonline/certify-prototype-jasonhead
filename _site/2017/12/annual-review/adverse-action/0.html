@@ -247,11 +247,11 @@ $(document).ready(function() {
       <div class="sba-l-col--12 sba-u-padding-x--2">
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
-            <span class="subheading--large"><span id="step"></span>&#58; Step <span id="stepnum"></span></span>
-            <h1>Please upload your documents</h1>
+            <span class="subheading--large">Initiate adverse action&#58; Step 1 of 5</span>
+            <h1>Which adverse action would like to initiate?</h1>
           </div>
         </div>
-        <p class="usa-font-lead"><span id="lead_text"></span></p>
+        
       </div>
     </div>
 
@@ -262,43 +262,39 @@ $(document).ready(function() {
 
         
         <form action="#">
-          <div class="sba-c-document-prompt">
-  <p class="sba-c-document-prompt__header">Attach required documents</p>
-  <button class="sba-c-button" type="button" aria-controls="doc_selector1" aria-expanded="false">
-    <svg aria-hidden="true" class="sba-c-icon sba-u-margin-right--1">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg-sprite/sprite.svg#file"></use>
-    </svg>Add documents
-  </button>
-</div>
+          <fieldset class="questions sba-u-border-top--1">
+  <h4>Make a recommendation</h4>
+  <ul id="response" class="usa-unstyled-list">
+    <li>
+      <input id="reassigned_VinceAlvarez" type="radio" name="action" value="Early graduation">
+      <label for="reassigned_VinceAlvarez">Early graduation</label>
+    </li>
+    <li>
+      <input id="reassigned_TeresaTyhurst" type="radio" name="action" value="Terminate">
+      <label for="reassigned_TeresaTyhurst">Termination</label>
+    </li>
+    <li>
+      <input id="reassigned_RickBlum" type="radio" name="action" value="Voluntary withdrawal">
+      <label for="reassigned_RickBlum">Voluntary withdrawal</label>
+    </li>
+  </ul>
+</fieldset>
+
+<script>
+
+</script>
+
 
 <!-- This script will mimic the interaction we want to see -->
 <script>
   $(document).ready(function() {
-
-    var $step = $('#step'),
-        $page_title = $('#page_title'),
-        $lead_text = $('#lead_text'),
-        $stepnum = $('#stepnum');
-
-
-    if ((action == "Retain")) {
-      $step.text('Retain this firm');
-      $stepnum.text('2 of 4');
-    }
-
-    else {
-      $step.text('Initiate adverse action');
-      $stepnum.text('3 of 5');
-    }
-
-
     $('form').on('submit', function() {
       if (!checkValidityIfSupported($('form').get(0))) {
         return false;
       }
       else {
         updateStoredData();
-        nextPage("3.html");
+        nextPage("1.html");
         return false;
       }
     });

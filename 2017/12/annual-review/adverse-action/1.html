@@ -5,9 +5,9 @@ layout: layout--workflow
 is_a_form: yes
 
 # Page Content
-step_text: <span id="step"></span>&#58; Step 1 of 4
+step_text: <span id="step"></span>&#58; Step <span id="stepnum"></span>
 page_h1: <span id="page_title"></span>
-lead_text: <span id="lead_text"></span>
+lead_text: Select who you would like to forward this case to.
 cta_text: Next
 secondary_action_text: Cancel
 
@@ -70,27 +70,19 @@ activity_log_link: ../activity-log.html
 
     var $step = $('#step'),
         $page_title = $('#page_title'),
-        $lead_text = $('#lead_text')
+        $stepnum = $('#stepnum');
 
 
     if ((action == "Retain")) {
       $step.text('Retain this firm');
       $page_title.text('Retain This Firm');
+      $stepnum.text('1 of 4');
     }
 
-    else if ((action == "Terminate")) {
-      $step.text('Terminate this firm');
-      $page_title.text('Terminate This Firm');
-    }
-
-    else if ((action == "VW")) {
-      $step.text('Withdraw this firm');
-      $page_title.text('Withdraw This Firm');
-    }
-
-    else if ((action == "EG")) {
-      $step.text('Early Graduate this firm');
-      $page_title.text('Early Graduate This Firm');
+    else {
+      $step.text('Initiate adverse action');
+      $page_title.text('Forward this case');
+      $stepnum.text('2 of 5');
     }
 
 

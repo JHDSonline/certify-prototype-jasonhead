@@ -247,11 +247,11 @@ $(document).ready(function() {
       <div class="sba-l-col--12 sba-u-padding-x--2">
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
-            <span class="subheading--large"><span id="step"></span>&#58; Step 1 of 4</span>
+            <span class="subheading--large"><span id="step"></span>&#58; Step <span id="stepnum"></span></span>
             <h1><span id="page_title"></span></h1>
           </div>
         </div>
-        <p class="usa-font-lead"><span id="lead_text"></span></p>
+        <p class="usa-font-lead">Select who you would like to forward this case to.</p>
       </div>
     </div>
 
@@ -311,27 +311,19 @@ $(document).ready(function() {
 
     var $step = $('#step'),
         $page_title = $('#page_title'),
-        $lead_text = $('#lead_text')
+        $stepnum = $('#stepnum');
 
 
     if ((action == "Retain")) {
       $step.text('Retain this firm');
       $page_title.text('Retain This Firm');
+      $stepnum.text('1 of 4');
     }
 
-    else if ((action == "Terminate")) {
-      $step.text('Terminate this firm');
-      $page_title.text('Terminate This Firm');
-    }
-
-    else if ((action == "VW")) {
-      $step.text('Withdraw this firm');
-      $page_title.text('Withdraw This Firm');
-    }
-
-    else if ((action == "EG")) {
-      $step.text('Early Graduate this firm');
-      $page_title.text('Early Graduate This Firm');
+    else {
+      $step.text('Initiate adverse action');
+      $page_title.text('Forward this case');
+      $stepnum.text('2 of 5');
     }
 
 

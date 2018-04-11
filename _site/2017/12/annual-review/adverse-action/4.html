@@ -248,7 +248,7 @@ $(document).ready(function() {
       <div class="sba-l-col--12 sba-u-padding-x--2">
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
-            <span class="subheading--large"><span id="step"></span>&#58; Step 4 of 4</span>
+            <span class="subheading--large"><span id="step"></span>&#58; Step <span id="stepnum"></span></span>
             <h1>Review your choices</h1>
           </div>
         </div>
@@ -263,6 +263,12 @@ $(document).ready(function() {
 
         
           <div class="review-info sba-u-margin-top--6">
+  <div class="review-info__item">
+    <div class="review-info__content">
+      <h2 class="review-info__heading">Recommendation:</h2>
+      <p data-print="action"></p>
+    </div>
+  </div>
   <div class="review-info__item">
     <div class="review-info__content">
       <h2 class="review-info__heading">Send case to:</h2>
@@ -287,28 +293,19 @@ $(document).ready(function() {
 
     var $step = $('#step'),
         $page_title = $('#page_title'),
-        $lead_text = $('#lead_text');
+        $lead_text = $('#lead_text'),
+        $stepnum = $('#stepnum');
 
 
-    if ((action == "Retain")) {
-      $step.text('Retain this firm');
-      //$page_title.text('Retain This Firm');
-    }
+        if ((action == "Retain")) {
+          $step.text('Retain this firm');
+          $stepnum.text('4 of 4');
+        }
 
-    else if ((action == "Terminate")) {
-      $step.text('Terminate this firm');
-      //$page_title.text('Terminate This Firm');
-    }
-
-    else if ((action == "VW")) {
-      $step.text('Withdraw this firm');
-      //$page_title.text('Withdraw This Firm');
-    }
-
-    else if ((action == "EG")) {
-      $step.text('Early Graduate this firm');
-      //$page_title.text('Early Graduate This Firm');
-    }
+        else {
+          $step.text('Initiate adverse action');
+          $stepnum.text('5 of 5');
+        }
 
   });
 </script>

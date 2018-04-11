@@ -275,32 +275,25 @@
           <ul class="task-panel-menu">
             <h6 class="sba-c-task-panel__menu-header">Make a recommendation:</h6>
             <li class="task-panel-menu__item">
-              <a href="{% if page.retain_link--adverse %}
-                {{ page.retain_link--adverse }}
+              <a href="{% if page.retain_link--retain %}
+                {{ page.retain_link--retain }}
               {% else %}
                 #
               {% endif %}" class="task-panel-menu__link">Retain this firm</a>
             </li>
             <li class="task-panel-menu__item">
-              <a href="{% if page.terminate_firm_link--adverse %}
-                {{ page.terminate_firm_link--adverse }}
+              <a href="{% if page.initiate_adverse__link %}
+                {{ page.initiate_adverse__link }}
               {% else %}
                 #
-              {% endif %}" class="task-panel-menu__link">Terminate this firm</a>
+              {% endif %}" class="task-panel-menu__link">Initiate Adverse Action</a>
             </li>
             <li class="task-panel-menu__item">
-              <a href="{% if page.voluntary_withdrawal_link--adverse %}
-                {{ page.voluntary_withdrawal_link--adverse }}
+              <a href="{% if page.initiate_adverse__link %}
+                {{ page.rinitiate_adverse__link }}
               {% else %}
                 #
-              {% endif %}" class="task-panel-menu__link">Voluntary withdrawal</a>
-            </li>
-            <li class="task-panel-menu__item">
-              <a href="{% if page.early_graduation_link--adverse %}
-                {{ page.early_graduation_link--adverse }}
-              {% else %}
-                #
-              {% endif %}" class="task-panel-menu__link">Early graduation</a>
+              {% endif %}" class="task-panel-menu__link">Suspend/Remove suspension</a>
             </li>
           </ul>
         </div>
