@@ -3,7 +3,6 @@ layout: layout--workflow
 
 #Page Settings
 body_class: hide-local-nav
-is_a_form: yes
 
 # Page Content
 step_text: Send Deficiency Letter&#58; Step 2 of 2
@@ -34,26 +33,4 @@ activity_log_link: activity-log.html
   </div>
 </div>
 
-<div class="sba-u-margin-bottom--3">
-  <ul class="sba-c-unstyled-list">
-    <li>
-      <input class="sba-c-checkbox" id="assert_approval" type="checkbox" name="approval" value="Has approval" required>
-      <label class="sba-c-label" for="assert_approval">I used “Refer case within SBA” to get approval for this action.</label>
-    </li>
-  </ul>
-</div>
-
-<!-- This script will mimic the interaction we want to see -->
-<script>
-  $(document).ready(function() {
-    $('button[type="submit"]').on('click', function() {
-      validateFields('form');
-      if (!has_validation_errors) {
-        updateStoredData();
-        nextPage('3.html')
-      }
-
-      return false;
-    });
-  });
-</script>
+<p><a href="3.html" class="sba-c-button sba-u-sm-margin-right--3">Send Deficiency Letter</a> <a href="#">Start over</a></p>
