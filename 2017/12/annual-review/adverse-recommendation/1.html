@@ -5,7 +5,6 @@ layout: layout--workflow
 is_a_form: yes
 
 # Page Content
-step_text: Initiate adverse action&#58; Step 1 of 5
 page_h1: Which adverse action would like to initiate?
 cta_text: Next
 secondary_action_text: Cancel
@@ -24,15 +23,15 @@ activity_log_link: ../activity-log.html
   <h4>Make a recommendation</h4>
   <ul id="response" class="usa-unstyled-list">
     <li>
-      <input id="reassigned_VinceAlvarez" type="radio" name="action" value="Early graduation" required>
+      <input id="reassigned_VinceAlvarez" type="radio" name="adverse_recommendation" value="Early graduation" required>
       <label for="reassigned_VinceAlvarez">Early graduation</label>
     </li>
     <li>
-      <input id="reassigned_TeresaTyhurst" type="radio" name="action" value="Terminate" required>
-      <label for="reassigned_TeresaTyhurst">Termination</label>
+      <input id="reassigned_TeresaTyhurst" type="radio" name="adverse_recommendation" value="Terminate" required>
+      <label for="reassigned_TeresaTyhurst">Send termination to HQ</label>
     </li>
     <li>
-      <input id="reassigned_RickBlum" type="radio" name="action" value="Voluntary withdrawal" required>
+      <input id="reassigned_RickBlum" type="radio" name="adverse_recommendation" value="Voluntary withdrawal" required>
       <label for="reassigned_RickBlum">Voluntary withdrawal</label>
     </li>
   </ul>
@@ -52,7 +51,15 @@ activity_log_link: ../activity-log.html
       }
       else {
         updateStoredData();
-        nextPage("1.html");
+        if ((adverse_recommendation == "Early graduation")) {
+          nextPage("../early-graduation/1.html");
+        }
+        else if ((adverse_recommendation == "Terminate")) {
+          nextPage("../termination-hq/1.html")
+        }
+        else {
+          nextPage("../voluntary-withdrawal/1.html")
+        }
         return false;
       }
     });
