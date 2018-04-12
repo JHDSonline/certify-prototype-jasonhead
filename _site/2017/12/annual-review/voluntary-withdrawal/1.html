@@ -72,7 +72,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -247,11 +247,11 @@ $(document).ready(function() {
       <div class="sba-l-col--12 sba-u-padding-x--2">
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
-            <span class="subheading--large">Voluntary Withdrawal&#58; Step 1 of 3</span>
-            <h1>Recommend voluntary withdrawal</h1>
+            <span class="subheading--large">Voluntary Withdrawal&#58; Step 1 of 4</span>
+            <h1>Forward this case to HQ</h1>
           </div>
         </div>
-        <p class="usa-font-lead">Before recommending voluntary withdrawal, you must&#58;</p>
+        
       </div>
     </div>
 
@@ -262,14 +262,7 @@ $(document).ready(function() {
 
         
         <form action="#">
-          <div class="usa-font-lead">
-  <ul class="sba-u-margin-top--0">
-    <li>Upload the firm’s voluntary withdrawal agreement to Analyst Documents</li>
-    <li>Get the necessary approvals using “Refer case within SBA”</li>
-  </ul>
-</div>
-
-<fieldset class="questions">
+          <fieldset class="questions">
   <h4>Select a person</h4>
   <ul id="response" class="usa-unstyled-list">
     <li>
@@ -305,7 +298,7 @@ $(document).ready(function() {
       }
       else {
         updateStoredData();
-        nextPage("2.html");
+        nextPage("1a.html");
         return false;
       }
     });
