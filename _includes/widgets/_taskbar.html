@@ -206,12 +206,12 @@
         <button type="button" class="usa-button-unstyled task-panel-toggle" aria-expanded="false" aria-controls="task-panel1">Actions</button>
         <div id="task-panel1" class="task-panel-content">
           <ul class="task-panel-menu">
-            <li class="task-panel-menu__item">
-              <a href="{% if page.official_letter_link %}
-                {{ page.official_letter_link }}
+            <li class="task-panel-menu__item" data-filter-applicationstatus="Screening">
+              <a href="{% if page.change_status_link %}
+                {{ page.change_status_link }}
               {% else %}
                 #
-              {% endif %}" class="task-panel-menu__link">Send official letter</a>
+              {% endif %}" class="task-panel-menu__link"><strong>Accept for processing</strong></a>
             </li>
             <li class="task-panel-menu__item">
               <a href="{% if page.refer_link %}
@@ -247,6 +247,13 @@
           <ul class="task-panel-menu">
             <h6 class="sba-c-task-panel__menu-header">Make a recommendation:</h6>
             <li class="task-panel-menu__item">
+              <a href="{% if page.official_letter_link %}
+                {{ page.official_letter_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Send official letter</a>
+            </li>
+            <li class="task-panel-menu__item" data-filter-applicationstatus="Processing">
               <a href="{% if page.retain_link--retain %}
                 {{ page.retain_link--retain }}
               {% else %}
@@ -284,7 +291,7 @@ $(document).ready(function() {
       $('#declined_task_panel').remove();
       $('#adverse_task_panel').remove();
     }
-    else if ((applicationstatus == "Processing") && (prototype == "adverse")) {
+    else if ((prototype == "adverse")) {
       $('#processing_task_panel').remove();
       $('#declined_task_panel').remove();
       $('#screening_task_panel').remove();
