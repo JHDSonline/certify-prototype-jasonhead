@@ -50,7 +50,7 @@
         <strong class="sba-u-margin-right--1">District office:</strong> <span data-print="district_office">Seattle</span>
         <a href="district-office/1.html" title="Change" class="sba-u-margin-left--1">
           <svg aria-hidden="true" class="sba-c-icon sba-c-icon--blue">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype/assets/svg-sprite/sprite.svg#edit"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg-sprite/sprite.svg#edit"></use>
             <span class="sba-u-visibility--screen-reader">Change</span>
           </svg>
         </a>
@@ -59,7 +59,7 @@
         <strong class="sba-u-margin-right--1">Servicing BOS:</strong> <span data-print="servicing_bos">None</span>
         <a href="servicing-bos/1.html" title="Change" class="sba-u-margin-left--1">
           <svg aria-hidden="true" class="sba-c-icon sba-c-icon--blue">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype/assets/svg-sprite/sprite.svg#edit"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg-sprite/sprite.svg#edit"></use>
             <span class="sba-u-visibility--screen-reader">Change</span>
           </svg>
         </a>
@@ -70,7 +70,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -262,13 +262,12 @@ $(document).ready(function() {
     </div>
     <div class="sba-l-row">
       <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--8 sba-u-padding-x--2">
-  <p class="usa-font-lead">Please select the district office that will work with Mike’s Garage.</p>
-
-
+  <p class="usa-font-lead">The servicing BOS will be able to communicate with the firm outside of the Annual Review process.</p>
 
   <form action="#">
     <fieldset class="questions">
       <label for="sbos_district_office" class="usa-sr-only">Choose the servicing BOS's district office</label>
+      <h4>Choose the servicing BOS's district office</h4>
       <select name="district_office" id="sbos_district_office" data-print="district_office" required>
         <option value=""></option>
         <option value="Alabama">Alabama </option>
@@ -425,6 +424,15 @@ $(document).ready(function() {
           </ul>
         </div>
       </div>
+    </fieldset>
+    <fieldset class="questions">
+      <h4>Or, if you would like to remove the servicing BOS…</h4>
+        <ul class="usa-unstyled-list">
+          <li>
+            <input id="None" type="radio" name="servicing_bos" value="None" required>
+            <label for="None">Remove servicing BOS</label>
+          </li>
+        </ul>
     </fieldset>
     <div class="actions">
       <div class="actions__main">

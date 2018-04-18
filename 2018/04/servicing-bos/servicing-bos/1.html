@@ -34,13 +34,12 @@ early_graduation_link--adverse: adverse-action/1.html?action=EG
 ---
 
 <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--8 sba-u-padding-x--2">
-  <p class="usa-font-lead">Please select the district office that will work with Mike’s Garage.</p>
-
-
+  <p class="usa-font-lead">The servicing BOS will be able to communicate with the firm outside of the Annual Review process.</p>
 
   <form action="#">
     <fieldset class="questions">
       <label for="sbos_district_office" class="usa-sr-only">Choose the servicing BOS's district office</label>
+      <h4>Choose the servicing BOS's district office</h4>
       <select name="district_office" id="sbos_district_office" data-print="district_office" required>
         <option value=""></option>
         <option value="Alabama">Alabama </option>
@@ -197,6 +196,15 @@ early_graduation_link--adverse: adverse-action/1.html?action=EG
           </ul>
         </div>
       </div>
+    </fieldset>
+    <fieldset class="questions">
+      <h4>Or, if you would like to remove the servicing BOS…</h4>
+        <ul class="usa-unstyled-list">
+          <li>
+            <input id="None" type="radio" name="servicing_bos" value="None" required>
+            <label for="None">Remove servicing BOS</label>
+          </li>
+        </ul>
     </fieldset>
     <div class="actions">
       <div class="actions__main">
