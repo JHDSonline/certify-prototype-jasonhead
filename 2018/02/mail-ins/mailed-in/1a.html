@@ -7,10 +7,12 @@ body_class: hide-local-nav
 
 # Page Content
 step_text: Received package by mail&#58; Step 2 of 4
-page_h1: What day was the package received?
-lead_text: The due date for the SBA or OHA will be set to 45 days from the day you enter.
+page_h1: When was the package received?
+lead_text: Please indicate when the package was received by the SBA, or if it is an appeal, by  OHA.
 cta_text: Next
 secondary_action_text: Cancel
+alert: true
+alert_text: Certify.sba.gov will set the due date for reconsideration to 45 days from when you indicate the request was received.
 
 # Tab Links
 application_link: application.html
@@ -28,6 +30,9 @@ activity_log_link: activity-log.html
 <!-- This script will mimic the interaction we want to see -->
 <script>
   $(document).ready(function() {
+    if (mailed_in == "Appeal") {
+      $('.sba-c-alert').remove();
+    }
     $('button[type="submit"]').on('click', function() {
       validateFields('form');
       if (!has_validation_errors) {

@@ -73,7 +73,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -249,16 +249,30 @@ $(document).ready(function() {
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
             <span class="subheading--large">Received package by mail&#58; Step 2 of 4</span>
-            <h1>What day was the package received?</h1>
+            <h1>When was the package received?</h1>
           </div>
         </div>
-        <p class="usa-font-lead">The due date for the SBA or OHA will be set to 45 days from the day you enter.</p>
+        <p class="usa-font-lead">Please indicate when the package was received by the SBA, or if it is an appeal, by  OHA.</p>
       </div>
     </div>
 
     <div class="sba-l-row">
       <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--8 sba-u-padding-x--2">
 
+        
+        <div class="sba-c-alert">
+          <div class="sba-c-alert__icon">
+            <svg aria-hidden="true" class="sba-c-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg-sprite/sprite.svg#info-circle"></use>
+            </svg>
+          </div>
+          <div class="sba-c-alert__body">
+            
+            
+            <p class="sba-c-alert__text">Certify.sba.gov will set the due date for reconsideration to 45 days from when you indicate the request was received.</p>
+            
+          </div>
+        </div>
         
 
         
@@ -270,6 +284,9 @@ $(document).ready(function() {
 <!-- This script will mimic the interaction we want to see -->
 <script>
   $(document).ready(function() {
+    if (mailed_in == "Appeal") {
+      $('.sba-c-alert').remove();
+    }
     $('button[type="submit"]').on('click', function() {
       validateFields('form');
       if (!has_validation_errors) {
