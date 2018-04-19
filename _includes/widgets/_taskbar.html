@@ -298,7 +298,7 @@ $(document).ready(function() {
       $('#declined_task_panel').remove();
       $('#adverse_task_panel').remove();
     }
-    else if ((prototype == "adverse")) {
+    else if ((typeof prototype !== "undefined") && (prototype == "adverse")) {
       $('#processing_task_panel').remove();
       $('#declined_task_panel').remove();
       $('#screening_task_panel').remove();
