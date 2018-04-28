@@ -400,6 +400,30 @@
 
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
           <legend class="sba-c-facet-set__legend">Dates</legend>
+          <h6>Case submitted</h6>
+          <div class="sba-u-display--flex sba-u-justify-content--between">
+            <div class="sba-u-padding-right--1">
+              <label for="BOS" class="sba-c-label">From</label>
+              <input type="date" id="date_input" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
+            </div>
+            <div class="sba-u-padding-left--1">
+              <label for="BOS" class="sba-c-label">To</label>
+              <input type="date" id="date_input" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
+            </div>
+          </div>
+
+          <h6>Case completed</h6>
+          <div class="sba-u-display--flex sba-u-justify-content--between">
+            <div class="sba-u-padding-right--1">
+              <label for="BOS" class="sba-c-label">From</label>
+              <input type="date" id="date_input" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
+            </div>
+            <div class="sba-u-padding-left--1">
+              <label for="BOS" class="sba-c-label">To</label>
+              <input type="date" id="date_input" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
+            </div>
+          </div>
+
           <ul class="sba-c-unstyled-list">
             <li>
               <input class="sba-c-checkbox" id="overdue" type="checkbox" name="date">
