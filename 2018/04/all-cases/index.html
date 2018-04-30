@@ -121,7 +121,7 @@ new_sba_nav: true
                     </li>
                     <li>
                       <input class="sba-c-checkbox" id="ar-3" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-3">Adverse action</label>
+                      <label class="sba-c-label" for="ar-3">Returned</label>
                     </li>
                     <li>
                       <input class="sba-c-checkbox" id="ar-4" type="checkbox" name="ar">
@@ -129,27 +129,23 @@ new_sba_nav: true
                     </li>
                     <li>
                       <input class="sba-c-checkbox" id="ar-4" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-4">Complete</label>
+                      <label class="sba-c-label" for="ar-4">SBA approved</label>
                     </li>
                     <li>
                       <input class="sba-c-checkbox" id="ar-5" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-5">Incomplete</label>
+                      <label class="sba-c-label" for="ar-5">SBA declined</label>
                     </li>
                     <li>
                       <input class="sba-c-checkbox" id="ar-6" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-6">Outstanding letter of Intent</label>
+                      <label class="sba-c-label" for="ar-6">Reconsideration</label>
                     </li>
                     <li>
                       <input class="sba-c-checkbox" id="ar-7" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-7">Outstanding letter of Deficiency</label>
+                      <label class="sba-c-label" for="ar-7">Pending reconsideration</label>
                     </li>
                     <li>
                       <input class="sba-c-checkbox" id="ar-8" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-8">Overdue to District Office</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ar-9" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-9">Overdue to SBA HQ</label>
+                      <label class="sba-c-label" for="ar-8">Appeal</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -164,43 +160,72 @@ new_sba_nav: true
                   <ul class="sba-c-unstyled-list">
                     <li>
                       <input class="sba-c-checkbox" id="ia-1" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-1">Unassigned</label>
+                      <label class="sba-c-label" for="ia-1">Draft</label>
                     </li>
                     <li>
                       <input class="sba-c-checkbox" id="ia-2" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-2">Screening</label>
+                      <label class="sba-c-label" for="ia-2">Submitted</label>
                     </li>
                     <li>
                       <input class="sba-c-checkbox" id="ia-3" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-3">Processing</label>
+                      <label class="sba-c-label" for="ia-3">Complete</label>
                     </li>
                     <li>
                       <input class="sba-c-checkbox" id="ia-4" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-4">Proposed review</label>
+                      <label class="sba-c-label" for="ia-4">Returned</label>
                     </li>
                     <li>
                       <input class="sba-c-checkbox" id="ia-5" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-5">Recommended eligible</label>
+                      <label class="sba-c-label" for="ia-5">Inactive</label>
                     </li>
                     <li>
                       <input class="sba-c-checkbox" id="ia-6" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-6">Recommended ineligible</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ia-6" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-6">SBA approved</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ia-7" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-7">SBA declined</label>
+                      <label class="sba-c-label" for="ia-6">Under review</label>
                     </li>
                   </ul>
                 </fieldset>
               </div>
             </li>
+          </ul>
+        </fieldset>
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Certificate Status</legend>
+          <ul class="sba-c-unstyled-list">
             <li>
-              <input class="sba-c-checkbox" id="continuing_eligibility" type="checkbox" name="review_type">
-              <label class="sba-c-label" for="continuing_eligibility">Continuing eligibility</label>
+              <input class="sba-c-checkbox" id="cs1" type="checkbox" name="cs">
+              <label class="sba-c-label" for="cs1">Active</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cs2" type="checkbox" name="cs">
+              <label class="sba-c-label" for="cs2">Early graduated</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cs2" type="checkbox" name="cs">
+              <label class="sba-c-label" for="cs2">Expired</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cs3" type="checkbox" name="cs">
+              <label class="sba-c-label" for="cs3">Graduated</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cs4" type="checkbox" name="cs">
+              <label class="sba-c-label" for="cs4">Inactive</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cs5" type="checkbox" name="cs">
+              <label class="sba-c-label" for="cs5">Ineligibe</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cs6" type="checkbox" name="cs">
+              <label class="sba-c-label" for="cs6">Pending</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cs7" type="checkbox" name="cs">
+              <label class="sba-c-label" for="cs7">Terminated</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cs8" type="checkbox" name="cs">
+              <label class="sba-c-label" for="cs8">Withdrawn</label>
             </li>
           </ul>
         </fieldset>
@@ -213,7 +238,6 @@ new_sba_nav: true
             </li>
             <li class="sba-u-margin-top--3">
               <label for="SBOS" class="sba-c-label">Supervising BOS</label>
-              <small>This is not applicable to Initial Applications</small>
               <input type="text" id="SBOS" value="All BOS's" class="sba-c-input">
             </li>
           </ul>
@@ -245,34 +269,23 @@ new_sba_nav: true
           <ul class="sba-c-unstyled-list">
             <li>
               <input class="sba-c-checkbox" id="r1" type="checkbox" name="referral">
-              <label class="sba-c-label" for="r1">Size</label>
+              <label class="sba-c-label" for="r1">HQ</label>
             </li>
             <li>
               <input class="sba-c-checkbox" id="r2" type="checkbox" name="referral">
-              <label class="sba-c-label" for="r2">OIG</label>
+              <label class="sba-c-label" for="r2">OGC</label>
             </li>
             <li>
               <input class="sba-c-checkbox" id="r3" type="checkbox" name="referral">
-              <label class="sba-c-label" for="r3">OGC</label>
+              <label class="sba-c-label" for="r3">Size</label>
             </li>
+
           </ul>
         </fieldset>
 
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
           <legend class="sba-c-facet-set__legend">Dates</legend>
-          <h6>Case submitted</h6>
-          <div class="sba-u-display--flex sba-u-justify-content--between">
-            <div class="sba-u-padding-right--1">
-              <label for="BOS" class="sba-c-label">From</label>
-              <input type="date" id="date_input" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
-            </div>
-            <div class="sba-u-padding-left--1">
-              <label for="BOS" class="sba-c-label">To</label>
-              <input type="date" id="date_input" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
-            </div>
-          </div>
-
-          <h6>Case completed</h6>
+          <h6>Anniversary date</h6>
           <div class="sba-u-display--flex sba-u-justify-content--between">
             <div class="sba-u-padding-right--1">
               <label for="BOS" class="sba-c-label">From</label>
@@ -301,8 +314,8 @@ new_sba_nav: true
             <select name="" id="sort">
               <option value="">Sort by…</option>
               <option value="">Relavence</option>
-              <option value="">Due date: Ascending</option>
-              <option value="">Due date: Descending</option>
+              <option value="">Next action due: Closest</option>
+              <option value="">Next action due: Farthest</option>
               <option value="">Firm name: Ascending</option>
               <option value="">Firm name: Descending</option>
             </select>
@@ -333,7 +346,7 @@ new_sba_nav: true
                   <span class="sba-c-badge">Initial Application — Screening</span>
                 </div>
                 <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Due: 5/17/18 (5 days left)
+                  Next action: 5/17/18 (5 days left)
                 </div>
               </div>
               <div class="sba-l-row">
@@ -354,7 +367,7 @@ new_sba_nav: true
                   <span class="sba-c-badge">Initial Application — Screening</span>
                 </div>
                 <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Due: 5/17/18 (5 days left)
+                  Next action: 5/17/18 (5 days left)
                 </div>
               </div>
               <div class="sba-l-row">
@@ -375,7 +388,7 @@ new_sba_nav: true
                   <span class="sba-c-badge">Initial Application — Screening</span>
                 </div>
                 <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Due: 5/17/18 (5 days left)
+                  Next action: 5/17/18 (5 days left)
                 </div>
               </div>
               <div class="sba-l-row">
@@ -396,7 +409,7 @@ new_sba_nav: true
                   <span class="sba-c-badge">Initial Application — Screening</span>
                 </div>
                 <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Due: 5/17/18 (5 days left)
+                  Next action: 5/17/18 (5 days left)
                 </div>
               </div>
               <div class="sba-l-row">
@@ -417,7 +430,7 @@ new_sba_nav: true
                   <span class="sba-c-badge">Initial Application — Screening</span>
                 </div>
                 <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Due: 5/17/18 (5 days left)
+                  Next action: 5/17/18 (5 days left)
                 </div>
               </div>
               <div class="sba-l-row">
@@ -438,7 +451,7 @@ new_sba_nav: true
                   <span class="sba-c-badge">Initial Application — Screening</span>
                 </div>
                 <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Due: 5/17/18 (5 days left)
+                  Next action: 5/17/18 (5 days left)
                 </div>
               </div>
               <div class="sba-l-row">
@@ -459,7 +472,7 @@ new_sba_nav: true
                   <span class="sba-c-badge">Initial Application — Screening</span>
                 </div>
                 <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Due: 5/17/18 (5 days left)
+                  Next action: 5/17/18 (5 days left)
                 </div>
               </div>
               <div class="sba-l-row">
@@ -480,7 +493,7 @@ new_sba_nav: true
                   <span class="sba-c-badge">Initial Application — Screening</span>
                 </div>
                 <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Due: 5/17/18 (5 days left)
+                  Next action: 5/17/18 (5 days left)
                 </div>
               </div>
               <div class="sba-l-row">
@@ -501,7 +514,7 @@ new_sba_nav: true
                   <span class="sba-c-badge">Initial Application — Screening</span>
                 </div>
                 <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Due: 5/17/18 (5 days left)
+                  Next action: 5/17/18 (5 days left)
                 </div>
               </div>
               <div class="sba-l-row">
@@ -522,7 +535,7 @@ new_sba_nav: true
                   <span class="sba-c-badge">Initial Application — Screening</span>
                 </div>
                 <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Due: 5/17/18 (5 days left)
+                  Next action: 5/17/18 (5 days left)
                 </div>
               </div>
               <div class="sba-l-row">
@@ -543,7 +556,7 @@ new_sba_nav: true
                   <span class="sba-c-badge">Initial Application — Screening</span>
                 </div>
                 <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Due: 5/17/18 (5 days left)
+                  Next action: 5/17/18 (5 days left)
                 </div>
               </div>
               <div class="sba-l-row">
