@@ -30,18 +30,41 @@ layout: card
 <ul>
   <li>All facets should append a URL parameter so BOS can bookmark queries</li>
   <li>Back button should be modified to remove last filter applied (as if adding the URL params are like going to a new page)</li>
+  <li>Selecting facets will refresh the page.</li>
 </ul>
 
 <h3>Questions</h3>
 <ul>
-  <li>I provided JS interation for handling sub-facets and indeterminate checkboxes. Necessary?</li>
-  <li>Do I need to provide interactions for adding and removing pills?</li>
-  <li>Do I need to provide a script for attaching URL params?</li>
-  <li>Do I need to provide interactions and UI for TypeAhead or is that included in the elastic search tool?</li>
-  <li>How will we handle accessibility for all these interactions?</li>
-  <li>Thoughts on using a these utility classes?</li>
-  <li>Can we change the order of the facet sets?</li>
-  <li>How do we go about adding the <a href="https://ussba.github.io/certify-design-system-documentation/components/spinners.html">spinner</a> for infinite scroll and applying filter.</li>
+  <li>
+    I provided JS interation for handling sub-facets and indeterminate checkboxes. Necessary?
+
+    <p><strong>Answer</strong></p>
+
+    <p>This can be avoided without a patch.</p>
+    <ul>
+      <li>If a checkbox pattern has a <code>follow-up</code>, remove the following attributes:
+        <ul>
+          <li><code>aria-controls</code></li>
+          <li><code>data-follow-up</code></li>
+          <li><code>aria-expanded</code></li>
+        </ul>
+      </li>
+      <li>For the checkbox's corresponding <code>follow-up</code>, remove the following attributes
+        <ul>
+          <li><code>id</code></li>
+          <li><code>hidden</code> - though this is applied when not showing on the page if including in the DOM</li>
+        </ul>
+      </li>
+      <li>
+        here is the code for displaying an indeterminate checkbox: <code>&lt;input class="sba-c-checkbox sba-c-checkbox--indeterminate" id="refer_someone_else" type="checkbox" name="review_type"></code>
+      </li>
+    </ul>
+  </li>
+  <li>Do I need to provide interactions for adding and removing pills? <strong>No, page will refesh</strong></li>
+  <li>Do I need to provide a script for attaching URL params? <strong>No, page will refresh</strong></li>
+  <li>Do I need to provide interactions and UI for TypeAhead or is that included in the elastic search tool? <strong>Yes</strong></li>
+  <li>How will we handle accessibility for all these interactions? <strong>No, page will refresh</strong></li>
+  <li>How do we go about adding the <a href="https://ussba.github.io/certify-design-system-documentation/components/spinners.html">spinner</a> for infinite scroll and applying filter <strong>No needed. page will refresh</strong>.</li>
 </ul>
 
 <p>
