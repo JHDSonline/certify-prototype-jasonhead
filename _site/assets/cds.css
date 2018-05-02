@@ -1871,7 +1871,7 @@ Style guide: utilities.font-size
   font-size: 1.5rem !important; }
 
 .sba-u-font-size--h6 {
-  font-size: 1rem !important; }
+  font-size: 1.3rem !important; }
 
 /*
 Responsive font sizes
@@ -1919,7 +1919,7 @@ Style guide: utilities.font-size.responsive
     font-size: 1.5rem !important; }
 
   .sba-u-sm-font-size--h6 {
-    font-size: 1rem !important; } }
+    font-size: 1.3rem !important; } }
 @media (min-width: 768px) {
   .sba-u-md-font-size--small {
     font-size: 1.4rem !important; }
@@ -1952,7 +1952,7 @@ Style guide: utilities.font-size.responsive
     font-size: 1.5rem !important; }
 
   .sba-u-md-font-size--h6 {
-    font-size: 1rem !important; } }
+    font-size: 1.3rem !important; } }
 @media (min-width: 1024px) {
   .sba-u-lg-font-size--small {
     font-size: 1.4rem !important; }
@@ -1985,7 +1985,7 @@ Style guide: utilities.font-size.responsive
     font-size: 1.5rem !important; }
 
   .sba-u-lg-font-size--h6 {
-    font-size: 1rem !important; } }
+    font-size: 1.3rem !important; } }
 @media (min-width: 1280px) {
   .sba-u-xl-font-size--small {
     font-size: 1.4rem !important; }
@@ -2018,7 +2018,7 @@ Style guide: utilities.font-size.responsive
     font-size: 1.5rem !important; }
 
   .sba-u-xl-font-size--h6 {
-    font-size: 1rem !important; } }
+    font-size: 1.3rem !important; } }
 /* Input widths */
 .sba-u-input-width--1 {
   width: 3.5rem; }
@@ -6508,6 +6508,8 @@ Style guide: components.button.guidance
   color: #046b99;
   display: inline-block;
   margin-right: 0.8rem;
+  margin-bottom: 1px;
+  margin-top: 1px;
   padding: 8px 0 8px 8px;
   font-size: 1.3rem;
   line-height: 1; }
@@ -6539,6 +6541,19 @@ input[type=number] {
   position: absolute;
   left: 0;
   top: 0.2rem; }
+
+.sba-c-checkbox--indeterminate + .sba-c-label:before {
+  background-image: none !important; }
+
+.sba-c-checkbox--indeterminate + .sba-c-label:after {
+  content: "";
+  display: block;
+  width: 10px;
+  position: absolute;
+  height: 3px;
+  background: white;
+  left: 4px;
+  top: 9.5px; }
 
 .sba-c-form-hint {
   color: #5b616b;
