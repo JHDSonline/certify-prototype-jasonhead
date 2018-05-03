@@ -15,61 +15,16 @@ body_class: hide-local-nav
 
 <div class="certify-page-header">
   <div class="certify-page-header__primary">
-    <span class="subheading--large">Close case: Step 4 of 4</span>
-    <h1>Finish closing this case</h1>
+    <h1>This case has been closed</h1>
   </div>
 </div>
 
-<p class="usa-font-lead">Please review the information you’ve provided and complete closing the case below.</p>
 
-<div class="certify-grid-wrap">
-  <div class="certify-width-two-thirds">
+<p class="usa-font-lead">You closed Mike’s Garage 8(a) Initial Application. The firm has been notified. No other action is required.</p>
 
-    <div class="certify-grid-wrap">
-      <div class="certify-width-two-thirds">
-        <div class="review-info">
-          <div class="review-info__item">
-            <div class="review-info__content">
-              <h2 class="review-info__heading">Reason for closing</h2>
-              <p data-print="close"></p>
-            </div>
-          </div>
-          <div class="review-info__item">
-            <div class="review-info__content">
-              <h2 class="review-info__heading">Note to SBA</h2>
-              <p><strong>Subject: </strong><span data-print="note_subject"></span></p>
-              <p data-print="note"></p>
-              <p><strong>Tags: </strong><span data-print="note-tags"></span></p>
-            </div>
-          </div>
-          <div class="review-info__item">
-            <div class="review-info__content">
-              <h2 class="review-info__heading">Message to firm owner</h2>
-              <p><strong>Subject: </strong><span data-print="message_subject"></span></p>
-              <p><span data-print="message_text"></span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <p><a href="close5.html" class="sba-c-button sba-c-button--danger sba-u-margin-right--2">Close case</a> <a href="#">Start over</a></p>
-  </div>
-</div>
+<p><a href="application.html" class="sba-c-button">Dashboard</a></p>
 
-<!-- This script will mimic the interaction we want to see -->
-<script>
-  $(document).ready(function() {
+<p class="usa-color-red">Dev note - this link should point to the dashboard. The prototype points to the overview only for continuity.</p>
 
-    $('form').on('submit', function() {
-      if (!checkValidityIfSupported($('form').get(0))) {
-        return false;
-      }
-      else {
-        updateStoredData();
-        nextPage("close5.html");
-        return false;
-      }
-    });
-  });
-</script>
+<form action=""><input type="hidden" id="withdrawal" value="false"></form>

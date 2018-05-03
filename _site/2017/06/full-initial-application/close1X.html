@@ -72,7 +72,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -244,19 +244,57 @@ $(document).ready(function() {
       <article id="main-content">
             <div class="certify-page-header">
   <div class="certify-page-header__primary">
-    <h1>This case has been closed</h1>
+    <span class="subheading--large">Close case: Step 1 of 4</span>
+    <h1>Closing this case</h1>
+  </div>
+</div>
+
+<div class="certify-grid-wrap">
+  <div class="certify-width-two-thirds">
+
+    <p>You will be able to review all of the information you entered before you complete closing this case.</p>
+
+    <form action="#">
+      <fieldset class="questions">
+        <h4>Why is this case being closed?</h4>
+        <ul id="response" class="usa-unstyled-list">
+          <li>
+            <input id="close_withdrawal" type="radio" name="close" value="Firm requested withdrawal" required>
+            <label for="close_withdrawal">Firm requested withdrawal</label>
+          </li>
+          <li>
+            <input id="close_unresponsive" type="radio" name="close" value="Firm has not been responsive" required>
+            <label for="close_unresponsive">Firm has not been responsive</label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="actions">
+        <div class="actions__main">
+          <button type="submit" class="sba-c-button">Next</button>
+          <a href="javascript:window.history.back();">Cancel</a>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
 
 
-<p class="usa-font-lead">You closed Mike’s Garage 8(a) Initial Application. The firm has been notified. No other action is required.</p>
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
 
-
-<p><a href="application.html" class="sba-c-button">Dashboard</a></p>
-
-<p class="usa-color-red">Dev note - this link should point to the dashboard. The prototype points to the overview only for continuity.</p>
-
-<form action=""><input type="hidden" id="withdrawal" value="false"></form>
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("close2.html");
+        return false;
+      }
+    });
+  });
+</script>
 
       </article>
       <script>

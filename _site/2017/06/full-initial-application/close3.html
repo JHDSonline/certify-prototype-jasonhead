@@ -72,7 +72,7 @@
   <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
       <button class="usa-nav-close">
-        <img src="/certify-prototype/assets/img/close.svg" alt="close">
+        <img src="/assets/img/close.svg" alt="close">
       </button>
 
       <div class="certify-global-nav">
@@ -244,50 +244,45 @@ $(document).ready(function() {
       <article id="main-content">
             <div class="certify-page-header">
   <div class="certify-page-header__primary">
-    <span class="subheading--large">Close case: Step 3 of 4</span>
-    <h1>Write a message to the firm owner to let them know that you are closing the case.</h1>
+    <span class="subheading--large">Close case: Step 3 of 3</span>
+    <h1>Finish closing this case</h1>
   </div>
 </div>
+
+<p class="usa-font-lead">Please review the information you’ve provided and complete closing the case below.</p>
 
 <div class="certify-grid-wrap">
   <div class="certify-width-two-thirds">
-    <form action="" class="message-form">
-      <fieldset class="questions">
-        <legend class="usa-sr-only">New Message</legend>
-        <label for="message_to">To</label>
-        <input type="text" id="message_to" value="Mike Jones" disabled>
-        <label for="message_subject">Subject</label>
-        <input type="text" id="message_subject">
-        <label for="message_text">Message</label>
-        <textarea name="" id="message_text" class="hidden"></textarea>
-        <div class="editor-container">
-          <div id="editor"></div>
-        </div>
-      </fieldset>
-      <p>This message will be submitted when you finish closing the case.</p>
-      <div class="actions">
-        <div class="actions__main">
-          <button type="submit" class="sba-c-button">Next</button>
-          <a href="javascript:window.history.back();">Back</a>
+
+    <div class="certify-grid-wrap">
+      <div class="certify-width-two-thirds">
+        <div class="review-info">
+          <div class="review-info__item">
+            <div class="review-info__content">
+              <h2 class="review-info__heading">Note to SBA</h2>
+              <p><strong>Subject: </strong><span data-print="note_subject"></span></p>
+              <p data-print="note"></p>
+              <p><strong>Tags: </strong><span data-print="note-tags"></span></p>
+            </div>
+          </div>
+          <div class="review-info__item">
+            <div class="review-info__content">
+              <h2 class="review-info__heading">Message to firm owner</h2>
+              <p><strong>Subject: </strong><span data-print="message_subject"></span></p>
+              <p><span data-print="message_text"></span></p>
+            </div>
+          </div>
         </div>
       </div>
-    </form>
+    </div>
+
+    <p><a href="close5.html" class="sba-c-button sba-c-button--danger sba-u-margin-right--2">Close case</a> <a href="#">Start over</a></p>
   </div>
 </div>
 
-<script>
-  var quill = new Quill('#editor', {
-    placeholder: 'Write or paste your text here',
-    theme: 'snow'
-  });
-</script>
-
+<!-- This script will mimic the interaction we want to see -->
 <script>
   $(document).ready(function() {
-
-    $('.ql-editor').on('keyup', function(){
-      $('#message_text').val($(this).text());
-    });
 
     $('form').on('submit', function() {
       if (!checkValidityIfSupported($('form').get(0))) {
