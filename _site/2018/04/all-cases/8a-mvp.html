@@ -113,7 +113,7 @@
             <h2 class="certify-local-nav__heading">All cases</h2>
             <ul class="usa-nav-primary usa-accordion">
               <li>
-                <a class="usa-nav-link " href="8a-mvp.html">8(a)</a>
+                <a class="usa-nav-link  current " href="8a-mvp.html">8(a)</a>
               </li>
               <!--
               <li>
@@ -121,7 +121,7 @@
               </li>
             -->
               <li>
-                <a class="usa-nav-link  current " href="mpp.html">MPP</a>
+                <a class="usa-nav-link " href="mpp.html">MPP</a>
               </li>
               <li>
                 <a class="usa-nav-link " href="wosb.html">WOSB</a>
@@ -141,7 +141,7 @@
       <div class="sba-l-col--12 sba-u-padding-x--2">
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
-            <h1>MPP cases</h1>
+            <h1>8(a) cases</h1>
           </div>
         </div>
       </div>
@@ -244,9 +244,56 @@
           <legend class="sba-c-facet-set__legend">Review type</legend>
           <ul class="sba-c-unstyled-list">
             <li>
-              <input class="sba-c-checkbox" id="initial_application" type="checkbox" name="review_type" aria-controls="followup2" data-follow-up="followup2" aria-expanded="false">
+              <input class="sba-c-checkbox" id="refer_someone_else" type="checkbox" name="review_type" aria-controls="followup1" data-follow-up="followup1" aria-expanded="false">
+              <label class="sba-c-label" for="refer_someone_else">Annual Review</label>
+              <div class="sba-c-follow-up sba-c-follow-up--sm" id="followup1" hidden>
+                <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+                  <legend class="sba-c-facet-set__legend sba-c-facet-set__legend--l2">Status</legend>
+                  <ul class="sba-c-unstyled-list">
+                    <li>
+                      <input class="sba-c-checkbox" id="ar-1" type="checkbox" name="ar">
+                      <label class="sba-c-label" for="ar-1">Screening</label>
+                    </li>
+                    <li>
+                      <input class="sba-c-checkbox" id="ar-2" type="checkbox" name="ar">
+                      <label class="sba-c-label" for="ar-2">Processing</label>
+                    </li>
+                    <li>
+                      <input class="sba-c-checkbox" id="ar-3" type="checkbox" name="ar">
+                      <label class="sba-c-label" for="ar-3">Returned</label>
+                    </li>
+                    <li>
+                      <input class="sba-c-checkbox" id="ar-4" type="checkbox" name="ar">
+                      <label class="sba-c-label" for="ar-4">Retained</label>
+                    </li>
+                    <li>
+                      <input class="sba-c-checkbox" id="ar-5" type="checkbox" name="ar">
+                      <label class="sba-c-label" for="ar-5">SBA approved</label>
+                    </li>
+                    <li>
+                      <input class="sba-c-checkbox" id="ar-6" type="checkbox" name="ar">
+                      <label class="sba-c-label" for="ar-6">SBA declined</label>
+                    </li>
+                    <li>
+                      <input class="sba-c-checkbox" id="ar-7" type="checkbox" name="ar">
+                      <label class="sba-c-label" for="ar-7">Reconsideration</label>
+                    </li>
+                    <li>
+                      <input class="sba-c-checkbox" id="ar-8" type="checkbox" name="ar">
+                      <label class="sba-c-label" for="ar-8">Pending reconsideration</label>
+                    </li>
+                    <li>
+                      <input class="sba-c-checkbox" id="ar-9" type="checkbox" name="ar">
+                      <label class="sba-c-label" for="ar-9">Appeal</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="initial_application" type="checkbox" name="review_type">
               <label class="sba-c-label" for="initial_application">Initial Application</label>
-              <div class="sba-c-follow-up sba-c-follow-up--sm" id="followup2" hidden>
+              <div class="sba-c-follow-up sba-c-follow-up--sm">
                 <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
                   <legend class="sba-c-facet-set__legend sba-c-facet-set__legend--l2">Status</legend>
                   <ul class="sba-c-unstyled-list">
@@ -322,39 +369,8 @@
           </ul>
         </fieldset>
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
-          <legend class="sba-c-facet-set__legend">Case ownership</legend>
-          <ul class="sba-c-unstyled-list">
-            <li>
-              <label for="BOS" class="sba-c-label">Case owner</label>
-              <input type="text" id="BOS" class="sba-c-input" placeholder="Type name">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
-          <legend class="sba-c-facet-set__legend">Program participation</legend>
-          <ul class="sba-c-unstyled-list">
-            <li>
-              <input class="sba-c-checkbox" id="pp1" type="checkbox" name="program_pp">
-              <label class="sba-c-label" for="pp1">EDWOSB</label>
-            </li>
-            <li>
-              <input class="sba-c-checkbox" id="pp2" type="checkbox" name="program_pp">
-              <label class="sba-c-label" for="pp2">HUBZone</label>
-            </li>
-            <li>
-              <input class="sba-c-checkbox" id="pp3" type="checkbox" name="program_pp">
-              <label class="sba-c-label" for="pp3">MPP</label>
-            </li>
-            <li>
-              <input class="sba-c-checkbox" id="pp4" type="checkbox" name="program_pp">
-              <label class="sba-c-label" for="pp4">WOSB</label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
           <legend class="sba-c-facet-set__legend">Dates</legend>
-          <h6>Anniversary date</h6>
+          <h6>Program start date</h6>
           <div class="sba-u-display--flex sba-u-justify-content--between">
             <div class="sba-u-padding-right--1">
               <label for="BOS" class="sba-c-label">From</label>
@@ -366,6 +382,8 @@
             </div>
           </div>
 
+          <button type="button" class="sba-c-button sba-c-button--inverse sba-c-button--small">Apply dates</button>
+
           <ul class="sba-c-unstyled-list">
             <li>
               <input class="sba-c-checkbox" id="overdue" type="checkbox" name="date">
@@ -373,6 +391,21 @@
             </li>
           </ul>
         </fieldset>
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Case ownership</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+              <label for="BOS" class="sba-c-label">Case owner</label>
+              <input type="text" id="BOS"  class="sba-c-input" placeholder="Type name">
+            </li>
+            <li class="sba-u-margin-top--3">
+              <label for="SBOS" class="sba-c-label">Servicing BOS</label>
+              <input type="text" id="SBOS"  class="sba-c-input" placeholder="Type name">
+            </li>
+          </ul>
+        </fieldset>
+
+
       </form>
       </div>
       <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--8 sba-u-padding-x--2 sba-u-lg-padding-left--6">
@@ -383,28 +416,12 @@
             <select name="" id="sort">
               <option value="">Sort by…</option>
               <option value="">Relevance</option>
-              <option value="">Next action due: Earliest</option>
-              <option value="">Next action due: Latest</option>
               <option value="">Firm name: Ascending</option>
               <option value="">Firm name: Descending</option>
             </select>
           </div>
         </div>
 
-        <div class="sba-c-facet-pills sba-u-margin-bottom--3">
-          <span class="sba-c-facet-pill">
-            Baltimore
-            <button class="sba-c-facet-pill__close-button" title="Close">X</button>
-          </span>
-          <span class="sba-c-facet-pill">
-            Inital Application - Screening
-            <button class="sba-c-facet-pill__close-button" title="Close">X</button>
-          </span>
-          <span class="sba-c-facet-pill">
-            HUBZone
-            <button class="sba-c-facet-pill__close-button" title="Close">X</button>
-          </span>
-          </div>
           <div class="sba-c-card sba-u-padding-y--2 sba-u-padding-x--1">
             <div class="sba-l-container sba-u-padding-x--2">
               <div class="sba-l-row sba-u-align-items--center sba-u-margin-bottom--1">
@@ -414,13 +431,11 @@
                 <div class="sba-l-col--12 sba-l-md-col--4">
                   <span class="sba-c-badge sba-u-margin-bottom--1 sba-u-md-margin-bottom--0">Initial Application — Screening</span>
                 </div>
-                <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Next action: 5/17/18 (5 days left)
-                </div>
+
               </div>
               <div class="sba-l-row">
                 <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith <span class="sba-u-separator--1">•</span> Recent action: Deficiently letter sent <span class="sba-u-separator--1">•</span> Participating programs: HUBZone, MPP</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith</p>
                 </div>
               </div>
             </div>
@@ -435,13 +450,11 @@
                 <div class="sba-l-col--12 sba-l-md-col--4">
                   <span class="sba-c-badge sba-u-margin-bottom--1 sba-u-md-margin-bottom--0">Initial Application — Screening</span>
                 </div>
-                <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Next action: 5/17/18 (5 days left)
-                </div>
+
               </div>
               <div class="sba-l-row">
                 <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith <span class="sba-u-separator--1">•</span> Recent action: Deficiently letter sent <span class="sba-u-separator--1">•</span> Participating programs: HUBZone, MPP</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith</p>
                 </div>
               </div>
             </div>
@@ -456,13 +469,11 @@
                 <div class="sba-l-col--12 sba-l-md-col--4">
                   <span class="sba-c-badge sba-u-margin-bottom--1 sba-u-md-margin-bottom--0">Initial Application — Screening</span>
                 </div>
-                <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Next action: 5/17/18 (5 days left)
-                </div>
+
               </div>
               <div class="sba-l-row">
                 <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith <span class="sba-u-separator--1">•</span> Recent action: Deficiently letter sent <span class="sba-u-separator--1">•</span> Participating programs: HUBZone, MPP</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith</p>
                 </div>
               </div>
             </div>
@@ -477,13 +488,11 @@
                 <div class="sba-l-col--12 sba-l-md-col--4">
                   <span class="sba-c-badge sba-u-margin-bottom--1 sba-u-md-margin-bottom--0">Initial Application — Screening</span>
                 </div>
-                <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Next action: 5/17/18 (5 days left)
-                </div>
+
               </div>
               <div class="sba-l-row">
                 <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith <span class="sba-u-separator--1">•</span> Recent action: Deficiently letter sent <span class="sba-u-separator--1">•</span> Participating programs: HUBZone, MPP</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith</p>
                 </div>
               </div>
             </div>
@@ -498,13 +507,11 @@
                 <div class="sba-l-col--12 sba-l-md-col--4">
                   <span class="sba-c-badge sba-u-margin-bottom--1 sba-u-md-margin-bottom--0">Initial Application — Screening</span>
                 </div>
-                <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Next action: 5/17/18 (5 days left)
-                </div>
+
               </div>
               <div class="sba-l-row">
                 <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith <span class="sba-u-separator--1">•</span> Recent action: Deficiently letter sent <span class="sba-u-separator--1">•</span> Participating programs: HUBZone, MPP</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith</p>
                 </div>
               </div>
             </div>
@@ -519,13 +526,11 @@
                 <div class="sba-l-col--12 sba-l-md-col--4">
                   <span class="sba-c-badge sba-u-margin-bottom--1 sba-u-md-margin-bottom--0">Initial Application — Screening</span>
                 </div>
-                <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Next action: 5/17/18 (5 days left)
-                </div>
+
               </div>
               <div class="sba-l-row">
                 <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith <span class="sba-u-separator--1">•</span> Recent action: Deficiently letter sent <span class="sba-u-separator--1">•</span> Participating programs: HUBZone, MPP</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith</p>
                 </div>
               </div>
             </div>
@@ -540,13 +545,11 @@
                 <div class="sba-l-col--12 sba-l-md-col--4">
                   <span class="sba-c-badge sba-u-margin-bottom--1 sba-u-md-margin-bottom--0">Initial Application — Screening</span>
                 </div>
-                <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Next action: 5/17/18 (5 days left)
-                </div>
+
               </div>
               <div class="sba-l-row">
                 <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith <span class="sba-u-separator--1">•</span> Recent action: Deficiently letter sent <span class="sba-u-separator--1">•</span> Participating programs: HUBZone, MPP</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith</p>
                 </div>
               </div>
             </div>
@@ -561,13 +564,11 @@
                 <div class="sba-l-col--12 sba-l-md-col--4">
                   <span class="sba-c-badge sba-u-margin-bottom--1 sba-u-md-margin-bottom--0">Initial Application — Screening</span>
                 </div>
-                <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Next action: 5/17/18 (5 days left)
-                </div>
+
               </div>
               <div class="sba-l-row">
                 <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith <span class="sba-u-separator--1">•</span> Recent action: Deficiently letter sent <span class="sba-u-separator--1">•</span> Participating programs: HUBZone, MPP</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith</p>
                 </div>
               </div>
             </div>
@@ -582,13 +583,11 @@
                 <div class="sba-l-col--12 sba-l-md-col--4">
                   <span class="sba-c-badge sba-u-margin-bottom--1 sba-u-md-margin-bottom--0">Initial Application — Screening</span>
                 </div>
-                <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Next action: 5/17/18 (5 days left)
-                </div>
+
               </div>
               <div class="sba-l-row">
                 <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith <span class="sba-u-separator--1">•</span> Recent action: Deficiently letter sent <span class="sba-u-separator--1">•</span> Participating programs: HUBZone, MPP</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith</p>
                 </div>
               </div>
             </div>
@@ -603,13 +602,11 @@
                 <div class="sba-l-col--12 sba-l-md-col--4">
                   <span class="sba-c-badge sba-u-margin-bottom--1 sba-u-md-margin-bottom--0">Initial Application — Screening</span>
                 </div>
-                <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Next action: 5/17/18 (5 days left)
-                </div>
+
               </div>
               <div class="sba-l-row">
                 <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith <span class="sba-u-separator--1">•</span> Recent action: Deficiently letter sent <span class="sba-u-separator--1">•</span> Participating programs: HUBZone, MPP</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith</p>
                 </div>
               </div>
             </div>
@@ -624,13 +621,11 @@
                 <div class="sba-l-col--12 sba-l-md-col--4">
                   <span class="sba-c-badge sba-u-margin-bottom--1 sba-u-md-margin-bottom--0">Initial Application — Screening</span>
                 </div>
-                <div class="sba-l-col--12 sba-l-md-col--4 sba-u-md-text-align--right">
-                  Next action: 5/17/18 (5 days left)
-                </div>
+
               </div>
               <div class="sba-l-row">
                 <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith <span class="sba-u-separator--1">•</span> Recent action: Deficiently letter sent <span class="sba-u-separator--1">•</span> Participating programs: HUBZone, MPP</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">Case owner: Bob Smith <span class="sba-u-separator--1">•</span> Currently with: Bob Smith</p>
                 </div>
               </div>
             </div>
