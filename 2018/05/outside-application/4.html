@@ -1,0 +1,102 @@
+---
+layout: layout--fullpage
+
+# Page content
+application_name: Additional information
+page_h1: Information requested outside of Annual Review
+show_taskbar: true
+local_nav_active: Application
+
+---
+
+<div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--8 sba-u-padding-x--2">
+  <h2>Information Request</h2>
+  <section class="card-set card-set--halves">
+    <div id="Eligibility" class="card">
+      <div class="card__header">
+        <h3 class="card__primary-heading"><a href="#" data-print="title">Information request</a></h3>
+      </div>
+      <div class="card__content">
+        <table class="quick-details">
+          <tbody>
+            <tr class="larger">
+              <th>Section is with:</th>
+              <td><span class="usa-color-red-dark">Firm</span></td>
+            </tr>
+            <tr>
+              <th>Last update:</th>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <th>Started:</th>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <th>Submitted by:</th>
+              <td>N/A</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="additional_info" class="card__footer hidden">
+        <a href="ad-hoc-index.html">View additions to this section</a><br>
+        <small>The firm has <strong class="usa-color-red">1</strong> item left to complete.</small>
+      </div>
+      <div class="card__bulk-actions" data-filter-applicationstatus="Processing">
+        <div class="task-panel">
+          <button type="button" class="usa-button-unstyled task-panel-toggle task-panel-toggle--small task-panel-toggle--vertical" aria-expanded="false" aria-controls="task-panel2">actions</button>
+          <div id="task-panel2" class="task-panel-content">
+            <ul class="task-panel-menu">
+              <li class="task-panel-menu__item">
+                <a href="return-section/1.html?section=Eligibility" class="task-panel-menu__link">Request revisions to section</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+</div>
+<div class="sba-l-sm-col--12 sba-l-md-col--golden-sm sba-l-lg-col--4 sba-u-padding-x--2 sba-u-lg-padding-left--4">
+  <div class="section-block">
+    <div class="section-block__header">
+      <h2>Recent Activity</h2>
+    </div>
+    <div class="sba-c-timeline">
+      <div class="sba-c-timeline__group">
+        <h4 class="sba-c-timeline__header">July 2017</h4>
+        <ol class="sba-c-timeline__list">
+          <li class="sba-c-timeline__list__item">
+            <span class="sba-c-timeline__timestamp">07/24 at 4:12pm</span>
+            <p>Questionnaire created</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <a href="#">View all activity</a>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function() {
+
+    if (typeof section_returned != "undefined") {
+      var section_returned_trimmed = section_returned.replace(/\s+/g, '');
+      $("#" + section_returned_trimmed).find('.usa-color-green').addClass('usa-color-red-dark').text("Firm");
+    }
+
+    if (typeof ad_hoc_section != "undefined") {
+      var ad_hoc_section_trimmed = ad_hoc_section.replace(/\s+/g, '');
+      $("#" + ad_hoc_section_trimmed).find('.card__footer').removeClass('hidden');
+    }
+
+    if (applicationstatus != "Processing") {
+      $('.processing-only').remove();
+    }
+
+  });
+</script>
