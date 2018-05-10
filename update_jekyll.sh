@@ -1,5 +1,5 @@
 if [ ! -d "_site" ] ; then
-  git clone git@github.com:USSBA/certify-prototype.git -b gh-pages _site
+  git clone git@github.com:SBA-ONE/certify-prototype.git -b gh-pages _site
 fi
 cd _site
 git pull
