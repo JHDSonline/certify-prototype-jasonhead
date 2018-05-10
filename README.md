@@ -15,8 +15,5 @@ Look at the GitHub repositotry to look at the folder structure and enter that in
 
 ## To Deploy
 ```
-bundle exec jekyll build
-git add -A
-git commit -m "Build for delpoy"
-git subtree push --prefix _site origin gh-pages
+./update_jekyll.sh
 ```
