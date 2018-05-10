@@ -84,17 +84,13 @@ local_nav_active: Application
 <script>
   $(document).ready(function() {
 
-    if (typeof section_returned != "undefined") {
-      var section_returned_trimmed = section_returned.replace(/\s+/g, '');
-      $("#" + section_returned_trimmed).find('.usa-color-green').addClass('usa-color-red-dark').text("Firm");
-    }
+    $('.taskbar-section:nth-child(2)').remove();
 
-    if (typeof ad_hoc_section != "undefined") {
-      var ad_hoc_section_trimmed = ad_hoc_section.replace(/\s+/g, '');
-      $("#" + ad_hoc_section_trimmed).find('.card__footer').removeClass('hidden');
-    }
+    $('.taskbar-section:nth-child(1)').find('span[data-print]').text('Draft');
 
-    if (applicationstatus != "Processing") {
+    $('.card__bulk-actions').remove();
+
+    if (applicationstatus == "Processing") {
       $('.processing-only').remove();
     }
 
