@@ -6,6 +6,7 @@
  -{% include_relative vendor/jquery.min.js %}
  -{% include_relative vendor/uswds.min.js %}
  -{% include_relative vendor/quill.js %}
+  -{% include_relative vendor/jqueryui.js %}
 
  // Add your JS sripts here
   -{% include_relative components/filter-firm-status.js %}

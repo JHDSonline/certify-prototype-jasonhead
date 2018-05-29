@@ -103,88 +103,103 @@ new_sba_nav: true
         </fieldset>
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
           <legend class="sba-c-facet-set__legend">Review type</legend>
-          <ul class="sba-c-unstyled-list">
+
+          <ul class="sba-c-unstyled-list sba-u-margin-top--1">
             <li>
-              <input class="sba-c-checkbox" id="refer_someone_else" type="checkbox" name="review_type" aria-controls="followup1" data-follow-up="followup1" aria-expanded="false">
-              <label class="sba-c-label" for="refer_someone_else">Annual Review</label>
-              <div class="sba-c-follow-up sba-c-follow-up--sm" id="followup1" hidden>
-                <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
-                  <legend class="sba-c-facet-set__legend sba-c-facet-set__legend--l2">Status</legend>
-                  <ul class="sba-c-unstyled-list">
-                    <li>
-                      <input class="sba-c-checkbox" id="ar-1" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-1">Screening</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ar-2" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-2">Processing</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ar-3" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-3">Returned</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ar-4" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-4">Retained</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ar-5" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-5">SBA approved</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ar-6" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-6">SBA declined</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ar-7" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-7">Reconsideration</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ar-8" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-8">Pending reconsideration</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ar-9" type="checkbox" name="ar">
-                      <label class="sba-c-label" for="ar-9">Appeal</label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
+              <ul class="usa-accordion">
+                <li class="sba-u-bgcolor--transparent">
+                  <button class="usa-accordion-button sba-u-padding--0 sba-u-padding-y--1 sba-u-bgcolor--transparent"
+                    aria-expanded="false"
+                    aria-controls="a1" type="button">
+                    Annual Review
+                  </button>
+                  <div id="a1" aria-hidden="true" class="usa-accordion-content sba-u-padding--0">
+                    <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+                      <legend class="sba-c-facet-set__legend sba-c-facet-set__legend--l2">Status</legend>
+                      <ul class="sba-c-unstyled-list">
+                        <li>
+                          <input class="sba-c-checkbox" id="ar-1" type="checkbox" name="ar">
+                          <label class="sba-c-label" for="ar-1">Screening</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ar-2" type="checkbox" name="ar">
+                          <label class="sba-c-label" for="ar-2">Processing</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ar-3" type="checkbox" name="ar">
+                          <label class="sba-c-label" for="ar-3">Returned</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ar-4" type="checkbox" name="ar">
+                          <label class="sba-c-label" for="ar-4">Retained</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ar-5" type="checkbox" name="ar">
+                          <label class="sba-c-label" for="ar-5">SBA approved</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ar-6" type="checkbox" name="ar">
+                          <label class="sba-c-label" for="ar-6">SBA declined</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ar-7" type="checkbox" name="ar">
+                          <label class="sba-c-label" for="ar-7">Reconsideration</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ar-8" type="checkbox" name="ar">
+                          <label class="sba-c-label" for="ar-8">Pending reconsideration</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ar-9" type="checkbox" name="ar">
+                          <label class="sba-c-label" for="ar-9">Appeal</label>
+                        </li>
+                      </ul>
+                    </fieldset>
+                  </div>
+                </li>
+              </ul>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="initial_application" type="checkbox" name="review_type">
-              <label class="sba-c-label" for="initial_application">Initial Application</label>
-              <div class="sba-c-follow-up sba-c-follow-up--sm">
-                <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
-                  <legend class="sba-c-facet-set__legend sba-c-facet-set__legend--l2">Status</legend>
-                  <ul class="sba-c-unstyled-list">
-                    <li>
-                      <input class="sba-c-checkbox" id="ia-1" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-1">Draft</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ia-2" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-2">Submitted</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ia-3" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-3">Complete</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ia-4" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-4">Returned</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ia-5" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-5">Inactive</label>
-                    </li>
-                    <li>
-                      <input class="sba-c-checkbox" id="ia-6" type="checkbox" name="ia">
-                      <label class="sba-c-label" for="ia-6">Under review</label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
+              <ul class="usa-accordion">
+                <li class="sba-u-bgcolor--transparent">
+                  <button class="usa-accordion-button sba-u-padding--0 sba-u-padding-y--1 sba-u-bgcolor--transparent"
+                    aria-expanded="false"
+                    aria-controls="a2" type="button">
+                    Initial Application
+                  </button>
+                  <div id="a2" aria-hidden="true" class="usa-accordion-content sba-u-padding--0">
+                    <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+                      <legend class="sba-c-facet-set__legend sba-c-facet-set__legend--l2">Status</legend>
+                      <ul class="sba-c-unstyled-list">
+                        <li>
+                          <input class="sba-c-checkbox" id="ia-1" type="checkbox" name="ia">
+                          <label class="sba-c-label" for="ia-1">Draft</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ia-2" type="checkbox" name="ia">
+                          <label class="sba-c-label" for="ia-2">Submitted</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ia-3" type="checkbox" name="ia">
+                          <label class="sba-c-label" for="ia-3">Complete</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ia-4" type="checkbox" name="ia">
+                          <label class="sba-c-label" for="ia-4">Returned</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ia-5" type="checkbox" name="ia">
+                          <label class="sba-c-label" for="ia-5">Inactive</label>
+                        </li>
+                        <li>
+                          <input class="sba-c-checkbox" id="ia-6" type="checkbox" name="ia">
+                          <label class="sba-c-label" for="ia-6">Under review</label>
+                        </li>
+                      </ul>
+                    </fieldset>
+                  </div>
+                </li>
+              </ul>
             </li>
           </ul>
         </fieldset>
@@ -234,12 +249,12 @@ new_sba_nav: true
           <h6>Program start date</h6>
           <div class="sba-u-display--flex sba-u-justify-content--between">
             <div class="sba-u-padding-right--1">
-              <label for="BOS" class="sba-c-label">From</label>
-              <input type="date" id="date_input" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
+              <label for="date_input1" class="sba-c-label">From</label>
+              <input type="date" id="date_input1" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}"  />
             </div>
             <div class="sba-u-padding-left--1">
-              <label for="BOS" class="sba-c-label">To</label>
-              <input type="date" id="date_input" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
+              <label for="date_input2" class="sba-c-label">To</label>
+              <input type="date" id="date_input2" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}"  />
             </div>
           </div>
 
@@ -253,15 +268,52 @@ new_sba_nav: true
           </ul>
         </fieldset>
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
-          <legend class="sba-c-facet-set__legend">Case ownership</legend>
+          <legend class="sba-c-facet-set__legend">Assignments</legend>
           <ul class="sba-c-unstyled-list">
             <li>
-              <label for="BOS" class="sba-c-label">Case owner</label>
-              <input type="text" id="BOS"  class="sba-c-input" placeholder="Type name">
+              <ul class="usa-accordion">
+                <li class="sba-u-bgcolor--transparent">
+                  <button class="usa-accordion-button sba-u-padding--0 sba-u-padding-y--1 sba-u-bgcolor--transparent"
+                    aria-expanded="false"
+                    aria-controls="b1" type="button">
+                    Case owner
+                  </button>
+                  <div id="b1" aria-hidden="true" class="usa-accordion-content sba-u-padding--0">
+                    <label for="BOS" class="sba-c-label">Case owner name</label>
+                    <input type="text" id="BOS"  class="sba-c-input sba-u-margin-bottom--3" placeholder="Type name">
+                  </div>
+                </li>
+              </ul>
             </li>
-            <li class="sba-u-margin-top--3">
-              <label for="SBOS" class="sba-c-label">Servicing BOS</label>
-              <input type="text" id="SBOS"  class="sba-c-input" placeholder="Type name">
+            <li>
+              <ul class="usa-accordion">
+                <li class="sba-u-bgcolor--transparent">
+                  <button class="usa-accordion-button sba-u-padding--0 sba-u-padding-y--1 sba-u-bgcolor--transparent"
+                    aria-expanded="false"
+                    aria-controls="a4" type="button">
+                    Servicing BOS
+                  </button>
+                  <div id="a4" aria-hidden="true" class="usa-accordion-content sba-u-padding--0">
+                    <label for="SBOS" class="sba-c-label">Servicing BOS name</label>
+                    <input type="text" id="SBOS"  class="sba-c-input sba-u-margin-bottom--3" placeholder="Type name">
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="usa-accordion">
+                <li class="sba-u-bgcolor--transparent">
+                  <button class="usa-accordion-button sba-u-padding--0 sba-u-padding-y--1 sba-u-bgcolor--transparent"
+                    aria-expanded="false"
+                    aria-controls="a5" type="button">
+                    Current reviewer
+                  </button>
+                  <div id="a5" aria-hidden="true" class="usa-accordion-content sba-u-padding--0">
+                    <label for="crBOS" class="sba-c-label">Current reviewer name</label>
+                    <input type="text" id="crBOS"  class="sba-c-input sba-u-margin-bottom--3" placeholder="Type name">
+                  </div>
+                </li>
+              </ul>
             </li>
           </ul>
         </fieldset>
@@ -281,6 +333,21 @@ new_sba_nav: true
               <option value="">Firm name: Descending</option>
             </select>
           </div>
+        </div>
+
+        <div class="sba-c-facet-pills sba-u-margin-bottom--3">
+          <span class="sba-c-facet-pill">
+            Baltimore
+            <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+          </span>
+          <span class="sba-c-facet-pill">
+            Inital Application - Screening
+            <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+          </span>
+          <span class="sba-c-facet-pill">
+            HUBZone
+            <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+          </span>
         </div>
 
           <div class="sba-c-card sba-u-padding-y--2 sba-u-padding-x--1">
@@ -500,3 +567,40 @@ new_sba_nav: true
 
 
 </div>
+
+
+
+
+
+
+<script>
+  $( function() {
+    var availableTags = [
+      "Allen Brown",
+      "Allison Jankins",
+      "Arnold Holovarty",
+      "Ben Chase",
+      "Christine Hemlock",
+      "Cristobol French",
+      "David Ethen",
+      "Dennis March",
+      "Donald Reach",
+      "Evan Harold",
+      "Faith McJenkins",
+      "Gary Homwelt",
+      "Heather Grambolt",
+      "Jason Minkins",
+      "Jennifer Bolt",
+      "Larry Portal",
+      "Paul Fraut",
+      "Penny Bragsby",
+      "Phil Reaben",
+      "Rachel Smith",
+      "Sara Tamer",
+      "Shelly Heller"
+    ];
+    $( "#BOS" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
