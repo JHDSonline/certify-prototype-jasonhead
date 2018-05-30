@@ -26,7 +26,12 @@
 
   {% if page.show_taskbar %}
     <div class="sba-l-taskbar-container">
-      {% include widgets/_taskbar.html %}
+      {% if page.show_taskbar %}
+        {% include _taskbar.html %}
+      {% else %}
+        {% include widgets/_taskbar.html %}
+      {% endif %}
+
     </div>
   {% endif %}
 
