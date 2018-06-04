@@ -15,5 +15,5 @@ Look at the GitHub repositotry to look at the folder structure and enter that in
 
 ## To Deploy
 ```
-./update_jekyll.sh
+bundle exec cds-gh-pages
 ```
