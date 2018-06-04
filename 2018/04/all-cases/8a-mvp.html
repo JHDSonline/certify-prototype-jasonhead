@@ -279,8 +279,43 @@ new_sba_nav: true
                     Case owner
                   </button>
                   <div id="b1" aria-hidden="true" class="usa-accordion-content sba-u-padding--0">
-                    <label for="BOS" class="sba-c-label">Case owner name</label>
-                    <input type="text" id="BOS"  class="sba-c-input sba-u-margin-bottom--3" placeholder="Type name">
+                    <label for="combobox" class="sba-u-visibility--screen-reader">Select a BOS</label>
+                    <div class="ui-widget sba-c-combobox">
+                      <select id="combobox">
+                        <option value="">Select one...</option>
+                        <option value="Aaron Rogers">Aaron Rogers</option>
+                        <option value="Arlene Baker">Arlene Baker</option>
+                        <option value="Barrett Foster">Barrett Foster</option>
+                        <option value="Bernice Jones">Bernice Jones</option>
+                        <option value="Catherine Masterson">Catherine Masterson</option>
+                        <option value="Christine Amici">Christine Amici</option>
+                        <option value="Connor Fitzpatrick">Connor Fitzpatrick</option>
+                        <option value="David Masterson">David Masterson</option>
+                        <option value="Don Huffman">Don Huffman</option>
+                        <option value="Erin Botz">Erin Botz</option>
+                        <option value="Freddie McDaniel">Freddie McDaniel</option>
+                        <option value="Gertrude Polanter">Gertrude Polanter</option>
+                        <option value="Henry Nichols">Henry Nichols</option>
+                        <option value="Jamie Ngo">Jamie Ngo</option>
+                        <option value="Jennifer Vollaley">Jennifer Vollaley</option>
+                        <option value="Liz Redman">Liz Redman</option>
+                        <option value="Paul Stevenson">Paul Stevenson</option>
+                        <option value="Penelope Martin">Penelope Martin</option>
+                        <option value="Rachel Walton">Rachel Walton</option>
+                        <option value="Richard Engleton">Richard Engleton</option>
+                        <option value="Steven Greymore">Steven Greymore</option>
+                        <option value="Timothy Grant">Timothy Grant</option>
+                      </select>
+                    </div>
+                    <script>
+                      $(function() {
+                        $( "#combobox" ).combobox({
+                          select: function(event, ui) {
+                                $( "#combobox" ).trigger("change");
+                             }
+                        });
+                      });
+                    </script>
                   </div>
                 </li>
               </ul>
@@ -294,8 +329,43 @@ new_sba_nav: true
                     Servicing BOS
                   </button>
                   <div id="a4" aria-hidden="true" class="usa-accordion-content sba-u-padding--0">
-                    <label for="SBOS" class="sba-c-label">Servicing BOS name</label>
-                    <input type="text" id="SBOS"  class="sba-c-input sba-u-margin-bottom--3" placeholder="Type name">
+                    <label for="combobox2" class="sba-u-visibility--screen-reader">Select a BOS</label>
+                    <div class="ui-widget sba-c-combobox">
+                      <select id="combobox2">
+                        <option value="">Select one...</option>
+                        <option value="Aaron Rogers">Aaron Rogers</option>
+                        <option value="Arlene Baker">Arlene Baker</option>
+                        <option value="Barrett Foster">Barrett Foster</option>
+                        <option value="Bernice Jones">Bernice Jones</option>
+                        <option value="Catherine Masterson">Catherine Masterson</option>
+                        <option value="Christine Amici">Christine Amici</option>
+                        <option value="Connor Fitzpatrick">Connor Fitzpatrick</option>
+                        <option value="David Masterson">David Masterson</option>
+                        <option value="Don Huffman">Don Huffman</option>
+                        <option value="Erin Botz">Erin Botz</option>
+                        <option value="Freddie McDaniel">Freddie McDaniel</option>
+                        <option value="Gertrude Polanter">Gertrude Polanter</option>
+                        <option value="Henry Nichols">Henry Nichols</option>
+                        <option value="Jamie Ngo">Jamie Ngo</option>
+                        <option value="Jennifer Vollaley">Jennifer Vollaley</option>
+                        <option value="Liz Redman">Liz Redman</option>
+                        <option value="Paul Stevenson">Paul Stevenson</option>
+                        <option value="Penelope Martin">Penelope Martin</option>
+                        <option value="Rachel Walton">Rachel Walton</option>
+                        <option value="Richard Engleton">Richard Engleton</option>
+                        <option value="Steven Greymore">Steven Greymore</option>
+                        <option value="Timothy Grant">Timothy Grant</option>
+                      </select>
+                    </div>
+                    <script>
+                      $(function() {
+                        $( "#combobox2" ).combobox({
+                          select: function(event, ui) {
+                                $( "#combobox2" ).trigger("change");
+                             }
+                        });
+                      });
+                    </script>
                   </div>
                 </li>
               </ul>
@@ -309,8 +379,43 @@ new_sba_nav: true
                     Current reviewer
                   </button>
                   <div id="a5" aria-hidden="true" class="usa-accordion-content sba-u-padding--0">
-                    <label for="crBOS" class="sba-c-label">Current reviewer name</label>
-                    <input type="text" id="crBOS"  class="sba-c-input sba-u-margin-bottom--3" placeholder="Type name">
+                    <label for="combobox3" class="sba-u-visibility--screen-reader">Select a BOS</label>
+                    <div class="ui-widget sba-c-combobox">
+                      <select id="combobox3">
+                        <option value="">Select one...</option>
+                        <option value="Aaron Rogers">Aaron Rogers</option>
+                        <option value="Arlene Baker">Arlene Baker</option>
+                        <option value="Barrett Foster">Barrett Foster</option>
+                        <option value="Bernice Jones">Bernice Jones</option>
+                        <option value="Catherine Masterson">Catherine Masterson</option>
+                        <option value="Christine Amici">Christine Amici</option>
+                        <option value="Connor Fitzpatrick">Connor Fitzpatrick</option>
+                        <option value="David Masterson">David Masterson</option>
+                        <option value="Don Huffman">Don Huffman</option>
+                        <option value="Erin Botz">Erin Botz</option>
+                        <option value="Freddie McDaniel">Freddie McDaniel</option>
+                        <option value="Gertrude Polanter">Gertrude Polanter</option>
+                        <option value="Henry Nichols">Henry Nichols</option>
+                        <option value="Jamie Ngo">Jamie Ngo</option>
+                        <option value="Jennifer Vollaley">Jennifer Vollaley</option>
+                        <option value="Liz Redman">Liz Redman</option>
+                        <option value="Paul Stevenson">Paul Stevenson</option>
+                        <option value="Penelope Martin">Penelope Martin</option>
+                        <option value="Rachel Walton">Rachel Walton</option>
+                        <option value="Richard Engleton">Richard Engleton</option>
+                        <option value="Steven Greymore">Steven Greymore</option>
+                        <option value="Timothy Grant">Timothy Grant</option>
+                      </select>
+                    </div>
+                    <script>
+                      $(function() {
+                        $( "#combobox3" ).combobox({
+                          select: function(event, ui) {
+                                $( "#combobox3" ).trigger("change");
+                             }
+                        });
+                      });
+                    </script>
                   </div>
                 </li>
               </ul>
@@ -567,40 +672,3 @@ new_sba_nav: true
 
 
 </div>
-
-
-
-
-
-
-<script>
-  $( function() {
-    var availableTags = [
-      "Allen Brown",
-      "Allison Jankins",
-      "Arnold Holovarty",
-      "Ben Chase",
-      "Christine Hemlock",
-      "Cristobol French",
-      "David Ethen",
-      "Dennis March",
-      "Donald Reach",
-      "Evan Harold",
-      "Faith McJenkins",
-      "Gary Homwelt",
-      "Heather Grambolt",
-      "Jason Minkins",
-      "Jennifer Bolt",
-      "Larry Portal",
-      "Paul Fraut",
-      "Penny Bragsby",
-      "Phil Reaben",
-      "Rachel Smith",
-      "Sara Tamer",
-      "Shelly Heller"
-    ];
-    $( "#BOS" ).autocomplete({
-      source: availableTags
-    });
-  } );
-  </script>
