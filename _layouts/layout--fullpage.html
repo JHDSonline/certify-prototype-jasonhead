@@ -26,12 +26,11 @@
 
   {% if page.show_taskbar %}
     <div class="sba-l-taskbar-container">
-      {% if page.show_taskbar %}
+      {% if page.taskbar_style == "initial" %}
         {% include _taskbar.html %}
       {% else %}
         {% include widgets/_taskbar.html %}
       {% endif %}
-
     </div>
   {% endif %}
 

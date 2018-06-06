@@ -1,8 +1,8 @@
 GIT
   remote: git@github.com:USSBA/certify_design_system_gem.git
-  revision: 1052e0360134d8c2b7c9992cc9b233775d1f915a
+  revision: a2dfe5858738ea3e723114ba3208eac41563f571
   specs:
-    certify_design_system (1.9.2)
+    certify_design_system (1.10.0)
       bourbon (~> 4.3, <= 5)
       sass (~> 3.5)
 
@@ -64,7 +64,7 @@ GEM
       sprockets (>= 3.3, < 4.1.beta)
     jekyll-babel (1.1.0)
       babel-transpiler
-    jekyll-feed (0.9.3)
+    jekyll-feed (0.10.0)
       jekyll (~> 3.3)
     jekyll-sanity (1.2.0)
       jekyll (~> 3.1)
