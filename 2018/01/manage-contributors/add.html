@@ -7,10 +7,10 @@ firm_experience: true
 
 # Page content
 application_name: 8(a) Initial Application
-page_h1: Add individual cliaming disadvantage
+page_h1: Add individual claiming disadvantage
 back_link: Back to application overview
-lead_text:
-cta_text: Next
+lead_text: Your contributor will be sent a questionnaire that they will need to fill out. You will not be able to submit your application to the SBA until your contributor completes their questionnaire. You must also add this person's spouse if they are married or legally separated.
+cta_text: Submit
 secondary_action_text: Cancel
 
 ---
@@ -20,7 +20,7 @@ secondary_action_text: Cancel
   <ul id="response" class="usa-unstyled-list">
     <li>
       <input id="contributor1_1" type="radio" name="contributor1" value="Early graduation" data-follow-up="contributor1_followup" aria-controls="contributor1_followup" aria-expanded="false" required>
-      <label for="contributor1_1">Select an existing contributor</label>
+      <label for="contributor1_1">Send a questionnaire to an existing contributor</label>
 
       <div class="sba-c-follow-up" id="contributor1_followup" hidden>
         <label class="sba-u-margin-top--0" for="combobox">Select a contributor that you have already invited</label>
@@ -49,23 +49,18 @@ secondary_action_text: Cancel
       <input id="contributor1_2" type="radio" name="contributor1" value="Terminate" data-follow-up="contributor1_followup2" aria-controls="contributor1_followup2" aria-expanded="false" required>
       <label for="contributor1_2">Invite a new contributor</label>
       <div class="sba-c-follow-up" id="contributor1_followup2" hidden>
+        <p class="sba-u-margin-top--0">Your new contributor will also be sent a questionnaire.</p>
         <ul id="response" class="usa-unstyled-list">
           <li>
             <label for="contributor1_name" class="sba-c-label sba-u-margin-top--0">Full name</label>
-            <input class="sba-c-input" type="text" id="contributor1_name">
+            <input class="sba-c-input" type="text" id="contributor1_name" disabled>
           </li>
           <li>
             <label for="contributor1_email" class="sba-c-label">Email address</label>
-            <input class="sba-c-input" type="email" id="contributor1_email">
+            <input class="sba-c-input" type="email" id="contributor1_email" disabled>
           </li>
         </ul>
       </div>
     </li>
   </ul>
 </fieldset>
-
-<p><a href="#" class="sba-c-button sba-c-button--inverse"><svg aria-hidden="true" class="sba-c-icon sba-u-margin-right--1">
-    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/assets/svg-sprite/sprite.svg#plus"></use>
-  </svg>Add another</a>
-
-</p>
