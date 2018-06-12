@@ -4,10 +4,11 @@ is_a_form: yes
 
 #Page settings
 firm_experience: true
+firm_view: true
 
 # Page content
 application_name: 8(a) Initial Application
-page_h1: Add individual claiming disadvantage
+page_h1: Add a <span id="title"></span>
 back_link: Back to application overview
 lead_text: Your contributor will be sent a questionnaire that they will need to fill out. You will not be able to submit your application to the SBA until your contributor completes their questionnaire. You must also add this person's spouse if they are married or legally separated.
 cta_text: Submit
@@ -15,7 +16,25 @@ secondary_action_text: Cancel
 
 ---
 
-<fieldset class="questions">
+<!-- For microservices approach -->
+<fieldset class="questions" data-filter-capability="current">
+  <input type="hidden" value="true" id="flash_banner">
+  <h4>Your contributor’s information</h4>
+  <ul id="response" class="usa-unstyled-list">
+    <li>
+      <label for="contributor1_name" class="sba-c-label sba-u-margin-top--0">Full name</label>
+      <input class="sba-c-input" type="text" id="contributor1_name">
+    </li>
+    <li>
+      <label for="contributor1_email" class="sba-c-label">Email address</label>
+      <input class="sba-c-input" type="email" id="contributor1_email">
+    </li>
+  </ul>
+</fieldset>
+
+<!-- For microservices approach -->
+<fieldset class="questions" data-filter-capability="microservices">
+  <input type="hidden" value="true" id="flash_banner">
   <h4>What would you like to do?</h4>
   <ul id="response" class="usa-unstyled-list">
     <li>
@@ -64,3 +83,32 @@ secondary_action_text: Cancel
     </li>
   </ul>
 </fieldset>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+
+    if (type == "DVD") {
+      $('#title').text("person claiming disadvantage");
+    }
+
+    else if (type == "spouse") {
+      $('#title').text("spouse");
+    }
+
+    else {
+      $('#title').text("person involved with your firm");
+    }
+
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("manage-contributors.html");
+        return false;
+      }
+    });
+  });
+</script>
