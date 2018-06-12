@@ -1,0 +1,50 @@
+---
+layout: layout--workflow
+
+#Page Settings
+is_a_form: yes
+body_class: hide-local-nav
+
+# Page Content
+step_text: Change due date&#58; 1 of 3
+page_h1: Change due date
+lead_text: This is some lead text
+cta_text: Next
+secondary_action_text: Cancel
+
+# Tab Links
+application_link: application.html
+firm_documents_link: firm-documents.html
+analyst_documents_link: analyst-documents.html
+notes_link: notes.html
+messages_link: messages.html
+activity_log_link: activity-log.html
+---
+
+<fieldset class="questions">
+  <h4>new date thing</h4>
+  <ul id="response" class="usa-unstyled-list">
+    <li>
+         <label for="change_due_date" class="sba-c-label sba-u-visibility--screen-reader">Enter a date</label>
+         <p class="sba-c-form-hint" id="change_due_date_hint">For example, MM/DD/YYYY</p>
+         <input type="date" id="change_due_date" class="sba-c-input" aria-describedby="change_due_date_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
+    </li>
+  </ul>
+</fieldset>
+
+
+
+<script>
+  $(document).ready(function() {
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("2.html");
+        return false;
+      }
+    });
+  });
+</script>
