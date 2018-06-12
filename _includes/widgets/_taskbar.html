@@ -51,6 +51,13 @@
                 #
               {% endif %}" class="task-panel-menu__link">Refer case within SBA </a>
             </li>
+            <li class="task-panel-menu__item" data-filter-prototype="ChangeDates">
+              <a href="{% if page.change_screening_due_date_link %}
+                {{ page.change_screening_due_date_link }}
+              {% else %}
+                #
+              {% endif %}" class="task-panel-menu__link">Change screening due date</a>
+            </li>
             <li class="task-panel-menu__item">
               <a href="{% if page.deficiency_letter_link %}
                 {{ page.deficiency_letter_link }}
