@@ -5,6 +5,25 @@
     </div>
     <button class="usa-menu-btn">Menu</button>
   </div>
+  {% if page.alert_banner %}
+  <div class="usa-grid-full masthead__alert-wrap" data-filter-flash_banner="true">
+    <div class="sba-c-alert sba-c-alert--success sba-u-margin-top--3">
+      <div class="sba-c-alert__icon">
+        <svg aria-hidden="true" class="sba-c-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/assets/svg-sprite/sprite.svg#check-circle"></use>
+        </svg>
+      </div>
+      <div class="sba-c-alert__body">
+        {% if page.alert_banner_heading %}
+        <h3 class="sba-c-alert__heading">{{ page.alert_banner_heading }}</h3>
+        {% endif %}
+        {% if page.alert_banner_text %}
+        <p class="sba-c-alert__text">{{ page.alert_banner_text }}</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
   <div class="usa-grid-full masthead__content">
     <div class="usa-width-one-fourth masthead__content__primary">
       <h1 class="masthead__primary-heading">{% if page.main_title %}
