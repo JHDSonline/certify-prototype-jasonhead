@@ -6,9 +6,9 @@ is_a_form: yes
 body_class: hide-local-nav
 
 # Page Content
-step_text: Change due date&#58; 1 of 3
-page_h1: Change due date
-lead_text: This is some lead text
+step_text: Change date&#58; step 1 of 3
+page_h1: Change Processing Due Date
+lead_text: This will allow the user to change the processing due date, leave a note, and review and submit the changes.
 cta_text: Next
 secondary_action_text: Cancel
 
@@ -22,11 +22,11 @@ activity_log_link: activity-log.html
 ---
 
 <fieldset class="questions">
-  <h4>new date thing</h4>
+  <!-- <h4>new date thing</h4> -->
   <ul id="response" class="usa-unstyled-list">
     <li>
-         <label for="change_due_date" class="sba-c-label sba-u-visibility--screen-reader">Enter a date</label>
-         <p class="sba-c-form-hint" id="change_due_date_hint">For example, MM/DD/YYYY</p>
+         <label for="change_due_date" class="sba-c-label sba-u-visibility--screen-reader">Enter date</label>
+         <p class="sba-c-form-hint" id="change_due_date_hint">Please select or manually enter the new date.</p>
          <input type="date" id="change_due_date" class="sba-c-input" aria-describedby="change_due_date_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
     </li>
   </ul>
