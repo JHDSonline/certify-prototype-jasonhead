@@ -1,0 +1,50 @@
+---
+layout: layout--workflow
+
+#Page Settings
+is_a_form: yes
+body_class: hide-local-nav
+
+# Page Content
+page_h1: Change Program End Date
+step_text: Change Program End Date&#58; Step 1 of 3
+lead_text: Select or manually enter new end date.
+cta_text: Next
+secondary_action_text: Cancel
+
+# Tab Links
+application_link: application.html
+firm_documents_link: firm-documents.html
+analyst_documents_link: analyst-documents.html
+notes_link: notes.html
+messages_link: messages.html
+activity_log_link: activity-log.html
+---
+
+<fieldset class="questions">
+
+  <h4 class="sba-u-visibility--screen-reader">Change Program End Date</h4>
+  <ul id="response" class="usa-unstyled-list">
+    <li>
+        <label for="change_program_date" class="sba-c-label sba-u-margin-top--0">Format: MM/DD/YYYY</label>
+        <input required type="text" id="change_program_date" class="sba-c-input js-calendar-picker js-format-as-date" value="06/20/2018"/>
+    </li>
+  </ul>
+</fieldset>
+
+
+
+<script>
+  $(document).ready(function() {
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("2.html");
+        return false;
+      }
+    });
+  });
+</script>
