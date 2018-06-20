@@ -1,1 +1,40 @@
+---
+layout: layout--workflow
+
+# Page Settings
+is_a_form: yes
+
+# Page Content
+page_h1: Change Program End Date
+step_text: Change program end date&#58; step 2 of 3
+page_h1: Add SBA Note
+lead_text: Please list reason(s) for date change.
+cta_text: Next
+secondary_action_text: Cancel
+
+# Tab Links
+application_link: ../overview.html
+firm_documents_link: ../firm-documents.html
+analyst_documents_link: ../analyst-documents.html
+notes_link: ../notes.html
+messages_link: ../messages.html
+activity_log_link: ../activity-log.html
+---
+
+{% include widgets/_note-form--workflows.html %}
+
+<script>
+$(document).ready(function() {
+  $('form').on('submit', function() {
+    if (!checkValidityIfSupported($('form').get(0))) {
+      return false;
+    }
+    else {
+      updateStoredData();
+      nextPage("3.html");
+      return false;
+    }
+  });
+});
+</script>
 <!-- Find a note workflow page -->
