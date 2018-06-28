@@ -260,13 +260,30 @@ new_sba_nav: true
 
           <button type="button" class="sba-c-button sba-c-button--inverse sba-c-button--small">Apply dates</button>
 
-          <ul class="sba-c-unstyled-list">
-            <li>
-              <input class="sba-c-checkbox" id="overdue" type="checkbox" name="date">
-              <label class="sba-c-label" for="overdue">Case past due</label>
-            </li>
-          </ul>
+
+<!-- my insert -->
+
+          <h6>Annual Review Due Date</h6>
+
+
+           <ul class="sba-c-unstyled-list">
+             <li>
+               <label for="annual-due-date" class="sba-c-label sba-u-visibility--screen-reader">Select annual due date rangeatom</label>
+               <select name="annual-due-date" id="annual-due-date">
+                 <option value="">Select date range</option>
+                 <option value="seven days">7 days</option>
+                 <option value="fifteen days">15 days</option>
+                 <option value="thirty days">30 days</option>
+                 <option value="sixty days">60 days</option>
+                 <option value="past due">Past Due</option>
+               </select>
+             </li>
+           </ul>
+
+<!-- my insert -->
+
         </fieldset>
+
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
           <legend class="sba-c-facet-set__legend">Assignments</legend>
           <ul class="sba-c-unstyled-list">
