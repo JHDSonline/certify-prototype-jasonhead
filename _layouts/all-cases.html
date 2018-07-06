@@ -16,12 +16,13 @@
       <button class="usa-menu-btn">Menu</button>
     </div>
 
-
+    {% unless page.hide_tabs %}
     <div class="usa-grid-full masthead__content sba-u-flex-direction--column">
       <div class="usa-width-one-fourth masthead__content__primary sba-u-border--0">
         <h1 class="masthead__primary-heading">All cases</h1>
       </div>
     </div>
+    {% endunless %}
 
     <nav role="navigation" class="usa-nav certify-nav">
       <div class="usa-nav-inner">
@@ -101,6 +102,8 @@
           </div>
         </div>
 
+        {% unless page.hide_tabs %}
+
         <div class="certify-local-nav">
           <div class="usa-grid-full">
             <h2 class="certify-local-nav__heading">All cases</h2>
@@ -122,9 +125,14 @@
             </ul>
           </div>
         </div>
+
+        {% endunless %}
+
       </div>
     </nav>
   </header>
+
+
 
 
 
