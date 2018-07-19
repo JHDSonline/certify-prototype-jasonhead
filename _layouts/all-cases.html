@@ -55,6 +55,25 @@
                     <span>Management</span>
                   </a>
                 </li>
+
+                <li>
+                  <button class="
+                  usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-3">
+                    <span>Requirements</span>
+                  </button>
+                  <ul id="side-nav-3" class="usa-nav-submenu">
+                    <li>
+                      <a href="{% if page.new_requirements_link %}{{ page.new_requirements_link }}{% else %}#{% endif %}">New Requirement(s)</a>
+                    </li>
+                    <li>
+                      <a href="{% if page.search_requirements_link %}{{ page.search_requirements_link }}{% else %}#{% endif %}">All Requirements</a>
+                    </li>
+                    <li>
+                      <a href="#">My Requirements</a>
+                    </li>
+                  </ul>
+                </li>
+
                 <li class="certify-case-search">
                   <form class="usa-search usa-search-small">
                     <div role="search">
