@@ -1,0 +1,128 @@
+---
+layout: all-cases
+
+# Page content
+application_name: 8(a) Requirements
+page_h1: Requirements
+hide_tabs: true
+---
+
+<div class="sba-u-padding-x--2 sba-l-col--12">
+
+  <h2 class="sba-u-font-size--h3 sba-u-border-bottom--1">Add New Requirement</h2>
+
+  <form action="#">
+    <fieldset class="sba-c-fieldset sba-c-fieldset--inputs">
+      <ul class="sba-c-unstyled-list sba-l-row">
+        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+          <label class="sba-c-label" for="add_duns">DUNS:</label>
+          <input class="sba-c-input" type="text" id="add_duns">
+        </li>
+
+        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+          <label class="sba-c-label" for="add_firm_name">Firm Name:</label>
+          <input class="sba-c-input" type="text" id="add_firm_name">
+        </li>
+
+        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+          <label class="sba-c-label" for="add_title">Title:</label>
+          <input class="sba-c-input" type="text" id="add_title">
+        </li>
+
+        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+          <label class="sba-c-label" for="add_district_office">District Office:</label>
+          <input class="sba-c-input" type="text" id="add_district_office">
+        </li>
+
+        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+          <label class="sba-c-label" for="add_description">Description:</label>
+          <input class="sba-c-input" type="text" id="add_description">
+        </li>
+
+        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+          <label class="sba-c-label" for="add_estimated_contract_value">Estimated Contract Value:</label>
+          <input class="sba-c-input" type="text" id="add_estimated_contract_value">
+        </li>
+
+        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+          <label class="sba-c-label" for="add_received_date">Received Date:</label>
+          <input type="text" id="add_received_date" class="sba-c-input js-calendar-picker js-format-as-date" />
+        </li>
+
+        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+          <label class="sba-c-label" for="add_contract_value">Contract Value:</label>
+          <input type="text" id="date_input" class="add_contract_value" />
+        </li>
+
+        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+          <label class="sba-c-label" for="add_naics">NAICS Code:</label>
+          <div class="ui-widget sba-c-combobox">
+              <select id="add_naics">
+                <option value="">Select one...</option>
+                <option value="code 1">Code 1</option>
+                <option value="code 1">Code 2</option>
+            </select>
+          </div>
+        </li>
+
+        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+          <label class="sba-c-label" for="add_size_standard">Size Standard:</label>
+          <input class="sba-c-input" type="text" id="add_size_standard">
+        </li>
+      </ul>
+    </fieldset>
+
+
+    <div class="sba-l-row">
+      <fieldset class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+        <legend class="sba-c-facet-set__legend">Case type</legend>
+        <ul class="sba-c-unstyled-list">
+          <li>
+            <input class="sba-c-checkbox" id="cs1" type="checkbox" name="cs">
+            <label class="sba-c-label sba-u-margin-top--0" for="cs1">Individually owned</label>
+          </li>
+          <li>
+            <input class="sba-c-checkbox" id="cs2" type="checkbox" name="cs">
+            <label class="sba-c-label sba-u-margin-top--0" for="cs2">Entity owned</label>
+          </li>
+          <li>
+            <input class="sba-c-checkbox" id="cs3" type="checkbox" name="cs">
+            <label class="sba-c-label sba-u-margin-top--0" for="cs3">Preponderance</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+        <legend class="sba-c-facet-set__legend">Activity</legend>
+        <ul class="sba-c-unstyled-list">
+          <li>
+            <input class="sba-c-checkbox" id="a1" type="checkbox" name="cs">
+            <label class="sba-c-label sba-u-margin-top--0" for="a1">Awaiting firm response</label>
+          </li>
+          <li>
+            <input class="sba-c-checkbox" id="a2" type="checkbox" name="cs">
+            <label class="sba-c-label sba-u-margin-top--0" for="a2">Firm has responded</label>
+          </li>
+          <li>
+            <input class="sba-c-checkbox" id="a2" type="checkbox" name="cs">
+            <label class="sba-c-label sba-u-margin-top--0" for="a2">Unread messages</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+        <legend class="sba-c-facet-set__legend">Application status</legend>
+        <ul class="sba-c-unstyled-list">
+          <li>
+            <input class="sba-c-checkbox" id="rt1" type="checkbox" name="cs">
+            <label class="sba-c-label sba-u-margin-top--0" for="rt1">Screening</label>
+          </li>
+          <li>
+            <input class="sba-c-checkbox" id="rt2" type="checkbox" name="cs">
+            <label class="sba-c-label sba-u-margin-top--0" for="rt2">Processing</label>
+          </li>
+        </ul>
+      </fieldset>
+    </div>
+  </form>
+</div>
