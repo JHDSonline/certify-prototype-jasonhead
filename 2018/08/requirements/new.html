@@ -11,7 +11,7 @@ search_requirements_link: search.html
 ---
 
 <div class="sba-u-padding-x--2 sba-l-col--12">
-
+<!-- ADD NEW REQUIREMENT -->
   <h2 class="sba-u-font-size--h3 sba-u-border-bottom--1">Add New Requirement</h2>
 
   <form action="#">
@@ -19,7 +19,9 @@ search_requirements_link: search.html
       <ul class="sba-c-unstyled-list sba-l-row">
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
           <label class="sba-c-label" for="add_duns">DUNS:</label>
-          <input class="sba-c-input" type="text" id="add_duns">
+          <input class="sba-c-input" type="text" id="add_duns"><button type="submit">
+             <span class="usa-search-submit-text">SUBMIT</span>
+           </button>
         </li>
 
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
@@ -59,13 +61,9 @@ search_requirements_link: search.html
 
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
           <label class="sba-c-label" for="add_naics">NAICS Code:</label>
-          <div class="ui-widget sba-c-combobox">
-              <select id="add_naics">
-                <option value="">Select one...</option>
-                <option value="code 1">Code 1</option>
-                <option value="code 1">Code 2</option>
-            </select>
-          </div>
+          <input class="sba-c-input" type="text" id="add_naics"><button type="submit">
+             <span class="usa-search-submit-text">SUBMIT</span>
+           </button>
         </li>
 
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
@@ -74,58 +72,329 @@ search_requirements_link: search.html
         </li>
       </ul>
     </fieldset>
+</form>
 
+<!-- ACCEPT / TURN BACK -->
+
+<legend class="sba-c-facet-set__legend">ACCEPT / TURN BACK</legend>
+
+<form action="#">
+  <fieldset class="sba-c-fieldset sba-c-fieldset--inputs">
+   <ul class="sba-c-unstyled-list sba-l-row">
+        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+           <label for="code" class="sba-c-label">Code</label>
+           <select name="code" id="codes">
+             <option value="">Select Code</option>
+             <option value="Offer Incomplete">Offer Incomplete </option>
+             <option value="Offer Not Suitable for 8(a) Program">Offer Not Suitable for 8(a) Program </option>
+             <option value="Adverse Impact">Adverse Impact </option>
+             <option value="Solicitation Previousl Issued">Solicitation Previousl Issued </option>
+             <option value="Offer Canceled or Withdrawn">Offer Canceled or Withdrawn </option>
+             <option value="Offer Exeeds Threshold Amounts">Offer Exeeds Threshold Amounts </option>
+             <option value="Offer Accepted">Offer Accepted </option>
+             <option value="Void Duplicate">Void Duplicate </option>
+            </select>
+        </li>
+</ul>
+</fieldset>
+</form>
+
+<!-- OFFER DATA -->
+<form>
 
     <div class="sba-l-row">
       <fieldset class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-        <legend class="sba-c-facet-set__legend">Case type</legend>
+        <legend class="sba-c-facet-set__legend">Offer Data</legend>
         <ul class="sba-c-unstyled-list">
-          <li>
-            <input class="sba-c-checkbox" id="cs1" type="checkbox" name="cs">
-            <label class="sba-c-label sba-u-margin-top--0" for="cs1">Individually owned</label>
-          </li>
-          <li>
-            <input class="sba-c-checkbox" id="cs2" type="checkbox" name="cs">
-            <label class="sba-c-label sba-u-margin-top--0" for="cs2">Entity owned</label>
-          </li>
-          <li>
-            <input class="sba-c-checkbox" id="cs3" type="checkbox" name="cs">
-            <label class="sba-c-label sba-u-margin-top--0" for="cs3">Preponderance</label>
-          </li>
+           <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+              <label class="sba-c-label" for="Solicitation_Number">Solicitation Number:</label>
+              <input class="sba-c-input" type="text" id="Solicitation_Number">
+           </li>
+           <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+            <label for="type" class="sba-c-label">Type:</label>
+            <select name="type" id="type">
+              <option value="">Select Type</option>
+              <option value="Type 1">Type 1 </option>
+              <option value="Type 2">Type 2 </option>
+              <option value="Type 3">Type 3 </option>
+              <option value="Type 4">Type 4 </option>
+              <option value="Type 5">Type 5 </option>
+             </select>
+           </li>
+
+           <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+            <label for="type" class="sba-c-label">Scope:</label>
+            <select name="type" id="type">
+              <option value="">Select Scope</option>
+              <option value="Local Buy">Local Buy </option>
+              <option value="Type 2">Regional Buy </option>
+              <option value="Type 3">National Buy </option>
+           </select>
+           </li>
+
+           <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+            <label for="type" class="sba-c-label">Agreement:</label>
+            <select name="type" id="type">
+              <option value="">Select Agreement</option>
+              <option value="Not selected">Not selected </option>
+              <option value="Not Applicable">Not Applicable </option>
+              <option value="Joint Venture">Joint Venture </option>
+              <option value="Management">Management </option>
+              <option value="Mentor Prototype">Mentor Prototype </option>
+             </select>
+           </li>
+
         </ul>
       </fieldset>
 
+<!-- AGENCY -->
       <fieldset class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-        <legend class="sba-c-facet-set__legend">Activity</legend>
+        <legend class="sba-c-facet-set__legend">Agency</legend>
         <ul class="sba-c-unstyled-list">
+           <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+             <label for="agency" class="sba-c-label">Agency:</label>
+             <select name="angcy" id="agency">
+               <option value="">Select Agency</option>
+               <option value=""> </option>
+               <option value=""> </option>
+               <option value="">  </option>
+               <option value=""> </option>
+               <option value="">  </option>
+             </select>
+           </li>
+
+           <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+             <label for="agency_office" class="sba-c-label">Agency Office:</label>
+             <select name="agency_office" id="agency_office">
+               <option value="">Select Agency Office</option>
+               <option value=""> </option>
+               <option value=""> </option>
+               <option value="">  </option>
+               <option value=""> </option>
+               <option value="">  </option>
+             </select>
+           </li>
           <li>
+            <label for="agency_office" class="sba-c-label">SBA Program:</label>
             <input class="sba-c-checkbox" id="a1" type="checkbox" name="cs">
-            <label class="sba-c-label sba-u-margin-top--0" for="a1">Awaiting firm response</label>
+            <label class="sba-c-label sba-u-margin-top--0" for="a1">8(a)</label>
           </li>
           <li>
             <input class="sba-c-checkbox" id="a2" type="checkbox" name="cs">
-            <label class="sba-c-label sba-u-margin-top--0" for="a2">Firm has responded</label>
+            <label class="sba-c-label sba-u-margin-top--0" for="a2">ASMPP</label>
           </li>
           <li>
             <input class="sba-c-checkbox" id="a2" type="checkbox" name="cs">
-            <label class="sba-c-label sba-u-margin-top--0" for="a2">Unread messages</label>
+            <label class="sba-c-label sba-u-margin-top--0" for="a2">WOSB</label>
           </li>
+          <li>
+            <label class="sba-c-label sba-u-margin-top--0" for="a2">Recieved Date:</label>
+            <input type="date" id="date_input" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
+          </li>
+          <li>
+            <label class="sba-c-label sba-u-margin-top--0" for="a2">Comments:</label>
+            <textarea class="sba-c-input" type="text" id="Solicitation_Number"></textarea>
+          </li>
+
         </ul>
       </fieldset>
 
+
+<!-- contract  officer info -->
+
+      <legend class="sba-c-facet-set__legend">Contracting Officer Information</legend>
+
+      <form action="#">
+        <fieldset class="sba-c-fieldset sba-c-fieldset--inputs">
+         <ul class="sba-c-unstyled-list sba-l-row">
+            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+              <label class="sba-c-label" for="add_duns">First Name:</label>
+              <input class="sba-c-input" type="text" id="add_firm_name">
+            </li>
+
+            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+              <label class="sba-c-label" for="add_firm_name">Address 1:</label>
+              <input class="sba-c-input" type="text" id="add_firm_name">
+            </li>
+
+            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+              <label class="sba-c-label" for="add_title">Last Name:</label>
+              <input class="sba-c-input" type="text" id="add_title">
+            </li>
+
+            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+              <label class="sba-c-label" for="add_district_office">Address 2:</label>
+              <input class="sba-c-input" type="text" id="add_district_office">
+            </li>
+
+            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+              <label class="sba-c-label" for="add_description">Description:</label>
+              <input class="sba-c-input" type="text" id="add_description">
+            </li>
+
+            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+              <label class="sba-c-label" for="add_estimated_contract_value">City</label>
+              <input class="sba-c-input" type="text" id="add_estimated_contract_value">
+            </li>
+
+            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+              <label class="sba-c-label" for="email">Email</label>
+              <input class="sba-c-input" type="text" id="email">
+            </li>
+
+            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+              <label class="sba-c-label" for="state">State:</label>
+              <select name="state" id="state">
+               <option value="">Select State</option>
+               <option value=""> </option>
+               <option value=""> </option>
+               <option value="">  </option>
+               <option value=""> </option>
+               <option value="">  </option>
+             </select>
+            </li>
+
+            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+              <label class="sba-c-label" for=""></label>
+
+            </li>
+
+            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+              <label class="sba-c-label" for="zip">Zip:</label>
+              <input class="sba-c-input" type="text" id="zip">
+            </li>
+         </ul>
+        </fieldset>
+      </form>
+
+</div>
+</form>
+
+<!-- CONTRACT INFO -->
+<form>
+
+    <div class="sba-l-row">
       <fieldset class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-        <legend class="sba-c-facet-set__legend">Application status</legend>
+        <legend class="sba-c-facet-set__legend">Contract Information</legend>
+
         <ul class="sba-c-unstyled-list">
-          <li>
-            <input class="sba-c-checkbox" id="rt1" type="checkbox" name="cs">
-            <label class="sba-c-label sba-u-margin-top--0" for="rt1">Screening</label>
-          </li>
-          <li>
-            <input class="sba-c-checkbox" id="rt2" type="checkbox" name="cs">
-            <label class="sba-c-label sba-u-margin-top--0" for="rt2">Processing</label>
-          </li>
+           <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+            <label for="type" class="sba-c-label">Contract Type:</label>
+            <select name="type" id="type">
+              <option value="">Select Type</option>
+              <option value="Type 1">Type 1 </option>
+              <option value="Type 2">Type 2 </option>
+              <option value="Type 3">Type 3 </option>
+              <option value="Type 4">Type 4 </option>
+              <option value="Type 5">Type 5 </option>
+             </select>
+           </li>
+
+           <li>
+             <label for="agency_office" class="sba-c-label">Contract Status:</label>
+             <input class="sba-c-checkbox" id="a1" type="checkbox" name="cs">
+             <label class="sba-c-label sba-u-margin-top--0" for="a1">Awarded</label>
+           </li>
+           <li>
+             <input class="sba-c-checkbox" id="a2" type="checkbox" name="cs">
+             <label class="sba-c-label sba-u-margin-top--0" for="a2">Not Awarded</label>
+           </li>
+
+           <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+            <label for="type" class="sba-c-label">Contract Number:</label>
+            <input class="sba-c-input" type="text" id="email">
+           </li>
+
+           <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+            <label for="type" class="sba-c-label">Comments:</label>
+            <textarea class="sba-c-input" type="text" id="email"></textarea>
+           </li>
+
         </ul>
       </fieldset>
-    </div>
-  </form>
+
+<!-- ADITIONAL COMMENTS -->
+      <fieldset class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+        <legend class="sba-c-facet-set__legend">Additional Comments</legend>
+        <ul class="sba-c-unstyled-list">
+             <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+             <label for="type" class="sba-c-label">Comments:</label>
+             <textarea class="sba-c-input" type="text" id="email"></textarea>
+            </li>
+
+        </ul>
+      </fieldset>
+
+<!-- Documents -->
+<fieldset class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+  <legend class="sba-c-facet-set__legend">Documents</legend>
+  <ul class="sba-c-unstyled-list">
+       <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+       <label for="type" class="sba-c-label">Document Type:</label>
+       <select name="type" id="type">
+         <option value="">Select Type</option>
+         <option value="Letter of Offer ">Letter of Offer </option>
+         <option value="TypSOWe ">SOW </option>
+         <option value="Acceptance ">Acceptance </option>
+         <option value="Other ">Other </option>
+       </select>
+       </li>
+       <li><br>
+            <div class="sba-c-doc-upload">
+                <!-- Primary heading content...visible stuff when closed -->
+                <div class="sba-c-doc-upload__primary-heading">
+                  <h3>Upload Document</h3>
+                  <p>Upload requirement documentation</p>
+                  <!-- Button to toggle the doc upload content -->
+                  <button class="sba-c-button sba-c-button--transparent sba-c-doc-upload__toggle" type="button" title="remove" aria-expanded="false" aria-controls="doc-upload1">upload file</button>
+                </div>
+                <!-- Primary contents of doc upload. Shown when expanded -->
+                <div id="doc-upload1" class="sba-c-doc-upload__content">
+                  <p>1) Attach a file</p>
+                  <div class="sba-c-doc-upload__file-input">
+                    <span>
+                      Drag file into this space or
+                      <label for="file-picker1">choose a file</label>
+                      <input type="file" id="file-picker1" accept=".pdf" />
+                    </span>
+                  </div>
+                  <label for="file-comment">2) Brief description (optional)</label>
+                  <input id="file-comment" type="text" class="sba-u-margin-bottom--3">
+                  <button class="sba-c-button" type="button" title="add-file">Upload file</button>
+                  <button class="sba-c-button sba-c-button--transparent" type="button" title="cancel" aria-controls="doc-upload1-cancel">Cancel</button>
+                </div>
+              </div>
+       </li>
+
+       <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+       <label for="type" class="sba-c-label">Comments:</label>
+       <textarea class="sba-c-input" type="text" id="email"></textarea>
+       </li>
+
+
+  </ul>
+</fieldset>
+
+<!-- UPLOADED DOCUMENTS -->
+
+      <legend class="sba-c-facet-set__legend">Uploaded Documents</legend>
+
+      <form action="#">
+        <fieldset class="sba-c-fieldset sba-c-fieldset--inputs">
+
+            <p>
+                 <label for="type" class="sba-c-label">Submitted documents list will autopopulate here</label>
+            </p>
+
+<br>
+ <p><a href="4.html" class="usa-button">Submit date change</a> <a href="1.html">Start over</a></p>
+        </fieldset>
+      </form>
+
+
+
+
+
+
+
 </div>
