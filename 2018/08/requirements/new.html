@@ -19,8 +19,8 @@ search_requirements_link: search.html
       <ul class="sba-c-unstyled-list sba-l-row">
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
           <label class="sba-c-label" for="add_duns">DUNS:</label>
-          <input class="sba-c-input" type="text" id="add_duns"><button type="submit">
-             <span class="usa-search-submit-text">SUBMIT</span>
+          <input class="sba-c-input" type="text" id="add_duns"><button class="sba-c-button sba-c-button--inverse"type="button">
+             <span class="usa-search-submit-text">Enter DUNS</span>
            </button>
         </li>
 
@@ -56,13 +56,13 @@ search_requirements_link: search.html
 
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
           <label class="sba-c-label" for="add_contract_value">Contract Value:</label>
-          <input type="text" id="date_input" class="add_contract_value" />
+          <input type="text" id="add_contract_value" class="add_contract_value" />
         </li>
 
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
           <label class="sba-c-label" for="add_naics">NAICS Code:</label>
-          <input class="sba-c-input" type="text" id="add_naics"><button type="submit">
-             <span class="usa-search-submit-text">SUBMIT</span>
+          <input class="sba-c-input" type="text" id="add_naics"><button class="sba-c-button sba-c-button--inverse"type="button">
+             <span class="usa-search-submit-text">Enter NAICS Code</span>
            </button>
         </li>
 
@@ -76,7 +76,7 @@ search_requirements_link: search.html
 
 <!-- ACCEPT / TURN BACK -->
 
-<legend class="sba-c-facet-set__legend">ACCEPT / TURN BACK</legend>
+<legend class="sba-c-facet-set__legend">Accept / Turn Back</legend>
 
 <form action="#">
   <fieldset class="sba-c-fieldset sba-c-fieldset--inputs">
@@ -124,7 +124,7 @@ search_requirements_link: search.html
 
            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
             <label for="type" class="sba-c-label">Scope:</label>
-            <select name="type" id="type">
+            <select name="type" id="scope">
               <option value="">Select Scope</option>
               <option value="Local Buy">Local Buy </option>
               <option value="Type 2">Regional Buy </option>
@@ -134,7 +134,7 @@ search_requirements_link: search.html
 
            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
             <label for="type" class="sba-c-label">Agreement:</label>
-            <select name="type" id="type">
+            <select name="type" id="agreement">
               <option value="">Select Agreement</option>
               <option value="Not selected">Not selected </option>
               <option value="Not Applicable">Not Applicable </option>
@@ -153,13 +153,13 @@ search_requirements_link: search.html
         <ul class="sba-c-unstyled-list">
            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
              <label for="agency" class="sba-c-label">Agency:</label>
-             <select name="angcy" id="agency">
+             <select name="angency" id="agency">
                <option value="">Select Agency</option>
                <option value=""> </option>
                <option value=""> </option>
-               <option value="">  </option>
                <option value=""> </option>
-               <option value="">  </option>
+               <option value=""> </option>
+               <option value=""> </option>
              </select>
            </li>
 
@@ -176,24 +176,24 @@ search_requirements_link: search.html
            </li>
           <li>
             <label for="agency_office" class="sba-c-label">SBA Program:</label>
-            <input class="sba-c-checkbox" id="a1" type="checkbox" name="cs">
+            <input class="sba-c-checkbox" id="8a" type="checkbox" name="cs">
             <label class="sba-c-label sba-u-margin-top--0" for="a1">8(a)</label>
           </li>
           <li>
-            <input class="sba-c-checkbox" id="a2" type="checkbox" name="cs">
+            <input class="sba-c-checkbox" id="asmpp" type="checkbox" name="cs">
             <label class="sba-c-label sba-u-margin-top--0" for="a2">ASMPP</label>
           </li>
           <li>
-            <input class="sba-c-checkbox" id="a2" type="checkbox" name="cs">
+            <input class="sba-c-checkbox" id="wosb" type="checkbox" name="cs">
             <label class="sba-c-label sba-u-margin-top--0" for="a2">WOSB</label>
           </li>
           <li>
             <label class="sba-c-label sba-u-margin-top--0" for="a2">Recieved Date:</label>
-            <input type="date" id="date_input" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
+            <input type="date" id="recieved_date_input" class="sba-c-input" aria-describedby="date_input_hint" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
           </li>
           <li>
             <label class="sba-c-label sba-u-margin-top--0" for="a2">Comments:</label>
-            <textarea class="sba-c-input" type="text" id="Solicitation_Number"></textarea>
+            <textarea class="sba-c-input" type="text" id="add_comments"></textarea>
           </li>
 
         </ul>
@@ -209,22 +209,22 @@ search_requirements_link: search.html
          <ul class="sba-c-unstyled-list sba-l-row">
             <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
               <label class="sba-c-label" for="add_duns">First Name:</label>
-              <input class="sba-c-input" type="text" id="add_firm_name">
+              <input class="sba-c-input" type="text" id="add_first_name">
             </li>
 
             <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
               <label class="sba-c-label" for="add_firm_name">Address 1:</label>
-              <input class="sba-c-input" type="text" id="add_firm_name">
+              <input class="sba-c-input" type="text" id="add_address1">
             </li>
 
             <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
               <label class="sba-c-label" for="add_title">Last Name:</label>
-              <input class="sba-c-input" type="text" id="add_title">
+              <input class="sba-c-input" type="text" id="add_last_name">
             </li>
 
             <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
               <label class="sba-c-label" for="add_district_office">Address 2:</label>
-              <input class="sba-c-input" type="text" id="add_district_office">
+              <input class="sba-c-input" type="text" id="add_address2">
             </li>
 
             <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
@@ -234,17 +234,17 @@ search_requirements_link: search.html
 
             <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
               <label class="sba-c-label" for="add_estimated_contract_value">City</label>
-              <input class="sba-c-input" type="text" id="add_estimated_contract_value">
+              <input class="sba-c-input" type="text" id="add_city">
             </li>
 
             <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
               <label class="sba-c-label" for="email">Email</label>
-              <input class="sba-c-input" type="text" id="email">
+              <input class="sba-c-input" type="text" id="add_email">
             </li>
 
             <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
               <label class="sba-c-label" for="state">State:</label>
-              <select name="state" id="state">
+              <select name="state" id="add_state">
                <option value="">Select State</option>
                <option value=""> </option>
                <option value=""> </option>
@@ -280,7 +280,7 @@ search_requirements_link: search.html
         <ul class="sba-c-unstyled-list">
            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
             <label for="type" class="sba-c-label">Contract Type:</label>
-            <select name="type" id="type">
+            <select name="type" id="add_contract_type">
               <option value="">Select Type</option>
               <option value="Type 1">Type 1 </option>
               <option value="Type 2">Type 2 </option>
@@ -292,22 +292,22 @@ search_requirements_link: search.html
 
            <li>
              <label for="agency_office" class="sba-c-label">Contract Status:</label>
-             <input class="sba-c-checkbox" id="a1" type="checkbox" name="cs">
+             <input class="sba-c-checkbox" id="add_contract_status" type="checkbox" name="cs">
              <label class="sba-c-label sba-u-margin-top--0" for="a1">Awarded</label>
            </li>
            <li>
-             <input class="sba-c-checkbox" id="a2" type="checkbox" name="cs">
+             <input class="sba-c-checkbox" id="add_not_awarded" type="checkbox" name="cs">
              <label class="sba-c-label sba-u-margin-top--0" for="a2">Not Awarded</label>
            </li>
 
            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
             <label for="type" class="sba-c-label">Contract Number:</label>
-            <input class="sba-c-input" type="text" id="email">
+            <input class="sba-c-input" type="text" id="add_contract_number">
            </li>
 
            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
             <label for="type" class="sba-c-label">Comments:</label>
-            <textarea class="sba-c-input" type="text" id="email"></textarea>
+            <textarea class="sba-c-input" type="text" id="add_comments"></textarea>
            </li>
 
         </ul>
@@ -319,7 +319,7 @@ search_requirements_link: search.html
         <ul class="sba-c-unstyled-list">
              <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
              <label for="type" class="sba-c-label">Comments:</label>
-             <textarea class="sba-c-input" type="text" id="email"></textarea>
+             <textarea class="sba-c-input" type="text" id="add_additional_comments"></textarea>
             </li>
 
         </ul>
