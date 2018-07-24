@@ -28,7 +28,6 @@ search_requirements_link: search.html
     <div class="sba-l-sm-col--12 sba-l-md-col--golden-sm sba-l-lg-col--3 sba-u-padding-x--2">
       <form action="#" >
         <h2 class="sba-u-font-size--h3">Filter Requirements</h2>
-
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
           <legend class="sba-c-facet-set__legend">Agency Info</legend>
           <ul class="sba-c-unstyled-list">
@@ -107,8 +106,8 @@ search_requirements_link: search.html
             </li>
 
             <li>
-               <label for="offices" class="sba-c-label">Agency</label>
-               <select name="offices" id="Agency">
+               <label for="agency" class="sba-c-label">Agency</label>
+               <select name="agency" id="agency">
                  <option value="">Select Agency</option>
                  <option value="Alabama">Agency 1 </option>
                 <option value="Alabama">Agency 2 </option>
@@ -127,18 +126,17 @@ search_requirements_link: search.html
           <legend class="sba-c-facet-set__legend">Contract Info</legend>
           <ul class="sba-c-unstyled-list">
              <li>
-                <label for="offices" class="sba-c-label">Contract Type</label>
-                <select name="offices" id="contract_type">
+                <label for="contract_type" class="sba-c-label">Contract Type</label>
+                <select name="contract_type" id="contract_type">
                   <option value="">Select Contract Type</option>
                   <option value="Alabama">Sole Source </option>
                  <option value="Alabama">Competitive </option>
                 </select>
              </li>
-
-             <li><label for="offices" class="sba-c-label">Title</label>
-                  <input class="sba-c-input" type="text" id="title">
+             <li>
+               <label for="title" class="sba-c-label">Title</label>
+               <input class="sba-c-input" type="text" id="title">
              </li>
-
           </ul>
         </fieldset>
 
@@ -148,136 +146,118 @@ search_requirements_link: search.html
           <legend class="sba-c-facet-set__legend">Firm Info</legend>
           <ul class="sba-c-unstyled-list">
             <li>
-               <label class="sba-c-label" for="cs1">NAICS Code</label>
-                    <select id="naics">
-                         <option value="">Select one...</option>
-                         <option value="code 1">Code 1</option>
-                         <option value="code 1">Code 2</option>
-                    </select>
+             <label class="sba-c-label" for="naics">NAICS Code</label>
+              <select id="naics">
+               <option value="">Select one...</option>
+               <option value="code 1">Code 1</option>
+               <option value="code 1">Code 2</option>
+              </select>
             </li>
-
           </ul>
         </fieldset>
 
 <!--OFFER INFO -->
 
-          <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
-                  <legend class="sba-c-facet-set__legend">Offer Info</legend>
-                  <ul class="sba-c-unstyled-list">
-                    <li>
-                       <label class="sba-c-label" for="cs1">Code</label>
-                            <select id="code">
-                                 <option value="">Select one...</option>
-                                 <option value="code 1">Offer Incomplete</option>
-                                 <option value="code 2">Offer Not Suitable 8(a) Program</option>
-                                 <option value="code 3">Adverse Impact </option>
-                                 <option value="code 4">Solicitation Previously Issued </option>
-                                 <option value="code 5">Offer Canceled or Withdrawn </option>
-                                 <option value="code 6">Offer Exceeds Threshold Amounts </option>
-                                 <option value="code 7">Offer Accepted </option>
-                                 <option value="code 8">Void Duplicate </option>
-                            </select>
-                    </li>
-
-                  </ul>
-                </fieldset>
-
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Offer Info</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+              <label class="sba-c-label" for="code">Code</label>
+              <select id="code">
+                <option value="">Select one...</option>
+                <option value="code 1">Offer Incomplete</option>
+                <option value="code 2">Offer Not Suitable 8(a) Program</option>
+                <option value="code 3">Adverse Impact </option>
+                <option value="code 4">Solicitation Previously Issued </option>
+                <option value="code 5">Offer Canceled or Withdrawn </option>
+                <option value="code 6">Offer Exceeds Threshold Amounts </option>
+                <option value="code 7">Offer Accepted </option>
+                <option value="code 8">Void Duplicate </option>
+              </select>
+            </li>
+          </ul>
+        </fieldset>
       </form>
+    </div>
+
+    <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--9 sba-u-padding-x--2 sba-u-lg-padding-left--6">
+      <div class="sba-u-display--flex sba-u-justify-content--between">
+        <h2 class="sba-u-font-size--h3">Showing 3 requirements</h2>
+        <div>
+          <label for="sort" class="sba-u-visibility--screen-reader">Sort by</label>
+          <select name="" id="sort">
+            <option value="">Sort by…</option>
+            <option value="">Relevance</option>
+            <option value="">Next action due: Earliest</option>
+            <option value="">Next action due: Latest</option>
+            <option value="">Firm name: Ascending</option>
+            <option value="">Firm name: Descending</option>
+          </select>
+        </div>
       </div>
 
-      <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--9 sba-u-padding-x--2 sba-u-lg-padding-left--6">
-        <div class="sba-u-display--flex sba-u-justify-content--between">
-          <h2 class="sba-u-font-size--h3">Showing 3 requirements</h2>
-          <div>
-            <label for="sort" class="sba-u-visibility--screen-reader">Sort by</label>
-            <select name="" id="sort">
-              <option value="">Sort by…</option>
-              <option value="">Relevance</option>
-              <option value="">Next action due: Earliest</option>
-              <option value="">Next action due: Latest</option>
-              <option value="">Firm name: Ascending</option>
-              <option value="">Firm name: Descending</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="sba-c-facet-pills sba-u-margin-bottom--3">
-          <span class="sba-c-facet-pill">
-            Screening
-            <button class="sba-c-facet-pill__close-button" title="Close">X</button>
-          </span>
-          <span class="sba-c-facet-pill">
-            Preponderance
-            <button class="sba-c-facet-pill__close-button" title="Close">X</button>
-          </span>
-        </div>
+      <div class="sba-c-facet-pills sba-u-margin-bottom--3">
+        <span class="sba-c-facet-pill">
+          Screening
+          <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+        </span>
+        <span class="sba-c-facet-pill">
+          Preponderance
+          <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+        </span>
+      </div>
 
 
-        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
-          <div class="sba-c-container sba-u-padding-x--2">
-            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
-              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
-                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Alchemy Science Corp</a></h3>
-              </div>
-
-              <div class="sba-l-row">
-                <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Agency: Sample Agency Name <span class="sba-u-separator--1">•</span> DUNS: 951753456  <span class="sba-u-separator--1">•</span> NAICS Number: 9560004587225 <span class="sba-u-separator--1">•</span> Type: Sole-Source <span class="sba-u-separator--1">•</span>Code: Offer Incomplete </p>
-                </div>
-              </div>
-
+      <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+        <div class="sba-c-container sba-u-padding-x--2">
+          <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+            <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+              <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Alchemy Science Corp</a></h3>
             </div>
+
+            <div class="sba-l-row">
+              <div class="sba-l-col--12">
+                <p class="sba-u-margin--0 sba-u-color--muted">Agency: Sample Agency Name <span class="sba-u-separator--1">•</span> DUNS: 951753456  <span class="sba-u-separator--1">•</span> NAICS Number: 9560004587225 <span class="sba-u-separator--1">•</span> Type: Sole-Source <span class="sba-u-separator--1">•</span>Code: Offer Incomplete </p>
+              </div>
+            </div>
+
           </div>
         </div>
-
-        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
-         <div class="sba-c-container sba-u-padding-x--2">
-           <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
-             <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
-                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Barthold SimTech</a></h3>
-             </div>
-
-             <div class="sba-l-row">
-                <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Agency: Sample Agency Name <span class="sba-u-separator--1">•</span> DUNS: 258741380  <span class="sba-u-separator--1">•</span> NAICS Number: 9560004587225 <span class="sba-u-separator--1">•</span> Type: Sole-Source <span class="sba-u-separator--1">•</span>Code: Offer Incomplete </p>
-                </div>
-             </div>
-
-           </div>
-         </div>
-        </div>
-
-        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
-         <div class="sba-c-container sba-u-padding-x--2">
-           <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
-
-             <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
-                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Bellview-Amerston, LLC</a>
-                </h3>
-             </div>
-
-             <div class="sba-l-row">
-                <div class="sba-l-col--12">
-                  <p class="sba-u-margin--0 sba-u-color--muted">Agency: Sample Agency Name <span class="sba-u-separator--1">•</span> DUNS: 345698720  <span class="sba-u-separator--1">•</span> NAICS Number: 9560004587225 <span class="sba-u-separator--1">•</span> Type: Sole-Source <span class="sba-u-separator--1">•</span>Code: Offer Incomplete </p>
-                </div>
-             </div>
-
-           </div>
-         </div>
-        </div>
-
-
-
-
-
-
-
-
-
-        </div>
       </div>
+
+      <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+       <div class="sba-c-container sba-u-padding-x--2">
+         <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+           <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+              <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Barthold SimTech</a></h3>
+           </div>
+
+           <div class="sba-l-row">
+              <div class="sba-l-col--12">
+                <p class="sba-u-margin--0 sba-u-color--muted">Agency: Sample Agency Name <span class="sba-u-separator--1">•</span> DUNS: 258741380  <span class="sba-u-separator--1">•</span> NAICS Number: 9560004587225 <span class="sba-u-separator--1">•</span> Type: Sole-Source <span class="sba-u-separator--1">•</span>Code: Offer Incomplete </p>
+              </div>
+           </div>
+
+         </div>
+       </div>
+      </div>
+
+      <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+       <div class="sba-c-container sba-u-padding-x--2">
+         <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+
+           <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+              <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Bellview-Amerston, LLC</a>
+              </h3>
+           </div>
+           <div class="sba-l-row">
+              <div class="sba-l-col--12">
+                <p class="sba-u-margin--0 sba-u-color--muted">Agency: Sample Agency Name <span class="sba-u-separator--1">•</span> DUNS: 345698720  <span class="sba-u-separator--1">•</span> NAICS Number: 9560004587225 <span class="sba-u-separator--1">•</span> Type: Sole-Source <span class="sba-u-separator--1">•</span>Code: Offer Incomplete </p>
+              </div>
+           </div>
+         </div>
+       </div>
+      </div>
+    </div>
   </div>
-
-
-
 </div>
