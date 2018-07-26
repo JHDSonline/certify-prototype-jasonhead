@@ -27,51 +27,37 @@ hide_tabs: true
         <h2 class="sba-u-font-size--h3">Filter Cases</h2>
 
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
-          <legend class="sba-c-facet-set__legend">Case type</legend>
-          <ul class="sba-c-unstyled-list">
-            <li>
-              <input class="sba-c-checkbox" id="cs1" type="checkbox" name="cs">
-              <label class="sba-c-label" for="cs1">Individually owned</label>
-            </li>
-            <li>
-              <input class="sba-c-checkbox" id="cs2" type="checkbox" name="cs">
-              <label class="sba-c-label" for="cs2">Entity owned</label>
-            </li>
-            <li>
-              <input class="sba-c-checkbox" id="cs3" type="checkbox" name="cs">
-              <label class="sba-c-label" for="cs3">Preponderance</label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
           <legend class="sba-c-facet-set__legend">Activity</legend>
           <ul class="sba-c-unstyled-list">
             <li>
-              <input class="sba-c-checkbox" id="a1" type="checkbox" name="cs">
+              <input class="sba-c-checkbox" id="a1" type="checkbox" name="activities">
               <label class="sba-c-label" for="a1">Awaiting firm response</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="a2" type="checkbox" name="cs">
+              <input class="sba-c-checkbox" id="a2" type="checkbox" name="activities">
               <label class="sba-c-label" for="a2">Firm has responded</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="a2" type="checkbox" name="cs">
-              <label class="sba-c-label" for="a2">Unread messages</label>
+              <input class="sba-c-checkbox" id="a3" type="checkbox" name="activities">
+              <label class="sba-c-label" for="a3">Unread messages</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs" data-filter-role="supervisor">
           <legend class="sba-c-facet-set__legend">Application status</legend>
           <ul class="sba-c-unstyled-list">
             <li>
-              <input class="sba-c-checkbox" id="rt1" type="checkbox" name="cs">
-              <label class="sba-c-label" for="rt1">Screening</label>
+              <input class="sba-c-checkbox" id="rt1" type="checkbox" name="status">
+              <label class="sba-c-label" for="rt1">Not submitted</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="rt2" type="checkbox" name="cs">
-              <label class="sba-c-label" for="rt2">Processing</label>
+              <input class="sba-c-checkbox" id="rt2" type="checkbox" name="status">
+              <label class="sba-c-label" for="rt2">Screening</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="rt3" type="checkbox" name="status">
+              <label class="sba-c-label" for="rt3">Processing</label>
             </li>
           </ul>
         </fieldset>
@@ -88,6 +74,8 @@ hide_tabs: true
             <select name="" id="sort">
               <option value="">Sort by…</option>
               <option value="">Relevance</option>
+              <option value="">Anniversary date: Earliest</option>
+              <option value="">Anniversary date: Latest</option>
               <option value="">Next action due: Earliest</option>
               <option value="">Next action due: Latest</option>
               <option value="">Firm name: Ascending</option>
@@ -114,7 +102,7 @@ hide_tabs: true
               <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
                 <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Mobo Tires, LLC</a></h3>
                 <p class="sba-u-color--muted sba-u-margin--0">2017 Annual Review (Screening)</p>
-                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong>5 days ago - <span class="sba-u-color--error">You requested info from the firm</span></strong></p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">5 days ago</span> - <span class="sba-u-color--error">You requested info from the firm</span></strong></p>
               </div>
               <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
                 <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
@@ -187,26 +175,23 @@ hide_tabs: true
                   </li>
                 </ol>
               </div>
-              <div class="sba-l-row">
-                <div class="sba-l-col--3">
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Type</h4>
-                  <p class="sba-u-margin--0">Entity-owned</p>
-                </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Program year</h4>
-                  <p class="sba-u-margin--0">3</p>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Anniversary date</h4>
+                  <p class="sba-u-margin--0">4/29/18</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -287,26 +272,23 @@ hide_tabs: true
                   </li>
                 </ol>
               </div>
-              <div class="sba-l-row">
-                <div class="sba-l-col--3">
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Type</h4>
-                  <p class="sba-u-margin--0">Individually owned</p>
-                </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Program year</h4>
-                  <p class="sba-u-margin--0">3</p>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Anniversary date</h4>
+                  <p class="sba-u-margin--0">4/29/18</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -386,26 +368,23 @@ hide_tabs: true
                   </li>
                 </ol>
               </div>
-              <div class="sba-l-row">
-                <div class="sba-l-col--3">
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Type</h4>
-                  <p class="sba-u-margin--0">Individually owned</p>
-                </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Program year</h4>
-                  <p class="sba-u-margin--0">3</p>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Anniversary date</h4>
+                  <p class="sba-u-margin--0">4/29/18</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -417,7 +396,7 @@ hide_tabs: true
               <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
                 <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Affiliated Labs, LLC</a></h3>
                 <p class="sba-u-color--muted sba-u-margin--0">2017 Annual Review (Screening)</p>
-                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong>3 days ago - <span class="sba-u-color--success">Firm updated application</span></strong></p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">3 days ago</span> - <span class="sba-u-color--success">Firm updated application</span></strong></p>
               </div>
               <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
                 <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
@@ -486,26 +465,23 @@ hide_tabs: true
                   </li>
                 </ol>
               </div>
-              <div class="sba-l-row">
-                <div class="sba-l-col--3">
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Type</h4>
-                  <p class="sba-u-margin--0">Entity-owned</p>
-                </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Program year</h4>
-                  <p class="sba-u-margin--0">3</p>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Anniversary date</h4>
+                  <p class="sba-u-margin--0">4/29/18</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -518,7 +494,7 @@ hide_tabs: true
               <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
                 <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Flickstream</a></h3>
                 <p class="sba-u-color--muted sba-u-margin--0">2017 Annual Review (Screening)</p>
-                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong>1 day ago - <span class="sba-u-color--error">You requested info from the firm</span></strong></p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">1 day ago</span> - <span class="sba-u-color--error">You requested info from the firm</span></strong></p>
               </div>
               <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
                 <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
@@ -591,26 +567,23 @@ hide_tabs: true
                   </li>
                 </ol>
               </div>
-              <div class="sba-l-row">
-                <div class="sba-l-col--3">
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Type</h4>
-                  <p class="sba-u-margin--0">Entity-owned</p>
-                </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Program year</h4>
-                  <p class="sba-u-margin--0">3</p>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Anniversary date</h4>
+                  <p class="sba-u-margin--0">4/29/18</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -691,26 +664,22 @@ hide_tabs: true
                   </li>
                 </ol>
               </div>
-              <div class="sba-l-row">
-                <div class="sba-l-col--3">
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Type</h4>
-                  <p class="sba-u-margin--0">Entity-owned</p>
-                </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Program year</h4>
-                  <p class="sba-u-margin--0">3</p>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Anniversary date</h4>
+                  <p class="sba-u-margin--0">4/29/18</p>
                 </div>
-              </div>
+              </div><p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -791,26 +760,23 @@ hide_tabs: true
                   </li>
                 </ol>
               </div>
-              <div class="sba-l-row">
-                <div class="sba-l-col--3">
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Type</h4>
-                  <p class="sba-u-margin--0">Entity-owned</p>
-                </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Program year</h4>
-                  <p class="sba-u-margin--0">3</p>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Anniversary date</h4>
+                  <p class="sba-u-margin--0">4/29/18</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -892,26 +858,23 @@ hide_tabs: true
                   </li>
                 </ol>
               </div>
-              <div class="sba-l-row">
-                <div class="sba-l-col--3">
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Type</h4>
-                  <p class="sba-u-margin--0">Entity-owned</p>
-                </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Program year</h4>
-                  <p class="sba-u-margin--0">3</p>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Anniversary date</h4>
+                  <p class="sba-u-margin--0">4/29/18</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -992,26 +955,120 @@ hide_tabs: true
                   </li>
                 </ol>
               </div>
-              <div class="sba-l-row">
-                <div class="sba-l-col--3">
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Type</h4>
-                  <p class="sba-u-margin--0">Entity-owned</p>
-                </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Program year</h4>
-                  <p class="sba-u-margin--0">3</p>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Anniversary date</h4>
+                  <p class="sba-u-margin--0">4/29/18</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Mandible</a></h3>
+                <p class="sba-u-color--muted sba-u-margin--0">2017 Annual Review (Not submitted)</p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span class="sba-u-color--error">Annual review 4 days late from firm</span></strong></p>
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                      </svg> 0
+                    </span>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> 24 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand12a">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand12a" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">Referred by</h4>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Anniversary date</h4>
+                  <p class="sba-u-margin--0">4/29/18</p>
+                </div>
+              </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -1097,26 +1154,23 @@ hide_tabs: true
                   </li>
                 </ol>
               </div>
-              <div class="sba-l-row">
-                <div class="sba-l-col--3">
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Type</h4>
-                  <p class="sba-u-margin--0">Entity-owned</p>
-                </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Program year</h4>
-                  <p class="sba-u-margin--0">3</p>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Anniversary date</h4>
+                  <p class="sba-u-margin--0">4/29/18</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
 
           </div>
@@ -1130,7 +1184,7 @@ hide_tabs: true
             <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
               <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
                 <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Block Vision Works</a></h3>
-                <p class="sba-u-color--muted sba-u-margin--0">2017 Annual Review (Anniversary date <strong>Jan. 13</strong>)</p>
+                <p class="sba-u-color--muted sba-u-margin--0">2017 Annual Review (Not submitted)</p>
 
               </div>
               <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
@@ -1200,42 +1254,30 @@ hide_tabs: true
                   </li>
                 </ol>
               </div>
-              <div class="sba-l-row">
-                <div class="sba-l-col--3">
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Type</h4>
-                  <p class="sba-u-margin--0">Entity-owned</p>
-                </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
-                  <h4 class="sba-u-margin-bottom--0">Program year</h4>
-                  <p class="sba-u-margin--0">3</p>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Anniversary date</h4>
+                  <p class="sba-u-margin--0">4/29/18</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
-
           </div>
         </div>
-
-
-
-
-
-
-
-
         </div>
       </div>
   </div>
-
-
-
+</div>
+<div class="sba-u-border-top--1 sba-u-margin-top--4 sba-u-padding-top--3">
+  <p><a href="#">View all 8(a) cases</a></p>
 </div>

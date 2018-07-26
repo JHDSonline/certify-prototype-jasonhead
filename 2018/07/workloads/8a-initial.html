@@ -30,16 +30,16 @@ hide_tabs: true
           <legend class="sba-c-facet-set__legend">Case type</legend>
           <ul class="sba-c-unstyled-list">
             <li>
-              <input class="sba-c-checkbox" id="cs1" type="checkbox" name="cs">
-              <label class="sba-c-label" for="cs1">Individually owned</label>
+              <input class="sba-c-checkbox" id="type1" type="checkbox" name="type">
+              <label class="sba-c-label" for="type1">Individually owned</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="cs2" type="checkbox" name="cs">
-              <label class="sba-c-label" for="cs2">Entity owned</label>
+              <input class="sba-c-checkbox" id="type2" type="checkbox" name="type">
+              <label class="sba-c-label" for="type2">Entity owned</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="cs3" type="checkbox" name="cs">
-              <label class="sba-c-label" for="cs3">Preponderance</label>
+              <input class="sba-c-checkbox" id="type3" type="checkbox" name="type">
+              <label class="sba-c-label" for="type3">Preponderance</label>
             </li>
           </ul>
         </fieldset>
@@ -48,16 +48,16 @@ hide_tabs: true
           <legend class="sba-c-facet-set__legend">Activity</legend>
           <ul class="sba-c-unstyled-list">
             <li>
-              <input class="sba-c-checkbox" id="a1" type="checkbox" name="cs">
+              <input class="sba-c-checkbox" id="a1" type="checkbox" name="activities">
               <label class="sba-c-label" for="a1">Awaiting firm response</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="a2" type="checkbox" name="cs">
+              <input class="sba-c-checkbox" id="a2" type="checkbox" name="activities">
               <label class="sba-c-label" for="a2">Firm has responded</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="a2" type="checkbox" name="cs">
-              <label class="sba-c-label" for="a2">Unread messages</label>
+              <input class="sba-c-checkbox" id="a3" type="checkbox" name="activities">
+              <label class="sba-c-label" for="a3">Unread messages</label>
             </li>
           </ul>
         </fieldset>
@@ -66,12 +66,26 @@ hide_tabs: true
           <legend class="sba-c-facet-set__legend">Application status</legend>
           <ul class="sba-c-unstyled-list">
             <li>
-              <input class="sba-c-checkbox" id="rt1" type="checkbox" name="cs">
-              <label class="sba-c-label" for="rt1">Screening</label>
+              <input class="sba-c-checkbox" id="status_2" type="checkbox" name="status">
+              <label class="sba-c-label" for="status_2">Screening</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="rt2" type="checkbox" name="cs">
-              <label class="sba-c-label" for="rt2">Processing</label>
+              <input class="sba-c-checkbox" id="status_3" type="checkbox" name="status">
+              <label class="sba-c-label" for="status_3">Processing</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Recommendations</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+              <input class="sba-c-checkbox" id="recommendation_1" type="checkbox" name="recommendation">
+              <label class="sba-c-label" for="recommendation_1">Eligible</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="recommendation_2" type="checkbox" name="recommendation">
+              <label class="sba-c-label" for="recommendation_2">Ineligible</label>
             </li>
           </ul>
         </fieldset>
@@ -114,7 +128,7 @@ hide_tabs: true
               <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
                 <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Mobo Tires, LLC</a></h3>
                 <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Screening)</p>
-                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong>5 days ago - <span class="sba-u-color--error">You requested info from the firm</span></strong></p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">5 days ago</span> - <span class="sba-u-color--error">You requested info from the firm</span></strong></p>
               </div>
               <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
                 <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
@@ -188,25 +202,26 @@ hide_tabs: true
                 </ol>
               </div>
               <div class="sba-l-row">
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Type</h4>
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">District office</h4>
                   <p class="sba-u-margin--0">Baltimore</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -288,25 +303,26 @@ hide_tabs: true
                 </ol>
               </div>
               <div class="sba-l-row">
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Type</h4>
                   <p class="sba-u-margin--0">Individually owned</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">District office</h4>
                   <p class="sba-u-margin--0">Baltimore</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -387,25 +403,26 @@ hide_tabs: true
                 </ol>
               </div>
               <div class="sba-l-row">
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Type</h4>
                   <p class="sba-u-margin--0">Individually owned</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">District office</h4>
                   <p class="sba-u-margin--0">Baltimore</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -417,7 +434,7 @@ hide_tabs: true
               <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
                 <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Affiliated Labs, LLC</a></h3>
                 <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Screening)</p>
-                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong>3 days ago - <span class="sba-u-color--success">Firm updated application</span></strong></p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">3 days ago</span> - <span class="sba-u-color--success">Firm updated application</span></strong></p>
               </div>
               <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
                 <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
@@ -487,25 +504,26 @@ hide_tabs: true
                 </ol>
               </div>
               <div class="sba-l-row">
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Type</h4>
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">District office</h4>
                   <p class="sba-u-margin--0">Baltimore</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -518,7 +536,7 @@ hide_tabs: true
               <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
                 <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Flickstream</a></h3>
                 <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Screening)</p>
-                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong>1 day ago - <span class="sba-u-color--error">You requested info from the firm</span></strong></p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">1 day ago</span> - <span class="sba-u-color--error">You requested info from the firm</span></strong></p>
               </div>
               <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
                 <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
@@ -592,25 +610,26 @@ hide_tabs: true
                 </ol>
               </div>
               <div class="sba-l-row">
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Type</h4>
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">District office</h4>
                   <p class="sba-u-margin--0">Baltimore</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -692,25 +711,26 @@ hide_tabs: true
                 </ol>
               </div>
               <div class="sba-l-row">
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Type</h4>
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">District office</h4>
                   <p class="sba-u-margin--0">Baltimore</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -792,25 +812,26 @@ hide_tabs: true
                 </ol>
               </div>
               <div class="sba-l-row">
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Type</h4>
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">District office</h4>
                   <p class="sba-u-margin--0">Baltimore</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -893,25 +914,26 @@ hide_tabs: true
                 </ol>
               </div>
               <div class="sba-l-row">
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Type</h4>
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">District office</h4>
                   <p class="sba-u-margin--0">Baltimore</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -993,25 +1015,26 @@ hide_tabs: true
                 </ol>
               </div>
               <div class="sba-l-row">
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Type</h4>
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">District office</h4>
                   <p class="sba-u-margin--0">Baltimore</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -1098,25 +1121,26 @@ hide_tabs: true
                 </ol>
               </div>
               <div class="sba-l-row">
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
                   <p class="sba-u-margin--0">Bob Smith</p>
                   <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
                   <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">Type</h4>
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4  class="sba-u-margin-bottom--0">Referred by</h4>
-                  <p class="sba-u-margin--0">Ben Shuth</p>
+                  <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
-                <div class="sba-l-col--3">
+                <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
                   <h4 class="sba-u-margin-bottom--0">District office</h4>
                   <p class="sba-u-margin--0">Baltimore</p>
                 </div>
               </div>
+              <p><a href="#">View this firm’s profile</a></p>
             </div>
           </div>
         </div>
@@ -1129,4 +1153,8 @@ hide_tabs: true
 
 
 
+</div>
+
+<div class="sba-u-border-top--1 sba-u-margin-top--4 sba-u-padding-top--3">
+  <p><a href="#">View all 8(a) cases</a></p>
 </div>
