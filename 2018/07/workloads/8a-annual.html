@@ -48,21 +48,49 @@ hide_tabs: true
           <legend class="sba-c-facet-set__legend">Application status</legend>
           <ul class="sba-c-unstyled-list">
             <li>
+              <input class="sba-c-checkbox" id="rt0" type="checkbox" name="status">
+              <label class="sba-c-label" for="rt0">60 day notice</label>
+            </li>
+            <li>
               <input class="sba-c-checkbox" id="rt1" type="checkbox" name="status">
-              <label class="sba-c-label" for="rt1">Not submitted</label>
+              <label class="sba-c-label" for="rt1">30 day notice</label>
             </li>
             <li>
               <input class="sba-c-checkbox" id="rt2" type="checkbox" name="status">
-              <label class="sba-c-label" for="rt2">Screening</label>
+              <label class="sba-c-label" for="rt2">Firm past due</label>
             </li>
             <li>
               <input class="sba-c-checkbox" id="rt3" type="checkbox" name="status">
-              <label class="sba-c-label" for="rt3">Processing</label>
+              <label class="sba-c-label" for="rt3">Screening</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="rt4" type="checkbox" name="status">
+              <label class="sba-c-label" for="rt4">Processing</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="rt5" type="checkbox" name="status">
+              <label class="sba-c-label" for="rt5">Analysis past due</label>
             </li>
           </ul>
         </fieldset>
 
-
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Currently with</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+              <input class="sba-c-checkbox" id="cw_me" type="checkbox" name="currently_with">
+              <label class="sba-c-label" for="cw_me">Me</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cw_firm" type="checkbox" name="currently_with">
+              <label class="sba-c-label" for="cw_firm">Firm</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cw_another_office" type="checkbox" name="currently_with">
+              <label class="sba-c-label" for="cw_another_office">Another office</label>
+            </li>
+          </ul>
+        </fieldset>
 
       </form>
       </div>
