@@ -66,17 +66,47 @@ hide_tabs: true
           <legend class="sba-c-facet-set__legend">Application status</legend>
           <ul class="sba-c-unstyled-list">
             <li>
+              <input class="sba-c-checkbox" id="status_0" type="checkbox" name="status">
+              <label class="sba-c-label" for="status_0">New</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="status_1" type="checkbox" name="status">
+              <label class="sba-c-label" for="status_1">Screening</label>
+            </li>
+            <li>
               <input class="sba-c-checkbox" id="status_2" type="checkbox" name="status">
-              <label class="sba-c-label" for="status_2">Screening</label>
+              <label class="sba-c-label" for="status_2">Processing</label>
             </li>
             <li>
               <input class="sba-c-checkbox" id="status_3" type="checkbox" name="status">
-              <label class="sba-c-label" for="status_3">Processing</label>
+              <label class="sba-c-label" for="status_3">Reconsideration pending</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="status_4" type="checkbox" name="status">
+              <label class="sba-c-label" for="status_4">Appeal pending</label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Currently with</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+              <input class="sba-c-checkbox" id="cw_me" type="checkbox" name="currently_with">
+              <label class="sba-c-label" for="cw_me">Me</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cw_firm" type="checkbox" name="currently_with">
+              <label class="sba-c-label" for="cw_firm">Firm</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cw_another_office" type="checkbox" name="currently_with">
+              <label class="sba-c-label" for="cw_another_office">Another office</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs" data-filter-role="supervisor">
           <legend class="sba-c-facet-set__legend">Recommendations</legend>
           <ul class="sba-c-unstyled-list">
             <li>
@@ -106,6 +136,8 @@ hide_tabs: true
               <option value="">Next action due: Latest</option>
               <option value="">Firm name: Ascending</option>
               <option value="">Firm name: Descending</option>
+              <option value="">Oldest</option>
+              <option value="">Newest</option>
             </select>
           </div>
         </div>
@@ -213,7 +245,7 @@ hide_tabs: true
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
-                  <h4  class="sba-u-margin-bottom--0">Referred by</h4>
+                  <h4  class="sba-u-margin-bottom--0">Forwarded by</h4>
                   <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
@@ -314,7 +346,7 @@ hide_tabs: true
                   <p class="sba-u-margin--0">Individually owned</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
-                  <h4  class="sba-u-margin-bottom--0">Referred by</h4>
+                  <h4  class="sba-u-margin-bottom--0">Forwarded by</h4>
                   <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
@@ -414,7 +446,7 @@ hide_tabs: true
                   <p class="sba-u-margin--0">Individually owned</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
-                  <h4  class="sba-u-margin-bottom--0">Referred by</h4>
+                  <h4  class="sba-u-margin-bottom--0">Forwarded by</h4>
                   <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
@@ -515,7 +547,7 @@ hide_tabs: true
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
-                  <h4  class="sba-u-margin-bottom--0">Referred by</h4>
+                  <h4  class="sba-u-margin-bottom--0">Forwarded by</h4>
                   <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
@@ -621,7 +653,7 @@ hide_tabs: true
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
-                  <h4  class="sba-u-margin-bottom--0">Referred by</h4>
+                  <h4  class="sba-u-margin-bottom--0">Forwarded by</h4>
                   <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
@@ -722,7 +754,7 @@ hide_tabs: true
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
-                  <h4  class="sba-u-margin-bottom--0">Referred by</h4>
+                  <h4  class="sba-u-margin-bottom--0">Forwarded by</h4>
                   <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
@@ -823,7 +855,7 @@ hide_tabs: true
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
-                  <h4  class="sba-u-margin-bottom--0">Referred by</h4>
+                  <h4  class="sba-u-margin-bottom--0">Forwarded by</h4>
                   <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
@@ -925,7 +957,7 @@ hide_tabs: true
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
-                  <h4  class="sba-u-margin-bottom--0">Referred by</h4>
+                  <h4  class="sba-u-margin-bottom--0">Forwarded by</h4>
                   <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
@@ -1026,7 +1058,7 @@ hide_tabs: true
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
-                  <h4  class="sba-u-margin-bottom--0">Referred by</h4>
+                  <h4  class="sba-u-margin-bottom--0">Forwarded by</h4>
                   <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
@@ -1132,7 +1164,7 @@ hide_tabs: true
                   <p class="sba-u-margin--0">Entity-owned</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
-                  <h4  class="sba-u-margin-bottom--0">Referred by</h4>
+                  <h4  class="sba-u-margin-bottom--0">Forwarded by</h4>
                   <p class="sba-u-margin--0">Ben Shuth on 5/23/18</p>
                 </div>
                 <div class="sba-l-col--12 sba-l-sm-col--3 sba-u-padding-right--1">
