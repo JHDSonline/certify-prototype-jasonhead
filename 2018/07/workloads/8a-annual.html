@@ -47,33 +47,34 @@ hide_tabs: true
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
           <legend class="sba-c-facet-set__legend">Application status</legend>
           <ul class="sba-c-unstyled-list">
+            <!-- We need to see unsubmitted annual reviews coming up in 60,30,past due -->
             <li>
-              <input class="sba-c-checkbox" id="rt0" type="checkbox" name="status">
-              <label class="sba-c-label" for="rt0">60 day notice</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ar_screening" name="eight_a[ar_screening]" id="eight_a_ar_screening">
+              <label class="sba-c-label" for="eight_a_ar_screening">Screening</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="rt1" type="checkbox" name="status">
-              <label class="sba-c-label" for="rt1">30 day notice</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ar_returned_with_deficiency_letter" name="eight_a[ar_returned_with_deficiency_letter]" id="eight_a_ar_returned_with_deficiency_letter">
+              <label class="sba-c-label" for="eight_a_ar_returned_with_deficiency_letter">Returned with Deficiency Letter</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="rt2" type="checkbox" name="status">
-              <label class="sba-c-label" for="rt2">Firm past due</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ar_processing" name="eight_a[ar_processing]" id="eight_a_ar_processing">
+              <label class="sba-c-label" for="eight_a_ar_processing">Processing</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="rt3" type="checkbox" name="status">
-              <label class="sba-c-label" for="rt3">Screening</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ar_retained" name="eight_a[ar_retained]" id="eight_a_ar_retained">
+              <label class="sba-c-label" for="eight_a_ar_retained">Retained</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="rt4" type="checkbox" name="status">
-              <label class="sba-c-label" for="rt4">Processing</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ar_early_graduation_recommended" name="eight_a[ar_early_graduation_recommended]" id="eight_a_ar_early_graduation_recommended">
+              <label class="sba-c-label" for="eight_a_ar_early_graduation_recommended">Early Graduation Recommended</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="rt5" type="checkbox" name="status">
-              <label class="sba-c-label" for="rt5">Analysis past due</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ar_termination_recommended" name="eight_a[ar_termination_recommended]" id="eight_a_ar_termination_recommended">
+              <label class="sba-c-label" for="eight_a_ar_termination_recommended">Termination Recommended</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="rt6" type="checkbox" name="status">
-              <label class="sba-c-label" for="rt6">Deficiency letter sent</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ar_voluntary_withdrawal_recommended" name="eight_a[ar_voluntary_withdrawal_recommended]" id="eight_a_ar_voluntary_withdrawal_recommended">
+              <label class="sba-c-label" for="eight_a_ar_voluntary_withdrawal_recommended">Voluntary Withdrawal Recommended</label>
             </li>
           </ul>
         </fieldset>

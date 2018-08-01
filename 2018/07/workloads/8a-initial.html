@@ -64,30 +64,50 @@ hide_tabs: true
 
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
           <legend class="sba-c-facet-set__legend">Application status</legend>
-          <ul class="sba-c-unstyled-list">
+          <ul class="sba-c-unstyled-list check-pill">
             <li>
-              <input class="sba-c-checkbox" id="status_0" type="checkbox" name="status">
-              <label class="sba-c-label" for="status_0">New</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ia_appeal_intent" name="eight_a[ia_appeal_intent]" id="eight_a_ia_appeal_intent">
+              <label class="sba-c-label" for="eight_a_ia_appeal_intent">Intent to Appeal</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="status_1" type="checkbox" name="status">
-              <label class="sba-c-label" for="status_1">Screening</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ia_screening" name="eight_a[ia_screening]" id="eight_a_ia_screening">
+              <label class="sba-c-label" for="eight_a_ia_screening">Screening</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="status_2" type="checkbox" name="status">
-              <label class="sba-c-label" for="status_2">15 day letter</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ia_returned_with_15_day_letter" name="eight_a[ia_returned_with_15_day_letter]" id="eight_a_ia_returned_with_15_day_letter">
+              <label class="sba-c-label" for="eight_a_ia_returned_with_15_day_letter">Returned with 15 Day Letter</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="status_3" type="checkbox" name="status">
-              <label class="sba-c-label" for="status_3">Processing</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ia_closed" name="eight_a[ia_closed]" id="eight_a_ia_closed">
+              <label class="sba-c-label" for="eight_a_ia_closed">Closed</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="status_4" type="checkbox" name="status">
-              <label class="sba-c-label" for="status_4">Reconsideration pending</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ia_processing" name="eight_a[ia_processing]" id="eight_a_ia_processing">
+              <label class="sba-c-label" for="eight_a_ia_processing">Processing</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" id="status_5" type="checkbox" name="status">
-              <label class="sba-c-label" for="status_5">Appeal pending</label>
+              <input class="sba-c-checkbox" type="checkbox" value="ia_sba_declined" name="eight_a[ia_sba_declined]" id="eight_a_ia_sba_declined">
+              <label class="sba-c-label" for="eight_a_ia_sba_declined">SBA Declined</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" type="checkbox" value="ia_pending_reconsideration" name="eight_a[ia_pending_reconsideration]" id="eight_a_ia_pending_reconsideration">
+              <label class="sba-c-label" for="eight_a_ia_pending_reconsideration">Pending Reconsideration</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" type="checkbox" value="ia_pending_reconsideration_or_appeal" name="eight_a[ia_pending_reconsideration_or_appeal]" id="eight_a_ia_pending_reconsideration_or_appeal">
+              <label class="sba-c-label" for="eight_a_ia_pending_reconsideration_or_appeal">Pending Reconsideration or Appeal</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" type="checkbox" value="ia_reconsideration" name="eight_a[ia_reconsideration]" id="eight_a_ia_reconsideration">
+              <label class="sba-c-label" for="eight_a_ia_reconsideration">Reconsideration</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" type="checkbox" value="ia_appeal" name="eight_a[ia_appeal]" id="eight_a_ia_appeal">
+              <label class="sba-c-label" for="eight_a_ia_appeal">Appeal</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" type="checkbox" value="ia_sba_approved" name="eight_a[ia_sba_approved]" id="eight_a_ia_sba_approved">
+              <label class="sba-c-label" for="eight_a_ia_sba_approved">SBA Approved</label>
             </li>
           </ul>
         </fieldset>
@@ -111,7 +131,7 @@ hide_tabs: true
         </fieldset>
 
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs" data-filter-role="supervisor">
-          <legend class="sba-c-facet-set__legend">Recommendations</legend>
+          <legend class="sba-c-facet-set__legend">Last recommendation</legend>
           <ul class="sba-c-unstyled-list">
             <li>
               <input class="sba-c-checkbox" id="recommendation_1" type="checkbox" name="recommendation">
@@ -901,12 +921,14 @@ hide_tabs: true
                 <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
                   <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
                   </div>
-                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1"><a href="#">
-                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
-                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
-                      </svg> 0
-                    </span>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 0
+                      </span>
+                    </a>
                   </div>
                   <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
                     <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
@@ -1002,12 +1024,14 @@ hide_tabs: true
                 <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
                   <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
                   </div>
-                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1"><a href="#">
-                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
-                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
-                      </svg> 0
-                    </span>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 0
+                      </span>
+                    </a>
                   </div>
                   <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
                     <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
