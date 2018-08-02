@@ -1,0 +1,80 @@
+{% for firm in site.data.all-cases-cards %}
+  <div class="sba-c-card" id="card_{{ forloop.index }}">
+    <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--8 sba-u-padding-x--2 sba-u-padding-y--2">
+        <h2 class="sba-u-margin--0 sba-u-font-size--h3"><a href="#">{{ firm.name }}</a></h2>
+        <p class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-color--muted">{{ firm.application }} ({{ firm.application_status }})</p>
+        <div class="sba-l-row">
+          {% if firm.due_date %}
+            <div class="sba-l-col--6">
+              <p class="sba-u-margin--0 sba-u-font-size--small">
+                <strong>Due date:</strong>
+                <span class="sba-u-color--gray">{{ firm.due_date }}</span>
+              </p>
+            </div>
+          {% endif %}
+          {% if firm.case_owner %}
+            <div class="sba-l-col--6">
+              <p class="sba-u-margin--0 sba-u-font-size--small">
+                <strong>Case owner:</strong>
+                <span class="sba-u-color--gray">{{ firm.case_owner }}</span>
+              </p>
+            </div>
+          {% endif %}
+          {% if firm.submission_date %}
+            <div class="sba-l-col--6">
+              <p class="sba-u-margin--0 sba-u-font-size--small">
+                <strong>Submission date:</strong>
+                <span class="sba-u-color--gray">{{ firm.submission_date }}</span>
+              </p>
+            </div>
+          {% endif %}
+          {% if firm.currently_with %}
+            <div class="sba-l-col--6">
+              <p class="sba-u-margin--0 sba-u-font-size--small">
+                <strong>Currently with:</strong>
+                <span class="sba-u-color--gray">{{ firm.currently_with }}</span>
+                </p>
+            </div>
+          {% endif %}
+        </div>
+    </div>
+    <div class="sba-l-sm-col--12 sba-l-md-col--golden-sm sba-l-lg-col--4 sba-u-padding-x--2 sba-u-padding-y--2 sba-u-lg-padding-left--2 sba-u-border-left--1">
+        {% if firm.anniversary_date %}
+          <p class="sba-u-margin--0 sba-u-font-size--small">
+            <strong>Anniversary date:</strong>
+            <span class="sba-u-color--gray">{{ firm.anniversary_date }}</span>
+          </p>
+        {% endif %}
+        {% if firm.certificate_status %}
+          <p class="sba-u-margin--0 sba-u-font-size--small">
+            <strong>Certificate status:</strong>
+            <span class="sba-u-color--gray">{{ firm.certificate_status }}</span>
+          </p>
+        {% endif %}
+        {% if firm.district_office %}
+          <p class="sba-u-margin--0 sba-u-font-size--small">
+            <strong>District Office:</strong>
+            <span class="sba-u-color--gray">{{ firm.district_office }}</span>
+          </p>
+        {% endif %}
+        {% if firm.program_start_date %}
+          <p class="sba-u-margin--0 sba-u-font-size--small">
+            <strong>Program start date:</strong>
+            <span class="sba-u-color--gray">{{ firm.program_start_date }}</span>
+          </p>
+        {% endif %}
+        {% if firm.servicing_bos %}
+          <p class="sba-u-margin--0 sba-u-font-size--small">
+            <strong>Servicing BOS:</strong>
+            <span class="sba-u-color--gray">{{ firm.servicing_bos }}</span>
+          </p>
+        {% endif %}
+        {% if firm.participating_programs %}
+          <p class="sba-u-margin--0 sba-u-font-size--small">
+            <strong>Participating programs:</strong>
+            <span class="sba-u-color--gray">{{ firm.participating_programs }}</span>
+          </p>
+        {% endif %}
+    </div>
+  </div>
+{% endfor %}

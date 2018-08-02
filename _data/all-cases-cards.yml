@@ -1,0 +1,67 @@
+- name: Mike’s Garage
+  anniversary_date: 05/12
+  application: Initital Application
+  application_status: Screening
+  case_owner: Billup Mollynardo
+  certificate_status: Pending
+  currently_with: Billup Mollynardo
+  district_office: Boston
+  due_date: 12/02/18
+  participating_programs: 8(a), Economically Disadvantaged Women-Owned Small Business, Women-Owned Small Business
+  program_start_date: 05/12
+  servicing_bos: Jeff Alfredo
+  submission_date: 10/18/18
+
+- name: Fisk, LLC
+  anniversary_date: 03/17
+  application: Initital Application
+  application_status: Screening
+  case_owner: Fannie Mishandon
+  certificate_status: Pending
+  currently_with: Fannie Mishandon
+  district_office: Des Moines
+  due_date: 11/05/18
+  participating_programs: 8(a), HUBZone
+  servicing_bos: Sally Mchphereson
+  submission_date: 03/12/12
+
+- name: Distributed Computing System Solutions Provider, Inc.
+  anniversary_date: 03/12
+  application: Initital Application
+  application_status: SBA Approved
+  case_owner: Fannie Mishandon
+  certificate_status: Pending
+  currently_with: Fannie Mishandon
+  district_office: Des Moines
+  due_date: 11/05/18
+  participating_programs: 8(a), HUBZone
+  servicing_bos: Sally Mchphereson
+  submission_date: 03/12/12
+
+- name: Social Solutions International, Inc.
+  anniversary_date: 03/18
+  application: 2018 Annual Review
+  application_status: Processing
+  case_owner: Mitch Gladstone
+  certificate_status: Pending
+  currently_with: Trace Ellison
+  district_office: Seattle
+  due_date: 05/12/28
+  participating_programs: 8(a)
+  program_start_date: 03/12/18
+  servicing_bos: Sally Mchphereson
+  submission_date: 04/19/18
+
+- name: JSGoodToGo
+  anniversary_date: 03/12
+  application: 2018 Annual Review
+  application_status: Processing
+  case_owner: Mitch Gladstone
+  certificate_status: Early graduation
+  currently_with: Trace Ellison
+  district_office: Seattle
+  due_date: 05/12/28
+  participating_programs: 8(a)
+  program_start_date: 03/12/18
+  servicing_bos: Sally Mchphereson
+  submission_date: 04/19/18
