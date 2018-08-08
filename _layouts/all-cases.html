@@ -122,28 +122,54 @@
         </div>
 
         {% unless page.hide_tabs %}
-
-        <div class="certify-local-nav">
-          <div class="usa-grid-full">
-            <h2 class="certify-local-nav__heading">All cases</h2>
-            <ul class="usa-nav-primary usa-accordion">
-              <li>
-                <a class="usa-nav-link {% if page.local_nav_active contains "8a" %} current {% endif %}" href="8a-mvp.html">8(a)</a>
-              </li>
-              <!--
-              <li>
-                <a class="usa-nav-link" href="#">HUBZone</a>
-              </li>
-            -->
-              <li>
-                <a class="usa-nav-link {% if page.local_nav_active contains "mpp" %} current {% endif %}" href="mpp.html">MPP</a>
-              </li>
-              <li>
-                <a class="usa-nav-link {% if page.local_nav_active contains "wosb" %} current {% endif %}" href="wosb.html">WOSB</a>
-              </li>
-            </ul>
+          {% if page.requirement_tabs %}
+          <div class="certify-local-nav">
+            <div class="usa-grid-full">
+              <h2 class="certify-local-nav__heading">All cases</h2>
+              <ul class="usa-nav-primary usa-accordion">
+                <li>
+                  <a class="usa-nav-link {% if page.local_nav_active contains "general" %} current {% endif %}" href="#">General info</a>
+                </li>
+                <!--
+                <li>
+                  <a class="usa-nav-link" href="#">HUBZone</a>
+                </li>
+              -->
+                <li>
+                  <a class="usa-nav-link {% if page.local_nav_active contains "documents" %} current {% endif %}" href="#">Documents</a>
+                </li>
+                <li>
+                  <a class="usa-nav-link {% if page.local_nav_active contains "firms" %} current {% endif %}" href="#">Firms</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+
+          {% else %}
+          <div class="certify-local-nav">
+            <div class="usa-grid-full">
+              <h2 class="certify-local-nav__heading">All cases</h2>
+              <ul class="usa-nav-primary usa-accordion">
+                <li>
+                  <a class="usa-nav-link {% if page.local_nav_active contains "8a" %} current {% endif %}" href="8a-mvp.html">8(a)</a>
+                </li>
+                <!--
+                <li>
+                  <a class="usa-nav-link" href="#">HUBZone</a>
+                </li>
+              -->
+                <li>
+                  <a class="usa-nav-link {% if page.local_nav_active contains "mpp" %} current {% endif %}" href="mpp.html">MPP</a>
+                </li>
+                <li>
+                  <a class="usa-nav-link {% if page.local_nav_active contains "wosb" %} current {% endif %}" href="wosb.html">WOSB</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {% endif %}
+
+
 
         {% endunless %}
 
