@@ -1,0 +1,28 @@
+nav_items:
+  show_search: true
+  left_side:
+    - title: Dashboard
+      url: dashboard.html
+    - title: Management
+      url: manage.html
+    - title: Requirements
+      subfolderitems:
+        - page: New Requirement(s)
+          url: new-requirement.html
+        - page: All Requirements
+          url: all-requirements.html
+        - page: My Requirements
+          url: my-requirements.html
+  right_side:
+    - title: Admin
+      url: admin.html
+    - title: Notifications
+      url: javascript:void(0)
+    - title: My Account
+      subfolderitems:
+        - page: My Account
+          url: my-account.html
+        - page: Log Out
+          url: javascript:void(0);
+    - title: Help
+      url: help.html

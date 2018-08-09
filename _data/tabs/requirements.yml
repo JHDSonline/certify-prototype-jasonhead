@@ -1,0 +1,7 @@
+tabs:
+  - name: General Info
+    url: general-info.html
+  - name: Documents
+    url: documents.html
+  - name: Firms
+    url: firms.html

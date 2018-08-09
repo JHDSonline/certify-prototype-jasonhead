@@ -13,7 +13,7 @@
   {% else %}
     {% unless page.hide_case_masthead %}
       {% if page.new_sba_nav %}
-       {% include _analyst_masthead_new_full.html %}
+       {% include _masthead.html %}
       {% else %}
         {% include _analyst_masthead_full.html %}
       {% endif %}
@@ -37,7 +37,6 @@
   <div class="sba-l-container">
     <div class="sba-l-row">
       <div class="sba-l-col--12 sba-u-padding-x--2">
-
         <div class="certify-page-header">
           <div class="certify-page-header__primary">
             {% if page.back_link %}

@@ -1,0 +1,11 @@
+nav_items:
+  left_side:
+  right_side:
+    - title: My Account
+      subfolderitems:
+        - page: My Account
+          url: my-account.html
+        - page: Log Out
+          url: javascript:void(0);
+    - title: Help
+      url: help.html
