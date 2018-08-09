@@ -1,0 +1,61 @@
+{% for firm in site.data.all-requirements-cards %}
+  <div class="sba-c-card" id="card_{{ forloop.index }}">
+    <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--12 sba-u-padding-x--2 sba-u-padding-y--2">
+        <h2 class="sba-u-margin--0 sba-u-font-size--h3"><a href="#">{{ firm.name }}</a></h2>
+
+        <div class="sba-l-row">
+          {% if firm.requirement_id %}
+            <div class="sba-l-col--6">
+              <p class="sba-u-margin--0 sba-u-font-size--small">
+                <strong>Requirment ID:</strong>
+                <span class="sba-u-color--gray">{{ firm.requirement_id }}</span>
+              </p>
+            </div>
+          {% endif %}
+          {% if firm.naics %}
+            <div class="sba-l-col--6">
+              <p class="sba-u-margin--0 sba-u-font-size--small">
+                <strong>NAICS:</strong>
+                <span class="sba-u-color--gray">{{ firm.naics }}</span>
+              </p>
+            </div>
+          {% endif %}
+          {% if firm.agency %}
+            <div class="sba-l-col--6">
+              <p class="sba-u-margin--0 sba-u-font-size--small">
+                <strong>Agency:</strong>
+                <span class="sba-u-color--gray">{{ firm.agency }}</span>
+              </p>
+            </div>
+          {% endif %}
+          {% if firm.type %}
+            <div class="sba-l-col--6">
+              <p class="sba-u-margin--0 sba-u-font-size--small">
+                <strong>Type:</strong>
+                <span class="sba-u-color--gray">{{ firm.type }}</span>
+                </p>
+            </div>
+          {% endif %}
+
+          {% if firm.duns %}
+            <div class="sba-l-col--6">
+              <p class="sba-u-margin--0 sba-u-font-size--small">
+                <strong>DUNS:</strong>
+                <span class="sba-u-color--gray">{{ firm.duns }}</span>
+                </p>
+            </div>
+          {% endif %}
+
+          {% if firm.code %}
+            <div class="sba-l-col--6">
+              <p class="sba-u-margin--0 sba-u-font-size--small">
+                <strong>Code:</strong>
+                <span class="sba-u-color--gray">{{ firm.code }}</span>
+                </p>
+            </div>
+          {% endif %}
+        </div>
+    </div>
+
+  </div>
+{% endfor %}
