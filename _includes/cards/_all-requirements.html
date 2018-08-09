@@ -1,7 +1,7 @@
 {% for firm in site.data.all-requirements-cards %}
   <div class="sba-c-card" id="card_{{ forloop.index }}">
     <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--12 sba-u-padding-x--2 sba-u-padding-y--2">
-        <h2 class="sba-u-margin--0 sba-u-font-size--h3"><a href="#">{{ firm.name }}</a></h2>
+        <h2 class="sba-u-margin--0 sba-u-font-size--h3"><a href="#">{{ firm.title }}</a></h2>
 
         <div class="sba-l-row">
           {% if firm.requirement_id %}

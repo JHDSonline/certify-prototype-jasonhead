@@ -1,29 +1,29 @@
-- name: Mike’s Garage
-  agency:  Agency name
+- title: Sample title 1
+  agency:  Agency title
   duns: 1234567
   requirement_id: 987654321
   type: Sole-Source
   code: Offer Incomplete
   naics:  234876
 
-- name: Alchemy Science Corp
-  agency:  Agency name
+- title: Sample title B
+  agency:  Agency title
   duns: 1234567
   requirement_id: 987654321
   type: Sole-Source
   code: Offer Incomplete
   naics:  234876
 
-- name: Barthold SimTech
-  agency:  Agency name
+- title: Sample title
+  agency:  Agency title
   duns: 1234567
   requirement_id: 987654321
   type: Sole-Source
   code: Offer Incomplete
   naics:  234876
 
-- name: Bellview-Amerston, LLC
-  agency:  Agency name
+- title: Sample title 101
+  agency:  Agency title
   duns: 1234567
   requirement_id: 987654321
   type: Sole-Source
