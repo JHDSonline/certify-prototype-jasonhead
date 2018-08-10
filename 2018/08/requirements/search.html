@@ -27,12 +27,12 @@ search_requirements_link: search.html
   <div class="sba-l-row sba-u-margin-x--neg2">
     <div class="sba-l-sm-col--12 sba-l-md-col--golden-sm sba-l-lg-col--3 sba-u-padding-x--2">
       <form action="#" >
-        <h2 class="sba-u-font-size--h3">Filter Requirements</h2>
+        <h2 class="sba-u-font-size--h3">Filter requirements</h2>
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
-          <legend class="sba-c-facet-set__legend">Agency Info</legend>
+          <legend class="sba-c-facet-set__legend">Agency info</legend>
           <ul class="sba-c-unstyled-list">
             <li>
-               <label for="offices" class="sba-c-label">District Office</label>
+               <label for="offices" class="sba-c-label">District office</label>
                <select name="offices" id="offices">
                  <option value="">All offices</option>
                  <option value="Alabama">Alabama </option>
@@ -123,10 +123,10 @@ search_requirements_link: search.html
 <!--CONTRACT INFO -->
 
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
-          <legend class="sba-c-facet-set__legend">Contract Info</legend>
+          <legend class="sba-c-facet-set__legend">Contract info</legend>
           <ul class="sba-c-unstyled-list">
              <li>
-                <label for="contract_type" class="sba-c-label">Contract Type</label>
+                <label for="contract_type" class="sba-c-label">Contract type</label>
                 <select name="contract_type" id="contract_type">
                   <option value="">Select Contract Type</option>
                   <option value="Alabama">Sole Source </option>
@@ -143,15 +143,11 @@ search_requirements_link: search.html
 <!--FIRM INFO -->
 
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
-          <legend class="sba-c-facet-set__legend">Firm Info</legend>
+          <legend class="sba-c-facet-set__legend">Firm info</legend>
           <ul class="sba-c-unstyled-list">
             <li>
-             <label class="sba-c-label" for="naics">NAICS Code</label>
-              <select id="naics">
-               <option value="">Select one...</option>
-               <option value="code 1">Code 1</option>
-               <option value="code 1">Code 2</option>
-              </select>
+             <label class="sba-c-label" for="naics">NAICS code</label>
+              <input class="sba-c-input" type="text" id="naics">
             </li>
           </ul>
         </fieldset>
@@ -159,7 +155,7 @@ search_requirements_link: search.html
 <!--OFFER INFO -->
 
         <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
-          <legend class="sba-c-facet-set__legend">Offer Info</legend>
+          <legend class="sba-c-facet-set__legend">Offer info</legend>
           <ul class="sba-c-unstyled-list">
             <li>
               <label class="sba-c-label" for="code">Code</label>
@@ -207,57 +203,8 @@ search_requirements_link: search.html
         </span>
       </div>
 
+{% include cards/_all-requirements.html %}
 
-      <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
-        <div class="sba-c-container sba-u-padding-x--2">
-          <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
-            <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
-              <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Alchemy Science Corp</a></h3>
-            </div>
-
-            <div class="sba-l-row">
-              <div class="sba-l-col--12">
-                <p class="sba-u-margin--0 sba-u-color--muted">Agency: Sample Agency Name <span class="sba-u-separator--1">•</span> DUNS: 951753456  <span class="sba-u-separator--1">•</span> NAICS Number: 9560004587225 <span class="sba-u-separator--1">•</span> Type: Sole-Source <span class="sba-u-separator--1">•</span>Code: Offer Incomplete </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
-       <div class="sba-c-container sba-u-padding-x--2">
-         <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
-           <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
-              <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Barthold SimTech</a></h3>
-           </div>
-
-           <div class="sba-l-row">
-              <div class="sba-l-col--12">
-                <p class="sba-u-margin--0 sba-u-color--muted">Agency: Sample Agency Name <span class="sba-u-separator--1">•</span> DUNS: 258741380  <span class="sba-u-separator--1">•</span> NAICS Number: 9560004587225 <span class="sba-u-separator--1">•</span> Type: Sole-Source <span class="sba-u-separator--1">•</span>Code: Offer Incomplete </p>
-              </div>
-           </div>
-
-         </div>
-       </div>
-      </div>
-
-      <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
-       <div class="sba-c-container sba-u-padding-x--2">
-         <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
-
-           <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
-              <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Bellview-Amerston, LLC</a>
-              </h3>
-           </div>
-           <div class="sba-l-row">
-              <div class="sba-l-col--12">
-                <p class="sba-u-margin--0 sba-u-color--muted">Agency: Sample Agency Name <span class="sba-u-separator--1">•</span> DUNS: 345698720  <span class="sba-u-separator--1">•</span> NAICS Number: 9560004587225 <span class="sba-u-separator--1">•</span> Type: Sole-Source <span class="sba-u-separator--1">•</span>Code: Offer Incomplete </p>
-              </div>
-           </div>
-         </div>
-       </div>
-      </div>
     </div>
   </div>
 </div>

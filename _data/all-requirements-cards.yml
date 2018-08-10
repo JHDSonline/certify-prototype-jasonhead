@@ -1,0 +1,31 @@
+- title: Sample title 1
+  agency:  Agency title
+  duns: 1234567
+  requirement_id: 987654321
+  type: Sole-Source
+  code: Offer Incomplete
+  naics:  234876
+
+- title: Sample title B
+  agency:  Agency title
+  duns: 1234567
+  requirement_id: 987654321
+  type: Sole-Source
+  code: Offer Incomplete
+  naics:  234876
+
+- title: Sample title
+  agency:  Agency title
+  duns: 1234567
+  requirement_id: 987654321
+  type: Sole-Source
+  code: Offer Incomplete
+  naics:  234876
+
+- title: Sample title 101
+  agency:  Agency title
+  duns: 1234567
+  requirement_id: 987654321
+  type: Sole-Source
+  code: Offer Incomplete
+  naics:  234876

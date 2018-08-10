@@ -1,0 +1,87 @@
+---
+layout: all-cases
+
+# Page content
+application_name: 8(a) Requirements
+page_h1: Add Documents
+requirement_tabs: true
+local_nav_active: documents
+masthead_title: Requirements
+
+new_requirements_link: new.html
+search_requirements_link: search.html
+---
+
+<div class="sba-u-padding-x--2 sba-l-col--12">
+
+
+<!-- Documents -->
+<fieldset class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+  
+  <ul class="sba-c-unstyled-list">
+       <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+       <label for="type" class="sba-c-label">Document Type:</label>
+       <select name="type" id="type">
+         <option value="">Select Type</option>
+         <option value="Letter of Offer ">Letter of Offer </option>
+         <option value="TypSOWe ">SOW </option>
+         <option value="Acceptance ">Acceptance </option>
+         <option value="Other ">Other </option>
+       </select>
+       </li>
+       <li><br>
+            <div class="sba-c-doc-upload">
+                <!-- Primary heading content...visible stuff when closed -->
+                <div class="sba-c-doc-upload__primary-heading">
+                  <h3>Upload Document</h3>
+                  <p>Upload requirement documentation</p>
+                  <!-- Button to toggle the doc upload content -->
+                  <button class="sba-c-button sba-c-button--transparent sba-c-doc-upload__toggle" type="button" title="remove" aria-expanded="false" aria-controls="doc-upload1">upload file</button>
+                </div>
+                <!-- Primary contents of doc upload. Shown when expanded -->
+                <div id="doc-upload1" class="sba-c-doc-upload__content">
+                  <p>1) Attach a file</p>
+                  <div class="sba-c-doc-upload__file-input">
+                    <span>
+                      Drag file into this space or
+                      <label for="file-picker1">choose a file</label>
+                      <input type="file" id="file-picker1" accept=".pdf" />
+                    </span>
+                  </div>
+                  <label for="file-comment">2) Brief description (optional)</label>
+                  <input id="file-comment" type="text" class="sba-u-margin-bottom--3">
+                  <button class="sba-c-button" type="button" title="add-file">Upload file</button>
+                  <button class="sba-c-button sba-c-button--transparent" type="button" title="cancel" aria-controls="doc-upload1-cancel">Cancel</button>
+                </div>
+              </div>
+       </li>
+
+       <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
+       <label for="doc_comments" class="sba-c-label">Document Comments:</label>
+       <textarea class="sba-c-input" id="doc_comments"></textarea>
+       </li>
+
+
+  </ul>
+</fieldset>
+
+<!-- UPLOADED DOCUMENTS -->
+
+      <legend class="sba-c-facet-set__legend">Uploaded Documents</legend>
+      <form action="#">
+        <fieldset class="sba-c-fieldset sba-c-fieldset--inputs">
+          <p>
+            <label for="type" class="sba-c-label">Submitted documents list will autopopulate here</label>
+          </p>
+
+        </fieldset>
+      </form>
+
+
+
+
+
+
+
+  </div>
+</div>

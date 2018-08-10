@@ -3,8 +3,10 @@ layout: all-cases
 
 # Page content
 application_name: 8(a) Requirements
-page_h1: Requirements
-hide_tabs: true
+page_h1: Add Requirements
+requirement_tabs: true
+local_nav_active: general
+masthead_title: Requirement Title
 
 new_requirements_link: new.html
 search_requirements_link: search.html
@@ -17,16 +19,6 @@ search_requirements_link: search.html
   <form action="#">
     <fieldset class="sba-c-fieldset sba-c-fieldset--inputs">
       <ul class="sba-c-unstyled-list sba-l-row">
-        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-          <label class="sba-c-label" for="add_duns">DUNS:</label>
-          <input class="sba-c-input" type="text" id="add_duns">
-          <button class="sba-c-button sba-c-button--inverse" type="button">Enter DUNS</button>
-        </li>
-
-        <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-          <label class="sba-c-label" for="add_firm_name">Firm Name:</label>
-          <input class="sba-c-input" type="text" id="add_firm_name">
-        </li>
 
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
           <label class="sba-c-label" for="add_title">Title:</label>
@@ -44,41 +36,31 @@ search_requirements_link: search.html
         </li>
 
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-          <label class="sba-c-label" for="add_estimated_contract_value">Estimated Contract Value:</label>
+          <label class="sba-c-label" for="add_estimated_contract_value">Estimated contract value:</label>
           <input class="sba-c-input" type="text" id="add_estimated_contract_value">
         </li>
 
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-          <label class="sba-c-label" for="add_received_date">Received Date:</label>
+          <label class="sba-c-label" for="add_received_date">Received date:</label>
           <input type="text" id="add_received_date" class="sba-c-input js-calendar-picker js-format-as-date" />
         </li>
 
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-          <label class="sba-c-label" for="add_contract_value">Contract Value:</label>
+          <label class="sba-c-label" for="add_contract_value">Actual contract value:</label>
           <input type="text" id="add_contract_value" class="add_contract_value" />
         </li>
 
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-          <label class="sba-c-label" for="add_naics">NAICS Code:</label>
+          <label class="sba-c-label" for="add_naics">NAICS:</label>
           <input class="sba-c-input" type="text" id="add_naics">
-          <button class="sba-c-button sba-c-button--inverse" type="button">Enter NAICS Code</button>
+          <button class="sba-c-button sba-c-button--inverse" type="button">Add</button>
         </li>
 
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-          <label class="sba-c-label" for="add_size_standard">Size Standard:</label>
+          <label class="sba-c-label" for="add_size_standard">Size standard:</label>
           <input class="sba-c-input" type="text" id="add_size_standard">
         </li>
-      </ul>
-    </fieldset>
-</form>
 
-<!-- ACCEPT / TURN BACK -->
-
-<legend class="sba-c-facet-set__legend">Accept / Turn Back</legend>
-
-<form action="#">
-  <fieldset class="sba-c-fieldset sba-c-fieldset--inputs">
-   <ul class="sba-c-unstyled-list sba-l-row">
         <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
            <label for="code" class="sba-c-label">Code</label>
            <select name="code" id="code">
@@ -86,26 +68,27 @@ search_requirements_link: search.html
              <option value="Offer Incomplete">Offer Incomplete </option>
              <option value="Offer Not Suitable for 8(a) Program">Offer Not Suitable for 8(a) Program </option>
              <option value="Adverse Impact">Adverse Impact </option>
-             <option value="Solicitation Previousl Issued">Solicitation Previousl Issued </option>
+             <option value="Solicitation Previousl Issued">Solicitation Previously Issued </option>
              <option value="Offer Canceled or Withdrawn">Offer Canceled or Withdrawn </option>
              <option value="Offer Exeeds Threshold Amounts">Offer Exeeds Threshold Amounts </option>
              <option value="Offer Accepted">Offer Accepted </option>
              <option value="Void Duplicate">Void Duplicate </option>
             </select>
         </li>
-</ul>
-</fieldset>
+      </ul>
+    </fieldset>
 </form>
+
 
 <!-- OFFER DATA -->
 <form>
 
     <div class="sba-l-row">
       <fieldset class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-        <legend class="sba-c-facet-set__legend">Offer Data</legend>
+        <legend class="sba-c-facet-set__legend">Offer data</legend>
         <ul class="sba-c-unstyled-list">
            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-              <label class="sba-c-label" for="Solicitation_Number">Solicitation Number:</label>
+              <label class="sba-c-label" for="Solicitation_Number">Solicitation number:</label>
               <input class="sba-c-input" type="text" id="Solicitation_Number">
            </li>
            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
@@ -162,9 +145,9 @@ search_requirements_link: search.html
            </li>
 
            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-             <label for="agency_office" class="sba-c-label">Agency Office:</label>
+             <label for="agency_office" class="sba-c-label">Agency office:</label>
              <select name="agency_office" id="agency_office">
-               <option value="">Select Agency Office</option>
+               <option value="">Select Agency office</option>
                <option value=""> </option>
                <option value=""> </option>
                <option value="">  </option>
@@ -174,7 +157,7 @@ search_requirements_link: search.html
            </li>
           <li>
             <fieldset class="sba-u-margin-top--4">
-              <legend class="sba-u-font-size--base sba-u-font-weight--normal">SBA Program:</legend>
+              <legend class="sba-u-font-size--base sba-u-font-weight--normal">SBA program:</legend>
               <ul class="sba-c-unstyled-list">
                 <li>
                   <input class="sba-c-checkbox" id="8a" type="checkbox" name="sba_program">
@@ -192,11 +175,11 @@ search_requirements_link: search.html
             </fieldset>
           </li>
           <li>
-            <label class="sba-c-label sba-u-margin-top--0" for="recieved_date_input">Recieved Date:</label>
+            <label class="sba-c-label sba-u-margin-top--0" for="recieved_date_input">Recieved date:</label>
             <input type="text" id="recieved_date_input" class="sba-c-input" pattern="(0[1-9]|1[012]).(0[1-9]|1[0-9]|2[0-9]|3[01]).[0-9]{4}" required />
           </li>
           <li>
-            <label class="sba-c-label sba-u-margin-top--0" for="agency_comments">Comments:</label>
+            <label class="sba-c-label sba-u-margin-top--0" for="agency_comments">Agency comments:</label>
             <textarea class="sba-c-input" name="agency_comments" id="agency_comments"></textarea>
           </li>
 
@@ -206,18 +189,18 @@ search_requirements_link: search.html
 
 <!-- contract  officer info -->
 
-      <legend class="sba-c-facet-set__legend">Contracting Officer Information</legend>
+      <legend class="sba-c-facet-set__legend">Contracting officer information</legend>
 
       <form action="#">
         <fieldset class="sba-c-fieldset sba-c-fieldset--inputs">
           <div class="sba-l-row">
             <ul class="sba-c-unstyled-list sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
               <li>
-                <label class="sba-c-label" for="co_first_name">First Name:</label>
+                <label class="sba-c-label" for="co_first_name">First name:</label>
                 <input class="sba-c-input" type="text" id="co_first_name">
               </li>
               <li>
-                <label class="sba-c-label" for="co_last_name">Last Name:</label>
+                <label class="sba-c-label" for="co_last_name">Last name:</label>
                 <input class="sba-c-input" type="text" id="co_last_name">
               </li>
               <li>
@@ -254,7 +237,7 @@ search_requirements_link: search.html
                </select>
               </li>
               <li>
-                <label class="sba-c-label" for="co_zip">Zip:</label>
+                <label class="sba-c-label" for="co_zip">ZIP code:</label>
                 <input class="sba-c-input" type="text" id="co_zip">
               </li>
             </ul>
@@ -269,11 +252,11 @@ search_requirements_link: search.html
 
     <div class="sba-l-row">
       <fieldset class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-        <legend class="sba-c-facet-set__legend">Contract Information</legend>
+        <legend class="sba-c-facet-set__legend">Contract information</legend>
 
         <ul class="sba-c-unstyled-list">
            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-            <label for="add_contract_type" class="sba-c-label">Contract Type:</label>
+            <label for="add_contract_type" class="sba-c-label">Contract type:</label>
             <select name="add_contract_type" id="add_contract_type">
               <option value="">Select Type</option>
               <option value="Type 1">Type 1 </option>
@@ -286,15 +269,15 @@ search_requirements_link: search.html
 
            <li>
              <fieldset class="sba-u-margin-top--4">
-               <legend class="sba-u-font-size--base sba-u-font-weight--normal">Contract Status:</legend>
+               <legend class="sba-u-font-size--base sba-u-font-weight--normal">Contract status:</legend>
                <ul class="sba-c-unstyled-list">
                  <li>
                    <input class="sba-c-checkbox" id="cs_awarded" type="checkbox" name="cs">
                    <label class="sba-c-label sba-u-margin-top--0" for="cs_awarded">Awarded</label>
                  </li>
                  <li>
-                   <input class="sba-c-checkbox" id="cs_not_awarded" type="checkbox" name="cs">
-                   <label class="sba-c-label sba-u-margin-top--0" for="cs_not_awarded">Not Awarded</label>
+                   <input class="sba-c-checkbox" id="cs_not_awarded" type="checkbox" name="cs" checked>
+                   <label class="sba-c-label sba-u-margin-top--0" for="cs_not_awarded">Not awarded</label>
                  </li>
                </ul>
              </fieldset>
@@ -302,12 +285,12 @@ search_requirements_link: search.html
 
 
            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-            <label for="type" class="sba-c-label">Contract Number:</label>
+            <label for="type" class="sba-c-label">Contract number:</label>
             <input class="sba-c-input" type="text" id="add_contract_number">
            </li>
 
            <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-            <label for="contract_comments" class="sba-c-label">Comments:</label>
+            <label for="contract_comments" class="sba-c-label">Contract comments:</label>
             <textarea class="sba-c-input" name="contract_comments" id="contract_comments"></textarea>
            </li>
 
@@ -316,83 +299,18 @@ search_requirements_link: search.html
 
 <!-- ADITIONAL COMMENTS -->
       <fieldset class="sba-l-col--12 sba-l-sm-col--6">
-        <legend class="sba-c-facet-set__legend">Additional Comments</legend>
+        <legend class="sba-c-facet-set__legend">Additional comments</legend>
         <ul class="sba-c-unstyled-list">
              <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-             <label for="add_additional_comments" class="sba-c-label">Comments:</label>
+             <label for="add_additional_comments" class="sba-c-label">Additional comments:</label>
              <textarea class="sba-c-input" name=
              "add_additional_comments" id="add_additional_comments"></textarea>
             </li>
 
         </ul>
       </fieldset>
-
-<!-- Documents -->
-<fieldset class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-  <legend class="sba-c-facet-set__legend">Documents</legend>
-  <ul class="sba-c-unstyled-list">
-       <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-       <label for="type" class="sba-c-label">Document Type:</label>
-       <select name="type" id="type">
-         <option value="">Select Type</option>
-         <option value="Letter of Offer ">Letter of Offer </option>
-         <option value="TypSOWe ">SOW </option>
-         <option value="Acceptance ">Acceptance </option>
-         <option value="Other ">Other </option>
-       </select>
-       </li>
-       <li><br>
-            <div class="sba-c-doc-upload">
-                <!-- Primary heading content...visible stuff when closed -->
-                <div class="sba-c-doc-upload__primary-heading">
-                  <h3>Upload Document</h3>
-                  <p>Upload requirement documentation</p>
-                  <!-- Button to toggle the doc upload content -->
-                  <button class="sba-c-button sba-c-button--transparent sba-c-doc-upload__toggle" type="button" title="remove" aria-expanded="false" aria-controls="doc-upload1">upload file</button>
-                </div>
-                <!-- Primary contents of doc upload. Shown when expanded -->
-                <div id="doc-upload1" class="sba-c-doc-upload__content">
-                  <p>1) Attach a file</p>
-                  <div class="sba-c-doc-upload__file-input">
-                    <span>
-                      Drag file into this space or
-                      <label for="file-picker1">choose a file</label>
-                      <input type="file" id="file-picker1" accept=".pdf" />
-                    </span>
-                  </div>
-                  <label for="file-comment">2) Brief description (optional)</label>
-                  <input id="file-comment" type="text" class="sba-u-margin-bottom--3">
-                  <button class="sba-c-button" type="button" title="add-file">Upload file</button>
-                  <button class="sba-c-button sba-c-button--transparent" type="button" title="cancel" aria-controls="doc-upload1-cancel">Cancel</button>
-                </div>
-              </div>
-       </li>
-
-       <li class="sba-l-col--12 sba-l-sm-col--6 sba-u-sm-padding-right--2">
-       <label for="doc_comments" class="sba-c-label">Comments:</label>
-       <textarea class="sba-c-input" id="doc_comments"></textarea>
-       </li>
-
-
-  </ul>
-</fieldset>
-
-<!-- UPLOADED DOCUMENTS -->
-
-      <legend class="sba-c-facet-set__legend">Uploaded Documents</legend>
-      <form action="#">
-        <fieldset class="sba-c-fieldset sba-c-fieldset--inputs">
-          <p>
-            <label for="type" class="sba-c-label">Submitted documents list will autopopulate here</label>
-          </p>
-          <br>
-          <p><a href="4.html" class="usa-button">Add requirement</a> <a href="1.html">Start over</a></p>
-        </fieldset>
-      </form>
-
-
-
-
+      <br>
+      <p><a href="4.html" class="usa-button">Add requirement</a> <a href="1.html">Start over</a></p>
 
 
 
