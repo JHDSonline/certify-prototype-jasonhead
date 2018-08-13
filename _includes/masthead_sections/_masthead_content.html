@@ -16,15 +16,18 @@
   {% if item.additional_info %}
   <div class="sba-u-margin-y--1 sba-u-display--flex sba-u-flex-direction--column sba-u-md-flex-direction--row">
     {% for additional_item in item.additional_info %}
-      <div class="sba-u-padding-right--4 sba-u-display--flex">
-        <strong class="sba-u-margin-right--1">{{ additional_item.key }}:</strong> <span data-print="{{ additional_item.data_id }}">{{ additional_item.value }}</span>
-        {% if additional_item.editable %}
-        <a href="servicing-bos/1.html" title="Change" class="sba-u-margin-left--1">
-          <svg aria-hidden="true" class="sba-c-icon sba-c-icon--blue">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#edit"></use>
-            <span class="sba-u-visibility--screen-reader">Change</span>
-          </svg>
-        </a>
+      <div class="sba-u-padding-right--6 sba-u-display--flex sba-u-md-flex-direction--column">
+        <strong class="sba-u-margin-right--1">{{ additional_item.key }}:</strong>
+        <span class="sba-u-display--flex">
+          <span data-print="{{ additional_item.data_id }}">{{ additional_item.value }}</span>
+          {% if additional_item.editable %}
+          <a href="{{ additional_item.url }}" title="Change" class="sba-u-margin-left--1">
+            <svg aria-hidden="true" class="sba-c-icon sba-c-icon--blue">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#edit"></use>
+              <span class="sba-u-visibility--screen-reader">Change</span>
+            </svg>
+          </a>
+        </span>
         {% endif %}
       </div>
     {% endfor %}
