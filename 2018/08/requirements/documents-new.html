@@ -1,0 +1,95 @@
+---
+layout: all-cases
+
+# Page content
+application_name: 8(a) Requirements
+page_h1: Documents
+requirement_tabs: true
+local_nav_active: documents
+masthead_title: Requirements
+
+new_requirements_link: new.html
+search_requirements_link: search.html
+---
+
+<div class="sba-u-padding--2 sba-l-col--12 sba-l-md-col--4 sba-u-bgcolor--primary-alt-lightest sba-u-border--1 sba-u-margin-top--4">
+  <form action="#">
+    <h2 class="sba-u-margin--0 sba-u-font-size--h3">Add new documents</h2>
+    <ul class="sba-c-unstyled-list">
+      <li>
+        <label for="type" class="sba-c-label">Document Type:</label>
+        <select name="type" id="type" required>
+          <option value="">Select Type</option>
+          <option value="Letter of Offer ">Letter of Offer </option>
+          <option value="TypSOWe ">SOW </option>
+          <option value="Acceptance ">Acceptance </option>
+          <option value="Other ">Other </option>
+        </select>
+      </li>
+      <li>
+        <label for="file">Choose a file</label>
+        <input type="file" id="file" required />
+      </li>
+      <li>
+        <label for="doc_comments" class="sba-c-label">Document Comments:</label>
+        <textarea class="sba-c-textarea" id="doc_comments"></textarea>
+      </li>
+    </ul>
+    <button type="submit" class="sba-c-button">
+      <svg aria-hidden="true" class="sba-c-icon sba-u-margin-right--1">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#plus"></use>
+    </svg>Add document
+    </button>
+  </form>
+</div>
+<div class="sba-u-padding--2 sba-l-col--12 sba-l-md-col--8 sba-u-padding-left--6 sba-u-margin-top--4">
+  <h2 class="sba-u-margin--0 sba-u-font-size--h3">Attached documents</h2>
+  <p class="sba-u-color--muted" data-filter-docs="false">There are no documens attached to this requirement.</p>
+  <table class="sba-c-table sba-c-table--borderless" data-filter-docs="true">
+    <thead>
+      <tr>
+        <th scope="col">Document</th>
+        <th scope="col">Type</th>
+        <th scope="col">Comments</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" data-table-header="Document"><a href="#" data-print="file">Letter.pdf</a></th>
+        <td data-table-header="Type" data-print="type">Letter of Offer</td>
+        <td data-table-header="Comments" data-print="doc_comments"> Sed vitae dignissim sem. Ut vestibulum pellentesque sem non vestibulum. </td>
+        <td data-table-header="Actions">
+          <!-- DEVS: Does this need to be a form? -->
+          <button class="sba-c-button sba-c-button--icon-only sba-c-button--transparent sba-u-color--error-dark" type="button" data-tooltip-text="Remove document" id="remove">
+              <svg aria-hidden="true" class="sba-c-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#trash">
+          </button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage('?docs=true');
+        return false;
+      }
+    });
+    $('#remove').on('click', function(){
+      var confirmed = confirm('Are you sure you want to remove this document?');
+      if (confirmed) {
+        nextPage("?docs=false");
+      }
+    })
+  });
+</script>
