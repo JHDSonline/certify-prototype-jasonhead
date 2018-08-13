@@ -19,3 +19,43 @@ bundle exec cds-gh-pages
 ```
 
 Just adding as a test
+
+## Configuration
+
+Using Jekyll’s `data` feature, it is relatively easy to put together a basic page with `Front Matter`.
+
+### Mastheads
+
+The Masthead has three primary components:
+
+* The Top Navigation
+* The mid-section, which is the masthead type
+* The tabs
+
+To create a prototype, only the `top_nav` is required, which `masthead_type` and `tab_set` are optional. If you are using tabs on a page, then the `masthead_type` is required.
+
+The values of each of the `Front Matter` items refer directly to a file in the `_data` directory. You will want to look at the `.yml` content because the it might require fixed naming conventions for certain links in the prototype.
+
+You can create additional `.yml` files, but there are several common examples available already.
+
+* __top_nav:__ `firm`, `sba-analyst`, `sba-new-user`, `sba-supervisor`
+* __masthead_content:__ `all-cases`, `annual-review--sba`, `initial-application--sba`
+* __tabs:__ `all-cases`, `analyst-application`, `firm-application`, `requirements`
+
+#### Sample 8(a) Annual Review viewed by supervisor
+```
+layout: default
+
+top_nav: sba-supervisor
+masthead_type: annual-review--sba
+tab_set: analyst-application
+```
+
+#### Sample 8(a) Initial Application viewed by analyst
+```
+layout: default
+
+top_nav: sba-analyst
+masthead_type: intial-application--sba
+tab_set: analyst-application
+```
