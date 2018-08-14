@@ -2,6 +2,6 @@ tabs:
   - name: General Info
     url: general-info.html
   - name: Documents
-    url: documents.html
+    url: documents-new.html?documents=false
   - name: Firms
-    url: firms.html
+    url: firms-new.html?firms=false

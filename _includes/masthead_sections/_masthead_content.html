@@ -9,14 +9,16 @@
           {{ page.firm_name }}
         {% else %}{{ item.main_heading }}{% endif %}{% if item.link_main_heading %}</a>{% endif %}
         {% if item.secondary_heading %}
+          <span class="sba-u-font-weight--normal sba-u-color--gray">
           | {{ item.secondary_heading }}
+          </span>
         {% endif %}
     </h1>
   </div>
   {% if item.additional_info %}
   <div class="sba-u-margin-y--1 sba-u-display--flex sba-u-flex-direction--column sba-u-md-flex-direction--row">
     {% for additional_item in item.additional_info %}
-      <div class="sba-u-padding-right--6 sba-u-display--flex sba-u-md-flex-direction--column">
+      <div class="sba-u-padding-right--7 sba-u-display--flex sba-u-md-flex-direction--column">
         <strong class="sba-u-margin-right--1">{{ additional_item.key }}:</strong>
         <span class="sba-u-display--flex">
           <span data-print="{{ additional_item.data_id }}">{{ additional_item.value }}</span>

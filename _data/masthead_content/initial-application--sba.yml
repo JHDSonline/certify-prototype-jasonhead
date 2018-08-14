@@ -4,8 +4,6 @@
   additional_info:
     - key: Owner
       value: Mike Jones (703-555-1234)
-    - key: Program year
-      value: 3
     - key: District office
       value: Seattle
       editable: true
