@@ -1,0 +1,7 @@
+tabs:
+  - name: Overview
+    url: overview.html
+  - name: Documents
+    url: documents.html
+  - name: Messages
+    url: messages.html

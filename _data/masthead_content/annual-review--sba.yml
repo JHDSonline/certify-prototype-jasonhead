@@ -1,0 +1,23 @@
+- main_heading: Mike’s Garage
+  link_main_heading: true
+  secondary_heading: 8(a) 2017 Annual Review
+  additional_info:
+    - key: Owner
+      value: Mike Jones (703-555-1234)
+    - key: Program year
+      value: 3
+    - key: District office
+      value: Seattle
+      editable: true
+      data_id: district_office
+      url: district-office/1.html
+    - key: Servicing BOS
+      value: Allen Smith
+      editable: true
+      data_id: servicing_bos
+      url: servicing-bos/1.html
+    - key: Program end date
+      value: July 23, 2019
+      editable: true
+      data_id: program_end_date
+      url: change-program-date/1.html

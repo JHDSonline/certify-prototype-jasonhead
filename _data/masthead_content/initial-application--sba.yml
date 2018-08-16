@@ -1,0 +1,9 @@
+- main_heading: Mike’s Garage
+  link_main_heading: true
+  secondary_heading: 8(a) Initial Application
+  additional_info:
+    - key: Owner
+      value: Mike Jones (703-555-1234)
+    - key: District office
+      value: Seattle
+      editable: true

@@ -1,0 +1,15 @@
+tabs:
+  - name: Overview
+    url: overview.html
+  - name: Documents
+    subfolderitems:
+      - page: Firm Documents
+        url: firm-documents.html
+      - page: Analyst Documents
+        url: analyst-documents.html
+  - name: SBA Notes
+    url: sba-notes.html
+  - name: Messages
+    url: messages.html
+  - name: Activity Log
+    url: activity-log.html

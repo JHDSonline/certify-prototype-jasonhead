@@ -1,0 +1,71 @@
+{% assign top_nav = page.top_nav %}
+
+<div class="certify-global-nav">
+  <div class="usa-grid-full">
+    <div class="certify-global-nav__primary">
+      <a href="#" class="certify-logo__link">
+        <img class="certify-logo" alt="certify.SBA.gov logo" src="{{ relative }}assets/img/certify-sba-gov-logo_on-dark.png" />
+      </a>
+      <ul class="usa-nav-primary usa-accordion">
+        {% for item in site.data.top_nav.[top_nav].nav_items.left_side %}
+        <li class="{% if page.global_nav_active contains item.title %} current {% endif %}">
+          {% if item.subfolderitems %}
+          <button class="
+          usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="topnav-{{ item.title | remove: " " }}">
+            <span>{{ item.title }}</span>
+          </button>
+          <ul id="topnav-{{ item.title | remove: " " }}" class="usa-nav-submenu">
+            {% for link in item.subfolderitems %}
+            <li>
+              <a href="{{ link.url }}">{{ link.page }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <a class="usa-nav-link" href="{{ item.url }}">
+            <span>{{ item.title }}</span>
+          </a>
+          {% endif %}
+        </li>
+        {% endfor %}
+
+        {% if site.data.top_nav.[top_nav].nav_items.show_search %}
+        <li class="certify-case-search">
+          <form class="usa-search usa-search-small">
+            <div role="search">
+              <label class="usa-sr-only" for="search-field-small">Search small</label>
+              <input id="search-field-small" type="search" name="search">
+              <button type="submit">
+                <span class="usa-sr-only">Search</span>
+              </button>
+            </div>
+          </form>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+    <ul class="usa-nav-primary usa-accordion">
+      {% for item in site.data.top_nav.[top_nav].nav_items.right_side %}
+      <li class="{% if page.global_nav_active contains item.title %} current {% endif %}">
+        {% if item.subfolderitems %}
+        <button class="
+        usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="topnav-{{ item.title | remove: " " }}">
+          <span>{{ item.title }}</span>
+        </button>
+        <ul id="topnav-{{ item.title | remove: " " }}" class="usa-nav-submenu">
+          {% for link in item.subfolderitems %}
+          <li>
+            <a href="{{ link.url }}">{{ link.page }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <a class="usa-nav-link" href="{{ item.url }}">
+          <span>{{ item.title }}</span>
+        </a>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
