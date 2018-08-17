@@ -31,11 +31,11 @@ page_h1: Dashboard
           <ul class="sba-c-unstyled-list">
             <li>
               <input class="sba-c-checkbox" id="a1" type="checkbox" name="activities">
-              <label class="sba-c-label" for="a1">Awaiting firm response</label>
+              <label class="sba-c-label" for="a1">Awaiting corrections/documents</label>
             </li>
             <li>
               <input class="sba-c-checkbox" id="a2" type="checkbox" name="activities">
-              <label class="sba-c-label" for="a2">Firm has responded</label>
+              <label class="sba-c-label" for="a2">Corrections/documents provided</label>
             </li>
             <li>
               <input class="sba-c-checkbox" id="a3" type="checkbox" name="activities">
@@ -53,28 +53,16 @@ page_h1: Dashboard
               <label class="sba-c-label" for="eight_a_ar_screening">Screening</label>
             </li>
             <li>
-              <input class="sba-c-checkbox" type="checkbox" value="ar_returned_with_deficiency_letter" name="eight_a[ar_returned_with_deficiency_letter]" id="eight_a_ar_returned_with_deficiency_letter">
-              <label class="sba-c-label" for="eight_a_ar_returned_with_deficiency_letter">Returned with Deficiency Letter</label>
-            </li>
-            <li>
               <input class="sba-c-checkbox" type="checkbox" value="ar_processing" name="eight_a[ar_processing]" id="eight_a_ar_processing">
               <label class="sba-c-label" for="eight_a_ar_processing">Processing</label>
             </li>
             <li>
               <input class="sba-c-checkbox" type="checkbox" value="ar_retained" name="eight_a[ar_retained]" id="eight_a_ar_retained">
-              <label class="sba-c-label" for="eight_a_ar_retained">Retained</label>
+              <label class="sba-c-label" for="eight_a_ar_retained">Approval Recommendation</label>
             </li>
             <li>
               <input class="sba-c-checkbox" type="checkbox" value="ar_early_graduation_recommended" name="eight_a[ar_early_graduation_recommended]" id="eight_a_ar_early_graduation_recommended">
-              <label class="sba-c-label" for="eight_a_ar_early_graduation_recommended">Early Graduation Recommended</label>
-            </li>
-            <li>
-              <input class="sba-c-checkbox" type="checkbox" value="ar_termination_recommended" name="eight_a[ar_termination_recommended]" id="eight_a_ar_termination_recommended">
-              <label class="sba-c-label" for="eight_a_ar_termination_recommended">Termination Recommended</label>
-            </li>
-            <li>
-              <input class="sba-c-checkbox" type="checkbox" value="ar_voluntary_withdrawal_recommended" name="eight_a[ar_voluntary_withdrawal_recommended]" id="eight_a_ar_voluntary_withdrawal_recommended">
-              <label class="sba-c-label" for="eight_a_ar_voluntary_withdrawal_recommended">Voluntary Withdrawal Recommended</label>
+              <label class="sba-c-label" for="eight_a_ar_early_graduation_recommended">Decline Recommendation</label>
             </li>
           </ul>
         </fieldset>
@@ -92,7 +80,11 @@ page_h1: Dashboard
             </li>
             <li>
               <input class="sba-c-checkbox" id="cw_another_office" type="checkbox" name="currently_with">
-              <label class="sba-c-label" for="cw_another_office">Another office</label>
+              <label class="sba-c-label" for="cw_another_office">Legal</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cw_size" type="checkbox" name="currently_with">
+              <label class="sba-c-label" for="cw_size">Size</label>
             </li>
           </ul>
         </fieldset>
@@ -131,7 +123,7 @@ page_h1: Dashboard
               <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
                 <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Mobo Tires, LLC</a></h3>
                 <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Screening)</p>
-                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">5 days ago</span> - <span class="sba-u-color--error">You requested info from the firm</span></strong></p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">5 days ago</span> - <span class="sba-u-color--error">You requested documents from the firm</span></strong></p>
               </div>
               <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
                 <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
@@ -431,7 +423,7 @@ page_h1: Dashboard
               <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
                 <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Affiliated Labs, LLC</a></h3>
                 <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Screening)</p>
-                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">3 days ago</span> - <span class="sba-u-color--success">Firm updated application</span></strong></p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">3 days ago</span> - <span class="sba-u-color--success">Firm submitted corrections</span></strong></p>
               </div>
               <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
                 <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
@@ -531,7 +523,7 @@ page_h1: Dashboard
               <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
                 <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Flickstream</a></h3>
                 <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Screening)</p>
-                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">1 day ago</span> - <span class="sba-u-color--error">You requested info from the firm</span></strong></p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">1 day ago</span> - <span class="sba-u-color--error">You requested corrections from the firm</span></strong></p>
               </div>
               <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
                 <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
