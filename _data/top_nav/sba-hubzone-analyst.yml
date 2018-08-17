@@ -1,0 +1,16 @@
+nav_items:
+  show_search: true
+  left_side:
+    - title: Dashboard
+      url: dashboard.html
+  right_side:
+    - title: Notifications
+      url: javascript:void(0)
+    - title: My Account
+      subfolderitems:
+        - page: My Account
+          url: my-account.html
+        - page: Log Out
+          url: javascript:void(0);
+    - title: Help
+      url: help.html
