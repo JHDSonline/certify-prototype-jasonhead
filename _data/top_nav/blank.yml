@@ -1,0 +1,7 @@
+nav_items:
+  left_side:
+  right_side:
+    - title: Design System
+      url: https://ussba.github.io/certify-design-system-documentation
+    - title: View on GitHub
+      url: https://github.com/ussba/certify-prototype

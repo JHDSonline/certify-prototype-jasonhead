@@ -1,63 +1,23 @@
 ---
-layout: application
+layout: default
+top_nav: blank
+
+page_h1: Certify Prototypes
 ---
 
-
-<div class="usa-grid">
-  <div class="usa-grid-full">
-    <h1>Design System</h1>
-    <p><a href="https://ussba.github.io/certify-design-system-documentation/" class="sba-c-button">View the design system</a></p>
-    <br>
-    <h1>Prototypes</h1>
-    <p>Here is a list of all the prototypes included</p>
-    <ul>
-      <li><a href="{{ relative }}2017/05/APP-347">Access Requests</a></li>
-      <li><a href="{{ relative }}2017/05/DESIGN-59/">Log in / Sign up / Reset Password</a></li>
-      <li><a href="{{ relative }}2017/06/case_assignment/">Case Assignment</a></li>
-      <li>
-        <a href="{{ relative }}2017/06/full-initial-application/">Analyst Review Initial Application</a>
-        <ul>
-          <li><a href="{{ relative }}2017/06/full-initial-application/recommendation-nov1.html">Recommendation Flow for November Launch</a></li>
-          <li><a href="{{ relative }}2017/06/full-initial-application/determination-nov1.html">Determination Flow for November Launch</a></li>
-        </ul>
-      </li>
-      <li><a href="{{ relative }}2017/08/firm">Initial Application Firm Experience</a></li>
-      <li><a href="{{ relative }}2017/10/landing">Landing page with new login buttons</a></li>
-      <li><a href="{{ relative }}2017/11/supervisor-dashboard">Supervisor Dashboard</a></li>
-      <li><a href="{{ relative }}2017/12/annual-review">Annual Reivew</a></li>
-      <li><a href="{{ relative }}2018/01/manage-contributors">Manage Contributors</a></li>
-      <li><a href="{{ relative }}2018/02/mail-ins">Mail ins</a></li>
-      <li><a href="{{ relative }}2018/04/servicing-bos">New header, servicing BOS</a></li>
-      <li><a href="{{ relative }}2018/04/all-cases">All cases</a></li>
-      <li><a href="{{ relative }}2018/05/outside-application">Request information outside of Annual Review</a></li>
-      <li><a href="{{ relative }}2018/05/combine-sbos-assignment">Adding Servicing BOS at the same time as case owner</a></li>
-      <li><a href="{{ relative }}2018/06/findings">Display recommendations / determination</a></li>
-      <li><a href="{{ relative }}2018/06/change-dates">Change certificate and application dates</a></li>
-      <li><a href="{{ relative }}2018/07/workloads">Workloads</a></li>
-      <li><a href="{{ relative }}2018/08/requirements">Requirements</a></li>
-      <li><a href="{{ relative }}2018/08/all-cases-cards">Anniversary date / all cases card redesign</a></li>
-    </ul>
-
-  </div>
+<div class="sba-l-row sba-u-margin-top--5">
+  {% assign sorted = site.data.prototypes | sort: 'url' %}
+  {% for item in sorted reversed %}
+    <div class="sba-l-col--12 sba-l-sm-col--6 sba-l-md-col--4 sba-u-padding-x--2" >
+      <div class="sba-c-card sba-u-display--block sba-u-padding--3">
+        {% if item.date %}
+          <p class="sba-u-font-size--small sba-u-color--muted sba-u-margin-top--0">{{ item.date }}</p>
+        {% endif %}
+        <h3 class="sba-u-margin--0"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a></h3>
+        {% if item.summary %}
+          <p>{{ item.summary }}</p>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
 </div>
-
-<script>
-  $(document).ready(function() {
-    $('form').on('submit', function() {
-      if (!checkValidityIfSupported($('form').get(0))) {
-        return false;
-      }
-      else {
-        updateStoredData();
-
-        if (fn == "James") {
-          nextPage("index3.html");
-        }
-        else {
-          nextPage("index2.html");
-        }
-        return false;
-      }
-    });
-  });
-</script>
