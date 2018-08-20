@@ -2,93 +2,112 @@
   date: May 2017
   url: /2017/05/APP-347
   summary: Experience for new Certify users and supervisor accepting/rejecting requests
+  audience: SBA
 
 - name: Log in / Sign up / Reset Password
   date: May 2017
   url: /2017/05/DESIGN-59/
   summary: Fixes usability issues with account creation and passowrd resets
+  audience: Firms
 
 - name: Case Assignment
   date: June 2017
   url: /2017/06/case_assignment/
   summary: End-to-end experience of supervisor assigning case to BOS viewing on dashboard
+  audience: SBA
 
 - name: Analyst Review Initial Application
   date: June 2017
   url: /2017/06/full-initial-application/
   summary: All workflows for analyst review of initial application
+  audience: SBA
 
 - name: Initial Application Firm Experience
   date: August 2017
   url: /2017/08/firm
   summary: Displays firm experience of various states of 8(a) Initial Application
+  audience: Firms
 
 - name: Landing page with new login buttons
   date: October 2017
   url: /2017/10/landing
   summary: Concept for rearranging buttons on landing page
+  audience: Firms
 
 - name: Supervisor Dashboard
   date: November 2017
   url: /2017/11/supervisor-dashboard
   summary: Concept for supervisor dashboard
+  audience: SBA
 
 - name: Analyst Review Annual Reivew
   date: December 2017
   url: /2017/12/annual-review
   summary: Includes all workflows of Annual Review
+  audience: SBA
 
 - name: Manage Contributors
   date: January 2018
   url: /2018/01/manage-contributors
   summary: New design for how firms can assign and manage contributors. Also includes shared services approach.
+  audience: Firms
 
 - name: Mail ins
   date: February 2018
   url: /2018/02/mail-ins
   summary: Workflow for how an analyst will indicate that a reconsideration/appeal was submitted outside of Cerify
+  audience: SBA
 
 - name: New header, servicing BOS
   date: April 2018
   url: /2018/04/servicing-bos
   summary: Concept for new head to include Servicing BOS
+  audience: SBA
 
 - name: All cases
   date: April 2018
   url: /2018/04/all-cases
   summary: Displays all cases in all programs
+  audience: SBA
 
 - name: Request information outside of Annual Review
   date: May 2018
   url: /2018/05/outside-application
   summary: Experience for how an analyst may submit a request for information outside of annual review.
+  audience: SBA
 
 - name: Adding Servicing BOS at the same time as case owner
   date: May 2018
   url: /2018/05/combine-sbos-assignment
   summary: Concept for assigning Servicing BOS at the same time as case owner
+  audience: SBA
 
 - name: Display recommendations / determination
   date: June 2018
   url: /2018/06/findings
   summary: Shows recommendations and determinations on an application
+  audience: SBA
 
 - name: Change certificate and application dates
   date: June 2018
   url: /2018/06/change-dates
   summary: Two workflows for changing dates
+  audience: SBA
 
 - name: Workloads
   date: July 2018
   url: /2018/07/workloads
   summary: How an analyst can view and manages their assigned cases
+  audience: SBA
 
 - name: Requirements
   date: August 2018
   url: /2018/08/requirements
   summary: First prototype of Requirements
+  audience: SBA
 
 - name: Anniversary date / all cases card redesign
   date: August 2018
   url: /2018/08/all-cases-cards
   summary: Redesigns cards on the all cases page to show anniversary date and make information easily scanned
+  audience: SBA

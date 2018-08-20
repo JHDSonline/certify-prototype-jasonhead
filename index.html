@@ -11,11 +11,27 @@ page_h1: Certify Prototypes
     <div class="sba-l-col--12 sba-l-sm-col--6 sba-l-md-col--4 sba-u-padding-x--2" >
       <div class="sba-c-card sba-u-display--block sba-u-padding--3">
         {% if item.date %}
-          <p class="sba-u-font-size--small sba-u-color--muted sba-u-margin-top--0">{{ item.date }}</p>
+          <p class="sba-u-font-size--small sba-u-color--muted sba-u-margin-top--0">
+            {{ item.date }}
+          </p>
         {% endif %}
-        <h3 class="sba-u-margin--0"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a></h3>
+        <h3 class="sba-u-margin--0">
+          <a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
+          {% if item.audience %}
+            {% if item.audience == "Firms" %}
+              <span class="sba-c-badge sba-c-badge--warn">{{ item.audience }}</span>
+            {% elsif item.audience == "SBA" %}
+              <span class="sba-c-badge sba-c-badge--info">{{ item.audience }}</span>
+            {% else %}
+              <span class="sba-c-badge">{{ item.audience }}</span>
+            {% endif %}
+          {% endif %}
+        </h3>
         {% if item.summary %}
-          <p>{{ item.summary }}</p>
+          <p>
+
+            {{ item.summary }}
+          </p>
         {% endif %}
       </div>
     </div>
