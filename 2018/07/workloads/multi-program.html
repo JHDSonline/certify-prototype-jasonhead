@@ -1,0 +1,1343 @@
+---
+layout: default
+top_nav: sba-supervisor
+masthead_type: dashboard
+tab_set: all-cases
+local_nav_active: HUBZone
+
+page_h1: HUBZone Dashboard
+---
+
+<div class="sba-l-col--12 sba-u-padding-x--2">
+  <header class="dashboard-section__header">
+    <h2 class="dashboard-section__heading">My Cases</h2>
+  </header>
+  <div class="sba-l-row">
+    <div role="search" class="sba-u-measure--wide sba-u-margin-y--3">
+      <form class="usa-search usa-search-big sba-c-search--large">
+        <label class="usa-sr-only" for="search-field-big">Search big</label>
+        <input id="search-field-big" type="search" name="search" placeholder="Search firm name, firm owner, DUNS, NAICS, etc.">
+        <button type="submit">
+          <span class="usa-search-submit-text">Search</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="sba-l-row sba-u-margin-x--neg2">
+    <div class="sba-l-sm-col--12 sba-l-md-col--golden-sm sba-l-lg-col--3 sba-u-padding-x--2">
+      <form action="#" >
+        <h2 class="sba-u-font-size--h3">Filter Cases</h2>
+
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Activity</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+              <input class="sba-c-checkbox" id="a1" type="checkbox" name="activities">
+              <label class="sba-c-label" for="a1">Awaiting corrections/documents</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="a2" type="checkbox" name="activities">
+              <label class="sba-c-label" for="a2">Corrections/documents provided</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="a3" type="checkbox" name="activities">
+              <label class="sba-c-label" for="a3">Unread messages</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Application status</legend>
+          <ul class="sba-c-unstyled-list">
+            <!-- We need to see unsubmitted annual reviews coming up in 60,30,past due -->
+            <li>
+              <input class="sba-c-checkbox" type="checkbox" value="ar_screening" name="eight_a[ar_screening]" id="eight_a_ar_screening">
+              <label class="sba-c-label" for="eight_a_ar_screening">Screening</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" type="checkbox" value="ar_processing" name="eight_a[ar_processing]" id="eight_a_ar_processing">
+              <label class="sba-c-label" for="eight_a_ar_processing">Processing</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" type="checkbox" value="ar_retained" name="eight_a[ar_retained]" id="eight_a_ar_retained">
+              <label class="sba-c-label" for="eight_a_ar_retained">Approval Recommendation</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" type="checkbox" value="ar_early_graduation_recommended" name="eight_a[ar_early_graduation_recommended]" id="eight_a_ar_early_graduation_recommended">
+              <label class="sba-c-label" for="eight_a_ar_early_graduation_recommended">Decline Recommendation</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Currently with</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+              <input class="sba-c-checkbox" id="cw_me" type="checkbox" name="currently_with">
+              <label class="sba-c-label" for="cw_me">Me</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cw_firm" type="checkbox" name="currently_with">
+              <label class="sba-c-label" for="cw_firm">Firm</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cw_another_office" type="checkbox" name="currently_with">
+              <label class="sba-c-label" for="cw_another_office">Legal</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="cw_size" type="checkbox" name="currently_with">
+              <label class="sba-c-label" for="cw_size">Size</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Returned cases heading</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+              <input class="sba-c-checkbox" id="case_return_no" type="checkbox" name="case_returned">
+              <label class="sba-c-label" for="case_return_no">New cases</label>
+            </li>
+            <li>
+              <input class="sba-c-checkbox" id="case_return_yes" type="checkbox" name="case_returned">
+              <label class="sba-c-label" for="case_return_yes">Returned cases</label>
+            </li>
+          </ul>
+        </fieldset>
+
+      </form>
+      </div>
+      <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--9 sba-u-padding-x--2 sba-u-lg-padding-left--6">
+        <div class="sba-u-display--flex sba-u-justify-content--between">
+          <h2 class="sba-u-font-size--h3">Showing 123 cases</h2>
+          <div>
+            <label for="sort" class="sba-u-visibility--screen-reader">Sort by</label>
+            <select name="" id="sort">
+              <option value="">Sort by…</option>
+              <option value="">Next action due: Earliest</option>
+              <option value="">Next action due: Latest</option>
+              <option value="">Firm name: Ascending</option>
+              <option value="">Firm name: Descending</option>
+              <option value="">Newest</option>
+              <option value="">Oldest</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="sba-c-facet-pills sba-u-margin-bottom--3">
+          <span class="sba-c-facet-pill">
+            Screening
+            <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+          </span>
+        </div>
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Mobo Tires, LLC</a></h3>
+                <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Screening)</p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">5 days ago</span> - <span class="sba-u-color--error">You requested documents from the firm</span></strong></p>
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Currently with Angel Silvestre (OIG)">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#arrow-right"></use>
+                      </svg> Angel Silvestre (OIG)
+                    </span>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--blue sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 3
+                      </span>
+                    </a>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5 sba-u-color--error" data-tooltip-text="Next action due: 5/31/18">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> 3 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand2">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand2" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">8(a) participation</h4>
+                  <p class="sba-u-margin--0">Yes</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Primary office location</h4>
+                  <p class="sba-u-margin--0">Oklahoma</p>
+                </div>
+              </div>
+              <p><a href="#">View this firm’s profile</a></p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Lake Superior Tech, LLC</a></h3>
+                <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Processing)</p>
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 0
+                      </span>
+                    </a>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> 8 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand3">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand3" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">8(a) participation</h4>
+                  <p class="sba-u-margin--0">Yes</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Primary office location</h4>
+                  <p class="sba-u-margin--0">Oklahoma</p>
+                </div>
+              </div>
+              <p><a href="#">View this firm’s profile</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Buzzard Point Landscaping</a></h3>
+                <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Screening)</p>
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--blue sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 1
+                      </span>
+                    </a>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> 11 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand4">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand4" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">8(a) participation</h4>
+                  <p class="sba-u-margin--0">Yes</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Primary office location</h4>
+                  <p class="sba-u-margin--0">Oklahoma</p>
+                </div>
+              </div>
+              <p><a href="#">View this firm’s profile</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Affiliated Labs, LLC</a></h3>
+                <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Screening)</p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">3 days ago</span> - <span class="sba-u-color--success">Firm submitted corrections</span></strong></p>
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--blue sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 3
+                      </span>
+                    </a>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> 12 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand5">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand5" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">8(a) participation</h4>
+                  <p class="sba-u-margin--0">Yes</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Primary office location</h4>
+                  <p class="sba-u-margin--0">Oklahoma</p>
+                </div>
+              </div>
+              <p><a href="#">View this firm’s profile</a></p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Flickstream</a></h3>
+                <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Screening)</p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span data-tooltip-text="7/30/18">1 day ago</span> - <span class="sba-u-color--error">You requested corrections from the firm</span></strong></p>
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Currently with Angel Silvestre (OIG)">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#arrow-right"></use>
+                      </svg> Firm
+                    </span>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 0
+                      </span>
+                    </a>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> 13 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand6">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand6" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">8(a) participation</h4>
+                  <p class="sba-u-margin--0">Yes</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Primary office location</h4>
+                  <p class="sba-u-margin--0">Oklahoma</p>
+                </div>
+              </div>
+              <p><a href="#">View this firm’s profile</a></p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Makeybots</a> </h3>
+                <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Screening) <span class="sba-c-badge">New</span></p>
+
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 0
+                      </span>
+                    </a>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> 15 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand7">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand7" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">8(a) participation</h4>
+                  <p class="sba-u-margin--0">Yes</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Primary office location</h4>
+                  <p class="sba-u-margin--0">Oklahoma</p>
+                </div>
+              </div><p><a href="#">View this firm’s profile</a></p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Rammecher Holsteid, LLC</a></h3>
+                <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Processing)</p>
+
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 0
+                      </span>
+                    </a>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> 28 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand8">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand8" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">8(a) participation</h4>
+                  <p class="sba-u-margin--0">Yes</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Primary office location</h4>
+                  <p class="sba-u-margin--0">Oklahoma</p>
+                </div>
+              </div>
+              <p><a href="#">View this firm’s profile</a></p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Mike’s Garage</a></h3>
+                <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Processing)</p>
+
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 0
+                      </span>
+                    </a>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> 31 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand9">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand9" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">8(a) participation</h4>
+                  <p class="sba-u-margin--0">Yes</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Primary office location</h4>
+                  <p class="sba-u-margin--0">Oklahoma</p>
+                </div>
+              </div>
+              <p><a href="#">View this firm’s profile</a></p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Alvarez Associates, LLC</a></h3>
+                <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Processing)</p>
+
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 0
+                      </span>
+                    </a>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> 39 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand10">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand10" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">8(a) participation</h4>
+                  <p class="sba-u-margin--0">Yes</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Primary office location</h4>
+                  <p class="sba-u-margin--0">Oklahoma</p>
+                </div>
+              </div>
+              <p><a href="#">View this firm’s profile</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Mandible</a></h3>
+                <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Not submitted)</p>
+                <p class="sba-u-margin--0 sba-u-font-size--h5"><strong><span class="sba-u-color--error">Annual review 4 days late from firm</span></strong></p>
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 0
+                      </span>
+                    </a>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> 24 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand12a">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand12a" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">8(a) participation</h4>
+                  <p class="sba-u-margin--0">Yes</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Primary office location</h4>
+                  <p class="sba-u-margin--0">Oklahoma</p>
+                </div>
+              </div>
+              <p><a href="#">View this firm’s profile</a></p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Minocam Opticals, LLC</a></h3>
+                <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Processing)</p>
+
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Currently with Angel Silvestre (OIG)">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#arrow-right"></use>
+                      </svg> Bill Bunsen (Size)
+                    </span>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 0
+                      </span>
+                    </a>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Clock stopped">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> Stopped, 39 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand11">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand11" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">8(a) participation</h4>
+                  <p class="sba-u-margin--0">Yes</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Primary office location</h4>
+                  <p class="sba-u-margin--0">Oklahoma</p>
+                </div>
+              </div>
+              <p><a href="#">View this firm’s profile</a></p>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+        <div class="sba-c-card sba-u-display--block sba-u-padding-y--2 sba-u-padding-x--1">
+          <div class="sba-c-container sba-u-padding-x--2">
+            <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-lg-flex-direction--row">
+              <div class="sba-l-col--12 sba-l-lg-col--5 sba-l-xl-col--6">
+                <h3 class="sba-u-margin-top--0 sba-u-margin-bottom--1 sba-u-md-margin-bottom--0"><a href="#">Block Vision Works</a></h3>
+                <p class="sba-u-color--muted sba-u-margin--0">Initial Application (Not submitted)</p>
+
+              </div>
+              <div class="sba-l-col--12 sba-l-lg-col--6 sba-l-xl-col--5">
+                <div class="sba-l-row sba-u-align-items--center sba-u-flex-direction--column sba-u-sm-flex-direction--row sba-u-margin-top--2 sba-u-lg-margin-top--0">
+                  <div class="sba-l-col--12 sba-l-sm-col--6 sba-padding-right--1">
+
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--2 sba-padding-right--1">
+                    <a href="#">
+                      <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="3 unread messages">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#envelope"></use>
+                        </svg> 0
+                      </span>
+                    </a>
+                  </div>
+                  <div class="sba-l-col--12 sba-l-sm-col--4 sba-padding-right--1">
+                    <span class="sba-u-display--flex sba-u-align-items--center sba-u-font-size--h5" data-tooltip-text="Next action due: 5/31/18">
+                      <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light sba-u-margin-right--1">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#clock"></use>
+                      </svg> 60 days left
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="sba-l-col--1 sba-u-sm-text-align--right">
+                <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand12">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="expand12" class="sba-u-padding-top--1" hidden>
+              <div class="sba-l-row" data-filter-role="supervisor">
+                <ol class="sba-c-recommendation-list sba-c-recommendation-list--horizontal">
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                  <li class="sba-c-recommendation-list__item sba-c-recommendation-list__item--positive">
+                    <div class="sba-c-recommendation-list__icon">
+                      <svg aria-hidden="true" class="sba-c-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#check-circle"></use>
+                      </svg>
+                    </div>
+                    <div class="sba-c-recommendation-list__content">
+                      <div class="sba-c-recommendation-list__recommendation">Retain recommendation</div>
+                      <div class="sba-c-recommendation-list__data">John Doe</div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+              <div class="sba-l-row sba-u-flex-direction--column sba-u-sm-flex-direction--row">
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4 class="sba-u-margin-bottom--0">Firm owner</h4>
+                  <p class="sba-u-margin--0">Bob Smith</p>
+                  <p class="sba-u-margin--0 sba-u-color--muted">(292) 555-3221</p>
+                  <p class="sba-u-margin--0"><a href="#">Send a message</a></p>
+                </div>
+                <div class="sba-l-col--12 sba-l-sm-col--4 sba-u-padding-right--1">
+                  <h4  class="sba-u-margin-bottom--0">8(a) participation</h4>
+                  <p class="sba-u-margin--0">Yes</p>
+                </div>
+                <div class="sba-l-col--4">
+                  <h4 class="sba-u-margin-bottom--0">Primary office location</h4>
+                  <p class="sba-u-margin--0">Oklahoma</p>
+                </div>
+              </div>
+              <p><a href="#">View this firm’s profile</a></p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="sba-u-border-top--1 sba-u-margin-top--4 sba-u-padding-top--3">
+  <p><a href="#">View all HUBZone cases</a></p>
+</div>
