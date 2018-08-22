@@ -1,0 +1,238 @@
+---
+layout: default
+top_nav: sba-analyst
+
+page_h1: Edit&#58; <span data-print="requirement_title">Requirement title</span>
+back_link: Return to requirement
+back_link_url: requirement-show.html
+---
+
+
+<div class="sba-l-col--3 sba-u-padding-x--2 sba-u-margin-top--3">
+  <ul class="usa-sidenav-list">
+    <li>
+      <a href="/components/" class="usa-current">General Info</a>
+    </li>
+    <li>
+      <a href="/components/typography/">Offer Data</a>
+    </li>
+    <li>
+      <a href="/components/typography/">Agency</a>
+    </li>
+    <li>
+      <a href="/components/typography/">Offer Data</a>
+    </li>
+    <li>
+      <a href="/components/typography/">Contracting Officer</a>
+    </li>
+    <li>
+      <a href="/components/typography/">Contract Info</a>
+    </li>
+    <li>
+      <a href="/components/typography/">Documents</a>
+    </li>
+    <li>
+      <a href="/components/typography/">Firms</a>
+    </li>
+    <li>
+      <a href="/components/typography/">Additional info</a>
+    </li>
+  </ul>
+</div>
+<div class="sba-l-col--9 sba-u-padding-x--2 sba-u-padding-left--7  sba-u-margin-top--3">
+  <div class="sba-u-display--flex sba-u-align-items--center">
+    <h2 class="sba-u-margin--0 sba-u-margin-right--2">General Info</h2>
+    <a href="?view=edit" class="sba-c-button sba-c-button--small" data-filter-view="show">Edit</a>
+  </div>
+
+  <div data-filter-view="show">
+
+    <table class='sba-c-table sba-c-table--borderless'>
+      <tbody>
+        <tr>
+          <th><strong>Requirement title</strong></th>
+          <td data-print="requirement_title"></td>
+        </tr>
+        <tr>
+          <th><strong>Description</strong></th>
+          <td data-print="requirement_description"></td>
+        </tr>
+        <tr>
+          <th><strong>Received date</strong></th>
+          <td data-print="requirement_received_date"></td>
+        </tr>
+        <tr>
+          <th><strong>NAICS Code</strong></th>
+          <td data-print="requirement_naics_code"></td>
+        </tr>
+        <tr>
+          <th><strong>Code</strong></th>
+          <td data-print="requirement_code"></td>
+        </tr>
+        <tr>
+          <th><strong>District office</strong></th>
+          <td data-print="requirement_district_office"></td>
+        </tr>
+        <tr>
+          <th><strong>Estimated contract value</strong></th>
+          <td data-print="requirement_estimated_contract_value"></td>
+        </tr>
+        <tr>
+          <th><strong>Actual contract value</strong></th>
+          <td data-print="requirement_actual_contract_value"></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+  </div>
+
+  <div data-filter-view="edit">
+    <form action=""class="sba-u-margin-top--5">
+      <ul class="sba-c-field-list">
+        <li>
+          <label class="sba-c-label" for="requirement_title">Requirement title</label>
+          <p class="sba-c-form-hint" id="requirement-title-hint">Choose a unique name. This will be how the requirement appears in searches.</p>
+          <input type="text" id="requirement_title" aria-describedby="requirement-title-hint" data-print=
+          "requirement_title" required>
+        </li>
+        <li>
+          <label class="sba-c-label" for="requirement_description">Description</label>
+          <input type="text" id="requirement_description" data-print="requirement_description">
+        </li>
+        <li>
+          <label for="requirement_received_date" class="sba-c-label sba-u-margin-top--0">Received date</label>
+          <p class="sba-c-form-hint" id="date_input_hint">For example, MM/DD/YYYY</p>
+          <input type="text" id="requirement_received_date" class="sba-c-input js-calendar-picker js-format-as-date" aria-describedby="date_input_hint" data-print="requirement_received_date" />
+        </li>
+        <li>
+          <label class="sba-c-label" for="requirement_naics_code">NAICS Code</label>
+          <input type="text" id="requirement_naics_code" data-print="requirement_naics_code">
+        </li>
+        <li>
+          <label class="sba-c-label" for="requirement_naics_code">Code</label>
+          <input type="text" id="requirement_code" data-print="requirement_code">
+        </li>
+        <li>
+          <label class="sba-c-label" for="requirement_distict_office">District office</label>
+          <!-- DO NOT COPY THIS-->
+          <select name="requirement_district_office" id="requirement_district_office" data-print="requirement_distict_office">
+            <option value="" selected disabled></option>
+            <option value="Alabama">Alabama </option>
+            <option value="Alaska">Alaska </option>
+            <option value="Arizona">Arizona </option>
+            <option value="Arkansas">Arkansas </option>
+            <option value="Baltimore">Baltimore </option>
+            <option value="Boise">Boise </option>
+            <option value="Buffalo">Buffalo </option>
+            <option value="Cleveland">Cleveland </option>
+            <option value="Colorado">Colorado </option>
+            <option value="Columbus">Columbus </option>
+            <option value="Connecticut">Connecticut </option>
+            <option value="Delaware">Delaware </option>
+            <option value="Des Moines">Des Moines </option>
+            <option value="El Paso">El Paso </option>
+            <option value="Fresno">Fresno </option>
+            <option value="Georgia">Georgia </option>
+            <option value="Hawaii">Hawaii </option>
+            <option value="Houston">Houston </option>
+            <option value="Illinois">Illinois </option>
+            <option value="Indiana">Indiana </option>
+            <option value="Kansas City">Kansas City </option>
+            <option value="Kentucky">Kentucky </option>
+            <option value="Los Angeles">Los Angeles </option>
+            <option value=">Louisiana">Louisiana </option>
+            <option value="Lower Rio G V">Lower Rio G V </option>
+            <option value="Lubbock">Lubbock </option>
+            <option value=">Maine">Maine </option>
+            <option value="Massachusetts">Massachusetts </option>
+            <option value="Michigan">Michigan </option>
+            <option value="Minnesota">Minnesota </option>
+            <option value="Mississippi">Mississippi </option>
+            <option value="Montana">Montana </option>
+            <option value=">New Hampshire">New Hampshire </option>
+            <option value=">North Carolina">North Carolina </option>
+            <option value="North Dakota ">North Dakota </option>
+            <option value="North Florida">North Florida </option>
+            <option value="Nebraska">Nebraska </option>
+            <option value=">Nevada">Nevada </option>
+            <option value="New Jersey">New Jersey </option>
+            <option value="New Mexico">New Mexico </option>
+            <option value="New York">New York </option>
+            <option value="Oklahoma">Oklahoma </option>
+            <option value="Philadelphia">Philadelphia </option>
+            <option value="Pittsburgh">Pittsburgh </option>
+            <option value="Portland">Portland </option>
+            <option value="Puerto Rico & U.S. Virgin Islands">Puerto Rico & U.S. Virgin Islands </option>
+            <option value="Rhode Island">Rhode Island </option>
+            <option value="Richmond">Richmond </option>
+            <option value="South Carolina">South Carolina </option>
+            <option value="South Dakota">South Dakota </option>
+            <option value="South Florida">South Florida </option>
+            <option value="Sacramento">Sacramento </option>
+            <option value="San Antonio">San Antonio </option>
+            <option value="San Diego">San Diego </option>
+            <option value="San Francisco">San Francisco </option>
+            <option value="Santa Ana">Santa Ana </option>
+            <option value="Seattle">Seattle </option>
+            <option value="St. Louis">St. Louis </option>
+            <option value="Syracuse">Syracuse </option>
+            <option value="Tennessee">Tennessee </option>
+            <option value="Utah">Utah </option>
+            <option value="Vermont">Vermont </option>
+            <option value="Washington">Washington </option>
+            <option value="West Virginia">West Virginia </option>
+            <option value="Wichita">Wichita </option>
+            <option value="Wisconsin">Wisconsin </option>
+            <option value="Wyoming">Wyoming </option>
+          </select>
+        </li>
+        <li>
+          <label for="requirement_estimated_contract_value">Estimated contract value</label>
+          <div class="sba-c-input-ornament-container">
+            <div class="sba-c-input-ornament sba-c-input-ornament--left">
+              <svg aria-hidden="true" class="sba-c-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#dollar-sign"></use>
+              </svg>
+            </div>
+            <input type="text" id="requirement_estimated_contract_value" class="sba-u-input-width--16" data-print="requirement_estimated_contract_value">
+          </div>
+        </li>
+        <li>
+          <label for="requirement_actual_contract_value">Actual contract value</label>
+          <div class="sba-c-input-ornament-container">
+            <div class="sba-c-input-ornament sba-c-input-ornament--left">
+              <svg aria-hidden="true" class="sba-c-icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#dollar-sign"></use>
+              </svg>
+            </div>
+            <input type="text" id="requirement_actual_contract_value" class="sba-u-input-width--16" data-print="requirement_actual_contract_value">
+          </div>
+        </li>
+      </ul>
+      <div class="actions sba-u-margin-top--5" data-filter-view="edit">
+        <div class="actions__main">
+          <button type="submit" class="sba-c-button sba-u-sm-margin-right--3">Save</button>
+          <a href="javascript:window.history.back();">Cancel</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("general-info.html?view=show");
+        return false;
+      }
+    });
+  });
+</script>

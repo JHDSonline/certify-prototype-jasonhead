@@ -1,0 +1,75 @@
+---
+layout: default
+top_nav: sba-analyst
+
+page_h1: New requirement
+lead_text: To create a requirement, please provide a title, agency information, and type. Once you create the requirement, you will be able to attach documents, associated firms, and any other information related to the requirement.
+---
+<div class="sba-l-col--12 sba-u-padding-x--2">
+  <form action="">
+    <ul class="sba-c-field-list">
+      <li>
+        <label class="sba-c-label" for="requirement_title">Requirement title</label>
+        <p class="sba-c-form-hint" id="requirement-title-hint">Choose a unique name. This will be how the requirement appears in searches.</p>
+        <input type="text" id="requirement_title" aria-describedby="requirement-title-hint" required>
+      </li>
+      <li>
+        <label class="sba-c-label" for="requirement_agency">Agency</label>
+        <div class="ui-widget sba-c-combobox">
+        <select id="requirement_agency" name="requirement_agency" required>
+          <option value="">Select one...</option>
+          <option value="Action">ACTION</option>
+          <option value="Department of Homeland Security (DHS)">Department of Homeland Security (DHS)</option>
+          <option value="Health and Human Services (HHS)">Health and Human Services (HHS)</option>
+          <option value="Veterans Affairs (VA)">Veterans Affairs (VA)</option>
+        </select>
+      </div>
+      <script>
+        $(function() {
+          $( "#requirement_agency" ).combobox({
+            select: function(event, ui) {
+                  $( "#combobox" ).trigger("change");
+               }
+          });
+        });
+      </script>
+      </li>
+      <li>
+        <label class="sba-c-label" for="requirement_type">Type</label>
+        <select name="requirement_type" id="requirement_type">
+          <option value="">Select Type</option>
+          <option value="Type 1">Type 1 </option>
+          <option value="Type 2">Type 2 </option>
+          <option value="Type 3">Type 3 </option>
+          <option value="Type 4">Type 4 </option>
+          <option value="Type 5">Type 5 </option>
+       </select>
+      </li>
+    </ul>
+    <div class="actions sba-u-margin-top--5">
+      <div class="actions__main">
+        <button type="submit" class="sba-c-button sba-u-sm-margin-right--3">Create requirement
+          <svg aria-hidden="true" class="sba-c-icon sba-u-margin-left--1">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("general-info.html?view=show");
+        return false;
+      }
+    });
+  });
+</script>
