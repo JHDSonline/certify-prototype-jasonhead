@@ -20,6 +20,44 @@ layout: layout--blank
         <form action="#">
           <fieldset class="questions">
 
+            <label for="info_request_for">This information request is for:</label>
+            <div class="ui-widget sba-c-combobox">
+              <select id="info_request_for" name="info_request_for" required>
+                <option value="">Select one...</option>
+                <option value="Aaron Rogers">Blak Zackerton (Firm owner)</option>
+                <option value="Arlene Baker">Arlene Baker</option>
+                <option value="Barrett Foster">Barrett Foster</option>
+                <option value="Bernice Jones">Bernice Jones</option>
+                <option value="Catherine Masterson">Catherine Masterson</option>
+                <option value="Christine Amici">Christine Amici</option>
+                <option value="Connor Fitzpatrick">Connor Fitzpatrick</option>
+                <option value="David Masterson">David Masterson</option>
+                <option value="Don Huffman">Don Huffman</option>
+                <option value="Erin Botz">Erin Botz</option>
+                <option value="Freddie McDaniel">Freddie McDaniel</option>
+                <option value="Gertrude Polanter">Gertrude Polanter</option>
+                <option value="Henry Nichols">Henry Nichols</option>
+                <option value="Jamie Ngo">Jamie Ngo</option>
+                <option value="Jennifer Vollaley">Jennifer Vollaley</option>
+                <option value="Liz Redman">Liz Redman</option>
+                <option value="Paul Stevenson">Paul Stevenson</option>
+                <option value="Penelope Martin">Penelope Martin</option>
+                <option value="Rachel Walton">Rachel Walton</option>
+                <option value="Richard Engleton">Richard Engleton</option>
+                <option value="Steven Greymore">Steven Greymore</option>
+                <option value="Timothy Grant">Timothy Grant</option>
+              </select>
+            </div>
+            <script>
+              $(function() {
+                $( "#info_request_for" ).combobox({
+                  select: function(event, ui) {
+                        $( "#info_request_for" ).trigger("change");
+                     }
+                });
+              });
+            </script>
+
             <label for="title">Title</label>
             <input type="text" id="title" required>
 
