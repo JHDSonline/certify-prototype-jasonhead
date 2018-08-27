@@ -6,34 +6,94 @@ masthead_type: initial-application--sba
 
 #Page Settings
 is_a_form: yes
-body_class: hide-local-nav
 
 # Page Content
 step_text: Reassign case
-page_h1: Would you like to make <span data-print="currently_with"></span> the Servicing BOS as well?
-lead_text: The Servicing BOS will be able to send messages to the firm outside of the annual review process.
+page_h1: Please select an analyst from the <span data-print="new_district_office">Washington, DC</span> District Office.
+lead_text: Assign this case to another analyst or supervisor.
 cta_text: Next
 secondary_action_text: Cancel
+
+# Tab Links
+application_link: application.html
+firm_documents_link: firm-documents.html
+analyst_documents_link: analyst-documents.html
+notes_link: notes.html
+messages_link: messages.html
+activity_log_link: activity-log.html
 ---
-<div class="no-hq">
-  <fieldset class="questions">
-      <legend class="usa-sr-only">Please select your answer</legend>
-      <div class="sba-l-row">
-        <div class="sba-l-col">
-          <ul class="usa-unstyled-list">
-            <li>
-              <input id="sbos_yes" type="radio" name="make_sbos" value="Yes" >
-              <label for="sbos_yes">Yes</label>
-            </li>
-            <li>
-              <input id="sbos_no" type="radio" name="make_sbos" value="No" >
-              <label for="sbos_no">No</label>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </fieldset>
+<fieldset class="questions">
+  <legend>Please select a BOS or supervisor</legend>
+  <div class="sba-l-row">
+    <div class="sba-l-col">
+      <ul class="usa-unstyled-list">
+        <li>
+          <input id="Frank_Apple" type="radio" name="currently_with" value="Frank Apple " required>
+          <label for="Frank_Apple">Frank Apple <small>(21 cases)</small></label>
+        </li>
+        <li>
+          <input id="Alana_Butterfield" type="radio" name="currently_with" value="Alana Butterfield " required>
+          <label for="Alana_Butterfield">Alana Butterfield <small>(17 cases)</small></label>
+        </li>
+        <li>
+          <input id="Sally_Christiansen" type="radio" name="currently_with" value="Sally Christiansen " required>
+          <label for="Sally_Christiansen">Sally Christiansen <small>(9 cases)</small></label>
+        </li>
+        <li>
+          <input id="Bud_Dvorak" type="radio" name="currently_with" value="Bud Dvorak " required>
+          <label for="Bud_Dvorak">Bud Dvorak <small>(15 cases)</small></label>
+        </li>
+        <li>
+          <input id="Sam_Ecker" type="radio" name="currently_with" value="Sam Ecker " required>
+          <label for="Sam_Ecker">Sam Ecker <small>(34 cases)</small></label>
+        </li>
+      </ul>
+    </div>
+    <div class="sba-l-col">
+      <ul class="usa-unstyled-list">
+        <li>
+          <input id="Kris_Kerfuffle" type="radio" name="currently_with" value="Kris Kerfuffle " required>
+          <label for="Kris_Kerfuffle">Kris Kerfuffle <small>(27 cases)</small></label>
+        </li>
+        <li>
+          <input id="Bart_Limey" type="radio" name="currently_with" value="Bart Limey " required>
+          <label for="Bart_Limey">Bart Limey <small>(32 cases)</small></label>
+        </li>
+        <li>
+          <input id="Allie_Melver" type="radio" name="currently_with" value="Allie Melver " required>
+          <label for="Allie_Melver">Allie Melver <small>(18 cases)</small></label>
+        </li>
+        <li>
+          <input id="John_Nickleson" type="radio" name="currently_with" value="John Nickleson " required>
+          <label for="John_Nickleson">John Nickleson <small>(33 cases)</small></label>
+        </li>
+        <li>
+          <input id="Teresa_Tyhurst" type="radio" name="currently_with" value="Teresa Tyhurst " required>
+          <label for="Teresa_Tyhurst">Teresa Tyhurst <small>(25 cases)</small></label>
+        </li>
+      </ul>
+    </div>
   </div>
+</fieldset>
+
+<fieldset class="questions sba-u-margin-top--7">
+  <legend>Would you like to make this person the servicing BOS?</legend>
+  <p class="sba-u-margin-bottom--0">The Servicing BOS will be able to send messages to the firm outside of the annual review process.</p>
+  <div class="sba-l-row">
+    <div class="sba-l-col">
+      <ul class="usa-unstyled-list">
+        <li>
+          <input id="sbos_yes" type="radio" name="make_sbos" value="Yes" required>
+          <label for="sbos_yes">Yes</label>
+        </li>
+        <li>
+          <input id="sbos_no" type="radio" name="make_sbos" value="No" required>
+          <label for="sbos_no">No</label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</fieldset>
 
   <!-- This script will mimic the interaction we want to see -->
   <script>

@@ -1,0 +1,53 @@
+---
+layout: default
+workflow: true
+top_nav: sba-supervisor
+masthead_type: initial-application--sba
+
+#Page Settings
+is_a_form: yes
+body_class: hide-local-nav
+
+# Page Content
+step_text: Reassign case
+page_h1: Would you like to make <span data-print="currently_with"></span> the Servicing BOS as well?
+lead_text: The Servicing BOS will be able to send messages to the firm outside of the annual review process.
+cta_text: Next
+secondary_action_text: Cancel
+---
+<div class="no-hq">
+  <fieldset class="questions">
+      <legend class="usa-sr-only">Please select your answer</legend>
+      <div class="sba-l-row">
+        <div class="sba-l-col">
+          <ul class="usa-unstyled-list">
+            <li>
+              <input id="sbos_yes" type="radio" name="make_sbos" value="Yes" >
+              <label for="sbos_yes">Yes</label>
+            </li>
+            <li>
+              <input id="sbos_no" type="radio" name="make_sbos" value="No" >
+              <label for="sbos_no">No</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <!-- This script will mimic the interaction we want to see -->
+  <script>
+    $(document).ready(function() {
+
+      $('form').on('submit', function() {
+        if (!checkValidityIfSupported($('form').get(0))) {
+          return false;
+        }
+        else {
+          updateStoredData();
+          nextPage("3.html");
+          return false;
+        }
+      });
+    });
+  </script>
