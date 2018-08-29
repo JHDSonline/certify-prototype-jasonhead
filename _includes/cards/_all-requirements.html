@@ -1,27 +1,27 @@
 {% for requirement in site.data.all-requirements-cards %}
   <div class="sba-c-card sba-u-padding--2" id="card_{{ forloop.index }}">
     <h2 class="sba-u-margin--0 sba-u-font-size--h3"><a href="#">{{ requirement.title }}</a> <span class="sba-u-color--gray sba-u-font-weight--normal ">({{ requirement.requirement_id }})</span></h2>
-    <div class="sba-l-row sba-u-margin-top--1">
+    <div class="sba-l-row">
       <div class="sba-l-col--6 sba-u-padding-right--2">
-        <p class="sba-u-margin--0 sba-u-font-size--small sba-u-sm-font-size--base">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
           <strong>Agency:</strong>
           <span class="sba-u-color--gray">{{ requirement.agency }}</span>
         </p>
-        <p class="sba-u-margin--0 sba-u-font-size--small sba-u-sm-font-size--base">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
           <strong>Type:</strong>
           <span class="sba-u-color--gray">{{ requirement.type }}</span>
         </p>
       </div>
       <div class="sba-l-col--6 sba-u-padding-right--2">
-        <p class="sba-u-margin--0 sba-u-font-size--small sba-u-sm-font-size--base">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
           <strong>Code:</strong>
           <span class="sba-u-color--gray">{{ requirement.code }}</span>
         </p>
-        <p class="sba-u-margin--0 sba-u-font-size--small sba-u-sm-font-size--base">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
           <strong>NAICS:</strong>
           <span class="sba-u-color--gray">{{ requirement.naics }}</span>
         </p>
-        <p class="sba-u-margin--0 sba-u-font-size--small sba-u-sm-font-size--base">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
         <strong>Associated firm(s):</strong>
         <span class="sba-u-color--gray">{{ requirement.duns }}</span>
         </p>
