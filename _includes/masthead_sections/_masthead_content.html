@@ -1,8 +1,9 @@
 {% assign masthead_type = page.masthead_type %}
 
 {% for item in site.data.masthead_content.[masthead_type] %}
-<div class="usa-grid-full masthead__content sba-u-flex-direction--column">
-  <div class="usa-width-one-fourth masthead__content__primary sba-u-border--0">
+<div class="sba-l-container masthead__content sba-u-flex-direction--column">
+  <div class="sba-u-padding-x--2">
+  <div class="masthead__content__primary sba-u-border--0">
     <h1 class="masthead__primary-heading">
       {% if item.link_main_heading %}<a href="firm-overview.html" data-print="firm_name">{% endif %}
         {% if page.firm_name %}
@@ -35,5 +36,6 @@
     {% endfor %}
   </div>
   {% endif %}
+  </div>
 </div>
 {% endfor %}

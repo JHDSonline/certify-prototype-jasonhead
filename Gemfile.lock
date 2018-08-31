@@ -1,8 +1,7 @@
-GIT
-  remote: git@github.com:USSBA/certify_design_system_gem.git
-  revision: f319a37e210d7b4ed92e7a2d382673cb347f2af8
+PATH
+  remote: ../certify_design_system_gem
   specs:
-    certify_design_system (1.14.5)
+    certify_design_system (1.14.7)
       bourbon (~> 4.3, <= 5)
       sass (~> 3.5)
 
