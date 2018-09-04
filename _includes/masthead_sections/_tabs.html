@@ -1,9 +1,7 @@
 {% assign tab_set = page.tab_set %}
 {% if site.data.tabs.[tab_set].tabs %}
-
   <div class="sba-l-container">
-    <div class="sba-u-padding-x--2 sba-c-tabs-wrapper">
-
+    <div class="sba-u-padding-x--2 sba-c-tabs-wrapper" id="tabs_wrapper">
     <ul class="sba-c-tabs__list">
       {% for tab in site.data.tabs.[tab_set].tabs %}
         <li class="sba-c-tabs__item">
@@ -25,23 +23,4 @@
     </ul>
     </div>
   </div>
-
-
-
-
-
-
-        <script>
-            /**
-             * Initiate priorityNav
-             */
-            var wrapper = document.querySelector(".sba-c-tabs-wrapper");
-            var nav = priorityNav.init({
-                mainNavWrapper: ".sba-c-tabs-wrapper",
-                breakPoint: 0,
-                throttleDelay: '50'
-            });
-
-
-        </script>
 {% endif %}
