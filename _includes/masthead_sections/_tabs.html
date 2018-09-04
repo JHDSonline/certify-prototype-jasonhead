@@ -2,7 +2,7 @@
 {% if site.data.tabs.[tab_set].tabs %}
 
   <div class="sba-l-container">
-    <div class="sba-u-padding-x--2">
+    <div class="sba-u-padding-x--2 sba-c-tabs-wrapper">
 
     <ul class="sba-c-tabs__list">
       {% for tab in site.data.tabs.[tab_set].tabs %}
@@ -21,9 +21,27 @@
           {% else %}
             <a class="sba-c-tabs__link {% if page.local_nav_active contains tab.name %} current {% endif %}" href="{{ tab.url }}">{{ tab.name }}</a>
           {% endif %}
-        </li>
       {% endfor %}
     </ul>
     </div>
   </div>
+
+
+
+
+
+
+        <script>
+            /**
+             * Initiate priorityNav
+             */
+            var wrapper = document.querySelector(".sba-c-tabs-wrapper");
+            var nav = priorityNav.init({
+                mainNavWrapper: ".sba-c-tabs-wrapper",
+                breakPoint: 0,
+                throttleDelay: '50'
+            });
+
+
+        </script>
 {% endif %}
