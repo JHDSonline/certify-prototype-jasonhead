@@ -1,29 +1,6 @@
 <header class="sba-c-masthead {% if page.top_nav contains "firm" %}sba-c-masthead--vendor{% endif %}">
-  <div class="sba-c-mobile-header">
-    <div class="sba-c-mobile-header__logo-container">
-      <a href="{{ site.baseurl }}/">
-        <img alt="certify.SBA.gov logo" class="sba-c-mobile-header__logo" src="{{ relative }}assets/img/certify-sba-gov-logo_on-dark.png" />
-      </a>
-    </div>
-    <ul class="sba-c-mobile-header__list">
-      <li class="sba-c-mobile-header__list-item">
-        <button class="sba-c-button sba-c-button--icon-only sba-c-button--transparent sba-js-visibility-trigger " type="button" aria-expanded="false" aria-controls="topnav-search" title="Search">
-          <svg aria-hidden="true" class="sba-c-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#search"></use>
-          </svg>
-        </button>
-      </li>
-      <li class="sba-c-mobile-header__list-item">
-        <span class="sba-c-badge sba-c-badge--warn sba-c-badge--generic"></span>
-        <button class="sba-c-mobile-header__toggle sba-c-button sba-c-button--icon-only sba-c-button--transparent sba-js-visibility-trigger " type="button" aria-expanded="false" aria-controls="topnav-notifications-drawer" title="Notifications">
-          <svg aria-hidden="true" class="sba-c-icon">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#bell"></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
-    <button type="button" class="sba-c-mobile-header__button" aria-controls="top_navigation">Menu</button>
-  </div>
+
+  {% include masthead_sections/_mobile-header.html %}
 
   {% include masthead_sections/_top_nav_new.html %}
 
