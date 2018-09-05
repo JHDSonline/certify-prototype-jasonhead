@@ -32,7 +32,7 @@ The Masthead has three primary components:
 * The mid-section, which is the masthead type
 * The tabs
 
-To create a prototype, only the `top_nav` is required, which `masthead_type` and `tab_set` are optional. If you are using tabs on a page, then the `masthead_type` is required.
+To create a prototype, only the `top_nav` is required, which `masthead_body` and `tab_set` are optional. If you are using tabs on a page, then the `masthead_body` is required.
 
 The values of each of the `Front Matter` items refer directly to a file in the `_data` directory. You will want to look at the `.yml` content because the it might require fixed naming conventions for certain links in the prototype.
 
@@ -47,7 +47,7 @@ You can create additional `.yml` files, but there are several common examples av
 layout: default
 
 top_nav: sba-supervisor
-masthead_type: annual-review--sba
+masthead_body: annual-review--sba
 tab_set: analyst-application
 ```
 
@@ -56,6 +56,6 @@ tab_set: analyst-application
 layout: default
 
 top_nav: sba-analyst
-masthead_type: intial-application--sba
+masthead_body: intial-application--sba
 tab_set: analyst-application
 ```
