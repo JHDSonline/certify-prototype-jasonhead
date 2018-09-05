@@ -1,26 +1,26 @@
 {% assign tab_set = page.tab_set %}
 {% if site.data.tabs.[tab_set].tabs %}
   <div class="sba-l-container">
-    <div class="sba-u-padding-x--2 sba-c-tabs-wrapper" id="tabs_wrapper">
-    <ul class="sba-c-tabs__list">
-      {% for tab in site.data.tabs.[tab_set].tabs %}
-        <li class="sba-c-tabs__item">
-          {% if tab.subfolderitems %}
-            <button class="sba-c-tabs__link sba-js-visibility-trigger {% if page.local_nav_active contains tab.name %} current {% endif %}" type="button" aria-expanded="false" aria-controls="dropdown-{{ tab.name | remove: " " }}">
-              <span>{{ tab.name }}</span>
-            </button>
-            <ul id="dropdown-{{ tab.name | remove: " " }}" class="sba-c-tabs__submenu" hidden>
-              {% for link in tab.subfolderitems %}
-              <li class="sba-c-tabs__submenu__item">
-                <a class="sba-c-tabs__submenu__link" href="{{ link.url }}">{{ link.page }}</a>
-              </li>
-              {% endfor %}
-            </ul>
-          {% else %}
-            <a class="sba-c-tabs__link {% if page.local_nav_active contains tab.name %} current {% endif %}" href="{{ tab.url }}">{{ tab.name }}</a>
-          {% endif %}
-      {% endfor %}
-    </ul>
+    <div class="sba-u-padding-x--2 sba-c-tabs-wrapper" id="tabs_wrapper" role="navigation">
+      <ul class="sba-c-tabs__list">
+        {% for tab in site.data.tabs.[tab_set].tabs %}
+          <li class="sba-c-tabs__item">
+            {% if tab.subfolderitems %}
+              <button class="sba-c-tabs__link sba-js-visibility-trigger {% if page.local_nav_active contains tab.name %} current {% endif %}" type="button" aria-expanded="false" aria-controls="dropdown-{{ tab.name | remove: " " }}">
+                <span>{{ tab.name }}</span>
+              </button>
+              <ul id="dropdown-{{ tab.name | remove: " " }}" class="sba-c-tabs__submenu" hidden>
+                {% for link in tab.subfolderitems %}
+                <li class="sba-c-tabs__submenu__item">
+                  <a class="sba-c-tabs__submenu__link" href="{{ link.url }}">{{ link.page }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <a class="sba-c-tabs__link {% if page.local_nav_active contains tab.name %} current {% endif %}" href="{{ tab.url }}">{{ tab.name }}</a>
+            {% endif %}
+        {% endfor %}
+      </ul>
     </div>
   </div>
 {% endif %}

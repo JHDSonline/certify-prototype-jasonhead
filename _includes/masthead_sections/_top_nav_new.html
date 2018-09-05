@@ -1,17 +1,17 @@
 {% assign top_nav = page.top_nav %}
-<nav id="top_navigation" class="sba-c-topnav">
+<nav id="top_navigation" class="sba-c-topnav" role="navigation">
   <div class="sba-c-topnav__inner">
     <a href="#" class="sba-c-topnav__logo-link">
       <img class="sba-c-topnav__logo" alt="certify.SBA.gov logo" src="{{ relative }}assets/img/certify-sba-gov-logo_on-dark.png" />
     </a>
 
-    <button class="sba-c-button sba-c-button--transparent sba-c-topnav__close">
+    <button class="sba-c-button sba-c-button--transparent sba-c-topnav__close" id="close_menu_button">
       <svg aria-hidden="true" class="sba-c-icon">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#times"></use>
       </svg><span class="sba-u-visibility--screen-reader">Close menu</span>
     </button>
 
-    <ul class="sba-c-topnav__list">
+    <ul class="sba-c-topnav__list sba-c-topnav__list--left-side">
       {% for item in site.data.top_nav.[top_nav].nav_items.left_side %}
       <li class="sba-c-topnav__list-item {% if page.global_nav_active contains item.title %} current {% endif %}">
         {% if item.subfolderitems %}
