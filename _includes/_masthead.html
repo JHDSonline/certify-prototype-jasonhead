@@ -1,26 +1,17 @@
-<header class="masthead {% if page.top_nav contains "firm" %}masthead--vendor{% endif %}">
-  <div class="usa-navbar certify-navbar">
-    <div class="usa-logo certify-logo" id="logo">
-      <img alt="certify.SBA.gov logo" src="{{ relative }}assets/img/certify-sba-gov-logo_on-dark.png" />
-    </div>
-    <button class="usa-menu-btn">Menu</button>
-  </div>
+<header class="sba-c-masthead {% if page.top_nav contains "firm" %}sba-c-masthead--vendor{% endif %}">
+
+  {% include masthead_sections/_mobile-header.html %}
+
+  {% include masthead_sections/_top_nav.html %}
+
+  {% include masthead_sections/_search-form.html %}
+
+  {% include masthead_sections/_notifications-drawer.html %}
 
   <!-- This the content in the gray area-->
   {% include masthead_sections/_masthead_content.html %}
 
-  <nav role="navigation" class="usa-nav certify-nav">
-    <div class="usa-nav-inner">
-      <button class="usa-nav-close">
-        <img src="{{ site.baseurl }}/assets/img/close.svg" alt="close">
-      </button>
+  <!-- Tabs -->
+  {% include masthead_sections/_tabs.html %}
 
-      <!-- Top nav-->
-      {% include masthead_sections/_top_nav.html %}
-
-      <!-- Tabs -->
-      {% include masthead_sections/_tabs.html %}
-
-    </div>
-  </nav>
 </header>

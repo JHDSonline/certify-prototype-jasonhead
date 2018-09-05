@@ -1,24 +1,23 @@
-{% assign masthead_type = page.masthead_type %}
+{% assign masthead_body = page.masthead_body %}
 
-{% for item in site.data.masthead_content.[masthead_type] %}
-<div class="usa-grid-full masthead__content sba-u-flex-direction--column">
-  <div class="usa-width-one-fourth masthead__content__primary sba-u-border--0">
-    <h1 class="masthead__primary-heading">
+{% for item in site.data.masthead_body.[masthead_body] %}
+<div class="sba-c-masthead__body sba-l-container sba-u-flex-direction--column">
+  <div class="sba-u-padding-x--2">
+  <div class="sba-u-border--0">
+    <h1 class="sba-c-masthead__primary-heading">
       {% if item.link_main_heading %}<a href="firm-overview.html" data-print="firm_name">{% endif %}
         {% if page.firm_name %}
           {{ page.firm_name }}
         {% else %}{{ item.main_heading }}{% endif %}{% if item.link_main_heading %}</a>{% endif %}
         {% if item.secondary_heading %}
-          <span class="sba-u-font-weight--normal sba-u-color--gray">
-          | {{ item.secondary_heading }}
-          </span>
+          <span class="sba-c-masthead__primary-heading--l2">{{ item.secondary_heading }}</span>
         {% endif %}
     </h1>
   </div>
   {% if item.additional_info %}
-  <div class="sba-u-margin-y--1 sba-u-display--flex sba-u-flex-direction--column sba-u-md-flex-direction--row">
+  <div class="sba-c-masthead__body__info sba-u-margin-y--1 sba-u-display--flex sba-u-flex-direction--column sba-u-md-flex-direction--row">
     {% for additional_item in item.additional_info %}
-      <div class="sba-u-padding-right--7 sba-u-display--flex sba-u-md-flex-direction--column">
+      <div class="sba-u-sm-padding-right--2 sba-u-lg-padding-right--7 sba-u-display--flex sba-u-md-flex-direction--column sba-l-col">
         <strong class="sba-u-margin-right--1">{{ additional_item.key }}:</strong>
         <span class="sba-u-display--flex">
           <span data-print="{{ additional_item.data_id }}">{{ additional_item.value }}</span>
@@ -35,5 +34,6 @@
     {% endfor %}
   </div>
   {% endif %}
+  </div>
 </div>
 {% endfor %}

@@ -12,5 +12,5 @@ nav_items:
           url: my-account.html
         - page: Log Out
           url: javascript:void(0);
-    - title: Help
-      url: help.html
+    - title: Training
+      url: training.html

@@ -1,71 +1,77 @@
 {% assign top_nav = page.top_nav %}
+<nav id="top_navigation" class="sba-c-topnav" role="navigation">
+  <div class="sba-c-topnav__inner">
+    <a href="#" class="sba-c-topnav__logo-link">
+      <img class="sba-c-topnav__logo" alt="certify.SBA.gov logo" src="{{ relative }}assets/img/certify-sba-gov-logo_on-dark.png" />
+    </a>
 
-<div class="certify-global-nav">
-  <div class="usa-grid-full">
-    <div class="certify-global-nav__primary">
-      <a href="#" class="certify-logo__link">
-        <img class="certify-logo" alt="certify.SBA.gov logo" src="{{ relative }}assets/img/certify-sba-gov-logo_on-dark.png" />
-      </a>
-      <ul class="usa-nav-primary usa-accordion">
-        {% for item in site.data.top_nav.[top_nav].nav_items.left_side %}
-        <li class="{% if page.global_nav_active contains item.title %} current {% endif %}">
-          {% if item.subfolderitems %}
-          <button class="
-          usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="topnav-{{ item.title | remove: " " }}">
-            <span>{{ item.title }}</span>
-          </button>
-          <ul id="topnav-{{ item.title | remove: " " }}" class="usa-nav-submenu">
-            {% for link in item.subfolderitems %}
-            <li>
-              <a href="{{ link.url }}">{{ link.page }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-          {% else %}
-          <a class="usa-nav-link" href="{{ item.url }}">
-            <span>{{ item.title }}</span>
-          </a>
-          {% endif %}
-        </li>
-        {% endfor %}
+    <button class="sba-c-button sba-c-button--transparent sba-c-topnav__close" id="close_menu_button">
+      <svg aria-hidden="true" class="sba-c-icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#times"></use>
+      </svg><span class="sba-u-visibility--screen-reader">Close menu</span>
+    </button>
 
-        {% if site.data.top_nav.[top_nav].nav_items.show_search %}
-        <li class="certify-case-search">
-          <form class="usa-search usa-search-small">
-            <div role="search">
-              <label class="usa-sr-only" for="search-field-small">Search small</label>
-              <input id="search-field-small" type="search" name="search">
-              <button type="submit">
-                <span class="usa-sr-only">Search</span>
-              </button>
-            </div>
-          </form>
-        </li>
-        {% endif %}
-      </ul>
-    </div>
-    <ul class="usa-nav-primary usa-accordion">
-      {% for item in site.data.top_nav.[top_nav].nav_items.right_side %}
-      <li class="{% if page.global_nav_active contains item.title %} current {% endif %}">
+    <ul class="sba-c-topnav__list sba-c-topnav__list--left-side">
+      {% for item in site.data.top_nav.[top_nav].nav_items.left_side %}
+      <li class="sba-c-topnav__list-item {% if page.global_nav_active contains item.title %} current {% endif %}">
         {% if item.subfolderitems %}
-        <button class="
-        usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="topnav-{{ item.title | remove: " " }}">
+        <button class="sba-c-topnav__subnav-toggle sba-js-visibility-trigger" type="button" aria-expanded="false" aria-controls="topnav-{{ item.title | remove: " " }}">
           <span>{{ item.title }}</span>
         </button>
-        <ul id="topnav-{{ item.title | remove: " " }}" class="usa-nav-submenu">
+        <ul id="topnav-{{ item.title | remove: " " }}" class="sba-c-topnav__subnav" hidden>
           {% for link in item.subfolderitems %}
-          <li>
-            <a href="{{ link.url }}">{{ link.page }}</a>
+          <li class="sba-c-topnav__subnav-item">
+            <a href="{{ link.url }}" class="sba-c-topnav__subnav__link">{{ link.page }}</a>
           </li>
           {% endfor %}
         </ul>
         {% else %}
-        <a class="usa-nav-link" href="{{ item.url }}">
-          <span>{{ item.title }}</span>
-        </a>
+        <a class="sba-c-topnav__link" href="{{ item.url }}">{{ item.title }}</a>
         {% endif %}
       </li>
       {% endfor %}
     </ul>
+
+    <ul class="sba-c-topnav__list sba-c-topnav__list--right-side">
+      {% if site.data.top_nav.[top_nav].nav_items.show_search %}
+      <li class="sba-c-topnav__list-item sba-c-topnav__list-item--search">
+        <button class="sba-c-topnav__subnav-toggle sba-c-button sba-c-button--icon-only sba-c-button--transparent sba-js-visibility-trigger sba-js-search-button" type="button" aria-expanded="false" aria-controls="topnav-search" title="Search">
+          <svg aria-hidden="true" class="sba-c-icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </li>
+      {% endif %}
+
+      {% for item in site.data.top_nav.[top_nav].nav_items.right_side %}
+        {% if item.subfolderitems %}
+          <li class="sba-c-topnav__list-item {% if page.global_nav_active contains item.title %} current {% endif %}">
+            <button class="sba-c-topnav__subnav-toggle sba-js-visibility-trigger" type="button" aria-expanded="false" aria-controls="topnav-{{ item.title | remove: " " }}">
+              <span>{{ item.title }}</span>
+            </button>
+            <ul id="topnav-{{ item.title | remove: " " }}" class="sba-c-topnav__subnav" hidden>
+              {% for link in item.subfolderitems %}
+              <li class="sba-c-topnav__subnav-item">
+                <a href="{{ link.url }}" class="sba-c-topnav__subnav__link">{{ link.page }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% elsif item.title == "Notifications" %}
+        <li class="sba-c-topnav__list-item sba-c-topnav__list-item--notifications {% if page.global_nav_active contains item.title %} current {% endif %}" aria-role="region" aria-live="polite">
+          <span class="sba-c-badge sba-c-badge--warn sba-c-badge--generic notifications-pip" title="You have new notifications"></span>
+          <button class="sba-c-topnav__subnav-toggle sba-c-button sba-c-button--icon-only sba-c-button--transparent sba-js-visibility-trigger sba-js-notifications-toggle" type="button" aria-expanded="false" aria-controls="topnav-notifications-drawer" title="Notifications">
+            <svg aria-hidden="true" class="sba-c-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#bell"></use>
+            </svg>
+          </button>
+        </li>
+        {% else %}
+        <li class="sba-c-topnav__list-item {% if page.global_nav_active contains item.title %} current {% endif %}">
+          <a class="sba-c-topnav__link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
   </div>
-</div>
+</nav>
