@@ -1,9 +1,9 @@
 {% assign tab_set = page.tab_set %}
-{% if site.data.tabs.[tab_set].tabs %}
+{% if site.data.tab_set.[tab_set].tabs %}
   <div class="sba-l-container">
     <div class="sba-u-padding-x--2 sba-c-tabs-wrapper sba-js-priority-nav-tabs" role="navigation">
       <ul class="sba-c-tabs__list">
-        {% for tab in site.data.tabs.[tab_set].tabs %}
+        {% for tab in site.data.tab_set.[tab_set].tabs %}
           <li class="sba-c-tabs__item">
             {% if tab.subfolderitems %}
               <button class="sba-c-tabs__link sba-js-visibility-trigger {% if page.local_nav_active contains tab.name %} current {% endif %}" type="button" aria-expanded="false" aria-controls="dropdown-{{ tab.name | remove: " " }}">
