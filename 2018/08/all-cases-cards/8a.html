@@ -12,15 +12,26 @@ new_sba_nav: true
 ---
 
 <div class="sba-l-col--12 sba-u-padding-x--2">
-  <div class="sba-l-row">
-    <div role="search" class="sba-u-measure--wide">
-      <form class="usa-search usa-search-big sba-c-search--large">
+  <div class="sba-l-row sba-u-justify-content--between sba-u-justify-content--space-between">
+    <div role="search">
+      <form class="usa-search usa-search-big sba-c-search--large" role="search">
         <label class="usa-sr-only" for="search-field-big">Search big</label>
         <input id="search-field-big" type="search" name="search" placeholder="Search firm name, firm owner, DUNS, NAICS, etc.">
         <button type="submit">
           <span class="usa-search-submit-text">Search</span>
         </button>
       </form>
+    </div>
+    <div>
+      <label for="sort" class="sba-u-visibility--screen-reader">Sort by</label>
+      <select name="" id="sort">
+        <option value="">Sort by…</option>
+        <option value="">Relevance</option>
+        <option value="">Next action due: Earliest</option>
+        <option value="">Next action due: Latest</option>
+        <option value="">Firm name: Ascending</option>
+        <option value="">Firm name: Descending</option>
+      </select>
     </div>
   </div>
   <div class="sba-l-row sba-u-margin-x--neg2">
@@ -321,35 +332,34 @@ new_sba_nav: true
       </form>
       </div>
       <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--8 sba-u-padding-x--2 sba-u-lg-padding-left--6">
-        <div class="sba-u-display--flex sba-u-justify-content--between">
-          <h2 class="sba-u-font-size--h3">Showing 123 cases</h2>
+        <div class="sba-u-display--flex sba-u-justify-content--between sba-u-margin-top--5 sba-u-margin-bottom--3 sba-u-align-items--end">
           <div>
-            <label for="sort" class="sba-u-visibility--screen-reader">Sort by</label>
-            <select name="" id="sort">
-              <option value="">Sort by…</option>
-              <option value="">Relevance</option>
-              <option value="">Next action due: Earliest</option>
-              <option value="">Next action due: Latest</option>
-              <option value="">Firm name: Ascending</option>
-              <option value="">Firm name: Descending</option>
-            </select>
+            <h2 class="sba-u-font-size--h3 sba-u-margin--0">Showing 123 cases</h2>
+            <div class="sba-c-facet-pills">
+              <span class="sba-c-facet-pill">
+                Baltimore
+                <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+              </span>
+              <span class="sba-c-facet-pill">
+                Inital Application - Screening
+                <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+              </span>
+              <span class="sba-c-facet-pill">
+                HUBZone
+                <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+              </span>
+            </div>
+          </div>
+          <div>
+            <a href="javascript:void(0);" class="sba-c-button sba-c-button--inverse">
+              <svg aria-hidden="true" class="sba-c-icon sba-u-margin-right--1">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#download"></use>
+              </svg>Download CSV
+            </a>
           </div>
         </div>
 
-        <div class="sba-c-facet-pills sba-u-margin-bottom--3">
-          <span class="sba-c-facet-pill">
-            Baltimore
-            <button class="sba-c-facet-pill__close-button" title="Close">X</button>
-          </span>
-          <span class="sba-c-facet-pill">
-            Inital Application - Screening
-            <button class="sba-c-facet-pill__close-button" title="Close">X</button>
-          </span>
-          <span class="sba-c-facet-pill">
-            HUBZone
-            <button class="sba-c-facet-pill__close-button" title="Close">X</button>
-          </span>
-        </div>
+
 
         {% include cards/_all-cases.html %}
 
