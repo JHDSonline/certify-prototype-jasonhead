@@ -1,0 +1,154 @@
+---
+layout: default
+top_nav: firm
+masthead_body: initial-application--firm
+tab_set: firm-application
+
+# Page content
+---
+
+<div class="sba-l-col--12 sba-u-padding-x--2">
+  <ul class="sba-c-breadcrumbs" role="menubar">
+    <li class="sba-c-breadcrumbs__item">
+      <a href="#" class="sba-c-breadcrumbs__link">HUBZone Application</a>
+    </li>
+    <li class="sba-c-breadcrumbs__item">
+      Basic Eligibility
+    </li>
+  </ul>
+</div>
+
+<div class="sba-l-row sba-u-margin-top--3">
+  <div class="sba-l-col--3 sba-u-padding-x--2">
+    <div class="sba-c-table-of-contents">
+      <p class="sba-c-table-of-contents__heading">Basic Eligibility</p>
+      <ol class="sba-c-table-of-contents__list">
+        <li class="sba-c-table-of-contents__list-item"><a href="#">Steps of Application</a></li>
+        <li class="sba-c-table-of-contents__list-item current"><span class="sba-u-visibility--screen-reader">Current location:</span> Update Your Info</li>
+        <li class="sba-c-table-of-contents__list-item">Is Your Firm Small?</li>
+        <li class="sba-c-table-of-contents__list-item">Your Firm’s Size</li>
+        <li class="sba-c-table-of-contents__list-item">About Your FIrm</li>
+      </ol>
+    </div>
+  </div>
+  <div class="sba-l-col--9 sba-u-padding-x--2 sba-u-padding-left--4">
+    <div class="sba-l-content-wrapper--form">
+      <a href="#" class="sba-c-button sba-c-button--transparent sba-u-padding-x--0">
+        <svg aria-hidden="true" class="sba-c-icon sba-u-margin-right--1">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#arrow-left"></use>
+        </svg>
+        Back
+      </a>
+      <form action="">
+        <h1>Update Your Info</h1>
+
+        <p><strong>Your firm’s information in SAM.gov must be up to date before you continue.</strong></p>
+
+        <p>If the information below is not correct, go to <a href="#" target="_blank">SAM.gov</a>, the System for Award Management website, to update it. <strong>If you make changes, wait 72 hours before continuing this application to ensure we have your correct information.</strong></p>
+
+        <fieldset>
+          <div class="sba-c-field-wrap">
+            <legend>Is your firm's information current in SAM.gov?</legend>
+            <ul class="sba-c-fields-list sba-c-fields-list--condensed">
+              <li>
+                <input class="sba-c-radio" id="Frank_Apple" type="radio" name="currently_with" value="Frank Apple " >
+                <label class="sba-c-label" for="Frank_Apple">Yes</label>
+              </li>
+              <li>
+                <input class="sba-c-radio" id="Alana_Butterfield" type="radio" name="currently_with" value="Alana Butterfield " >
+                <label class="sba-c-label" for="Alana_Butterfield">No</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sba-c-question-footnote" id="q1_footnote">
+            <h4 class="sba-c-question-footnote__heading">More information</h4>
+            <p>Examples of non-8(a) work include:</p>
+            <ul>
+              <li>Non-government/commercial contracts and subcontracts</li>
+              <li>Government work outside of an 8(a) award</li>
+              <li>Multiple award schedule contracts not offered through the 8(a) program</li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="sba-c-field-wrap">
+            <legend>Which option above does your firm choose?</legend>
+            <p>If you choose Option 1, then XYZ... If you choose Option 2, you must certify that you will meet the 35% HUBZone residency requirement whenever your firm works on a HUBZone contract.</p>
+            <ul class="sba-c-fields-list sba-c-fields-list--condensed">
+              <li>
+                <input class="sba-c-radio" id="s2_1" type="checkbox" name="s2" value="Frank Apple " >
+                <label class="sba-c-label" for="s2_1">Option 1</label>
+              </li>
+              <li>
+                <input class="sba-c-radio" id="s2_2" type="checkbox" name="s2" value="Alana Butterfield " data-follow-up="q1_a2_followup" aria-controls="q1_a2_followup" aria-expanded="false">
+                <label class="sba-c-label" for="s2_2">Option 2</label>
+
+                <div class="sba-c-follow-up" id="q1_a2_followup" hidden>
+                  <div class="sba-c-field-wrap">
+                    <ul class="usa-unstyled-list">
+                      <li>
+                        <label for="">Please tell us why</label>
+                        <textarea></textarea>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <input class="sba-c-radio" id="s2_3" type="checkbox" name="s2" value="Frank Apple " >
+                <label class="sba-c-label" for="s2_3">Option 3</label>
+              </li>
+            </ul>
+            <p>Next we will ask you questions based on your primary NAICS code.</p>
+          </div>
+        </fieldset>
+
+        <ul class="sba-c-fields-list">
+          <li>
+            <div class="sba-c-field-wrap">
+              <div class="sba-c-form-error">
+                <p class="sba-c-form-error__message">Helpful error message</p>
+                <label for="">Your full name</label>
+                <input type="text">
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="sba-c-field-wrap">
+              <label for="">Your favorite cookie</label>
+              <input type="text">
+            </div>
+          </li>
+        </ul>
+        <div class="sba-c-button-group">
+          <div class="sba-c-button-group__item">
+            <button type="submit" class="sba-c-button sba-c-button--big">
+              Save &amp; continue
+              <svg aria-hidden="true" class="sba-c-icon sba-u-margin-left--1">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function() {
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("b3.html");
+        return false;
+      }
+    });
+  });
+</script>

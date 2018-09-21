@@ -1,0 +1,100 @@
+---
+layout: default
+top_nav: firm
+masthead_body: initial-application--firm
+tab_set: firm-application
+
+# Page content
+---
+
+<div class="sba-l-col--12 sba-u-padding-x--2">
+  <ul class="sba-c-breadcrumbs" role="menubar">
+    <li class="sba-c-breadcrumbs__item">
+      <a href="#" class="sba-c-breadcrumbs__link">HUBZone Application</a>
+    </li>
+    <li class="sba-c-breadcrumbs__item">
+      Basic Eligibility
+    </li>
+  </ul>
+</div>
+
+<div class="sba-l-row sba-u-margin-top--3">
+  <div class="sba-l-col--3 sba-u-padding-x--2">
+    <div class="sba-c-table-of-contents">
+      <p class="sba-c-table-of-contents__heading">Basic Eligibility</p>
+      <ol class="sba-c-table-of-contents__list">
+        <li class="sba-c-table-of-contents__list-item current"><span class="sba-u-visibility--screen-reader">Current location:</span> Steps of Application</li>
+        <li class="sba-c-table-of-contents__list-item">Update Your Info</li>
+        <li class="sba-c-table-of-contents__list-item">Is Your Firm Small?</li>
+        <li class="sba-c-table-of-contents__list-item">Your Firm’s Size</li>
+        <li class="sba-c-table-of-contents__list-item">About Your FIrm</li>
+      </ol>
+    </div>
+  </div>
+  <div class="sba-l-col--9 sba-u-padding-x--2 sba-u-padding-left--4">
+    <div class="sba-l-content-wrapper--form">
+      <a href="#" class="sba-c-button sba-c-button--transparent sba-u-padding-x--0">
+        <svg aria-hidden="true" class="sba-c-icon sba-u-margin-right--1">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#arrow-left"></use>
+        </svg>
+        Back
+      </a>
+      <form action="">
+        <h1>Steps of the Application</h1>
+
+        <p><strong>1) First fill out the sections of this application in order.</strong></p>
+        <ul>
+          <li>Basic Eligibility</li>
+          <li>Ownership</li>
+          <li>Control and Size</li>
+          <li>Offices and Employees - Certification</li>
+        </ul>
+
+        <p><strong>2) Docs and info you’ll need:</strong></p>
+        <ul>
+          <li>Basic Eligibility</li>
+          <li>Ownership</li>
+          <li>Control and Size</li>
+          <li>Offices and Employees - Certification</li>
+        </ul>
+
+        <p><strong>3) Things to know</strong></p>
+        <ul>
+          <li>Basic Eligibility</li>
+          <li>Ownership</li>
+          <li>Control and Size</li>
+          <li>Offices and Employees - Certification</li>
+        </ul>
+
+
+
+        <div class="sba-c-button-group">
+          <div class="sba-c-button-group__item">
+            <button type="submit" class="sba-c-button sba-c-button--big">
+              Save &amp; continue
+              <svg aria-hidden="true" class="sba-c-icon sba-u-margin-left--1">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function() {
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("b3.html");
+        return false;
+      }
+    });
+  });
+</script>

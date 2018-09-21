@@ -1,0 +1,86 @@
+---
+layout: default
+top_nav: firm
+masthead_body: initial-application--firm
+tab_set: firm-application
+
+# Page content
+---
+
+<div class="sba-l-col--12 sba-u-padding-x--2">
+  <ul class="sba-c-breadcrumbs" role="menubar">
+    <li class="sba-c-breadcrumbs__item">
+      <a href="#" class="sba-c-breadcrumbs__link">HUBZone Application</a>
+    </li>
+    <li class="sba-c-breadcrumbs__item">
+      Basic Eligibility
+    </li>
+  </ul>
+</div>
+
+<div class="sba-l-row sba-u-margin-top--3">
+  <div class="sba-l-col--3 sba-u-padding-x--2">
+    <div class="sba-c-table-of-contents">
+      <p class="sba-c-table-of-contents__heading">Basic Eligibility</p>
+      <ol class="sba-c-table-of-contents__list">
+        <li class="sba-c-table-of-contents__list-item">Steps of Application</li>
+        <li class="sba-c-table-of-contents__list-item">Update Your Info</li>
+        <li class="sba-c-table-of-contents__list-item">Is Your Firm Small?</li>
+        <li class="sba-c-table-of-contents__list-item">Your Firm’s Size</li>
+        <li class="sba-c-table-of-contents__list-item">About Your FIrm</li>
+      </ol>
+    </div>
+  </div>
+  <div class="sba-l-col--9 sba-u-padding-x--2 sba-u-padding-left--4">
+    <div class="sba-l-content-wrapper--form">
+      <form action="">
+        <h1>Basic Eligibility for HUBZone</h1>
+
+        <p>To qualify for the HUBZone program, your business must:</p>
+        <ul>
+          <li>Be a small business organized for profit</li>
+          <li>Be at least 51% owned and controlled by U.S. citizens</li>
+          <li>Have its principal office located in a HUBZone</li>
+          <li>Have at least 35% of its employees live in a HUBZone</li>
+        </ul>
+
+        <p>The full requirements for eligibility are in Title 13 Part 126 Subpart B of the Code of Federal Regulations (CFR). (There are different requirements for some entities and entity-owned firms.)</p>
+        <p>Note that SBA and federal regulations often refer to businesses or companies as “firms.”</p>
+        <p><a href="#">Search the HUBZone map</a> to see if an address is in a HUBZone. </p>
+        <p><a href="#">Learn more about the HUBZone program</a>.</p>
+
+        <div class="sba-c-question-footnote" id="q1_footnote">
+          <h4 class="sba-c-question-footnote__heading">More information</h4>
+          <p>A firm’s <strong>principal office</strong> is the office where the majority of the firm’s employees do their work.</p>
+        </div>
+
+        <div class="sba-c-button-group">
+          <div class="sba-c-button-group__item">
+            <button type="submit" class="sba-c-button sba-c-button--big">
+              Get started
+              <svg aria-hidden="true" class="sba-c-icon sba-u-margin-left--1">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function() {
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("b2.html");
+        return false;
+      }
+    });
+  });
+</script>
