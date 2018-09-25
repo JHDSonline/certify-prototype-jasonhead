@@ -1,0 +1,104 @@
+---
+layout: default
+top_nav: firm
+masthead_body: initial-application--firm
+tab_set: firm-application
+
+# Page content
+---
+
+<div class="sba-l-col--12 sba-u-padding-x--2">
+  <ul class="sba-c-breadcrumbs" role="menubar">
+    <li class="sba-c-breadcrumbs__item">
+      <a href="#" class="sba-c-breadcrumbs__link">HUBZone Application</a>
+    </li>
+    <li class="sba-c-breadcrumbs__item">
+      Basic Eligibility
+    </li>
+  </ul>
+</div>
+
+<div class="sba-l-row sba-u-margin-top--3">
+  <div class="sba-l-col--3 sba-u-padding-x--2">
+    <div class="sba-c-table-of-contents">
+      <p class="sba-c-table-of-contents__heading">Basic Eligibility</p>
+      <ol class="sba-c-table-of-contents__list">
+        <li class="sba-c-table-of-contents__list-item"><a href="#">Steps of Application</a></li>
+        <li class="sba-c-table-of-contents__list-item current"><span class="sba-u-visibility--screen-reader">Current location:</span> Update Your Info</li>
+        <li class="sba-c-table-of-contents__list-item">Is Your Firm Small?</li>
+        <li class="sba-c-table-of-contents__list-item">Your Firm’s Size</li>
+        <li class="sba-c-table-of-contents__list-item">About Your FIrm</li>
+      </ol>
+    </div>
+  </div>
+  <div class="sba-l-col--9 sba-u-padding-x--2 sba-u-padding-left--4">
+    <div class="sba-l-content-wrapper--form">
+      <a href="#" class="sba-c-button sba-c-button--transparent sba-u-padding-x--0">
+        <svg aria-hidden="true" class="sba-c-icon sba-u-margin-right--1">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#arrow-left"></use>
+        </svg>
+        Back
+      </a>
+      <form action="">
+        <h1>Companies That Own Your Firm</h1>
+
+        <p>You must provide information for each of these firms before you can submit your application. You can come back to this page at any time.</p>
+
+        <p>To add or remove items from this list, please return to the <a href="#">previous page</a>.</p>
+
+        <table class="sba-c-table sba-c-table--borderless sba-u-font-size--h3">
+          <tbody>
+            <tr>
+              <th>
+                <a href="b6.html?firm=Bobs%20mufflers"><strong>Bob's mufflers</strong></a>
+              </th>
+              <td>
+                <span class="sba-c-badge sba-c-badge--success sba-u-font-size--base">Complete</span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="b6.html?firm=Matador%20Labs"><strong>Matador Labs, LLC</strong></a>
+              </th>
+              <td>
+                <span class="sba-c-badge sba-c-badge--warn sba-u-font-size--base">Info needed</span>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+
+
+
+
+        <div class="sba-c-button-group">
+          <button type="submit" class="sba-c-button sba-c-button--inverse sba-c-button--big">
+            Edit firm info
+          </button>
+          <button type="submit" class="sba-c-button  sba-c-button--big">
+            Continue application
+            <svg aria-hidden="true" class="sba-c-icon sba-u-margin-left--1">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function() {
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("#");
+        return false;
+      }
+    });
+  });
+</script>

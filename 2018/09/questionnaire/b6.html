@@ -1,0 +1,169 @@
+---
+layout: default
+top_nav: firm
+masthead_body: initial-application--firm
+tab_set: firm-application
+
+# Page content
+---
+
+<div class="sba-l-col--12 sba-u-padding-x--2">
+  <ul class="sba-c-breadcrumbs" role="menubar">
+    <li class="sba-c-breadcrumbs__item">
+      <a href="#" class="sba-c-breadcrumbs__link">HUBZone Application</a>
+    </li>
+    <li class="sba-c-breadcrumbs__item">
+      Basic Eligibility
+    </li>
+  </ul>
+</div>
+
+<div class="sba-l-row sba-u-margin-top--3">
+  <div class="sba-l-col--3 sba-u-padding-x--2">
+    <div class="sba-c-table-of-contents">
+      <p class="sba-c-table-of-contents__heading">Basic Eligibility</p>
+      <ol class="sba-c-table-of-contents__list">
+        <li class="sba-c-table-of-contents__list-item"><a href="#">Steps of Application</a></li>
+        <li class="sba-c-table-of-contents__list-item current"><span class="sba-u-visibility--screen-reader">Current location:</span> Update Your Info</li>
+        <li class="sba-c-table-of-contents__list-item">Is Your Firm Small?</li>
+        <li class="sba-c-table-of-contents__list-item">Your Firm’s Size</li>
+        <li class="sba-c-table-of-contents__list-item">About Your FIrm</li>
+      </ol>
+    </div>
+  </div>
+  <div class="sba-l-col--9 sba-u-padding-x--2 sba-u-padding-left--4">
+    <div class="sba-l-content-wrapper--form">
+      <a href="#" class="sba-c-button sba-c-button--transparent sba-u-padding-x--0">
+        <svg aria-hidden="true" class="sba-c-icon sba-u-margin-right--1">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#arrow-left"></use>
+        </svg>
+        Back
+      </a>
+      <form action="">
+        <h1>Enter information about <span data-print="firm">Star Services</span></h1>
+
+        <ul class="sba-c-fields-list">
+          <li>
+            <div class="sba-c-field-wrap">
+              <label class="sba-c-input" for="">What percentage of your firm does <span data-print="firm">Star Services</span> own?</label>
+              <div class="sba-c-input-ornament-container">
+                <div class="sba-c-input-ornament sba-c-input-ornament--right">
+                  <svg aria-hidden="true" class="sba-c-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/assets/svg-sprite/sprite.svg#percent"></use>
+                  </svg>
+                </div>
+                <input type="number" class="sba-c-input sba-u-input-width--3">
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <fieldset>
+          <div class="sba-c-field-wrap">
+            <legend>Ownership of <span data-print="firm">Star Services</span></legend>
+
+            <p>Please provide the corporate document that shows who owns Star Services.</p>
+
+
+
+            <div class="sba-c-doc-upload">
+              <!-- Primary heading content...visible stuff when closed -->
+              <div class="sba-c-doc-upload__primary-heading">
+                <h3>Ownership Document</h3>
+                <p>This document is required</p>
+                <!-- Button to toggle the doc upload content -->
+                <button class="sba-c-button sba-c-button--transparent sba-c-doc-upload__toggle" type="button" title="remove" aria-expanded="false" aria-controls="doc-upload1">add file</button>
+              </div>
+              <!-- Primary contents of doc upload. Shown when expanded -->
+              <div id="doc-upload1" class="sba-c-doc-upload__content">
+                <p>1) Attach a file</p>
+                <div class="sba-c-doc-upload__file-input">
+                  <span>
+                    Drag file into this space or
+                    <label for="file-picker1">choose a file</label>
+                    <input type="file" id="file-picker1" accept=".pdf" />
+                  </span>
+                </div>
+                <label for="file-comment">2) Brief description (optional)</label>
+                <input id="file-comment" type="text" class="sba-u-margin-bottom--3">
+                <button class="sba-c-button" type="button" title="add-file">Add file</button>
+                <button class="sba-c-button sba-c-button--transparent" type="button" title="cancel" aria-controls="doc-upload1-cancel">Cancel</button>
+              </div>
+            </div>
+
+            <fieldset>
+              <div class="sba-c-field-wrap">
+                <legend>Who directly owns <span data-print="firm">Star Services</span>?</legend>
+                <p><strong>Direct ownership</strong> means one or more of the following own this company <strong>directly</strong>.</p>
+
+                <ul class="sba-c-fields-list sba-c-fields-list--condensed">
+                  <li>
+                    <input class="sba-c-radio" id="s2_1" type="checkbox" name="s2" value="Frank Apple " >
+                    <label class="sba-c-label" for="s2_1">Individuals</label>
+                  </li>
+                  <li>
+                    <input class="sba-c-radio" id="s2_2" type="checkbox" name="s2" value="Frank Apple " >
+                    <label class="sba-c-label" for="s2_2">Companies</label>
+                  </li>
+                  <li>
+                    <input class="sba-c-radio" id="s2_3" type="checkbox" name="s2" value="Frank Apple " >
+                    <label class="sba-c-label" for="s2_3">A trust</label>
+                  </li>
+                  <li>
+                    <input class="sba-c-radio" id="s4" type="checkbox" name="s2" value="Frank Apple " >
+                    <label class="sba-c-label" for="s4">An Indian Tribal Government</label>
+                  </li>
+                  <li>
+                    <input class="sba-c-radio" id="s4" type="checkbox" name="s2" value="Frank Apple " >
+                    <label class="sba-c-label" for="s4">An Alaska Native Corporation</label>
+                  </li>
+                  <li>
+                    <input class="sba-c-radio" id="s5" type="checkbox" name="s2" value="Frank Apple " >
+                    <label class="sba-c-label" for="s5">A Native Hawaiian Organization</label>
+                  </li>
+                  <li>
+                    <input class="sba-c-radio" id="s6" type="checkbox" name="s2" value="Frank Apple " >
+                    <label class="sba-c-label" for="s6">A Community Development Corporation</label>
+                  </li>
+                  <li>
+                    <input class="sba-c-radio" id="s7" type="checkbox" name="s2" value="Frank Apple " >
+                    <label class="sba-c-label" for="s7">A Small Agricultural Cooperative</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+
+          </div>
+        </fieldset>
+
+
+        <p>To remove this owner, go to the list of companies that directly own your firm.</p>
+
+        <div class="sba-c-button-group">
+          <button type="button" class="sba-c-button sba-c-button--transparent sba-c-button--big">
+            Cancel
+          </button>
+          <button type="submit" class="sba-c-button sba-c-button--big">
+            Update info
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function() {
+    $('form').on('submit', function() {
+      if (!checkValidityIfSupported($('form').get(0))) {
+        return false;
+      }
+      else {
+        updateStoredData();
+        nextPage("b6.html");
+        return false;
+      }
+    });
+  });
+</script>
