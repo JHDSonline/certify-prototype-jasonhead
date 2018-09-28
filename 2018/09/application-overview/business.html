@@ -26,25 +26,15 @@ page_h1: Overview
     </div>
     <div class="sba-c-subquestionnaire-summary__status-container">
       {% if section.status == "Locked" %}
-      <span data-tooltip-text="Locked">
-        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light" >
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/assets/svg-sprite/sprite.svg#lock"></use>
-        </svg>
-      </span>
+      <span class="sba-c-badge sba-c-badge--info">Locked</span>
       {% elsif section.status == "Partial" %}
-      <span data-tooltip-text="Incomplete">
-        <span class="sba-c-progress-indicator" aria-hidden="true">
-          <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gold" style="width: 50%"></span>
-        </span>
-      </span>
+      <span class="sba-c-badge sba-c-badge--warn">Incomplete</span>
       {% elsif section.status == "Complete" %}
-      <span data-tooltip-text="Complete, not submitted">
-        <span class="sba-c-progress-indicator" aria-hidden="true">
-          <span class="sba-c-progress-indicator__meter sba-u-bgcolor--green" style="width: 100%"></span>
-        </span>
-      </span>
+      <span class="sba-c-badge sba-c-badge--success">Complete</span>
+      {% elsif section.status == "Returned" %}
+      <span class="sba-c-badge sba-c-badge--alert">Returned</span>
       {% else %}
-      <span class="sba-c-badge sba-c-badge--warn" data-tooltip-text="Currently with">{{section.status}}</span>
+      <span class="sba-c-badge">Not started</span>
       {% endif %}
     </div>
     <div class="sba-c-subquestionnaire-summary__update-container">
@@ -60,29 +50,15 @@ page_h1: Overview
         </div>
         <div class="sba-c-subquestionnaire-summary__status-container">
           {% if ad_hoc.status == "Locked" %}
-          <span data-tooltip-text="Locked">
-            <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light" >
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/assets/svg-sprite/sprite.svg#lock"></use>
-            </svg>
-          </span>
+          <span class="sba-c-badge sba-c-badge--info">Locked</span>
           {% elsif ad_hoc.status == "Partial" %}
-          <span data-tooltip-text="Incomplete">
-            <span class="sba-c-progress-indicator" aria-hidden="true">
-              <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gold" style="width: 50%"></span>
-            </span>
-          </span>
+          <span class="sba-c-badge sba-c-badge--warn">Incomplete</span>
           {% elsif ad_hoc.status == "Complete" %}
-          <span data-tooltip-text="Complete, not submitted">
-            <span class="sba-c-progress-indicator" aria-hidden="true">
-              <span class="sba-c-progress-indicator__meter sba-u-bgcolor--green" style="width: 100%"></span>
-            </span>
-          </span>
+          <span class="sba-c-badge sba-c-badge--success">Complete</span>
+          {% elsif ad_hoc.status == "Returned" %}
+          <span class="sba-c-badge sba-c-badge--alert">Returned</span>
           {% else %}
-          <span data-tooltip-text="Not started">
-            <span class="sba-c-progress-indicator" aria-hidden="true">
-              <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gray-lighter" style="width: 0%"></span>
-            </span>
-          </span>
+          <span class="sba-c-badge">Not started</span>
           {% endif %}
         </div>
         <div class="sba-c-subquestionnaire-summary__update-container">
@@ -119,29 +95,15 @@ page_h1: Overview
       </div>
       <div class="sba-c-subquestionnaire-summary__status-container">
         {% if section.status == "Locked" %}
-        <span data-tooltip-text="Locked">
-          <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light" >
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/assets/svg-sprite/sprite.svg#lock"></use>
-          </svg>
-        </span>
+        <span class="sba-c-badge sba-c-badge--info">Locked</span>
         {% elsif section.status == "Partial" %}
-        <span data-tooltip-text="Incomplete">
-          <span class="sba-c-progress-indicator" aria-hidden="true">
-            <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gold" style="width: 50%"></span>
-          </span>
-        </span>
+        <span class="sba-c-badge sba-c-badge--warn">Incomplete</span>
         {% elsif section.status == "Complete" %}
-        <span data-tooltip-text="Complete, not submitted">
-          <span class="sba-c-progress-indicator" aria-hidden="true">
-            <span class="sba-c-progress-indicator__meter sba-u-bgcolor--green" style="width: 100%"></span>
-          </span>
-        </span>
+        <span class="sba-c-badge sba-c-badge--success">Complete</span>
+        {% elsif section.status == "Returned" %}
+        <span class="sba-c-badge sba-c-badge--alert">Returned</span>
         {% else %}
-        <span data-tooltip-text="Not started">
-          <span class="sba-c-progress-indicator" aria-hidden="true">
-            <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gray-lighter" style="width: 0%"></span>
-          </span>
-        </span>
+        <span class="sba-c-badge">Not started</span>
         {% endif %}
       </div>
       <div class="sba-c-subquestionnaire-summary__update-container">
@@ -162,29 +124,15 @@ page_h1: Overview
           </div>
           <div class="sba-c-subquestionnaire-summary__status-container">
             {% if ad_hoc.status == "Locked" %}
-            <span data-tooltip-text="Locked">
-              <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light" >
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/assets/svg-sprite/sprite.svg#lock"></use>
-              </svg>
-            </span>
+            <span class="sba-c-badge sba-c-badge--info">Locked</span>
             {% elsif ad_hoc.status == "Partial" %}
-            <span data-tooltip-text="Incomplete">
-              <span class="sba-c-progress-indicator" aria-hidden="true">
-                <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gold" style="width: 50%"></span>
-              </span>
-            </span>
+            <span class="sba-c-badge sba-c-badge--warn">Incomplete</span>
             {% elsif ad_hoc.status == "Complete" %}
-            <span data-tooltip-text="Complete, not submitted">
-              <span class="sba-c-progress-indicator" aria-hidden="true">
-                <span class="sba-c-progress-indicator__meter sba-u-bgcolor--green" style="width: 100%"></span>
-              </span>
-            </span>
+            <span class="sba-c-badge sba-c-badge--success">Complete</span>
+            {% elsif ad_hoc.status == "Returned" %}
+            <span class="sba-c-badge sba-c-badge--alert">Returned</span>
             {% else %}
-            <span data-tooltip-text="Not started">
-              <span class="sba-c-progress-indicator" aria-hidden="true">
-                <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gray-lighter" style="width: 0%"></span>
-              </span>
-            </span>
+            <span class="sba-c-badge">Not started</span>
             {% endif %}
           </div>
           <div class="sba-c-subquestionnaire-summary__update-container">
