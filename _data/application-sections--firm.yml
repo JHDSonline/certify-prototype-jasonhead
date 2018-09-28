@@ -1,0 +1,56 @@
+business:
+  - title: Eligibility
+    status: Locked
+    updated: "Last update: 09/12/18"
+
+  - title: Ownership
+    status: Locked
+    updated: "Last update: 09/12/18"
+    ad_hocs:
+      - title: Need tax documents
+        status: Locked
+        updated: "Last update: 09/12/18"
+      - title: Need tax documents 2
+        status: Partial
+        updated: "Last update: 09/12/18"
+
+  - title: Control
+    status: Locked
+    updated: "Last update: 09/12/18"
+
+  - title: Potential for success
+    status: Locked
+    updated: "Last update: 09/12/18"
+
+  - title: Character
+    status: Complete
+    returned: "true"
+    updated: "Last update: 09/12/18"
+
+individuals:
+  - title: Michael Smith
+    class: Disadvantaged individual
+    status: Locked
+    updated: "Last update: 09/12/18"
+
+  - title: Shelly Hamilton
+    class: Spouse
+    status: Locked
+    updated: "Last update: 09/12/18"
+    ad_hocs:
+     - title: Need tax documents
+       status: Locked
+       updated: "Last update: 09/12/18"
+     - title: Need tax documents 2
+       status: Not started
+       updated: Not started
+
+  - title: Giovani Rappaport
+    class: Non Disadvantaged Individual
+    status: Partial
+    updated: "Last update: 09/12/18"
+
+  - title: Blake Carmichael
+    class: Non Disadvantaged Individual
+    status: Complete
+    updated: "Last update: 09/12/18"

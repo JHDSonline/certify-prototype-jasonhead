@@ -1,0 +1,223 @@
+---
+layout: default
+top_nav: firm
+masthead_body: initial-application--firm
+tab_set: firm-application
+
+local_nav_active: Overview
+page_h1: Overview
+---
+
+
+
+<div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--8 sba-u-padding-x--2">
+
+  <h2 class="sba-u-color--muted sba-u-font-weight--normal">Information about the business</h2>
+
+
+{% for section in site.data.application-sections--firm.business %}
+<div class="sba-c-subquestionnaire-summary">
+  <div class="sba-c-subquestionnaire-summary__item">
+    <div class="sba-c-subquestionnaire-summary__name-container">
+      <h3 class="sba-c-subquestionnaire-summary__name"><a href="">{{section.title}}</a></h3>
+      {% if section.returned %}
+      <strong class="sba-u-color--error">Returned for revisions</strong>
+      {% endif %}
+    </div>
+    <div class="sba-c-subquestionnaire-summary__status-container">
+      {% if section.status == "Locked" %}
+      <span data-tooltip-text="Locked">
+        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light" >
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/assets/svg-sprite/sprite.svg#lock"></use>
+        </svg>
+      </span>
+      {% elsif section.status == "Partial" %}
+      <span data-tooltip-text="Incomplete">
+        <span class="sba-c-progress-indicator" aria-hidden="true">
+          <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gold" style="width: 50%"></span>
+        </span>
+      </span>
+      {% elsif section.status == "Complete" %}
+      <span data-tooltip-text="Complete, not submitted">
+        <span class="sba-c-progress-indicator" aria-hidden="true">
+          <span class="sba-c-progress-indicator__meter sba-u-bgcolor--green" style="width: 100%"></span>
+        </span>
+      </span>
+      {% else %}
+      <span class="sba-c-badge sba-c-badge--warn" data-tooltip-text="Currently with">{{section.status}}</span>
+      {% endif %}
+    </div>
+    <div class="sba-c-subquestionnaire-summary__update-container">
+      {{section.updated}}
+    </div>
+  </div>
+
+  {% if section.ad_hocs %}
+    {% for ad_hoc in section.ad_hocs %}
+      <div class="sba-c-subquestionnaire-summary__item sba-c-subquestionnaire-summary__item--sub">
+        <div class="sba-c-subquestionnaire-summary__name-container">
+          <p class="sba-c-subquestionnaire-summary__name"><a href="">&rdsh; {{ad_hoc.title}}</a></p>
+        </div>
+        <div class="sba-c-subquestionnaire-summary__status-container">
+          {% if ad_hoc.status == "Locked" %}
+          <span data-tooltip-text="Locked">
+            <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light" >
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/assets/svg-sprite/sprite.svg#lock"></use>
+            </svg>
+          </span>
+          {% elsif ad_hoc.status == "Partial" %}
+          <span data-tooltip-text="Incomplete">
+            <span class="sba-c-progress-indicator" aria-hidden="true">
+              <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gold" style="width: 50%"></span>
+            </span>
+          </span>
+          {% elsif ad_hoc.status == "Complete" %}
+          <span data-tooltip-text="Complete, not submitted">
+            <span class="sba-c-progress-indicator" aria-hidden="true">
+              <span class="sba-c-progress-indicator__meter sba-u-bgcolor--green" style="width: 100%"></span>
+            </span>
+          </span>
+          {% else %}
+          <span data-tooltip-text="Not started">
+            <span class="sba-c-progress-indicator" aria-hidden="true">
+              <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gray-lighter" style="width: 0%"></span>
+            </span>
+          </span>
+          {% endif %}
+        </div>
+        <div class="sba-c-subquestionnaire-summary__update-container">
+          {{ad_hoc.updated}}
+        </div>
+      </div>
+    {% endfor %}
+  {% endif %}
+</div>
+{% endfor %}
+
+
+
+
+
+  <h2 class="sba-u-color--muted sba-u-font-weight--normal sba-u-margint-bottom--0">Individuals involved with the business</h2>
+
+  <p>To protect personal information, you will not be able to see the responses provided by any of the people involved with your business except for your own.</p>
+
+  <p>To <strong>add</strong> or <strong>remove</strong> any people from this list, go to the <a href="#">manage contributors page</a>.</p>
+
+  {% for section in site.data.application-sections--firm.individuals %}
+  <div class="sba-c-subquestionnaire-summary">
+    <div class="sba-c-subquestionnaire-summary__item">
+      <div class="sba-c-subquestionnaire-summary__name-container">
+        <h3 class="sba-c-subquestionnaire-summary__name">
+          {% if forloop.index == 1%}
+          <a href="">{{section.title}}</a>
+          {% else %}
+            {{section.title}}
+          {% endif %}
+        </h3>
+        <p class="sba-c-subquestionnaire-summary__name__class">{{section.class}}</p>
+      </div>
+      <div class="sba-c-subquestionnaire-summary__status-container">
+        {% if section.status == "Locked" %}
+        <span data-tooltip-text="Locked">
+          <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light" >
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/assets/svg-sprite/sprite.svg#lock"></use>
+          </svg>
+        </span>
+        {% elsif section.status == "Partial" %}
+        <span data-tooltip-text="Incomplete">
+          <span class="sba-c-progress-indicator" aria-hidden="true">
+            <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gold" style="width: 50%"></span>
+          </span>
+        </span>
+        {% elsif section.status == "Complete" %}
+        <span data-tooltip-text="Complete, not submitted">
+          <span class="sba-c-progress-indicator" aria-hidden="true">
+            <span class="sba-c-progress-indicator__meter sba-u-bgcolor--green" style="width: 100%"></span>
+          </span>
+        </span>
+        {% else %}
+        <span data-tooltip-text="Not started">
+          <span class="sba-c-progress-indicator" aria-hidden="true">
+            <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gray-lighter" style="width: 0%"></span>
+          </span>
+        </span>
+        {% endif %}
+      </div>
+      <div class="sba-c-subquestionnaire-summary__update-container">
+        {{section.updated}}
+        {% if section.status != "Locked" %}
+        <div><a href="#">Send reminder</a></div>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if section.ad_hocs %}
+      {% for ad_hoc in section.ad_hocs %}
+        <div class="sba-c-subquestionnaire-summary__item sba-c-subquestionnaire-summary__item--sub">
+          <div class="sba-c-subquestionnaire-summary__name-container">
+            <p class="sba-c-subquestionnaire-summary__name">
+              &rdsh; {{ad_hoc.title}}
+            </p>
+          </div>
+          <div class="sba-c-subquestionnaire-summary__status-container">
+            {% if ad_hoc.status == "Locked" %}
+            <span data-tooltip-text="Locked">
+              <svg aria-hidden="true" class="sba-c-icon sba-c-icon--gray-light" >
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{site.baseurl}}/assets/svg-sprite/sprite.svg#lock"></use>
+              </svg>
+            </span>
+            {% elsif ad_hoc.status == "Partial" %}
+            <span data-tooltip-text="Incomplete">
+              <span class="sba-c-progress-indicator" aria-hidden="true">
+                <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gold" style="width: 50%"></span>
+              </span>
+            </span>
+            {% elsif ad_hoc.status == "Complete" %}
+            <span data-tooltip-text="Complete, not submitted">
+              <span class="sba-c-progress-indicator" aria-hidden="true">
+                <span class="sba-c-progress-indicator__meter sba-u-bgcolor--green" style="width: 100%"></span>
+              </span>
+            </span>
+            {% else %}
+            <span data-tooltip-text="Not started">
+              <span class="sba-c-progress-indicator" aria-hidden="true">
+                <span class="sba-c-progress-indicator__meter sba-u-bgcolor--gray-lighter" style="width: 0%"></span>
+              </span>
+            </span>
+            {% endif %}
+          </div>
+          <div class="sba-c-subquestionnaire-summary__update-container">
+            {{ad_hoc.updated}}
+            {% if ad_hoc.status != "Locked" %}
+            <div><a href="#">Send reminder</a></div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+  {% endfor %}
+
+</div>
+<div class="sba-l-sm-col--12 sba-l-md-col--golden-sm sba-l-lg-col--4 sba-u-padding-x--2 sba-u-lg-padding-left--4">
+  <div class="section-block">
+    <div class="section-block__header">
+      <h2>How to submit<h2>
+    </div>
+
+    <div class="sba-c-guidance sba-c-guidance--warning">
+      <div class="sba-c-guidance__header">
+        <h2 class="sba-c-guidance__primary-heading">Your application has been returned to you.</h2>
+      </div>
+      <div class="sba-c-guidance__section">
+        <p>Please provide the information requested in <a href="#">this message</a> by <strong>Sept. 15th, 2017</strong>.</p>
+      </div>
+      <div class="sba-c-guidance__section">
+        <input type="checkbox" name="update" id="update_made" value="yes">
+        <label for="update_made">I have made the requested updates</label>
+        <p><a id="resubmit-button" href="#" class="sba-c-button sba-c-button--disabled">Resubmit to SBA</a></p>
+      </div>
+    </div>
+  </div>
+</div>

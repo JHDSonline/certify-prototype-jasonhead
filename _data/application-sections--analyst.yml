@@ -1,0 +1,55 @@
+business:
+  - title: Eligibility
+    currently_with: SBA
+    updated: "Last update: 09/12/18"
+
+  - title: Ownership
+    currently_with: SBA
+    updated: "Last update: 09/12/18"
+    ad_hocs:
+      - title: Need tax documents
+        currently_with: SBA
+        updated: "Last update: 09/12/18"
+      - title: Need tax documents 2
+        currently_with: FIRM
+        updated: "Last update: 09/12/18"
+
+  - title: Control
+    currently_with: SBA
+    updated: "Last update: 09/12/18"
+
+  - title: Potential for success
+    currently_with: SBA
+    updated: "Last update: 09/12/18"
+
+  - title: Character
+    currently_with: FIRM
+    updated: "Last update: 09/12/18"
+
+individuals:
+  - title: Michael Smith
+    class: Disadvantaged individual
+    currently_with: SBA
+    updated: "Last update: 09/12/18"
+
+  - title: Shelly Hamilton
+    class: Spouse
+    currently_with: FIRM
+    updated: "Last update: 09/12/18"
+    ad_hocs:
+     - title: Need tax documents
+       currently_with: SBA
+       updated: "Last update: 09/12/18"
+     - title: Need tax documents 2
+       currently_with: FIRM
+       updated: "Last update: 09/12/18"
+
+  - title: Giovani Rappaport
+    class: Non Disadvantaged Individual
+    currently_with: FIRM
+    updated: "Last update: 09/12/18"
+
+  - title: Blake Carmichael
+    class: Non Disadvantaged Individual
+    currently_with: FIRM
+    updated: "Last update: 09/12/18"
