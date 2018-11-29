@@ -1,23 +1,33 @@
-<header class="masthead">
-  <div class="usa-navbar certify-navbar">
-    <div class="usa-logo certify-logo" id="logo">
-      <img alt="certify.SBA.gov logo" src="{{ relative }}assets/img/certify-sba-gov-logo_on-dark.png" />
-    </div>
-    <button class="usa-menu-btn">Menu</button>
+<div class="usa-navbar certify-navbar">
+  <div class="usa-logo certify-logo" id="logo">
+    <img alt="certify.SBA.gov logo" src="{{ relative }}assets/img/certify-sba-gov-logo_on-dark.png" />
   </div>
+  <button class="usa-menu-btn">Menu</button>
+    <nav role="navigation" class="usa-nav certify-nav">
+        <div class="usa-nav-inner">
+            <button class="usa-nav-close">
+                <img src="{{ site.baseurl }}/assets/img/close.svg" alt="close">
+            </button>
 
-<div class="usa-grid-full masthead__alert-wrap hidden">
+            {% include _analyst_global_nav.html %}
+        </div>
+    </nav>
+</div>
+
+<div class="full-gray">
+  <br>
+  <div class="masthead">
+    <div class="usa-grid-full masthead__alert-wrap hidden">
   <div class="usa-alert usa-alert-warning">
     <div class="usa-alert-body">
       <h3 class="usa-alert-heading">Please close this case</h3>
-      <p class="usa-alert-text">The firm has requested to withdraw its 8(a) Ininitial Application on 00/00/0000.</p>
+      <p class="usa-alert-text">The firm has requested to withdraw its 8(a) Initial Application on 00/00/0000.</p>
     </div>
   </div>
 </div>
-
-  <div class="usa-grid-full masthead__content">
-    <div class="usa-width-one-fourth masthead__content__primary">
-      <h1 class="masthead__primary-heading"><a href="firm-overview.html" data-print="firm_name">Mike’s Garage - Jason test to see if thjis is pulled in.</a> <span class="sba-c-badge sba-c-badge--alert" data-filter-suspended="suspended">Suspended</span> <span class="sba-c-badge sba-c-badge--warn" data-filter-suspended="recommended">Suspended (DO)</span></h1>
+    <div class="usa-grid-full ">
+      <div class="masthead__content__primary sba-u-border--0">
+      <h1 class="masthead__primary-heading"><a href="firm-overview.html" data-print="firm_name">Entity 10 Legal Business Name</a> <span class="sba-c-badge sba-c-badge--alert" data-filter-suspended="suspended">Suspended</span> <span class="sba-c-badge sba-c-badge--warn" data-filter-suspended="recommended">Suspended (DO)</span></h1>
       <h2 class="masthead__secondary-heading" data-print="applicationname">
         {% if page.application_name %}
           {{ page.application_name }}
@@ -26,37 +36,31 @@
         {% endif %}
       </h2>
     </div>
-    <div  class="usa-width-one-sixth masthead__content__secondary">
-      <p>
-        <strong>Program year</strong><br>
-        1 <br>
-        &nbsp;
-      </p>
+      <div class="sba-u-margin-y--1 sba-u-display--flex sba-u-flex-direction--column sba-u-md-flex-direction--row">
+      <div class="sba-u-padding-right--2 sba-u-display--flex">
+        <strong class="sba-u-margin-right--1">Owner:</strong>Sam Merica (555-555-5555)
+      </div>
+      <div class="sba-u-padding-right--2 sba-u-display--flex">
+        <strong class="sba-u-margin-right--1">District Office:</strong>
+        <span class="sba-u-margin-right--1" data-print="district_office">Alabama</span>
+        <a href="/sba_application/36/application_dashboard/overview/edit_duty_station"><svg aria-hidden="true" class="sba-c-icon sba-c-icon--blue">
+          <use xlink:href="/assets/landing-icons/sprite-3535fc585084653aae0e2fee71dcf813058ac5968806854f457074545d802a33.svg#edit" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+        </svg>
+          <span class="sba-u-visibility--screen-reader">Change</span></a>
+      </div>
+      <div class="sba-u-padding-right--2 sba-u-display--flex">
+        <strong class="sba-u-margin-right--1">Servicing BOS:</strong>
+        <span class="sba-u-margin-right--1" data-print="servicing_bos">Analyst1 Sba analyst 8a district office</span>
+        <a href="/sba_application/36/application_dashboard/overview/edit_servicing_bos">
+          <svg aria-hidden="true" class="sba-c-icon sba-c-icon--blue">
+            <use xlink:href="/assets/landing-icons/sprite-3535fc585084653aae0e2fee71dcf813058ac5968806854f457074545d802a33.svg#edit" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="sba-u-visibility--screen-reader">Change</span></a>
+      </div>
     </div>
-    <div class="usa-width-one-sixth masthead__content__secondary">
-      <p>
-        <strong>Firm owner</strong><br>
-        Mike Jones <br>
-        703-555-3232
-      </p>
     </div>
-    <div id="field_office" class="usa-width-one-sixth masthead__content__secondary">
-      <p>
-        <strong>District office</strong><br>
-        <span data-print="field_office"></span> <br>
-        <a href="select-field-office.html">Change</a>
-      </p>
-    </div>
-  </div>
-
-  <nav role="navigation" class="usa-nav certify-nav">
+    <nav role="navigation" class="usa-nav certify-nav">
     <div class="usa-nav-inner">
-      <button class="usa-nav-close">
-        <img src="{{ site.baseurl }}/assets/img/close.svg" alt="close">
-      </button>
-
-      {% include _analyst_global_nav.html %}
-
       <div class="certify-local-nav">
         <div class="usa-grid-full">
           <h2 class="certify-local-nav__heading">Mike's Gararage – 8(a) Initial Application</h2>
@@ -70,21 +74,21 @@
             -->
             <li>
               <a class="usa-nav-link {% if page.local_nav_active contains "Application" %} current {% endif %}" href="{% if page.application_link %}
-                {{ page.application_link }}
+              {{ page.application_link }}
               {% else %}
-                #
+              #
               {% endif %}">
               {% if page.application_name contains "Annual Review" %}
-                <span>Annual Review</span>
+              <span>Annual Review</span>
               {% else %}
-                <span>Application</span>
+              <span>Application</span>
               {% endif %}
               </a>
             </li>
             <li>
               <button class="
               usa-accordion-button usa-nav-link {% if page.local_nav_active contains "Documents" %} current {% endif %}" aria-expanded="false" aria-controls="side-nav-3">
-                <span>Documents</span>
+              <span>Documents</span>
               </button>
               <ul id="side-nav-3" class="usa-nav-submenu">
                 <li>
@@ -105,29 +109,29 @@
             </li>
             <li>
               <a class="usa-nav-link {% if page.local_nav_active contains "Notes" %} current {% endif %}" href="{% if page.notes_link %}
-                {{ page.notes_link }}
+              {{ page.notes_link }}
               {% else %}
-                #
+              #
               {% endif %}">
-                <span>SBA Notes</span>
+              <span>SBA Notes</span>
               </a>
             </li>
             <li>
               <a class="usa-nav-link {% if page.local_nav_active contains "Messages" %} current {% endif %}" href="{% if page.messages_link %}
-                {{ page.messages_link }}
+              {{ page.messages_link }}
               {% else %}
-                #
+              #
               {% endif %}">
-                <span>Messages</span>
+              <span>Messages</span>
               </a>
             </li>
             <li>
               <a class="usa-nav-link {% if page.local_nav_active contains "Log" %} current {% endif %}" href="{% if page.activity_log_link %}
-                {{ page.activity_log_link }}
+              {{ page.activity_log_link }}
               {% else %}
-                #
+              #
               {% endif %}">
-                <span>Activity Log</span>
+              <span>Activity Log</span>
               </a>
             </li>
           </ul>
@@ -135,8 +139,11 @@
       </div>
     </div>
   </nav>
-</header>
+  </div>
 
+
+</div>
+</div>
 
 <script>
 $(document).ready(function() {

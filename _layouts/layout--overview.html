@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+  {% include _head--overview.html %}
+</head>
+<body class="public mainscreen {% if page.body_class %}
+    {{ page.body_class }}{% endif %}">
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+{% include _masthead--overview.html %}
+
+{% if page.show_taskbar %}
+    <div class="sba-l-taskbar-container">
+      {% if page.taskbar_style == "initial" %}
+        {% include _taskbar.html %}
+      {% endif %}
+      {% if page.taskbar_style == "overview" %}
+        {% include _taskbar--overview.html %}
+      {% else %}
+        {% include widgets/_taskbar.html %}
+      {% endif %}
+    </div>
+  {% endif %}
+
+<div class="sba-l-container">
+  <div class="sba-l-row">
+    <div class="sba-l-col--12 sba-u-padding-x--2">
+      <div class="certify-page-header">
+        <div class="certify-page-header__primary">
+          {% if page.back_link %}
+          <p class="sba-u-margin-top--0"><a href="javascript:window.history.back();">« {{ page.back_link }}</a></p>
+          {% endif %}
+          <h1>{{ page.page_h1 }}</h1>
+        </div>
+        {% if page.header_button_text %}
+        <div class="certify-page-header__secondary">
+          <a href="#" class="usa-button usa-button-big" id="{% if page.header_button_id %}{{ page.header_button_id }}{% else %}header-button{% endif %}">{{ page.header_button_text }}</a>
+        </div>
+        {% endif %}
+      </div>
+
+      {% if page.lead_text %}<p class="usa-font-lead">{{ page.lead_text }}</p>{% endif %}
+    </div>
+  </div>
+  <div class="sba-l-row">
+    {{ content }}
+  </div>
+</div>
+<script>
+    $(function() {
+        $('.expander-view-more-trigger').click(function () {
+            $(this).toggleClass("expander-view-more-hidden");
+        });
+    })
+</script>
+<div class="sba-l-container">
+  {% include _return_to_top.html %}
+</div>
+
+{% include _footer.html %}
+
+{% include widgets/_note.html %}
+
+</body>
+</html>
