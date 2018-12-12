@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7e4f2eda-0071-453d-b4ba-3676d3ae4a90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/prototypes.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/prototypes.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -4486,17 +4486,7 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_data/prototypes.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="138" column="53" selection-start-line="138" selection-start-column="53" selection-end-line="138" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -4556,9 +4546,9 @@
         <option value="$PROJECT_DIR$/_includes/_head--overview.html" />
         <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only.html" />
         <option value="$PROJECT_DIR$/update_jekyll.sh" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_data/prototypes.yml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -4584,29 +4574,6 @@
               <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
               <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
-              <item name="2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
-              <item name="2018" type="462c0819:PsiDirectoryNode" />
-              <item name="11" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
-              <item name="2018" type="462c0819:PsiDirectoryNode" />
-              <item name="11" type="462c0819:PsiDirectoryNode" />
-              <item name="read-only-subquestionnaire" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
-              <item name="_data" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -4614,7 +4581,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="ChangesTree.GroupingKeys" value="" />
+    <property name="ChangesTree.GroupingKeys" value="directory" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -4738,7 +4705,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88624000" />
+    <option name="totallyTimeSpent" value="90985000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -4751,12 +4718,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="3840" height="2137" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85875285" visible="true" weight="0.30767217" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.859545" visible="true" weight="0.30767217" />
       <window_info id="Structure" order="1" sideWeight="0.32331902" side_tool="true" weight="0.16692996" />
       <window_info id="Favorites" order="2" sideWeight="0.32331902" side_tool="true" weight="0.16692996" />
-      <window_info id="npm" order="3" sideWeight="0.14124718" side_tool="true" visible="true" weight="0.30767217" />
+      <window_info id="npm" order="3" sideWeight="0.140455" side_tool="true" visible="true" weight="0.30767217" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960724" weight="0.32967034" />
@@ -4766,7 +4732,7 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49882168" weight="0.32917082" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.8277036" weight="0.32917082" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49078462" visible="true" weight="0.34174085" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49078462" weight="0.34174085" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50921535" side_tool="true" weight="1.0" />
       <window_info anchor="bottom" id="GitHub Pull Requests" order="11" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -4974,9 +4940,6 @@
         <state relative-caret-position="-16743" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_site/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/_site/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -5038,31 +5001,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/update_jekyll.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
@@ -5125,13 +5067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -5142,10 +5077,43 @@
     <entry file="file://$PROJECT_DIR$/_data/all-cases-cards.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_data/prototypes.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1134">
-          <caret line="138" column="53" selection-start-line="138" selection-start-column="53" selection-end-line="138" selection-end-column="53" />
+          <caret line="138" column="56" selection-start-line="138" selection-start-column="56" selection-end-line="138" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2027" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
