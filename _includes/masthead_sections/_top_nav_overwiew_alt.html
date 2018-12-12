@@ -1,3 +1,9 @@
+<nav role="navigation" class="usa-nav certify-nav">
+  <div class="usa-nav-inner">
+    <button class="usa-nav-close">
+      <img src="{{ site.baseurl }}/assets/img/close.svg" alt="close">
+    </button>
+
 <div class="certify-global-nav">
   <div class="usa-grid-full">
     <div class="certify-global-nav__primary">
@@ -6,13 +12,13 @@
       </a>
       <ul class="usa-nav-primary usa-accordion">
         <li class="{% if page.global_nav_active contains "Dashboard" %} current {% endif %}">
-          <a class="usa-nav-link" href="{% if page.dashboard_link %}
+        <a class="usa-nav-link" href="{% if page.dashboard_link %}
             {{ page.dashboard_link }}
           {% else %}
             #
           {% endif %}">
-            <span>Dashboard</span>
-          </a>
+          <span>Dashboard</span>
+        </a>
         </li>
 
         <li>
