@@ -136,13 +136,7 @@
   summary: Potential redesign for the application overview
   audience: SBA
 
-- name: Jason Test for Jekyll site build
-  date: November 2018
-  url: /2018/11/jekyll-test-page
-  summary: Jason Testing how to creat jekyll pages for site prototype
-  audience: UX Team
-
-- name: Read Only Sub-Questionnaire
+- name: Read Only Sub-Questionnaire update 12/11/2018GIT
   date: November 2018
   url: /2018/11/read-only-subquestionnaire
   summary: Redesign the 'Read-Only' sub-questionnaire view for SBA users
