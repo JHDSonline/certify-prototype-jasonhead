@@ -136,8 +136,20 @@
   summary: Potential redesign for the application overview
   audience: SBA
 
-- name: Read Only Sub-Questionnaire update 12/11/2018GIT
+- name: APP-3360 - Redesign the 'Read-Only' sub-questionnaire view for SBA users
   date: November 2018
   url: /2018/11/read-only-subquestionnaire
   summary: Redesign the 'Read-Only' sub-questionnaire view for SBA users
-  audience: SBA
+  audience: UX Team
+
+- name: APP-4015 - Design view for search results - All Sectors (*ex.. 8a, hubzone)
+  date: December 2018
+  url: /2018/12/APP-4015
+  summary: Redesign the results view for global search for SBA users
+  audience: UX Team
+
+- name: APP-3331 - As a Vendor Admin, I want to change my email address in Certify
+  date: December 2018
+  url: /2018/12/APP-3331
+  summary: As a Vendor Admin, I want to change my email address in Certify
+  audience: UX Team
