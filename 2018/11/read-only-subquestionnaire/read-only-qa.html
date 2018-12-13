@@ -1156,19 +1156,19 @@ assign_link: assign1.html
 $(document.body).on("click", "[id$=_show_content]", function (event) {
     var card_id = $(this).attr("id")
     var content_id = card_id.replace("_show_content", "_content");
-    $('#' + content_id).toggleClass("hide");
-    alert($('#' + content_id));
-    $(".cards").toggleClass("current")
-    alert($('#' + content_id));
+    $('#' + content_id).removeClass("hide");
+    // alert($('#' + content_id));
+    $(".cards").addClass("hide")
+    // alert($('#' + content_id));
 });
 
 $(document.body).on("click", "[id$=_show_cards]", function (event) {
     var content_id = $(this).attr("id")
     var card_id = content_id.replace("_show_cards", "_content");
-    $('#' + card_id).toggleClass("hide");
-    alert($(this).attr("id"));
-    $(".cards").removeClass("current")
-    alert($(this).attr("id"));
+    $('#' + card_id).addClass("hide");
+    // alert($(this).attr("id"));
+    $(".cards").removeClass("hide")
+    // alert($(this).attr("id"));
 
 });
 

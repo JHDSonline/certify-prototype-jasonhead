@@ -2,44 +2,71 @@
 layout: card
 ---
 <article>
-        <h1>Read Only Sub-Questionnaire</h1>
+    <h1>Read Only Sub-Questionnaire</h1>
 
-        <p>Redesign the 'Read-Only' sub-questionnaire view for SBA users</p>
+    <p>Redesign the 'Read-Only' sub-questionnaire view for SBA users:</br>
+        For this view I have the Details view display under the card selected. Keeping all of the other cards in view as a reference.<br>
+        I added programming for a show hide click of the header link so users can easily hide by clicking the header or close btn. I also added a close to the footer of details.<br>
+        Currently you only see one detail view at at time, cards are hidden, then detail view is shown. When close is clicked details is hidden and Cards are shown.</p>
 
-        <ul>
-            <li>Show Details view underneath the card it represents style using the card style</li>
-
-        </ul>
-
-        <p>
-            <a href="read-only.html?status=processing&status_text=Processing" class="sba-c-button">
-                <svg aria-hidden="true" class="sba-c-icon sba-c-icon--lg">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype/assets/svg-sprite/sprite.svg#bolt"></use>
-                </svg> Initial application
-            </a>
-        </p>
     <ul>
-        <li>Same as current Qa function hide cards show details - styled results as cards style</li>
-
+        <li>Modified rogramming:</li>
+        <ul>
+        <li>Click Header: show details view
+            <ul>
+            <li>Added function Second Click on header hides details view</li>
+            </ul>
+        </li>
+        <li>Click Close: Hides Details view
+            <ul>
+                <li>Added Close btn to footer</li>
+            </ul>
+        </li>
+        <li>Details Pops up under the corresponding card</li>
+        <li>Need to add programing to only show the detail view of the card selected. as for now they stack in order of codeing </li>
+        <li>Updated Details Styling to card design</li>
+        </ul>
     </ul>
 
     <p>
-        <a href="qa-read-only.html?status=processing&status_text=Processing" class="sba-c-button">
+        <a href="read-only.html?status=processing&status_text=Processing" class="sba-c-button">
             <svg aria-hidden="true" class="sba-c-icon sba-c-icon--lg">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype/assets/svg-sprite/sprite.svg#bolt"></use>
-            </svg> Initial application
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#bolt"></use>
+            </svg>
+            View Prototype
         </a>
     </p>
     <ul>
-        <li>Disadvantaged Individual view show details style as cards keep original cards in view results styled as cards with tabs</li>
+        <li>Current Qa programming:
+        <ul>
+        <li>Click Header: hide cards/show details</li>
+        <li>Click Close: Hide Details/Show Cards</li>
+        <li>Updated Details Styling to card design</li>
+        </ul></li>
+    </ul>
 
+    <p>
+        <a href="read-only-qa.html?status=processing&status_text=Processing" class="sba-c-button">
+            <svg aria-hidden="true" class="sba-c-icon sba-c-icon--lg">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#bolt"></use>
+            </svg>
+            View Prototype
+        </a>
+    </p>
+    <ul>
+        <li>Disadvantaged Individual: (see bottom card for this view)
+            <ul>
+                <li>Added Tabs for this view</li>
+                <li>Updated Details Styling to card design</li>
+            </ul></li>
     </ul>
 
     <p>
         <a href="di-read-only.html?status=processing&status_text=Processing" class="sba-c-button">
             <svg aria-hidden="true" class="sba-c-icon sba-c-icon--lg">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype/assets/svg-sprite/sprite.svg#bolt"></use>
-            </svg> Initial application
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#bolt"></use>
+            </svg>
+            View Prototype
         </a>
     </p>
 
