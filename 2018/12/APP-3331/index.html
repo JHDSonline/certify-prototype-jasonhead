@@ -1,50 +1,42 @@
 ---
-layout: application
+layout: card
 ---
+<article>
+    <h1>APP-3331</h1>
 
-<div id="homepage">
-  <div class="usa-width-one-whole">
-    <img alt="Background Image" class="back-img-mobile" src="assets/landing-icons/banner.jpg"></div>
-    <div aria-label="Image of small business team members welcoming you to the certify.SBA.gov application, where you can register your business to compete for US Federal government contracts." class="usa-width-one-whole back-img" style="background-image: url('https://certify.sba.gov/assets/landing-icons/banner.jpg')">
-      <div class="usa-width-two-thirds">
-        <div class="welcome-block"><h2>Welcome to certify.SBA.gov</h2>
-          <div class="usa-font-lead">The U.S. Small Business Administration (SBA) is working to modernize the application process for federal contracting programs. Manage your application and eligibility documentation for the WOSB and All Small Mentor-Protégé programs online from our easy-to-use dashboard. <b>Get started today!</b>
-          </div>
-        </div>
-      </div><div class="usa-width-one-third">
-        <div class="login-block">
-          <form action="sign-in.html" method="get">
-            <div class="button_wrapper">
-              <button class="button-full" type="submit"> Login</button>
-            </div>
-            <p>Or</p>
-          </form>
-          <form action="create-account.html" method="get">
-            <div class="button_wrapper">
-              <button class="usa-color-gold">Get started</button>
-            </div>
-          </form>
-          <a href="/max_gov">
-            Federal government employees: <br>Login or create an account</a>
-          </div>
-        </div>
-      </div>
-      <div class="usa-width-one-whole row_block">
-        <div class="usa-width-one-third">
-          <h3>New Features</h3>
-          <p>Experience a unified SBA contracting program certification process and complete SBA forms directly online. Upload and manage your documents across multiple programs and receive email notifications such as expiration and renewal notices.</p>
-        </div>
-        <div class="usa-width-one-third">
-          <h3>Am I Eligible?</h3>
-          <p>Answer a few questions to discover if your company should pursue participation in SBA’s contracting programs. Are you eligible to join the Woman Owned Small Business (WOSB) Program, HUBZone Program, or 8(a) Business Development Program?&nbsp;<a href="/am-i-eligible">Find out</a></p>
-        </div>
-        <div class="usa-width-one-third">
-          <h3>Upcoming Activities</h3>
-          <p>New programs will soon be incorporated onto certify.SBA.gov including the 8(a) Business Development Program (Winter 2017), HUBZone Program (Spring 2017) and Dynamic Small Business Search (DSBS) (Summer 2017).</p>
-        </div>
-      </div>
-      <div class="usa-width-one-whole currently-grey-box">
-        <p>Currently, this website is available for the Women-Owned Small Business (WOSB) and All Small Mentor Protégé programs only. For the 8(a) Business Development and HUBZone programs, please continue to use the <a href="https://eweb.sba.gov/gls" target="_blank">SBA General Login System (GLS)</a> to manage your certifications.
-        </p>
-      </div>
-    </div>
+    <h3>As a Vendor Admin, I want to change my email address in Certify</h3>
+
+    <h5>Description:</h5>
+       AC:<br>
+
+        * Vendor Admin and/or Helpdesk analyst can change a Vendor Admin's email address<br>
+        * The new email address must be verified<br>
+        <br>
+        Questions:<br>
+
+        * Is this an end-user function, or a helpdesk analyst function?<br>
+        * Does the firm need to make any change in Sam.gov first?<br>
+<br>
+        Context:<br>
+
+        * It is possible that a secretary or spouse may have claimed the business on behalf of the firm owner, and now realizes that the firm owner needs to be the Vendor Admin in Certify. Changing the Email address of the Vendor Admin in Certify (the Email ID) is a simple way to accomplish this. After the email address change, the secretary/spouse would just need to share the password with the firm owner, and the firm owner could start logging in on their own.<br>
+<br>
+        Profile page in demo: [https://demo.sba-one.net/vendor_admin/my_profile]<br>
+    </p>
+
+
+
+    <p>
+        <a href="supervisor-dashboard/index.html?status=processing&status_text=Processing" class="sba-c-button">
+            <svg aria-hidden="true" class="sba-c-icon sba-c-icon--lg">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#bolt"></use>
+            </svg>
+            View Prototype
+        </a>
+    </p>
+
+
+</article>
+<script>
+    sessionStorage.clear();
+</script>
