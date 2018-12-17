@@ -1,7 +1,24 @@
 ---
-layout: analyst_application
-local_nav_active: Documents
-application_link: application.html
+
+layout: layout--overview
+local_nav_active: Analyst Documents
+
+top_nav: sba-global--new
+
+masthead_body: readonly-overview-body--sba
+
+tab_set: application-overview--sba
+
+show_taskbar: true
+taskbar_style: overview
+
+application_name: Initial Application
+page_h1: Analyst Documents
+
+header_button_text: Upload
+
+#links
+application_link: read-only.html
 firm_documents_link: firm-documents.html
 analyst_documents_link: analyst-documents.html
 notes_link: notes.html
@@ -13,20 +30,15 @@ recommendation_link: recommendation1.html
 refer_link: refer1.html
 close_case_link: close1.html
 return_link: return1.html
+revisions_link: revisions1.html
 close_case2_link: close1.html
+assign_link: assign1.html
+
+
 ---
 
-
-{% include _taskbar.html %}
-
-<div class="certify-page-header">
-  <div class="certify-page-header__primary">
-    <h1>Analyst Documents</h1>
-  </div>
-  <div class="certify-page-header__secondary">
-    <a href="#" class="usa-button usa-button-big">Upload</a>
-  </div>
-</div>
+<div class="certify-grid-wrap">
+  <div class="">
 
 <p class="usa-font-lead">Documents in the table below have been added to this application by the SBA.</p>
 
@@ -124,6 +136,8 @@ close_case2_link: close1.html
 </table>
 
 <p><a href="#">View archived documents</a></p>
+
+  </div></div>
 
 <!-- This script will mimic the interaction we want to see -->
 <script>

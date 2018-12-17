@@ -1,7 +1,25 @@
 ---
-layout: analyst_application
+
+layout: layout--overview
 local_nav_active: Activity Log
-application_link: application.html
+
+top_nav: sba-global--new
+
+masthead_body: readonly-overview-body--sba
+
+tab_set: application-overview--sba
+
+show_taskbar: true
+taskbar_style: overview
+
+application_name: Initial Application
+page_h1: Activity Log
+
+<!--header_button_text: Compose new note-->
+
+
+#links
+application_link: read-only.html
 firm_documents_link: firm-documents.html
 analyst_documents_link: analyst-documents.html
 notes_link: notes.html
@@ -11,56 +29,77 @@ ad_hoc_link: ad-hoc1.html
 change_status_link: change-processing1.html
 recommendation_link: recommendation1.html
 refer_link: refer1.html
+close_case_link: close1.html
 return_link: return1.html
+revisions_link: revisions1.html
 close_case2_link: close1.html
+assign_link: assign1.html
 ---
 
 
-{% include _taskbar.html %}
+<div class="sba-l-col--12 certify-grid-wrap">
+  <div class="usa-width-three-fourths">
+    <div class="sba-c-timeline">
+      <ol class="sba-c-timeline__list">
+        <li class="sba-c-timeline__list__item"><span>12/04/2018 at 07:47 PM</span>
+          <p>sba_supervisor_1 Sba supervisor 8a district office created a new note titled reassign</p></li>
+        <li class="sba-c-timeline__list__item"><span>12/04/2018 at 07:47 PM</span>
+          <p>sba_supervisor_1 Sba supervisor 8a district office changed owner to sba_supervisor_1 Sba supervisor 8a district office</p></li>
+        <li class="sba-c-timeline__list__item"><span>11/21/2018 at 02:30 PM</span>
+          <p>sba_supervisor_2 Sba supervisor 8a district office accepted the application for processing</p></li>
+        <li class="sba-c-timeline__list__item"><span>11/21/2018 at 02:29 PM</span>
+          <p>sba_supervisor_2 Sba supervisor 8a district office accepted the application for processing</p></li>
+        <li class="sba-c-timeline__list__item"><span>11/21/2018 at 02:29 PM</span>
+          <p>sba_supervisor_2 Sba supervisor 8a district office changed owner to sba_supervisor_2 Sba supervisor 8a district office</p></li>
+        <li class="sba-c-timeline__list__item"><span>11/21/2018 at 02:29 PM</span>
+          <p>sba_supervisor_2 Sba supervisor 8a district office changed the application to screening</p></li>
+        <li class="sba-c-timeline__list__item"><span>11/09/2018 at 05:46 PM</span>
+          <p>QA User submitted the application</p></li>
+      </ol>
+    </div>
 
-<h1>Activity Log</h1>
+<!--<h4 class="timeline-header">Today</h4>-->
+<!--<ol class="timeline">-->
+  <!--<li class="timeline__item">-->
+    <!--<span class="timeline__data">11:15am</span>-->
+    <!--<p>Jane Doe change the status to In Progress</p>-->
+  <!--</li>-->
+  <!--<li class="timeline__item">-->
+    <!--<span class="timeline__data">10:20am</span>-->
+    <!--<p>Karen Smith changed the review status to Assigned</p>-->
+  <!--</li>-->
+<!--</ol>-->
 
+<!--<h4 class="timeline-header">Yesterday</h4>-->
+<!--<ol class="timeline">-->
+  <!--<li class="timeline__item">-->
+    <!--<span class="timeline__data">4:12pm</span>-->
+    <!--<p>Jane Doe change the status to In Progress</p>-->
+  <!--</li>-->
+  <!--<li class="timeline__item">-->
+    <!--<span class="timeline__data">3:31pm</span>-->
+    <!--<p>Karen Smith changed the review status to Assigned</p>-->
+  <!--</li>-->
+  <!--<li class="timeline__item">-->
+    <!--<span class="timeline__data">12:18pm</span>-->
+    <!--<p>Karen Smith changed the review status to Assigned</p>-->
+  <!--</li>-->
+  <!--<li class="timeline__item">-->
+    <!--<span class="timeline__data">9:52am</span>-->
+    <!--<p>Karen Smith changed the review status to Assigned</p>-->
+  <!--</li>-->
+<!--</ol>-->
 
-<h4 class="timeline-header">Today</h4>
-<ol class="timeline">
-  <li class="timeline__item">
-    <span class="timeline__data">11:15am</span>
-    <p>Jane Doe change the status to In Progress</p>
-  </li>
-  <li class="timeline__item">
-    <span class="timeline__data">10:20am</span>
-    <p>Karen Smith changed the review status to Assigned</p>
-  </li>
-</ol>
+<!--<h4 class="timeline-header">2 Days Ago</h4>-->
+<!--<ol class="timeline">-->
+  <!--<li class="timeline__item">-->
+    <!--<span class="timeline__data">11:16am</span>-->
+    <!--<p>Jane Doe change the status to In Progress</p>-->
+  <!--</li>-->
+  <!--<li class="timeline__item">-->
+    <!--<span class="timeline__data">9:23am</span>-->
+    <!--<p>Karen Smith changed the review status to Assigned</p>-->
+  <!--</li>-->
+<!--</ol>-->
 
-<h4 class="timeline-header">Yesterday</h4>
-<ol class="timeline">
-  <li class="timeline__item">
-    <span class="timeline__data">4:12pm</span>
-    <p>Jane Doe change the status to In Progress</p>
-  </li>
-  <li class="timeline__item">
-    <span class="timeline__data">3:31pm</span>
-    <p>Karen Smith changed the review status to Assigned</p>
-  </li>
-  <li class="timeline__item">
-    <span class="timeline__data">12:18pm</span>
-    <p>Karen Smith changed the review status to Assigned</p>
-  </li>
-  <li class="timeline__item">
-    <span class="timeline__data">9:52am</span>
-    <p>Karen Smith changed the review status to Assigned</p>
-  </li>
-</ol>
-
-<h4 class="timeline-header">2 Days Ago</h4>
-<ol class="timeline">
-  <li class="timeline__item">
-    <span class="timeline__data">11:16am</span>
-    <p>Jane Doe change the status to In Progress</p>
-  </li>
-  <li class="timeline__item">
-    <span class="timeline__data">9:23am</span>
-    <p>Karen Smith changed the review status to Assigned</p>
-  </li>
-</ol>
+  </div></div>

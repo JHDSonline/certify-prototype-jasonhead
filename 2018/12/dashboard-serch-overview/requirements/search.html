@@ -1,0 +1,211 @@
+---
+layout: default
+top_nav: sba-analyst
+
+# Page content
+application_name: 8(a) Requirements
+page_h1: All Requirements
+local_nav_active: 8a
+new_sba_nav: true
+hide_tabs: true
+
+new_requirements_link: new.html
+search_requirements_link: search.html
+---
+
+<div class="sba-l-col--12 sba-u-padding-x--2">
+  <div class="sba-l-row">
+    <div role="search" class="sba-u-measure--wide">
+      <form class="usa-search usa-search-big sba-c-search--large">
+        <label class="usa-sr-only" for="search-field-big">Search big</label>
+        <input id="search-field-big" type="search" name="search" placeholder="Search DUNS, NAICS, etc.">
+        <button type="submit">
+          <span class="usa-search-submit-text">Search</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="sba-l-row sba-u-margin-x--neg2">
+    <div class="sba-l-sm-col--12 sba-l-md-col--golden-sm sba-l-lg-col--3 sba-u-padding-x--2">
+      <form action="#" >
+        <h2 class="sba-u-font-size--h3">Filter requirements</h2>
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Agency info</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+               <label for="offices" class="sba-c-label">District office</label>
+               <select name="offices" id="offices">
+                 <option value="">All offices</option>
+                 <option value="Alabama">Alabama </option>
+                 <option value="Alaska">Alaska </option>
+                 <option value="Arizona">Arizona </option>
+                 <option value="Arkansas">Arkansas </option>
+                 <option value="Baltimore">Baltimore </option>
+                 <option value="Boise">Boise </option>
+                 <option value="Buffalo">Buffalo </option>
+                 <option value="Cleveland">Cleveland </option>
+                 <option value="Colorado">Colorado </option>
+                 <option value="Columbus">Columbus </option>
+                 <option value="Connecticut">Connecticut </option>
+                 <option value="Delaware">Delaware </option>
+                 <option value="Des Moines">Des Moines </option>
+                 <option value="El Paso">El Paso </option>
+                 <option value="Fresno">Fresno </option>
+                 <option value="Georgia">Georgia </option>
+                 <option value="Hawaii">Hawaii </option>
+                 <option value="Houston">Houston </option>
+                 <option value="Illinois">Illinois </option>
+                 <option value="Indiana">Indiana </option>
+                 <option value="Kansas City">Kansas City </option>
+                 <option value="Kentucky">Kentucky </option>
+                 <option value="Los Angeles">Los Angeles </option>
+                 <option value="Louisiana">Louisiana </option>
+                 <option value="Lower Rio G V">Lower Rio G V </option>
+                 <option value="Lubbock">Lubbock </option>
+                 <option value=">Maine">Maine </option>
+                 <option value="Massachusetts">Massachusetts </option>
+                 <option value="Michigan">Michigan </option>
+                 <option value="Minnesota">Minnesota </option>
+                 <option value="Mississippi">Mississippi </option>
+                 <option value="Montana">Montana </option>
+                 <option value=">New Hampshire">New Hampshire </option>
+                 <option value=">North Carolina">North Carolina </option>
+                 <option value="North Dakota ">North Dakota </option>
+                 <option value="North Florida">North Florida </option>
+                 <option value="Nebraska">Nebraska </option>
+                 <option value=">Nevada">Nevada </option>
+                 <option value="New Jersey">New Jersey </option>
+                 <option value="New Mexico">New Mexico </option>
+                 <option value="New York">New York </option>
+                 <option value="Oklahoma">Oklahoma </option>
+                 <option value="Philadelphia">Philadelphia </option>
+                 <option value="Pittsburgh">Pittsburgh </option>
+                 <option value="Portland">Portland </option>
+                 <option value="Puerto Rico & U.S. Virgin Islands">Puerto Rico & U.S. Virgin Islands </option>
+                 <option value="Rhode Island">Rhode Island </option>
+                 <option value="Richmond">Richmond </option>
+                 <option value="South Carolina">South Carolina </option>
+                 <option value="South Dakota">South Dakota </option>
+                 <option value="South Florida">South Florida </option>
+                 <option value="Sacramento">Sacramento </option>
+                 <option value="San Antonio">San Antonio </option>
+                 <option value="San Diego">San Diego </option>
+                 <option value="San Francisco">San Francisco </option>
+                 <option value="Santa Ana">Santa Ana </option>
+                 <option value="Seattle">Seattle </option>
+                 <option value="St. Louis">St. Louis </option>
+                 <option value="Syracuse">Syracuse </option>
+                 <option value="Tennessee">Tennessee </option>
+                 <option value="Utah">Utah </option>
+                 <option value="Vermont">Vermont </option>
+                 <option value="Washington">Washington </option>
+                 <option value="West Virginia">West Virginia </option>
+                 <option value="Wichita">Wichita </option>
+                 <option value="Wisconsin">Wisconsin </option>
+                 <option value="Wyoming">Wyoming </option>
+               </select>
+            </li>
+
+            <li>
+               <label for="agency" class="sba-c-label">Agency</label>
+               <select name="agency" id="agency">
+                 <option value="">Select Agency</option>
+                 <option value="Alabama">Agency 1 </option>
+                <option value="Alabama">Agency 2 </option>
+
+                <option value="Alabama">Agency 3 </option>
+                <option value="Alabama">Agency 4 </option>
+                <option value="Alabama">Agency 5 </option>
+               </select>
+            </li>
+          </ul>
+        </fieldset>
+
+<!--CONTRACT INFO -->
+
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Contract info</legend>
+          <ul class="sba-c-unstyled-list">
+             <li>
+                <label for="contract_type" class="sba-c-label">Contract type</label>
+                <select name="contract_type" id="contract_type">
+                  <option value="">Select Contract Type</option>
+                  <option value="Alabama">Sole Source </option>
+                 <option value="Alabama">Competitive </option>
+                </select>
+             </li>
+             <li>
+               <label for="title" class="sba-c-label">Title</label>
+               <input class="sba-c-input" type="text" id="title">
+             </li>
+          </ul>
+        </fieldset>
+
+<!--FIRM INFO -->
+
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Firm info</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+             <label class="sba-c-label" for="naics">NAICS code</label>
+              <input class="sba-c-input" type="text" id="naics">
+            </li>
+          </ul>
+        </fieldset>
+
+<!--OFFER INFO -->
+
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Offer info</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+              <label class="sba-c-label" for="code">Code</label>
+              <select id="code">
+                <option value="">Select one...</option>
+                <option value="code 1">Offer Incomplete</option>
+                <option value="code 2">Offer Not Suitable 8(a) Program</option>
+                <option value="code 3">Adverse Impact </option>
+                <option value="code 4">Solicitation Previously Issued </option>
+                <option value="code 5">Offer Canceled or Withdrawn </option>
+                <option value="code 6">Offer Exceeds Threshold Amounts </option>
+                <option value="code 7">Offer Accepted </option>
+                <option value="code 8">Void Duplicate </option>
+              </select>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--9 sba-u-padding-x--2 sba-u-lg-padding-left--6">
+      <div class="sba-u-display--flex sba-u-justify-content--between">
+        <h2 class="sba-u-font-size--h3">Showing 3 requirements</h2>
+        <div>
+          <label for="sort" class="sba-u-visibility--screen-reader">Sort by</label>
+          <select name="" id="sort">
+            <option value="">Sort by…</option>
+            <option value="">Relevance</option>
+            <option value="">Next action due: Earliest</option>
+            <option value="">Next action due: Latest</option>
+            <option value="">Firm name: Ascending</option>
+            <option value="">Firm name: Descending</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sba-c-facet-pills sba-u-margin-bottom--3">
+        <span class="sba-c-facet-pill">
+          Screening
+          <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+        </span>
+        <span class="sba-c-facet-pill">
+          Preponderance
+          <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+        </span>
+      </div>
+
+{% include cards/_all-requirements.html %}
+
+    </div>
+  </div>
+</div>

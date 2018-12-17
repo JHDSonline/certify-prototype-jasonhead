@@ -136,26 +136,41 @@
   summary: Potential redesign for the application overview
   audience: SBA
 
-- name: APP-3360
+- name: Read-Only, sub-questionnaire view
   date: November 2018
   url: /2018/11/read-only-subquestionnaire
+  app: APP-3360
   summary: Redesign the 'Read-Only' sub-questionnaire view for SBA users
-  audience: UX Team
+  audience: SBA
+
+- name: Change Email Address
+  date: December 2018
+  url: /2018/12/APP-3331
+  app: APP-3331
+  summary: APP-3331 As a Vendor Admin, I want to change my email address in Certify
+  audience: Firms
 
 #- name: APP-4015 - Design view for search results - All Sectors (*ex.. 8a, hubzone)
 #  date: December 2018
 #  url: /2018/12/APP-4015
 #  summary: Redesign the results view for global search for SBA users
 #  audience: UX Team
+#
+#- name: APP-4058
+#  date: December 2018
+#  url: /2018/12/APP-4058
+#  summary: As all SBA users, I need to be able to access the things that are being removed from my current customized nav bar after the implementation of a new global nav bar
+#  audience: UX Team
+#
+#- name: APP-4139
+#  date: December 2018
+#  url: /2018/12/APP-4139
+#  summary: Create an updated prototype of the new firm overview page
+#  audience: UX Team
 
-- name: APP-3331
-  date: December 2018
-  url: /2018/12/APP-3331
-  summary: As a Vendor Admin, I want to change my email address in Certify
-  audience: UX Team
-
-- name: APP-4058
-  date: December 2018
-  url: /2018/12/APP-4058
-  summary: As all SBA users, I need to be able to access the things that are being removed from my current customized nav bar after the implementation of a new global nav bar
-  audience: UX Team
+- name: Dashboard --> Search Results --> Firm Overview
+  date: November 2018
+  url: /2018/12/dashboard-serch-overview
+  app: APP-4015, APP-4058, APP-4139
+  summary: Dashboard links and search design, Search results - design updates to the view, Updated Firm overview design.
+  audience: SBA

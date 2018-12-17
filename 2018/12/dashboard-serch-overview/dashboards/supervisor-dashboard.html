@@ -1,10 +1,21 @@
 ---
-layout: analyst
+
+layout: layout--overview
 global_nav_active: Dashboard
+
+top_nav: sba-global--new
+
+page_h1: Dashboard
+
+
+#links
+
+
+
 ---
 
-<h1>Dashboard</h1>
-
+<!--<h1>Dashboard</h1>-->
+<div class="sba-l-col--12 sba-u-padding-x--0">
 <section class="dashboard-section">
   <header class="dashboard-section__header">
     <h2 class="dashboard-section__heading">Unassigned Cases</h2>
@@ -13,6 +24,7 @@ global_nav_active: Dashboard
     <thead>
       <tr>
         <th>Date Submitted</th>
+        <th>Type</th>
         <th>Applicant Firm</th>
         <th>Applicant Firm Location</th>
         <th>Actions</th>
@@ -21,6 +33,7 @@ global_nav_active: Dashboard
     <tbody>
       <tr>
         <td>08/29/17</td>
+        <td>Initial</td>
         <td>
           <a href="#">Televares Software Development</a> <br>
           <small>Social Disadvantage: Preponderance of evidence<br>
@@ -29,39 +42,7 @@ global_nav_active: Dashboard
           Owners: 2</small>
         </td>
         <td>Seattle, WA</td>
-        <td><a href="#">Assign</a></td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
-<section class="dashboard-section">
-  <header class="dashboard-section__header">
-    <h2 class="dashboard-section__heading">Declined Cases</h2>
-  </header>
-  <table>
-    <thead>
-      <tr>
-        <th>Date Declined</th>
-        <th>Applicant Firm</th>
-        <th>Applicant Firm Location</th>
-        <th>Original Case Owner</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>08/29/17</td>
-        <td>
-          <a href="#">Mitchell Holdings, LLC</a> <br>
-          <small>Social Disadvantage: Preponderance of evidence<br>
-          Legal Structure: LLC <br>
-          Entity Ownership: Yes <br>
-          Owners: 2</small>
-        </td>
-        <td>Seattle, WA</td>
-        <td>Douglas Fink (BOS)</td>
-        <td><a href="#">Assign</a></td>
+        <td><a href="assign-case.html">Assign</a></td>
       </tr>
     </tbody>
   </table>
@@ -75,9 +56,10 @@ global_nav_active: Dashboard
     <thead>
       <tr>
         <th>Firm</th>
+        <th>Type</th>
         <th>Status</th>
-        <th>Application Due</th>
-        <th>Details <!-- DEV NOTES: SORT BY NAME --></th>
+        <th>Due Date</th>
+        <th>Currently with <!-- DEV NOTES: SORT BY NAME --></th>
       </tr>
     </thead>
     <tbody>
@@ -89,6 +71,9 @@ global_nav_active: Dashboard
           <small>Firm Owner: Rose Johnson<br>
           Phone: 817-324-8392</small>
         </th>
+        <td>
+          Initial
+        </td>
         <td>
           <strong>Processing</strong> <br>
           <small><strong>BOS Recommendation: <span class="usa-color-green"> Eligible</span></strong></small> <br>
@@ -108,6 +93,9 @@ global_nav_active: Dashboard
           Phone: 817-324-8392</small>
         </th>
         <td>
+          Initial
+        </td>
+        <td>
           <strong>Processing</strong> <br>
           <small><strong>BOS Recommendation: <span class="usa-color-red"> Ineligible</span></strong></small> <br>
         </td>
@@ -121,9 +109,9 @@ global_nav_active: Dashboard
 
     </tbody>
   </table>
-  <a href="#" class="usa-button usa-button-big">View all cases</a>
+  <a href="../all-cases-cards/8a.html" class="usa-button usa-button-big">View all cases</a>
 </section>
-
+</div>
 <!-- This script will mimic the interaction we want to see -->
 <script>
   $(document).ready(function() {

@@ -1,11 +1,12 @@
-- main_heading: Entity 10 Legal Business Name
+- main_heading: Mike’s Garage
   link_main_heading: true
   secondary_heading: 8(a) Initial Application
+  tertiary_heading: Program Year 1
   additional_info:
     - key: Owner
       value: Sam Merica (703-555-1234)
 #    - key: Program year
-#      value: 3
+#      value: 1
     - key: District office
       value: Seattle
       editable: true
