@@ -170,7 +170,7 @@
 
 - name: Dashboard --> Search Results --> Firm Overview
   date: November 2018
-  url: /2018/12/dashboard-serch-overview
+  url: /2018/12/dashboard-search-overview
   app: APP-4015, APP-4058, APP-4139
   summary: Dashboard links and search design, Search results - design updates to the view, Updated Firm overview design.
   audience: SBA

@@ -11,49 +11,152 @@
 <script src="{{ site.baseurl }}/assets/cds.js"></script>
 <meta name="robots" content="noindex">
 <style>
-    .sba-c-tabs__link, .nav__dropdown-toggle, .sba-c-tabs__link:visited, .nav__dropdown-toggle:visited {
-        background-color: transparent;
-    }
-    .sba-c-tabs__link.current, .current.nav__dropdown-toggle {
-        color: #0071bc !important;
-        background: #ffffff;
-        border: 1px solid #d6d7d9;
-        margin-bottom: -1px;
-        border-bottom: 0;
-    }
-    .sba-c-tabs__link.current:before, .current.nav__dropdown-toggle:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 0px;
-        background-color: transparent;
-        width: 100%;
-        display: none !important;
-    }
-    .sba-c-tabs__link:hover:after {
-        color: #0071bc;
-        text-decoration: none;
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 0.7rem;
-        background-color: #0071bc;
-        width: 100%;
-        /*padding-bottom: 1rem;*/
-        margin-bottom: -1px;
-
-    }
-    .sba-c-tabs__link:hover{
-        background-color: transparent;
+    /*.sba-c-tabs__link, .nav__dropdown-toggle, .sba-c-tabs__link:visited, .nav__dropdown-toggle:visited {*/
+        /*background-color: transparent;*/
+    /*}*/
+    /*.sba-c-tabs__link.current, .current.nav__dropdown-toggle {*/
+        /*color: #0071bc !important;*/
+        /*background: #ffffff;*/
+        /*border: 1px solid #d6d7d9;*/
+        /*margin-bottom: -1px;*/
+        /*border-bottom: 0;*/
+    /*}*/
+    /*.sba-c-tabs__link.current:before, .current.nav__dropdown-toggle:before {*/
         /*content: "";*/
-        /*border-bottom: 0.7rem solid #0071bc;*/
-        /*padding-bottom: 1rem;*/
+        /*position: absolute;*/
+        /*top: 0;*/
+        /*left: 0;*/
+        /*height: 0px;*/
+        /*background-color: transparent;*/
+        /*width: 100%;*/
+        /*display: none !important;*/
+    /*}*/
+    /*.sba-c-tabs__link:hover:after {*/
+        /*color: #0071bc;*/
+        /*text-decoration: none;*/
+        /*content: "";*/
+        /*position: absolute;*/
+        /*bottom: 0;*/
+        /*left: 0;*/
+        /*height: 0.7rem;*/
+        /*background-color: #0071bc;*/
+        /*width: 100%;*/
+        /*!*padding-bottom: 1rem;*!*/
         /*margin-bottom: -1px;*/
 
-    }
+    /*}*/
+    /*.sba-c-tabs__link:hover{*/
+        /*background-color: transparent;*/
+        /*!*content: "";*!*/
+        /*!*border-bottom: 0.7rem solid #0071bc;*!*/
+        /*!*padding-bottom: 1rem;*!*/
+        /*!*margin-bottom: -1px;*!*/
 
+    /*}*/
+
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse svg {
+        fill: #0071bc;
+        width: 24px;
+        height: 24px;
+        pointer-events: none; }
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse:hover {
+        background-color: #ffffff;!important
+    }
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse:hover svg {
+        fill: #112e51; }
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse[disabled] svg {
+        fill: #d6d7d9; }
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse .sba-c-task-panel__toggle--small {
+        height: 30px;
+        width: 30px; }
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse .sba-c-task-panel__toggle--small svg {
+        width: 20px;
+        height: 20px; }
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse .sba-c-task-panel__toggle--small + .sba-c-task-panel__content {
+        right: -2rem;
+        top: 4.75rem; }
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse .sba-c-task-panel__toggle--big {
+        height: auto;
+        padding: 0.8rem 1.6rem;
+        width: auto; }
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse .sba-c-task-panel__toggle--big svg {
+        fill: #0071bc;
+        width: 28px; }
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse .sba-c-task-panel__toggle--big + .sba-c-task-panel__content {
+        right: 0; }
+
+    .sba-c-task-panel__toggle--vertical {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg); }
+
+    .sba-c-task-panel__content hr {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #0071bc;
+        border-bottom: none;
+        margin: 0 2rem; }
+
+    .sba-c-task-panel__menu-header {
+        margin: .8rem 2rem;
+        text-transform: none; }
+
+    .sba-c-task-panel__content.sba-c-task-panel__content--has-tabs {
+        width: 32rem; }
+    .sba-c-task-panel__content.sba-c-task-panel__content--has-tabs:after {
+        border-bottom-color: #f1f1f1; }
+
+    .sba-c-task-panel .sba-c-tabs-wrapper {
+        background-color: #f1f1f1;
+        border-bottom: 1px solid #d6d7d9; }
+
+    .sba-c-task-panel .sba-c-tabs__list {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 1.6rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem; }
+
+    .sba-c-task-panel .sba-c-tabs__link, .sba-c-task-panel .nav__dropdown-toggle {
+        font-size: 1.2rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem; }
+
+    .sba-c-task-panel .sba-c-tabs__link.current::before, .sba-c-task-panel .current.nav__dropdown-toggle::before {
+        height: 2px; }
+
+    .sba-c-task-panel .sba-c-tabs__tab-content {
+        border: 0; }
+
+    .sba-c-task-panel__toggle--inverse, .sba-c-button-group .sba-c-task-panel__toggle--inverse[type="submit"],
+    .sba-c-task-panel__toggle--inverse:visited,
+    .sba-c-button-group .sba-c-task-panel__toggle--inverse[type="submit"]:visited {
+        background-color: white;
+        color: #0071bc; }
+    .sba-c-task-panel__toggle--inverse:focus, .sba-c-button-group .sba-c-task-panel__toggle--inverse[type="submit"]:focus, .sba-c-task-panel__toggle--inverse:hover, .sba-c-button-group .sba-c-task-panel__toggle--inverse[type="submit"]:hover,
+    .sba-c-task-panel__toggle--inverse:visited:focus,
+    .sba-c-task-panel__toggle--inverse:visited:hover {
+        background-color: white;
+        border-color: #205493;
+        color: #205493; }
+    .sba-c-task-panel__toggle--inverse:active, .sba-c-button-group .sba-c-task-panel__toggle--inverse[type="submit"]:active,
+    .sba-c-task-panel__toggle--inverse:visited:active {
+        border-color: #112e51;
+        color: #112e51; }
     .hide{
         display: none;
     }
