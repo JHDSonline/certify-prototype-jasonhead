@@ -1,0 +1,26 @@
+nav_items:
+  show_search: false
+  left_side:
+    - title: Dashboard
+      url: dashboard.html
+#    - title: Management
+#      url: manage.html
+#    - title: Requirements
+#      subfolderitems:
+#        - page: New Requirement(s)
+#          url: new-requirement.html
+#        - page: All Requirements
+#          url: all-requirements.html
+  right_side:
+    - title: Notifications
+      url: javascript:void(0)
+    - title: Help
+      url: javascript:void(0);
+    - title: John Doe
+      subfolderitems:
+        - page: Settings
+          url: javascript:void(0);
+        - page: My Account
+          url: my-account.html
+        - page: Log Out
+          url: javascript:void(0);

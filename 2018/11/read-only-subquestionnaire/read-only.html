@@ -1,8 +1,9 @@
 ---
+
 layout: layout--overview
 local_nav_active: Application
 
-top_nav: sba-analyst--overview
+top_nav: sba-global--new
 
 masthead_body: readonly-overview-body--sba
 
@@ -1157,18 +1158,18 @@ $(document.body).on("click", "[id$=_show_content]", function (event) {
     var card_id = $(this).attr("id")
     var content_id = card_id.replace("_show_content", "_content");
     $('#' + content_id).toggleClass("hide");
-    alert($('#' + content_id));
+    // alert($('#' + content_id));
     $(".cards").toggleClass("current")
-    alert($('#' + content_id));
+    // alert($('#' + content_id));
 });
 
 $(document.body).on("click", "[id$=_show_cards]", function (event) {
     var content_id = $(this).attr("id")
     var card_id = content_id.replace("_show_cards", "_content");
     $('#' + card_id).toggleClass("hide");
-    alert($(this).attr("id"));
+    /*alert($(this).attr("id"));*/
     $(".cards").removeClass("current")
-    alert($(this).attr("id"));
+    // alert($(this).attr("id"));
 
 });
 
