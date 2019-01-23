@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e4f2eda-0071-453d-b4ba-3676d3ae4a90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-asmpp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-wosb.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2018/12/dashboard-search-overview/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2018/12/dashboard-search-overview/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_data/tab_set/business-profile-12192018.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/tab_set/business-profile-12192018.yml" afterDir="false" />
-    </list>
+    <list default="true" id="7e4f2eda-0071-453d-b4ba-3676d3ae4a90" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -4960,12 +4953,12 @@
       <workItem from="1545053512849" duration="84000" />
       <workItem from="1545053618395" duration="29370000" />
       <workItem from="1547748700226" duration="903000" />
-      <workItem from="1547749649436" duration="9321000" />
+      <workItem from="1547749649436" duration="9728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177091000" />
+    <option name="totallyTimeSpent" value="177498000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -4985,7 +4978,7 @@
       <window_info id="npm" order="3" sideWeight="0.14879519" side_tool="true" visible="true" weight="0.17176938" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49912372" visible="true" weight="0.17052735" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49912372" visible="true" weight="0.30310497" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -4996,7 +4989,7 @@
       <window_info anchor="bottom" id="GitHub Pull Requests" order="10" weight="0.32967034" />
       <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.32987142" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32967034" />
-      <window_info active="true" anchor="bottom" x="10" y="23" width="3819" height="2137" id="Terminal" order="13" sideWeight="0.50087625" side_tool="true" visible="true" weight="0.17052735" />
+      <window_info active="true" anchor="bottom" x="10" y="23" width="3819" height="2137" id="Terminal" order="13" sideWeight="0.50087625" side_tool="true" visible="true" weight="0.30310497" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
