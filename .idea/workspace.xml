@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e4f2eda-0071-453d-b4ba-3676d3ae4a90" name="Default Changelist" comment="" />
+    <list default="true" id="7e4f2eda-0071-453d-b4ba-3676d3ae4a90" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -4811,7 +4813,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/_includes/_analyst_global_nav.html" />
   </component>
   <component name="RecentsManager">
@@ -4953,12 +4955,12 @@
       <workItem from="1545053512849" duration="84000" />
       <workItem from="1545053618395" duration="29370000" />
       <workItem from="1547748700226" duration="903000" />
-      <workItem from="1547749649436" duration="9728000" />
+      <workItem from="1547749649436" duration="10656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177498000" />
+    <option name="totallyTimeSpent" value="178426000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
