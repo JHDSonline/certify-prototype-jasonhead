@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e4f2eda-0071-453d-b4ba-3676d3ae4a90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7e4f2eda-0071-453d-b4ba-3676d3ae4a90" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -4813,12 +4811,12 @@
       <workItem from="1548262257124" duration="1864000" />
       <workItem from="1548449711369" duration="869000" />
       <workItem from="1548450623906" duration="1069000" />
-      <workItem from="1548773996988" duration="6080000" />
+      <workItem from="1548773996988" duration="6526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188719000" />
+    <option name="totallyTimeSpent" value="189165000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -4832,8 +4830,8 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="3840" height="2137" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8512048" visible="true" weight="0.21733437" />
-      <window_info id="Structure" order="1" sideWeight="0.32331902" side_tool="true" weight="0.16692996" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7237386" visible="true" weight="0.21733437" />
+      <window_info id="Structure" order="1" sideWeight="0.27626136" side_tool="true" weight="0.21733437" />
       <window_info id="Favorites" order="2" sideWeight="0.32331902" side_tool="true" weight="0.16692996" />
       <window_info id="npm" order="3" sideWeight="0.14879519" side_tool="true" visible="true" weight="0.17176938" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -4849,7 +4847,7 @@
       <window_info anchor="bottom" id="GitHub Pull Requests" order="10" weight="0.32967034" />
       <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.32987142" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32967034" />
-      <window_info active="true" anchor="bottom" x="10" y="23" width="3819" height="2137" id="Terminal" order="13" sideWeight="0.50196385" side_tool="true" visible="true" weight="0.8817151" />
+      <window_info active="true" anchor="bottom" x="10" y="23" width="3819" height="2137" id="Terminal" order="13" sideWeight="0.50196385" side_tool="true" visible="true" weight="0.40413997" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
