@@ -1,11 +1,11 @@
 tabs:
   - name: 8(a)
-    url: "#"
+    url: business-profile-8a.html
   - name: ASMPP
-    url: "#"
+    url: business-profile-asmpp.html
   - name: HUBZone
-    url: "#"
+    url: business-profile-hubzone.html
   - name: WOSB
-    url: "#"
+    url: business-profile-wosb.html
   - name: Business Profile
-    url: "#"
+    url: business-profile
