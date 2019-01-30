@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e4f2eda-0071-453d-b4ba-3676d3ae4a90" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html" beforeDir="false" afterPath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -4487,13 +4490,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1549">
+              <caret line="133" column="13" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-asmpp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1008">
+              <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -4592,13 +4603,24 @@
         <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/8a/business-profile-8a.html" />
         <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/index.html" />
         <option value="$PROJECT_DIR$/_data/tab_set/business-profile-12192018.yml" />
-        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html" />
         <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-asmpp.html" />
         <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-wosb.html" />
         <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-hubzone.html" />
         <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -4632,6 +4654,61 @@
               <item name="2018" type="462c0819:PsiDirectoryNode" />
               <item name="12" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="12" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-search-overview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="12" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-search-overview" type="462c0819:PsiDirectoryNode" />
+              <item name="all-cases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="12" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-search-overview" type="462c0819:PsiDirectoryNode" />
+              <item name="all-cases-cards" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="12" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-search-overview" type="462c0819:PsiDirectoryNode" />
+              <item name="business-profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="12" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-search-overview" type="462c0819:PsiDirectoryNode" />
+              <item name="requirements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="_data" type="462c0819:PsiDirectoryNode" />
+              <item name="tab_set" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -4646,23 +4723,23 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/_includes/_analyst_global_nav.html" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/delete" />
-      <recent name="$PROJECT_DIR$/2018/12/dashboard-serch-overview/dashboards" />
-      <recent name="$PROJECT_DIR$/2018/12/dashboard-serch-overview/business-profile" />
-      <recent name="$PROJECT_DIR$/2018/12/dashboard-serch-overview" />
-      <recent name="$PROJECT_DIR$/2018/12/APP-3331/change-email" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile" />
       <recent name="$PROJECT_DIR$/2018/12/dashboard-search-overview/8a" />
       <recent name="$PROJECT_DIR$/2018/12/dashboard-serch-overview/business-profile" />
       <recent name="$PROJECT_DIR$/_data/tab_set" />
       <recent name="$PROJECT_DIR$/2018/11/read-only-subquestionnaire" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/delete" />
+      <recent name="$PROJECT_DIR$/2018/12/dashboard-serch-overview/dashboards" />
+      <recent name="$PROJECT_DIR$/2018/12/dashboard-serch-overview/business-profile" />
+      <recent name="$PROJECT_DIR$/2018/12/dashboard-serch-overview" />
+      <recent name="$PROJECT_DIR$/2018/12/APP-3331/change-email" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -4794,12 +4871,12 @@
       <workItem from="1548450623906" duration="1069000" />
       <workItem from="1548773996988" duration="8966000" />
       <workItem from="1548809036145" duration="1488000" />
-      <workItem from="1548811877579" duration="2500000" />
+      <workItem from="1548811877579" duration="7374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195593000" />
+    <option name="totallyTimeSpent" value="200467000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -4812,8 +4889,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="3840" height="2137" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7237386" visible="true" weight="0.21733437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7237386" visible="true" weight="0.21733437" />
       <window_info id="Structure" order="1" sideWeight="0.27626136" side_tool="true" weight="0.21733437" />
       <window_info id="Favorites" order="2" sideWeight="0.32331902" side_tool="true" weight="0.16692996" />
       <window_info id="npm" order="3" sideWeight="0.14879519" side_tool="true" visible="true" weight="0.17176938" />
@@ -4830,7 +4908,7 @@
       <window_info anchor="bottom" id="GitHub Pull Requests" order="10" weight="0.32967034" />
       <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.32987142" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32967034" />
-      <window_info active="true" anchor="bottom" auto_hide="true" x="1288" y="45" width="2267" height="1711" id="Terminal" order="13" sideWeight="0.50196385" side_tool="true" type="WINDOWED" visible="true" weight="0.40413997" />
+      <window_info anchor="bottom" auto_hide="true" x="-2560" y="245" width="2560" height="1395" id="Terminal" maximized="true" order="13" sideWeight="0.50196385" side_tool="true" type="WINDOWED" weight="0.40413997" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -4997,13 +5075,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/8a/business-profile-8a.html" />
-    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_data/top_nav/sba-analyst.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -5078,31 +5149,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/tab_set/business-profile-12192018.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="182" column="39" selection-start-line="182" selection-start-column="39" selection-end-line="182" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-asmpp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -5120,13 +5170,6 @@
           <folding>
             <marker date="1548780170227" expanded="true" signature="401:8964" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1194">
-          <caret line="203" column="10" selection-start-line="15" selection-start-column="4" selection-end-line="203" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -5155,10 +5198,57 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/tab_set/business-profile-12192018.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#article#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#article#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#article#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#article#0;n#!!top" />
+            <element signature="n#div#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#article#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-asmpp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1549">
+          <caret line="133" column="13" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
