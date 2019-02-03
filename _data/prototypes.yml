@@ -174,3 +174,10 @@
   app: APP-4015, APP-4058, APP-4139
   summary: Dashboard links and search design, Search results - design updates to the view, Updated Firm overview design.
   audience: SBA
+
+- name: Data Dictionary
+  date: January 2019
+  url: /2019/01/app-4301
+  app: APP-4301
+  summary: UI/UX enhancements and style updates.
+  audience: SBA

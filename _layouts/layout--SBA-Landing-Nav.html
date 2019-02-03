@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+  {% include _head.html %}
+</head>
+<body class="public mainscreen {% if page.body_class %}
+    {{ page.body_class }}{% endif %}">
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+{% include _SBA-Landing-New-Nav.html %}
+
+<div class="sba-l-container">
+  <div class="sba-l-row">
+    <div class="sba-l-col--12 sba-u-padding-x--0">
+      <div class="certify-page-header" style="margin-bottom: 0px;">
+        <div class="certify-page-header__primary sba-l-col--9">
+          {% if page.back_link %}
+          <p class="sba-u-margin-top--0"><a href="javascript:window.history.back();">« {{ page.back_link }}</a></p>
+          {% endif %}
+          <h1>{{ page.page_h1 }}</h1>
+        </div>
+        {% if page.header_button_text %}
+        <div class="sba-l-col--3 sba-u-md-text-align--right">
+          <!--<a href="#" class="sba-c-button sba-c-button&#45;&#45;inverse" id="{% if page.header_button_id %}{{ page.header_button_id }}{% else %}header-button{% endif %}">{{ page.header_button_text }}</a>-->
+          <a aria-title="Export" class="sba-c-button sba-c-button--inverse" id="{% if page.header_button_id %}{{ page.header_button_id }}{% else %}header-button{% endif %}" href="https://dev.sba-one.net/admin/data_dictionary/csv_download_all.csv"><span class="sba-c-tooltip-wrapper"><svg aria-hidden="true" class="sba-c-icon sba-c-icon--blue sba-u-margin-right--1" data-tooltip-text="Export CSV" aria-describedby="tooltip95309" tabindex="0"><use xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#download"></use></svg><span class="sba-c-tooltip" id="tooltip95309" aria-hidden="true" aria-role="tooltip">Export CSV</span></span>{{ page.header_button_text }}</a>
+        </div>
+        {% endif %}
+      </div>
+      {% if page.lead_text %}<p class="usa-font-lead">{{ page.lead_text }}</p>{% endif %}
+    </div>
+  </div>
+  <div class="sba-l-row">
+    {{ content }}
+  </div>
+</div>
+<script>
+    $(function() {
+        $('.expander-view-more-trigger').click(function () {
+            $(this).toggleClass("expander-view-more-hidden");
+        });
+    })
+</script>
+<div class="sba-l-container">
+  {% include _return_to_top.html %}
+</div>
+
+{% include _footer.html %}
+
+{% include widgets/_note.html %}
+
+</body>
+</html>
