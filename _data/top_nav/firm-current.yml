@@ -1,0 +1,23 @@
+nav_items:
+  left_side:
+    - title: Dashboard
+      url: dashboard.html
+    - title: Program
+      url: program.html
+    - title: Business
+      url: business.html
+    - title: Documents
+      url: documents.html
+    - title: Profile
+      url: profile.html
+  right_side:
+    - title: Notifications
+      url: javascript:void(0)
+    - title: My Account
+      subfolderitems:
+        - page: My Account
+          url: my-account.html
+        - page: Log Out
+          url: javascript:void(0);
+    - title: Help
+      url: help.html
