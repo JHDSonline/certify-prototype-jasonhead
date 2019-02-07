@@ -57,7 +57,7 @@
         <option name="PARSE_HTML_ANCHOR_ID" value="false" />
         <option name="PLANTUML_FENCED_CODE" value="false" />
         <option name="PUML_FENCED_CODE" value="false" />
-        <option name="SIM_TOC_BLANK_LINE_SPACER" value="true" />
+        <option name="SIM_TOC_BLANK_LINE_SPACER" value="false" />
       </ParserOptions>
     </ParserSettings>
     <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" embedUrlContent="false" addPageHeader="true" embedImages="false" embedHttpImages="false" imageUriSerials="false" addDocTypeHtml="true" noParaTags="false" plantUmlConversion="0" mathConversion="-1">
@@ -69,7 +69,7 @@
       <bodyTop />
       <bodyBottom />
     </HtmlSettings>
-    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="false" isCssTextEnabled="false" isDynamicPageWidth="true">
+    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="true" isCssTextEnabled="false" isDynamicPageWidth="true">
       <StylesheetProvider>
         <provider providerId="com.vladsch.idea.multimarkdown.editor.swing.html.css" providerName="Default Swing Stylesheet" />
       </StylesheetProvider>
@@ -77,7 +77,7 @@
       <cssText />
       <cssUriHistory />
     </CssSettings>
-    <HtmlExportSettings updateOnSave="false" parentDir="" targetDir="" cssDir="" scriptDir="" plainHtml="false" imageDir="" copyLinkedImages="false" imageUniquifyType="0" targetPathType="2" targetExt="" useTargetExt="false" noCssNoScripts="false" useElementStyleAttribute="false" linkToExportedHtml="true" exportOnSettingsChange="true" regenerateOnProjectOpen="false" linkFormatType="HTTP_ABSOLUTE" />
+    <HtmlExportSettings updateOnSave="false" parentDir="" targetDir="" cssDir="" scriptDir="" plainHtml="false" imageDir="img" copyLinkedImages="false" imageUniquifyType="0" targetPathType="2" targetExt="" useTargetExt="false" noCssNoScripts="false" useElementStyleAttribute="false" linkToExportedHtml="true" exportOnSettingsChange="true" regenerateOnProjectOpen="false" linkFormatType="HTTP_ABSOLUTE" />
     <LinkMapSettings>
       <textMaps />
     </LinkMapSettings>

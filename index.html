@@ -6,41 +6,43 @@ page_h1: Certify Prototypes - JH UX/UI Builds
 ---
 
 <div class="sba-l-row sba-u-margin-top--5">
-  {% assign sorted = site.data.prototypes | sort: 'url' %}
-  {% for item in sorted reversed %}
-    <div class="sba-l-col--12 sba-l-sm-col--6 sba-l-md-col--4 sba-u-padding-x--2" >
-      <div class="sba-c-card sba-u-display--block sba-u-padding--3">
-        {% if item.date %}
-          <p class="sba-u-font-size--small sba-u-color--muted sba-u-margin-top--0" style="float: left;">
-            {{ item.date }}
-          </p>
+    <!--Card Row Container-->
+    <div class="card-set card-set--3col">
+        {% assign sorted = site.data.prototypes | sort: 'url' %}
+        {% for item in sorted reversed %}
 
-          {% if item.audience %}
-            {% if item.audience == "Firms" %}
-              <span class="sba-c-badge sba-c-badge--warn" style="float: right;">{{ item.audience }}</span>
-            {% elsif item.audience == "SBA" %}
-              <span class="sba-c-badge sba-c-badge--info" style="float: right;">{{ item.audience }}</span>
-            {% else %}
-              <span class="sba-c-badge" style="float: right;">{{ item.audience }}</span>
-            {% endif %}
-          {% endif %}
+        <div class="card">
+            <div class="card__header">
 
-        {% endif %}
-        <h3 class="sba-u-margin--0">
-          <a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
-        </h3>
-        {% if item.app %}
-        <h4 class="sba-u-color--muted sba-u-margin-top--2">
-          {{ item.app }}
-        </h4>
-        {% endif %}
-        {% if item.summary %}
-          <p>
+                <p class="sba-u-font-size--small sba-u-color--muted sba-u-margin-top--0"> {{ item.date }}</p>
 
-            {{ item.summary }}
-          </p>
-        {% endif %}
-      </div>
+                {% if item.audience %}
+                <div class="card__bulk-actions">
+                    <div class="task-panel">
+                    {% if item.audience == "Firms" %}
+                    <span class="sba-c-badge sba-c-badge--warn ">{{ item.audience }}</span>
+                    {% elsif item.audience == "SBA" %}
+                    <span class="sba-c-badge sba-c-badge--info">{{ item.audience }}</span>
+                    {% else %}
+                    <span class="sba-c-badge">{{ item.audience }}</span>
+                    {% endif %}
+                </div>
+                </div>
+                {% endif %}
+
+                <h3 class="sba-u-margin--0">
+                    <a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
+                </h3>
+
+            </div>
+            <div class="card__content sba-u-padding-top--0">
+
+                <h4 class="sba-u-color--muted sba-u-margin-top--2">{{ item.app }}</h4>
+
+                <p>{{ item.summary }}</p>
+
+            </div>
+        </div>
+        {% endfor %}
     </div>
-  {% endfor %}
 </div>

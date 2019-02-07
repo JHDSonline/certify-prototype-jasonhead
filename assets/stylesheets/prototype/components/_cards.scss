@@ -115,6 +115,52 @@
   }
 }
 
+// Shows three cards in a row arranged horizontally and flows downward - added 02-05-2019 Jason Head - enquizit sba team.
+.card-set--3col {
+  @include flex-direction(row);
+
+  .card__footer {
+    @include media($nav-width) {
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+.card-set--3col .card{
+  @include media($nav-width) {
+    width: 33.3333333333%;
+    width: calc(33.3333333333% - 3.2rem);
+    margin: 0 0 6rem 0;
+    margin: 0 calc(3.2rem) 6rem 0;
+  }
+}
+
+.card-set--3col .card:nth-child(3n) {
+  @include media($nav-width) {
+    width: 33.3333333333%;
+    width: calc(33.3333333333% - 3.2rem);
+    margin: 0 0 6rem 0;
+    //margin: 0 0 6rem calc(3.2rem);
+  }
+}
+
+
+.card-set--3col .card__header {
+  padding: 2rem 2rem 0;
+}
+
+.card-set--3col .card__content {
+  padding: 2rem;
+}
+
+.card-set--3col .card__bulk-actions {
+
+  @include media($nav-width) {
+    right: .5rem;
+    top: 1rem;
+  }
+}
+
 // Standalone Cards
 .standalone-card {
 

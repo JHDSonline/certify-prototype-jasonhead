@@ -1,0 +1,143 @@
+---
+layout: layout--SBA-Landing-Nav
+page_h1: Data Dictionary
+header_button_text: Download Entire Dictionary
+---
+
+<div class="sba-l-row sba-u-margin-top--5">
+    <!--Card Row Container-->
+    <div class="card-set">
+        {% assign sorted = site.data.data-dictionary-4301--data | sort: 'name' %}
+        {% for item in sorted %}
+        <div class="card" id="card_{{ forloop.index }}">
+            <div class="card__header">
+                {% if item.name %}
+                <h3 class="card__primary-heading">{{ item.name }}</h3>
+                {% endif %}
+                {% if item.badge %}
+                {% if item.badge == "warn" %}
+                <span class="sba-c-badge sba-c-badge--warn sba-u-md-font-size--base sba-u-margin-top--1"><strong>{{ item.percent }}% </strong></span>
+                {% elsif item.badge == "success" %}
+                <span class="sba-c-badge sba-c-badge--success sba-u-md-font-size--base sba-u-margin-top--1"><strong>{{ item.percent }}% </strong></span>
+                {% elsif item.badge == "alert" %}
+                <span class="sba-c-badge sba-c-badge--alert sba-u-md-font-size--base sba-u-margin-top--1"><strong>{{ item.percent }}% </strong></span>
+                {% else %}
+                <span class="sba-c-badge sba-u-md-font-size--base sba-u-margin-top--1"><strong>{{ item.percent }}% </strong></span>
+                {% endif %}
+                {% endif %}
+            </div>
+            <div class="card__content">
+                {% if item.summary %}
+                <p>{{ item.summary }}</p>
+                {% endif %}
+            </div>
+            <div class="card__bulk-actions sba-u-margin-top--1">
+                <div class="task-panel">
+                    <button class="sba-c-button sba-c-button--transparent" type="button" aria-title=" Export" href="https://dev.sba-one.net/admin/data_dictionary/csv_download.csv?table=access_requests" data-tooltip-text="Export CSV" aria-describedby="tooltip98693" tabindex="0">
+                        <svg aria-hidden="true" class="sba-c-icon sba-c-icon--blue" aria-describedby="tooltip98693" tabindex="0">
+                            <use xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#download"></use>
+                        </svg>
+                    </button>
+                    <button class="sba-c-button sba-c-button--transparent sba-c-button--icon-only sba-c-card__toggle sba-c-tooltip-toggle" id="toggle_{{ forloop.index }}" type="button" data-tooltip-text="Show/hide details" aria-expanded="false" aria-controls="expand_{{ forloop.index }}">
+                        <svg aria-hidden="true" class="sba-c-icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card__bulk-actions">
+                <div class="task-panel">
+                    <button aria-controls="task-panel11" aria-expanded="false" class="usa-button-unstyled task-panel-toggle task-panel-toggle--small task-panel-toggle--vertical" type="button"> actions
+                    </button>
+                    <div class="task-panel-content" id="task-panel11">
+                        <ul class="task-panel-menu">
+                            <li class="task-panel-menu__item"><a class="task-panel-menu__link" href="/reviews/AP1541782920/request_adhoc_review/start?sub_section_name=eight_a_eligibility">Request revisions to section</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--content hidden for card Starts here -->
+            <div id="expand_{{ forloop.index }}" class="sba-u-padding-top--1" hidden>
+                <!--Card Basic Eligibility Content-->
+                <div class="card__content sba-u-padding-top--0 sba-u-padding-bottom--0">
+                    {% if item.expand %}
+                    <span>{{ item.expand }}</span>
+                    {% endif %}
+                </div>
+
+            </div>
+            <!-- Details END -->
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<script>
+
+    $(document).ready(function(){
+
+        // Toggle cards to show/hide details
+        var $doc_toggle = $('.sba-c-card__toggle'),
+            active_class = 'is-activated',
+            hidden_attribute = 'hidden';
+
+        $doc_toggle.on('click', function() {
+
+            // Determine which document we clicked on
+            toggle = $(this),
+            // alert($(this).attr("id"));
+            elem = $(this).attr("aria-controls");
+            // alert($(this).attr("aria-controls"));
+
+            var $target = $("#" + elem),
+            // alert($(this).attr($target))
+
+
+            if ( toggle.attr('aria-expanded') === 'false' ) {
+                toggle
+                    .attr("aria-expanded","true")
+                    .addClass(active_class);
+                $target.removeAttr(hidden_attribute);
+            } else {
+                toggle
+                    .attr("aria-expanded","false")
+                    .removeClass(active_class);
+                $target.attr(hidden_attribute, "");
+            }
+        });
+
+    });
+
+</script>
+
+<!--<script>-->
+    <!--$(document.body).on("click", "[id$=_show_content]", function (event) {-->
+        <!--var card_id = $(this).attr("id")-->
+        <!--var content_id = card_id.replace("_show_content", "_content");-->
+        <!--$('#' + content_id).toggleClass("hidden");-->
+        <!--// alert($('#' + content_id));-->
+        <!--$(".cards").toggleClass("current")-->
+        <!--// alert($('#' + content_id));-->
+    <!--});-->
+
+    <!--$(document.body).on("click", "[id$=_show_cards]", function (event) {-->
+        <!--var content_id = $(this).attr("id")-->
+        <!--var card_id = content_id.replace("_show_cards", "_content");-->
+        <!--$('#' + card_id).toggleClass("hidden");-->
+        <!--// alert($(this).attr("id"));-->
+        <!--$(".cards").removeClass("current")-->
+        <!--// alert($(this).attr("id"));-->
+
+    <!--});-->
+
+    <!--var sendSectionRequest = function (sectionId, sbaAppId) {-->
+        <!--// document.getElementById("page-spinner").style.display = "inline-block";-->
+        <!--$.ajax({-->
+            <!--url: "/sba_application/" + sbaAppId + "/application_dashboard/overview/section_info?id=" + sectionId,-->
+            <!--type: "GET"-->
+        <!--})-->
+            <!--.then(function (x) {-->
+            <!--});-->
+    <!--}-->
+<!--</script>-->
+
+
