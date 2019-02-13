@@ -142,13 +142,13 @@
   app: APP-3360
   summary: Redesign the 'Read-Only' sub-questionnaire view for SBA users
   audience: SBA
-
-- name: Change Email Address
-  date: December 2018
-  url: /2018/12/APP-3331
-  app: APP-3331
-  summary: APP-3331 As a Vendor Admin, I want to change my email address in Certify
-  audience: Firms
+#
+#- name: Change Email Address
+#  date: December 2018
+#  url: /2018/12/APP-3331
+#  app: APP-3331
+#  summary: APP-3331 As a Vendor Admin, I want to change my email address in Certify
+#  audience: Firms
 
 #- name: APP-4015 - Design view for search results - All Sectors (*ex.. 8a, hubzone)
 #  date: December 2018
@@ -168,9 +168,32 @@
 #  summary: Create an updated prototype of the new firm overview page
 #  audience: UX Team
 
-- name: Dashboard --> Search Results --> Firm Overview
+- name: Firm Overview
   date: November 2018
   url: /2018/12/dashboard-search-overview
-  app: APP-4015, APP-4058, APP-4139
+  app: APP-4015, APP-4058
   summary: Dashboard links and search design, Search results - design updates to the view, Updated Firm overview design.
   audience: SBA
+
+- name: Business Profiles
+  date: Jan 2019
+  url: /2018/12/dashboard-search-overview/business-profile
+  app: APP-4139
+  summary: |
+    <p>Create an updated prototype of the new firm overview page - SBA users</p>
+    <p>Adding out of cycle events has resulted in changes to the current firm overview. In preparation of developing the new firm overview page that incorporates HUBZone, we need an updated prototype. All SBA users can see this view.</p>
+  audience: SBA
+
+- name: Data Dictionary
+  date: January 2019
+  url: /2019/01/APP-4301
+  app: APP-4301
+  summary: UI/UX enhancements and style updates.
+  audience: SBA
+
+- name: Individual Contributor
+  date: February 2019
+  url: /2019/02/APP-4321/manage-contributors
+  app: APP-4321
+  summary: Firm owners are confused by the contributors card. Make UI and copy enhancements to make it easier to understand and help firm owners complete their section and send invitations to the correct contributors without contacting the help desk.
+  audience: Firms

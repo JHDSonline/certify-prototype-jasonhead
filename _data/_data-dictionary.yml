@@ -1,0 +1,24 @@
+- name: access_requests
+  percent: 23
+#  url: /2018/05/combine-sbos-assignment
+  summary: (Role requests that users make when they first log in. Role requests that users make when they first log in.Role requests that users make when they first log in.)
+  badge: warn
+
+
+- name: access_requests
+  percent: 23
+  #  url: /2018/05/combine-sbos-assignment
+  summary: (Role requests that users make when they first log in. Role requests )
+  badge: alert
+
+- name: access_requests
+  percent: 23
+  #  url: /2018/05/combine-sbos-assignment
+  summary: (Role requests that users make when they first log in. )
+  badge: sucess
+
+- name: access_requests
+  percent: 23
+  #  url: /2018/05/combine-sbos-assignment
+  summary: (Role requests that users make when they first log in. Role requests  users make when they first log in.)
+  badge: warn

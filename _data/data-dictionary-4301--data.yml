@@ -1,0 +1,4172 @@
+- name: access_requests
+  percent: 23
+  summary: (Role requests that users make when they first log in. Role requests that users make when they first log in.Role requests that users make when they first log in.)
+  badge: alert
+  expand: |
+    <table class="sba-u-margin-top--1">
+                                <thead>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Comment</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>Primary Key (serial) for record uniqueness.</td>
+                                </tr>
+                                <tr>
+                                    <td>user_id</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>organization_id</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>solicitation_number</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>solicitation_naics</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>procurement_type</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>status</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>accepted_on</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>request_expires_on</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>access_expires_on</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>deleted_at</td>
+                                    <td>Date and time the record was soft deleted.</td>
+                                </tr>
+                                <tr>
+                                    <td>created_at</td>
+                                    <td>Date and time the record was created.</td>
+                                </tr>
+                                <tr>
+                                    <td>updated_at</td>
+                                    <td>Date and time the record was last updated.</td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>role_id</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>roles_map</td>
+                                    <td>this is the user hash where the roles will be saved</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+- name: agency_contact_types
+  percent: 100
+  summary: (This table stores the contract types available to an agency requirement )
+  badge: success
+  expand: |
+    <table class="sba-u-margin-top--1">
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td>The name of the contract type</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: agency_naics_codes
+  percent: 0
+  summary: (List of all NAICS codes )
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>code</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>industry_title</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>size_dollars_mm</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>size_employees</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: agency_offer_agreements
+  percent: 0
+  summary: (List of agreement types )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: agency_offer_codes
+  percent: 0
+  summary: (List of offer codes)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: agency_offer_scopes
+  percent: 0
+  summary: (The regional scope of an offer )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: agency_offices
+  percent: 0
+  summary: (List of Federal  Agencies and Departments )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>abbreviation</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: agency_requirement_documents
+  percent: 67
+  summary: (List of agency  requirement and a corresponding document )
+  badge: warn
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>user_id</td>
+    <td>Associate a document to the user that created/uploaded it</td>
+    </tr>
+    <tr>
+    <td>agency_requirement_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>stored_file_name</td>
+    <td>Name of the file assigned during legacy migration.</td>
+    </tr>
+    <tr>
+    <td>original_file_name</td>
+    <td>Name of the file displayed to the user.</td>
+    </tr>
+    <tr>
+    <td>document_type</td>
+    <td>Chosen from AgencyRequirementDocument::AGENCY_DOCUMENT_TYPES.</td>
+    </tr>
+    <tr>
+    <td>file_metadata</td>
+    <td>Many data types and their relationships.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>comment</td>
+    <td>Holds an comments user entered for the document.</td>
+    </tr>
+    <tr>
+    <td>is_active</td>
+    <td>A boolen indicating if the user is active.</td>
+    </tr>
+    <tr>
+    <td>av_status</td>
+    <td>Indicates the Anti Virus Scan status of the uploaded document.</td>
+    </tr>
+    <tr>
+    <td>valid_pdf</td>
+    <td>Indicates if the PDF validation succeeded.</td>
+    </tr>
+    <tr>
+    <td>compressed_status</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: agency_requirement_organizations
+  percent: 0
+  summary: (List of agency  requirement and an associated organization )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>agency_requirement_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>organization_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: agency_requirements
+  percent: 3
+  summary: (List of Agency  Requirements )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>user_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>duty_station_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>program_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>agency_naics_code_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>agency_office_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>agency_offer_code_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>agency_offer_scope_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>agency_offer_agreement_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>agency_contract_type_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>agency_co_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>description</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>received_on</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>estimated_contract_value</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>contract_value</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>offer_solicitation_number</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>offer_value</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>contract_number</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>agency_comments</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>contract_comments</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>comments</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>contract_awarded</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>unique_number</td>
+    <td>autogenerated unique identifier that can be used to refer to an agency
+    requirement, in the format of &lt;A-Z&gt;&lt;A-Z&gt;&lt;timestamp&gt;&lt;A-Z&gt;
+    (two uppercase letters followed by a timestamp number followed by an uppercase
+    letter)
+    </td>
+    </tr>
+    <tr>
+    <td>case_number</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>e8a_created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>e8a_deleted_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: annual_reports
+  percent: 71
+  summary: (A table comment)
+  badge: warn
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>certificate_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>sba_application_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>status</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>reviewer_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: anonymous_users
+  percent: 0
+  summary: (The anonymous_user stores a record for every user that take the am-i-eligible survey. )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: answer_documents
+  percent: 0
+  summary: (The answer_documents table are documents that are added by answer for further information. )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>answer_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>document_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: answers
+  percent: 100
+  summary: (The answers table tracks the responses provided by a user. )
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>type</td>
+    <td>Type of application (WOSB, EDWOSB, 8(a) etc.). (might be changed to a text
+    column).
+    </td>
+    </tr>
+    <tr>
+    <td>owner_id</td>
+    <td>Composite key (owner_id and owner_type) indicates either the Users or the
+    Anonymous Users table.
+    </td>
+    </tr>
+    <tr>
+    <td>owner_type</td>
+    <td>User identification role.</td>
+    </tr>
+    <tr>
+    <td>sba_application_id</td>
+    <td>Foreign Key to the SBA Applications table.</td>
+    </tr>
+    <tr>
+    <td>question_id</td>
+    <td>Foreign Key to the Questions table.</td>
+    </tr>
+    <tr>
+    <td>evaluated_response</td>
+    <td>Response which determines which answer is correct.</td>
+    </tr>
+    <tr>
+    <td>response</td>
+    <td>Answer provided by the user.</td>
+    </tr>
+    <tr>
+    <td>comment</td>
+    <td>Field for users to add additional notes to their answers.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    <tr>
+    <td>value</td>
+    <td>Aggregated response for the answer. With introduction of Form 413 questions,
+    this has been changed to a json type to handle complex responses with more that
+    one value.
+    </td>
+    </tr>
+    <tr>
+    <td>details</td>
+    <td>Detailed response for the answer. Json type to hold complex responses.</td>
+    </tr>
+    <tr>
+    <td>answered_for_id</td>
+    <td>Indicates who or for whom the answer was entered.</td>
+    </tr>
+    <tr>
+    <td>answered_for_type</td>
+    <td>The type of table the ID is associated with.</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: applicable_questions
+  percent: 0
+  summary: (The applicable_questions table is a list of questions asked to become certified. )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>evaluation_purpose_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>question_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>positive_response</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>lookup</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: application_status_types
+  percent: 0
+  summary: (The application_status_types stores the different status an certification can have. )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>description</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: assessments
+  percent: 8
+  summary: (Assessments are)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>review_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>note_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>assessed_by_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>the_assessed_type</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>the_assessed_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>status</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>determination_decision</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>new_reviewer_id</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: assignments
+  percent: 13
+  summary: (Stores the different users that are assigned to a review )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>review_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>supervisor_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>owner_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>reviewer_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: av_status_history
+  percent: 0
+  summary: (The av_status_history table stores an entry for each pass searching for documents that need to be scanned. )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>start_time</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>end_time</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>total_documents</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>total_errors</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>error_message</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: bdmis_migrations
+  percent: 85
+  summary: (Used to store data about applications that were previously stored in BDMIS )
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>sba_application_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>error_messages</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>approval_date</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>case_number</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>case_url</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>certification</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>company_name</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>decline_date</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>ein</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>next_review</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>office</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>page</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>status</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>submitted_on_date</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>exit_date</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>approved_date</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>office_code</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>office_name</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>district_code</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>district_name</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>duns</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>hashed_duns</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>current_assigned_email</td>
+    <td>New columns from the BDMIS csv import</td>
+    </tr>
+    <tr>
+    <td>last_recommendation</td>
+    <td>New columns from the BDMIS csv import</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: business_partners
+  percent: 95
+  summary: (The business partners table stores information around the business partner. )
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>sba_application_id</td>
+    <td>Foreign Key to the SBA Applications table.</td>
+    </tr>
+    <tr>
+    <td>first_name</td>
+    <td>First name of the business partner.</td>
+    </tr>
+    <tr>
+    <td>last_name</td>
+    <td>Last name of the business partner.</td>
+    </tr>
+    <tr>
+    <td>marital_status</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>address</td>
+    <td>Street address of the business partner.</td>
+    </tr>
+    <tr>
+    <td>city</td>
+    <td>City of the business partner.</td>
+    </tr>
+    <tr>
+    <td>state</td>
+    <td>State of the business partner.</td>
+    </tr>
+    <tr>
+    <td>postal_code</td>
+    <td>Postal code of the business partner.</td>
+    </tr>
+    <tr>
+    <td>country</td>
+    <td>Country of the business partner.</td>
+    </tr>
+    <tr>
+    <td>home_phone</td>
+    <td>Home phone of the business partner.</td>
+    </tr>
+    <tr>
+    <td>business_phone</td>
+    <td>Business phone of the business partner.</td>
+    </tr>
+    <tr>
+    <td>email</td>
+    <td>Business phone of the business partner.</td>
+    </tr>
+    <tr>
+    <td>status</td>
+    <td>Status of the business partnet within the organization.</td>
+    </tr>
+    <tr>
+    <td>ssn</td>
+    <td>Social Security Number of the business partner.</td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td>Title phone of the business partner.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: business_types
+  percent: 0
+  summary: (The different business types that can be certified )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>display_name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: business_units
+  percent: 43
+  summary: (Departments within the SBA )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>program_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td>TBD</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: certificate_status_types
+  percent: 0
+  summary: (The certificate_status_types table stores the certificate status type offered by the SBA.)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>description</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: certificate_types
+  percent: 69
+  summary: (The certificate_types table stores the certification types offered by the SBA. )
+  badge: warn
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td>Name of certificate.</td>
+    </tr>
+    <tr>
+    <td>description</td>
+    <td>A description of the certificate types.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td>Title of certificate.</td>
+    </tr>
+    <tr>
+    <td>type</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>duration_in_days</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>wait_period_in_days</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>renewal_period_in_days</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>renewal_notification_period_in_days</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>annual_report_period_in_days</td>
+    <td>TBD</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: certificates
+  percent: 84
+  summary: (The certificates  table stores the certificates offered by the SBA. )
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>organization_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>certificate_status_type_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>certificate_type_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>issue_date</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>expiry_date</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>workflow_state</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>type</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>workflow_dirty</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>original_certificate_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>next_annual_report_date</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>duty_station_id</td>
+    <td>The id of the duty station that was selected for the 8a initial master
+    application
+    </td>
+    </tr>
+    <tr>
+    <td>suspended</td>
+    <td>Migrated from BDMIS to be used later</td>
+    </tr>
+    <tr>
+    <td>current_assigned_email</td>
+    <td>Migrated from BDMIS to be used later for review assignment</td>
+    </tr>
+    <tr>
+    <td>servicing_bos_id</td>
+    <td>the user id of the person who serves as the servicing BOS</td>
+    </tr>
+    <tr>
+    <td>rejected</td>
+    <td>Last recommendation from BDMIS to be used later</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: contributors
+  percent: 77
+  summary: (Users that a person filling out a certification application has asked to fill out a contributor application)
+  badge: warn
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>full_name</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>email</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>section_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>sba_application_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>position</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>section_name_type</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>expires_at</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>user_id</td>
+    <td>The id of the User object that corresponds to this contributor</td>
+    </tr>
+    <tr>
+    <td>sub_application_id</td>
+    <td>The id of the sub_application that this contributor has been invited to fill
+    out
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: countries
+  percent: 0
+  summary: (List of all recognized countries )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>iso_alpha2_code</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: cron_job_histories
+  percent: 50
+  summary: (Log of cron job that have run )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>type</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>start_time</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>end_time</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: current_questionnaires
+  percent: 71
+  summary: (A table comment)
+  badge: warn
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>certificate_type_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>questionnaire_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>kind</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>for_testing</td>
+    <td>this allows new questionnaires to be tested locally and in lower environments
+    before being available in prod
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: determinations
+  percent: 14
+  summary: (Records the decision made after a review )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>decision</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>decider_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>eligible</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: disqualifiers
+  percent: 0
+  summary: (Questions whose answer can disqualify an applicant )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>value</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>message</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: document_type_questions
+  percent: 0
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>document_type_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>question_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: document_types
+  percent: 0
+  summary: (The documents_types table is a list of possible documents types the user can select from. Birth Certificates, Operation Agreement or Doing Business As are examples of document type.)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>description</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: documents
+  percent: 100
+  summary: (The documents tables holds the documents uploaded from the WOSB owner. )
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>organization_id</td>
+    <td>Foreign Key to the Organizations table.</td>
+    </tr>
+    <tr>
+    <td>stored_file_name</td>
+    <td>Name of the file assigned during legacy migration.</td>
+    </tr>
+    <tr>
+    <td>original_file_name</td>
+    <td>Name of the file displayed to the user.</td>
+    </tr>
+    <tr>
+    <td>document_type_id</td>
+    <td>Foreign Key to the Document Types table.</td>
+    </tr>
+    <tr>
+    <td>file_metadata</td>
+    <td>Many data types and their relationships.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    <tr>
+    <td>comment</td>
+    <td>Holds an comments user entered for the document.</td>
+    </tr>
+    <tr>
+    <td>is_active</td>
+    <td>A boolen indicating if the user is active.</td>
+    </tr>
+    <tr>
+    <td>av_status</td>
+    <td>Indicates the Anti Virus Scan status of the uploaded document.</td>
+    </tr>
+    <tr>
+    <td>valid_pdf</td>
+    <td>Indicates if the PDF validation succeeded.</td>
+    </tr>
+    <tr>
+    <td>user_id</td>
+    <td>Associate a document to the user that created/uploaded it</td>
+    </tr>
+    <tr>
+    <td>is_analyst</td>
+    <td>Indicates if the document was uploaded by an analyst</td>
+    </tr>
+    <tr>
+    <td>compressed_status</td>
+    <td>TBD</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: duty_stations
+  percent: 73
+  summary: (A table comment)
+  badge: warn
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>facility_code</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>street_address</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>city</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>state</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>zip</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>region_code</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td>TBD</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: eligible_naic_codes
+  percent: 0
+  summary: (The eligible_naic_codes table is a list of NAIC Codes that are applicable to the WOSB/EDWOSB offerings. )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>certificate_type_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>naic_code</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>naic_code_description</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: email_notification_histories
+  percent: 67
+  summary: (A table comment )
+  badge: warn
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>program</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>days</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>organization_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>email</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>error</td>
+    <td>Error message if there is an exception while creating or sending an 8(a) Annual
+    Review Application / Notification
+    </td>
+    </tr>
+    <tr>
+    <td>annual_review_sba_application_id</td>
+    <td>8(a) Annual Review Application for successfully created applications</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: evaluation_histories
+  percent: 10
+  summary: (A table comment )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>category</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>value</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>stage</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>evaluable_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>evaluator_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>evaluable_type</td>
+    <td>The type of model that is being evaluated</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: evaluation_purposes
+  percent: 100%
+  summary: (Defines a grouping of applicable questions. For instance":" Am I Eligible for WOSB, Am I Eligible for EDWOSB etc. )
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td>Evaluation purpose name.</td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td>Title of evaluation purpose.</td>
+    </tr>
+    <tr>
+    <td>certificate_type_id</td>
+    <td>Foreign Key to the Certificate Type table.</td>
+    </tr>
+    <tr>
+    <td>questionnaire_id</td>
+    <td>Foreign Key to the Questionnaires table.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>explanations</td>
+    <td>Text of why you do or don't qualify.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: event_logs
+  percent: 50
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>loggable_id</td>
+    <td>The associated model</td>
+    </tr>
+    <tr>
+    <td>loggable_type</td>
+    <td>The associated model</td>
+    </tr>
+    <tr>
+    <td>user_id</td>
+    <td>The user who generated the event, if any</td>
+    </tr>
+    <tr>
+    <td>event</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>comment</td>
+    <td>Additional text annotation</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: expiration_dates
+  percent: 0
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>type</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>model</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>field</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>days_from_now</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: groups
+  percent: 0
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>program_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: help_pages
+  percent: 0
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>left_panel</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>right_panel</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: notes
+  percent: 18
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>notated_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>notated_type</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>body</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>author_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>published</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>tags</td>
+    <td>these are tags that are associated with a document uploaded by an analyst</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: office_locations
+  percent: 33
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>business_unit_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>user_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: office_requests
+  percent: 33
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>duty_station_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>access_request_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: offices
+  percent: 33
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>duty_station_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>user_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: organizations
+  percent: 0
+  summary: (The organization table stores the Organizations. )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>duns_number</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>tax_identifier</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>tax_identifier_type</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>business_type</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>folder_name</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: permission_requests
+  percent: 33
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>access_request_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>user_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: personnels
+  percent: 0
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>organization_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>user_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: programs
+  percent: 0
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: question_presentations
+  percent: 73
+  summary: (The question_presentations table stores date about a question and how/what is presented to the user. )
+  badge: warn
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>question_id</td>
+    <td>Foreign Key to the Questions table.</td>
+    </tr>
+    <tr>
+    <td>section_id</td>
+    <td>Foreign Key to the Section table.</td>
+    </tr>
+    <tr>
+    <td>position</td>
+    <td>Order of question within a page.</td>
+    </tr>
+    <tr>
+    <td>tooltip</td>
+    <td>Hover help text.</td>
+    </tr>
+    <tr>
+    <td>helpful_info</td>
+    <td>Content of question details and failure reasons.</td>
+    </tr>
+    <tr>
+    <td>question_override_title</td>
+    <td>Used when a question requires an over-ride.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>validation_rules</td>
+    <td>Used for front end javascript validations.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    <tr>
+    <td>disqualifier_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>repeater_label</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>minimum</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>maximum</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: question_rules
+  percent: 100
+  summary: (The question_rules table stores any logic needed for question logic. )
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>question_type_id</td>
+    <td>Foreign Key to the Questions Type table.</td>
+    </tr>
+    <tr>
+    <td>capability</td>
+    <td>Controls if a comment or attachment is needed.</td>
+    </tr>
+    <tr>
+    <td>mandatory</td>
+    <td>Determines if a comment or question is required.</td>
+    </tr>
+    <tr>
+    <td>condition</td>
+    <td>Used to determine the presentation of a comment or attachment.</td>
+    </tr>
+    <tr>
+    <td>value</td>
+    <td>Controls the expected value to be presented.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: question_types
+  percent: 89
+  summary: (The question_types is a grouping of question based on type. )
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td>Name of question.</td>
+    </tr>
+    <tr>
+    <td>description</td>
+    <td>A description of the question types.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td>Title of question.</td>
+    </tr>
+    <tr>
+    <td>type</td>
+    <td>Type of question.</td>
+    </tr>
+    <tr>
+    <td>config_options</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: questionnaire_histories
+  percent: 57
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>certificate_type_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>questionnaire_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>kind</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>version</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: questionnaires
+  percent: 96
+  summary: (The questionnaires table stores questionnaire details. )
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td>Name of questionnaire.</td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td>Title of questionnaire.</td>
+    </tr>
+    <tr>
+    <td>submit_text</td>
+    <td>Text for the submit button.</td>
+    </tr>
+    <tr>
+    <td>confirm</td>
+    <td>Used to determine if the confirmation page should be displayed.</td>
+    </tr>
+    <tr>
+    <td>anonymous</td>
+    <td>Identifies if the questionnaire is pre or post login.</td>
+    </tr>
+    <tr>
+    <td>determine_eligibility</td>
+    <td>Used to control display of all questions or eligibility.</td>
+    </tr>
+    <tr>
+    <td>display_title</td>
+    <td>Header for questionnaire.</td>
+    </tr>
+    <tr>
+    <td>single_page</td>
+    <td>Used to identify of the questionnaire is single page or not.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    <tr>
+    <td>root_section_id</td>
+    <td>Indicates the root section of the questionnaire.</td>
+    </tr>
+    <tr>
+    <td>first_section_id</td>
+    <td>Indicates the first section of the questionaire.</td>
+    </tr>
+    <tr>
+    <td>program_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>maximum_allowed</td>
+    <td>same as in certificate type - moved here because there can be different types of questionnairesinitial, annual review, etc.
+    </td>
+    </tr>
+    <tr>
+    <td>certificate_type_id</td>
+    <td>support for multiple questionnaires per cert type</td>
+    </tr>
+    <tr>
+    <td>initial_app</td>
+    <td>is this questionnaire used as the 'initial application' vendors fill out (with
+    future support for multiple simultaneous)
+    </td>
+    </tr>
+    <tr>
+    <td>vendor_can_start</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>analyst_can_start</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>review_page_display_title</td>
+    <td>The display title on the review page</td>
+    </tr>
+    <tr>
+    <td>link_label</td>
+    <td>The label used when linking to this questionnaire</td>
+    </tr>
+    <tr>
+    <td>human_name</td>
+    <td>The human name or short name used to refer to the questionnaire (EDWOSB, etc.)
+    </td>
+    </tr>
+    <tr>
+    <td>type</td>
+    <td>For subclassing questionnaires</td>
+    </tr>
+    <tr>
+    <td>scheduler_can_start</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>prerequisite_order</td>
+    <td>TBD</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: questions
+  percent: 100
+  summary: (The questions table stores all questions needed to be answered when attempting to become certified.)
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td>Name of question.</td>
+    </tr>
+    <tr>
+    <td>description</td>
+    <td>A description of the questions.</td>
+    </tr>
+    <tr>
+    <td>question_type_id</td>
+    <td>Foreign Key to the Questions Type table.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td> Title of question.</td>
+    </tr>
+    <tr>
+    <td>multi</td>
+    <td>Does this question have more than one answer? An array of the same answer type
+    </td>
+    </tr>
+    <tr>
+    <td>helpful_info</td>
+    <td>Where we stuff all the extra json details that we use for questions - mostly
+    used for failure messages.
+    </td>
+    </tr>
+    <tr>
+    <td>sub_questions</td>
+    <td>For complex questions - like personal property, where there are a number of
+    questions on the page with complex interdependencies, this field holds all the
+    information for the subquestions, which is used to create 'virtual questions' in
+    the application
+    </td>
+    </tr>
+    <tr>
+    <td>possible_values</td>
+    <td>For pick lists? What is the list of possible values to choose from?</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    <tr>
+    <td>strategy</td>
+    <td>What algorithm to use for calculating totals / massaging the final value that is
+    stored for an answer.
+    </td>
+    </tr>
+    <tr>
+    <td>prepopulate</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>title_wrapper_tag</td>
+    <td>Adding the ability to wrap a question title with somthing other than h3</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: review_documents
+  percent: 0
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>review_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>document_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: reviews
+  percent: 45
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>type</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>case_number</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>sba_application_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>certificate_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>current_assignment_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>workflow_state</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>determination_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>workflow_dirty</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>screening_due_date</td>
+    <td>The due date for the screening</td>
+    </tr>
+    <tr>
+    <td>processing_due_date</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>recommend_eligible</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>recommend_eligible_for_appeal</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>determine_eligible</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>determine_eligible_for_appeal</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>processing_paused</td>
+    <td>flag that indicates if the review processing has been paused</td>
+    </tr>
+    <tr>
+    <td>processing_pause_date</td>
+    <td>The date that processing was paused</td>
+    </tr>
+    <tr>
+    <td>letter_due_date</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>reconsideration_or_appeal_clock</td>
+    <td>Date by which the user has to submit an appeal or reconsideration</td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: roles
+  percent: 0
+  summary: (The roles table stores user assigned roles. )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>resource_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>resource_type</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: sba_application_documents
+  percent: 0
+  summary: (The sba_application_documents table stores all documents associated to the application.)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>sba_application_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>document_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: sba_applications
+  percent: 80
+  summary: (The sba_applications table stores all certification applications submitted to the SBA.)
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>application_status_type_id</td>
+    <td> Foreign Key to the Application Status Type table.</td>
+    </tr>
+    <tr>
+    <td>organization_id</td>
+    <td>Foreign Key to the Organizations table.</td>
+    </tr>
+    <tr>
+    <td>application_start_date</td>
+    <td>Date and time of when the application was started.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    <tr>
+    <td>progress</td>
+    <td>Measures progress of the application.</td>
+    </tr>
+    <tr>
+    <td>signature</td>
+    <td>Holds the signature from the application. This is from the signature section
+    which is not stored as Answers
+    </td>
+    </tr>
+    <tr>
+    <td>application_submitted_at</td>
+    <td>Timestamp of when the application was submitted</td>
+    </tr>
+    <tr>
+    <td>root_section_id</td>
+    <td>Indicates the root section of the application.</td>
+    </tr>
+    <tr>
+    <td>first_section_id</td>
+    <td>Indicates the first section of the application.</td>
+    </tr>
+    <tr>
+    <td>renewal</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>workflow_state</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>version_number</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>current_sba_application_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>is_current</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>sam_snapshot</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>certificate_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>questionnaire_id</td>
+    <td>each app needs to associate directly to a questionnaire instead of a cert type
+    </td>
+    </tr>
+    <tr>
+    <td>type</td>
+    <td>For subclassing applications</td>
+    </tr>
+    <tr>
+    <td>master_application_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>position</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>kind</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>current_section_id</td>
+    <td>Used to track the current section for sub applications so you can quickly get
+    back to that section from the master app
+    </td>
+    </tr>
+    <tr>
+    <td>zip_file_status</td>
+    <td>Status of Zip file of all documents. 0 - Not Created, 1 - Pending, 2 - Ready.
+    Refer story APP-473
+    </td>
+    </tr>
+    <tr>
+    <td>prerequisite_order</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>workflow_dirty</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>returned_by</td>
+    <td>Track the last case owner who returned this application to vendor</td>
+    </tr>
+    <tr>
+    <td>original_certificate_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>adhoc_question_title</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>adhoc_question_details</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>screening_due_date</td>
+    <td>The due date for the screening</td>
+    </tr>
+    <tr>
+    <td>returned_reviewer_id</td>
+    <td>TBD</td>
+    </tr>
+    <tr>
+    <td>creator_id</td>
+    <td>User id of the person that created the application</td>
+    </tr>
+    <tr>
+    <td>unanswered_adhoc_reviews</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>bdmis_case_number</td>
+    <td>The BDMIS case number</td>
+    </tr>
+    <tr>
+    <td>review_for</td>
+    <td>The date the annual review is set for.</td>
+    </tr>
+    <tr>
+    <td>review_number</td>
+    <td>The number of the review, 1 thru 8.</td>
+    </tr>
+    <tr>
+    <td>info_request_assigned_to_id</td>
+    <td>The id of the user who's workload queue this application (request for info) will
+    show up in
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: section_rules
+  percent: 81
+  summary: (The section_rules table stores all the logic for each section. )
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>questionnaire_id</td>
+    <td>Foreign Key to the Questionnaires table.</td>
+    </tr>
+    <tr>
+    <td>from_section_id</td>
+    <td>Controls which section to move backwards to.</td>
+    </tr>
+    <tr>
+    <td>to_section_id</td>
+    <td>Controls which section to move forward to.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    <tr>
+    <td>skip_info</td>
+    <td>Controls any sections that are NA.</td>
+    </tr>
+    <tr>
+    <td>expression</td>
+    <td>Expression to check if this rule applies to current state.</td>
+    </tr>
+    <tr>
+    <td>sba_application_id</td>
+    <td>Foreign Key to the SBA Applications table.</td>
+    </tr>
+    <tr>
+    <td>template_root_id</td>
+    <td>If this section rule relates to a template section, what is the root of the
+    template tree.
+    </td>
+    </tr>
+    <tr>
+    <td>dynamic</td>
+    <td>Is this section rule for a dynamic section (created from Form 413).</td>
+    </tr>
+    <tr>
+    <td>is_last</td>
+    <td>Is this the last rule? - used to determine when to continue to the regular
+    section rules after handling dynamic sections.
+    </td>
+    </tr>
+    <tr>
+    <td>is_multi_path_template</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>terminal_section_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>generated_from_id</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: sections
+  percent: 88
+  summary: (The sections table store each section of an application. )
+  badge: success
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td>Name of section.</td>
+    </tr>
+    <tr>
+    <td>description</td>
+    <td>A description of the sections.</td>
+    </tr>
+    <tr>
+    <td>sba_application_id</td>
+    <td>Foreign Key to the SBA Applications table.</td>
+    </tr>
+    <tr>
+    <td>ancestry</td>
+    <td>This records the parents of this section.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    <tr>
+    <td>title</td>
+    <td>Title of the section.</td>
+    </tr>
+    <tr>
+    <td>submit_text</td>
+    <td>Text that should appear on the Submit button on the page.</td>
+    </tr>
+    <tr>
+    <td>questionnaire_id</td>
+    <td>Foreign Key to the Questionnaires table.</td>
+    </tr>
+    <tr>
+    <td>type</td>
+    <td>Type of section.</td>
+    </tr>
+    <tr>
+    <td>template_id</td>
+    <td>For dynamic sections (Form 413) this references the original template that was
+    used to create the section
+    </td>
+    </tr>
+    <tr>
+    <td>repeat</td>
+    <td>Is this a repeating section (Form 413) where you can have a list of the same
+    section (one for each business partner)
+    </td>
+    </tr>
+    <tr>
+    <td>displayable</td>
+    <td>Template sections are not displayed in the UI - just used for creating other
+    sections - so they're not displable
+    </td>
+    </tr>
+    <tr>
+    <td>position</td>
+    <td>Order the section is displayed in the tree.</td>
+    </tr>
+    <tr>
+    <td>answered_for_id</td>
+    <td>For dynamic sections, the model id (business partner id) that this section is
+    associated with.
+    </td>
+    </tr>
+    <tr>
+    <td>answered_for_type</td>
+    <td>For dynamic sections, the model type (BusinessPartner).</td>
+    </tr>
+    <tr>
+    <td>original_section_id</td>
+    <td>When an application is created the sections are copied from the questionnaire -
+    so each application has it's own hierarchy. The original section refers to the
+    section in the questionnaire.that corresponds to this section. Used to proxy the
+    questions / question presentations
+    </td>
+    </tr>
+    <tr>
+    <td>dynamic</td>
+    <td>Is this a dynamic section that was created from a template?</td>
+    </tr>
+    <tr>
+    <td>template_type</td>
+    <td>What is the subtype of the template, so you can dynamically create different
+    types of sections (question section, review section, etc).
+    </td>
+    </tr>
+    <tr>
+    <td>validation_rules</td>
+    <td>Used for front end javascript validations.</td>
+    </tr>
+    <tr>
+    <td>is_applicable</td>
+    <td>Indicates if the section is applicable based on previous responses.</td>
+    </tr>
+    <tr>
+    <td>is_completed</td>
+    <td>Indicates if the section is completed based on responses.</td>
+    </tr>
+    <tr>
+    <td>review_position</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>sub_sections_completed</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>sub_sections_applicable</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>defer_applicability_for_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>sub_questionnaire_id</td>
+    <td>For master questionnaires to have sub questionnaires</td>
+    </tr>
+    <tr>
+    <td>sub_application_id</td>
+    <td>For master applications to have sub applicationss</td>
+    </tr>
+    <tr>
+    <td>status</td>
+    <td>Used for sub applications to determine if the app has been started, is in
+    progress or has been completed
+    </td>
+    </tr>
+    <tr>
+    <td>prescreening</td>
+    <td>This will be used for any sub-sections / sub applications that are to be
+    completed BEFORE reaching the master 8a questionnaire
+    </td>
+    </tr>
+    <tr>
+    <td>is_last</td>
+    <td>Used to determine which page to use to submit the application (sub apps submit
+    from review, where others submit from signature)
+    </td>
+    </tr>
+    <tr>
+    <td>related_to_section_id</td>
+    <td>for adhoc questionnaires - they are related to other subsections in the
+    application
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: tags
+  percent: 20%
+  summary: (Tags that are associated to SBA notes that analysts create. Used for filtering. )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>name</td>
+    <td>name of the tag</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: users
+  percent: 59
+  summary: (The users table stores all users that login to the system. )
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td>Primary Key (serial) for record uniqueness.</td>
+    </tr>
+    <tr>
+    <td>email</td>
+    <td>Email address of the user.</td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td>Date and time the record was soft deleted.</td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td>Date and time the record was created.</td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td>Date and time the record was last updated.</td>
+    </tr>
+    <tr>
+    <td>encrypted_password</td>
+    <td>Password salted and encrypted. Uses bcrypt algorithm</td>
+    </tr>
+    <tr>
+    <td>reset_password_token</td>
+    <td>Unique token generated when user requests for a password reset</td>
+    </tr>
+    <tr>
+    <td>reset_password_sent_at</td>
+    <td>Timestamp of when the reset password request was initiated</td>
+    </tr>
+    <tr>
+    <td>sign_in_count</td>
+    <td>Number of successful Sign Ins the user has had to the system</td>
+    </tr>
+    <tr>
+    <td>current_sign_in_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>last_sign_in_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>current_sign_in_ip</td>
+    <td>IP address of the current sign in</td>
+    </tr>
+    <tr>
+    <td>last_sign_in_ip</td>
+    <td>IP address of the last sign in</td>
+    </tr>
+    <tr>
+    <td>confirmation_token</td>
+    <td>Unique token generated when the user signs up and is sent an email to confirm
+    account.
+    </td>
+    </tr>
+    <tr>
+    <td>confirmed_at</td>
+    <td>Timestamp of when the account was confirmed.</td>
+    </tr>
+    <tr>
+    <td>confirmation_sent_at</td>
+    <td>Timestamp of when the confirmation email was sent.</td>
+    </tr>
+    <tr>
+    <td>unconfirmed_email</td>
+    <td>NOT USED</td>
+    </tr>
+    <tr>
+    <td>failed_attempts</td>
+    <td>Number of failed sign in attempts the user has had</td>
+    </tr>
+    <tr>
+    <td>unlock_token</td>
+    <td>Unique token generated when the user requests to unlock account.</td>
+    </tr>
+    <tr>
+    <td>locked_at</td>
+    <td>Timestamp of when the account was locked</td>
+    </tr>
+    <tr>
+    <td>first_name</td>
+    <td>User's first name.</td>
+    </tr>
+    <tr>
+    <td>last_name</td>
+    <td>User's last name.</td>
+    </tr>
+    <tr>
+    <td>phone_number</td>
+    <td>User's phone number.</td>
+    </tr>
+    <tr>
+    <td>provider</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>uid</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>max_user_classification</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>max_agency</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>max_org_tag</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>max_group_list</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>max_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>max_first_name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>max_security_level_list</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>max_last_name</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>max_email</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>max_bureau</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>roles_map</td>
+    <td>this is the user hash where the roles will be saved</td>
+    </tr>
+    <tr>
+    <td>uuid</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
+- name: workflow_changes
+  percent: 0
+  summary: (A table comment)
+  badge: alert
+  expand: |
+    <table>
+    <thead>
+    <tr>
+    <th>Column</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>model_type</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>model_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>workflow_state</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>user_id</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>deleted_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>created_at</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>updated_at</td>
+    <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+
