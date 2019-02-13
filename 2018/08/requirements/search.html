@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+  <head>
+    <title>Certify Prototype Jason Head</title>
+<meta name="viewport" content="width=device-width">
+<meta name="robots" content="noindex">
+
+
+
+
+<link rel="stylesheet" href="/certify-prototype-jasonhead/assets/stylesheets/application.css">
+<link rel="stylesheet" href="/certify-prototype-jasonhead/assets/cds.css">
+<script src="/certify-prototype-jasonhead/assets/javascripts/application.js"></script>
+<script src="/certify-prototype-jasonhead/assets/cds.js"></script>
+<meta name="robots" content="noindex">
+
+<!--<style>-->
+    <!--.float-right{-->
+        <!--float: right;-->
+    <!--}-->
+<!--</style>-->
+  </head>
+  <body class="public mainscreen ">
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+  <header class="sba-c-masthead ">
+
+<div class="sba-c-mobile-header">
+  <div class="sba-c-mobile-header__logo-container">
+    <a href="/certify-prototype-jasonhead/index.html">
+      <img alt="certify.SBA.gov logo" class="sba-c-mobile-header__logo" src="../../../assets/img/certify-sba-gov-logo_on-dark.png" />
+    </a>
+  </div>
+  <ul class="sba-c-mobile-header__list">
+    <li class="sba-c-mobile-header__list-item">
+      <button class="sba-c-button sba-c-button--icon-only sba-c-button--transparent sba-js-visibility-trigger sba-js-search-button" type="button" aria-expanded="false" aria-controls="topnav-search" title="Search">
+        <svg aria-hidden="true" class="sba-c-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </li>
+    <li class="sba-c-mobile-header__list-item">
+      <span class="sba-c-badge sba-c-badge--warn sba-c-badge--generic notifications-pip"></span>
+      <button class="sba-c-mobile-header__toggle sba-c-button sba-c-button--icon-only sba-c-button--transparent sba-js-visibility-trigger sba-js-notifications-toggle" id="" type="button" aria-expanded="false" aria-controls="topnav-notifications-drawer" title="Notifications">
+        <svg aria-hidden="true" class="sba-c-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#bell"></use>
+        </svg>
+      </button>
+    </li>
+  </ul>
+  <button type="button" class="sba-c-mobile-header__button" id="mobile_menu_button" aria-controls="top_navigation">Menu</button>
+</div>
+
+
+
+<nav id="top_navigation" class="sba-c-topnav" role="navigation">
+  <div class="sba-c-topnav__inner">
+    <a href="/certify-prototype-jasonhead/index.html" class="sba-c-topnav__logo-link">
+      <img class="sba-c-topnav__logo" alt="certify.SBA.gov logo" src="../../../assets/img/certify-sba-gov-logo_on-dark.png" />
+    </a>
+
+    <button class="sba-c-button sba-c-button--transparent sba-c-topnav__close" id="close_menu_button">
+      <svg aria-hidden="true" class="sba-c-icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#times"></use>
+      </svg><span class="sba-u-visibility--screen-reader">Close menu</span>
+    </button>
+
+    <ul class="sba-c-topnav__list sba-c-topnav__list--left-side">
+      
+      <li class="sba-c-topnav__list-item ">
+        
+        <a class="sba-c-topnav__link" href="dashboard.html">Dashboard</a>
+        
+      </li>
+      
+      <li class="sba-c-topnav__list-item ">
+        
+        <button class="sba-c-topnav__subnav-toggle sba-js-visibility-trigger" type="button" aria-expanded="false" aria-controls="topnav-Requirements">
+          <span>Requirements</span>
+        </button>
+        <ul id="topnav-Requirements" class="sba-c-topnav__subnav" hidden>
+          
+          <li class="sba-c-topnav__subnav-item">
+            <a href="new-requirement.html" class="sba-c-topnav__subnav__link">New Requirement(s)</a>
+          </li>
+          
+          <li class="sba-c-topnav__subnav-item">
+            <a href="all-requirements.html" class="sba-c-topnav__subnav__link">All Requirements</a>
+          </li>
+          
+          <li class="sba-c-topnav__subnav-item">
+            <a href="my-requirements.html" class="sba-c-topnav__subnav__link">My Requirements</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+    </ul>
+
+    <ul class="sba-c-topnav__list sba-c-topnav__list--right-side">
+      
+      <li class="sba-c-topnav__list-item sba-c-topnav__list-item--search">
+        <button class="sba-c-topnav__subnav-toggle sba-c-button sba-c-button--icon-only sba-c-button--transparent sba-js-visibility-trigger sba-js-search-button" type="button" aria-expanded="false" aria-controls="topnav-search" title="Search">
+          <svg aria-hidden="true" class="sba-c-icon">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </li>
+      
+
+      
+        
+        <li class="sba-c-topnav__list-item sba-c-topnav__list-item--notifications " aria-role="region" aria-live="polite">
+          <span class="sba-c-badge sba-c-badge--warn sba-c-badge--generic notifications-pip" title="You have new notifications"></span>
+          <button class="sba-c-topnav__subnav-toggle sba-c-button sba-c-button--icon-only sba-c-button--transparent sba-js-visibility-trigger sba-js-notifications-toggle" type="button" aria-expanded="false" aria-controls="topnav-notifications-drawer" title="Notifications">
+            <svg aria-hidden="true" class="sba-c-icon">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#bell"></use>
+            </svg>
+          </button>
+        </li>
+        
+      
+        
+          <li class="sba-c-topnav__list-item ">
+            <button class="sba-c-topnav__subnav-toggle sba-js-visibility-trigger" type="button" aria-expanded="false" aria-controls="topnav-MyAccount">
+              <span>My Account</span>
+            </button>
+            <ul id="topnav-MyAccount" class="sba-c-topnav__subnav" hidden>
+              
+              <li class="sba-c-topnav__subnav-item">
+                <a href="my-account.html" class="sba-c-topnav__subnav__link">My Account</a>
+              </li>
+              
+              <li class="sba-c-topnav__subnav-item">
+                <a href="javascript:void(0);" class="sba-c-topnav__subnav__link">Log Out</a>
+              </li>
+              
+            </ul>
+          </li>
+        
+      
+        
+        <li class="sba-c-topnav__list-item ">
+          <a class="sba-c-topnav__link" href="training.html">Training</a>
+        </li>
+        
+      
+    </ul>
+  </div>
+</nav>
+
+
+<div class="sba-c-top-nav__search-outer-container" id="topnav-search" hidden>
+  <div class="sba-c-top-nav__search-container" >
+    <div class="sba-l-container">
+      <form class="sba-c-top-nav__search-form" role="search">
+        <label class="sba-u-visibility--screen-reader" for="topnav_search_query">Search small</label>
+        <input class="sba-c-input" id="topnav_search_query" type="search" name="topnav_search_query" placeholder="Search firms">
+        <button class="sba-c-button sba-c-button--transparent" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div id="topnav-notifications-drawer" hidden>
+  <div class="sba-c-top-nav__notifications-drawer-outer-container sba-l-container">
+    <div class="sba-c-top-nav__notifications-drawer-container">
+      <div class="sba-c-top-nav__notifications-drawer">
+        <ul class="sba-c-top-nav__notifications-drawer__list" tabindex="0">
+          <li class="sba-c-top-nav__notifications-drawer__list-item">
+            <a href="#" class="sba-c-top-nav__notifications-drawer__link">
+              <p class="sba-c-top-nav__notifications-drawer__message">Mike’s Garage added a contributor to its 8(a) Initial Application.</p>
+              <p class="sba-c-top-nav__notifications-drawer__timestamp">July 13, 2018 2:18pm</p>
+            </a>
+          </li>
+          <li class="sba-c-top-nav__notifications-drawer__list-item">
+            <a href="#" class="sba-c-top-nav__notifications-drawer__link">
+              <p class="sba-c-top-nav__notifications-drawer__message">Terrycloth, LLC submitted information for its 8(a) Initial Application.</p>
+              <p class="sba-c-top-nav__notifications-drawer__timestamp">July 13, 2018 2:15pm</p>
+            </a>
+          </li>
+          <li class="sba-c-top-nav__notifications-drawer__list-item">
+            <a href="#" class="sba-c-top-nav__notifications-drawer__link">
+              <p class="sba-c-top-nav__notifications-drawer__message">Please review the 8(a) Initial Application for Hammertime, LLC. </p>
+              <p class="sba-c-top-nav__notifications-drawer__timestamp">July 13, 2018 2:03pm</p>
+            </a>
+          </li>
+          <li class="sba-c-top-nav__notifications-drawer__list-item">
+            <a href="#" class="sba-c-top-nav__notifications-drawer__link">
+              <p class="sba-c-top-nav__notifications-drawer__message">Please review the 8(a) Initial Application for MASTERWERKS. </p>
+              <p class="sba-c-top-nav__notifications-drawer__timestamp">July 13, 2018 1:11pm</p>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="sba-c-top-nav__notifications-drawer__view-all">View all notifications</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- This the content in the gray area-->
+
+
+
+
+
+<!-- Tabs -->
+
+
+
+
+</header>
+
+  
+
+
+  
+
+    <div class="sba-l-container">
+      
+      <div class="sba-l-row">
+        <div class="sba-l-col--12 sba-u-padding-x--2">
+          <div class="certify-page-header">
+            <div class="certify-page-header__primary">
+              
+              <h1>All Requirements</h1>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="sba-l-row">
+        <div class="sba-l-col--12 sba-u-padding-x--2">
+  <div class="sba-l-row">
+    <div role="search" class="sba-u-measure--wide">
+      <form class="usa-search usa-search-big sba-c-search--large">
+        <label class="usa-sr-only" for="search-field-big">Search big</label>
+        <input id="search-field-big" type="search" name="search" placeholder="Search DUNS, NAICS, etc.">
+        <button type="submit">
+          <span class="usa-search-submit-text">Search</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="sba-l-row sba-u-margin-x--neg2">
+    <div class="sba-l-sm-col--12 sba-l-md-col--golden-sm sba-l-lg-col--3 sba-u-padding-x--2">
+      <form action="#" >
+        <h2 class="sba-u-font-size--h3">Filter requirements</h2>
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Agency info</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+               <label for="offices" class="sba-c-label">District office</label>
+               <select name="offices" id="offices">
+                 <option value="">All offices</option>
+                 <option value="Alabama">Alabama </option>
+                 <option value="Alaska">Alaska </option>
+                 <option value="Arizona">Arizona </option>
+                 <option value="Arkansas">Arkansas </option>
+                 <option value="Baltimore">Baltimore </option>
+                 <option value="Boise">Boise </option>
+                 <option value="Buffalo">Buffalo </option>
+                 <option value="Cleveland">Cleveland </option>
+                 <option value="Colorado">Colorado </option>
+                 <option value="Columbus">Columbus </option>
+                 <option value="Connecticut">Connecticut </option>
+                 <option value="Delaware">Delaware </option>
+                 <option value="Des Moines">Des Moines </option>
+                 <option value="El Paso">El Paso </option>
+                 <option value="Fresno">Fresno </option>
+                 <option value="Georgia">Georgia </option>
+                 <option value="Hawaii">Hawaii </option>
+                 <option value="Houston">Houston </option>
+                 <option value="Illinois">Illinois </option>
+                 <option value="Indiana">Indiana </option>
+                 <option value="Kansas City">Kansas City </option>
+                 <option value="Kentucky">Kentucky </option>
+                 <option value="Los Angeles">Los Angeles </option>
+                 <option value="Louisiana">Louisiana </option>
+                 <option value="Lower Rio G V">Lower Rio G V </option>
+                 <option value="Lubbock">Lubbock </option>
+                 <option value=">Maine">Maine </option>
+                 <option value="Massachusetts">Massachusetts </option>
+                 <option value="Michigan">Michigan </option>
+                 <option value="Minnesota">Minnesota </option>
+                 <option value="Mississippi">Mississippi </option>
+                 <option value="Montana">Montana </option>
+                 <option value=">New Hampshire">New Hampshire </option>
+                 <option value=">North Carolina">North Carolina </option>
+                 <option value="North Dakota ">North Dakota </option>
+                 <option value="North Florida">North Florida </option>
+                 <option value="Nebraska">Nebraska </option>
+                 <option value=">Nevada">Nevada </option>
+                 <option value="New Jersey">New Jersey </option>
+                 <option value="New Mexico">New Mexico </option>
+                 <option value="New York">New York </option>
+                 <option value="Oklahoma">Oklahoma </option>
+                 <option value="Philadelphia">Philadelphia </option>
+                 <option value="Pittsburgh">Pittsburgh </option>
+                 <option value="Portland">Portland </option>
+                 <option value="Puerto Rico & U.S. Virgin Islands">Puerto Rico & U.S. Virgin Islands </option>
+                 <option value="Rhode Island">Rhode Island </option>
+                 <option value="Richmond">Richmond </option>
+                 <option value="South Carolina">South Carolina </option>
+                 <option value="South Dakota">South Dakota </option>
+                 <option value="South Florida">South Florida </option>
+                 <option value="Sacramento">Sacramento </option>
+                 <option value="San Antonio">San Antonio </option>
+                 <option value="San Diego">San Diego </option>
+                 <option value="San Francisco">San Francisco </option>
+                 <option value="Santa Ana">Santa Ana </option>
+                 <option value="Seattle">Seattle </option>
+                 <option value="St. Louis">St. Louis </option>
+                 <option value="Syracuse">Syracuse </option>
+                 <option value="Tennessee">Tennessee </option>
+                 <option value="Utah">Utah </option>
+                 <option value="Vermont">Vermont </option>
+                 <option value="Washington">Washington </option>
+                 <option value="West Virginia">West Virginia </option>
+                 <option value="Wichita">Wichita </option>
+                 <option value="Wisconsin">Wisconsin </option>
+                 <option value="Wyoming">Wyoming </option>
+               </select>
+            </li>
+
+            <li>
+               <label for="agency" class="sba-c-label">Agency</label>
+               <select name="agency" id="agency">
+                 <option value="">Select Agency</option>
+                 <option value="Alabama">Agency 1 </option>
+                <option value="Alabama">Agency 2 </option>
+
+                <option value="Alabama">Agency 3 </option>
+                <option value="Alabama">Agency 4 </option>
+                <option value="Alabama">Agency 5 </option>
+               </select>
+            </li>
+          </ul>
+        </fieldset>
+
+<!--CONTRACT INFO -->
+
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Contract info</legend>
+          <ul class="sba-c-unstyled-list">
+             <li>
+                <label for="contract_type" class="sba-c-label">Contract type</label>
+                <select name="contract_type" id="contract_type">
+                  <option value="">Select Contract Type</option>
+                  <option value="Alabama">Sole Source </option>
+                 <option value="Alabama">Competitive </option>
+                </select>
+             </li>
+             <li>
+               <label for="title" class="sba-c-label">Title</label>
+               <input class="sba-c-input" type="text" id="title">
+             </li>
+          </ul>
+        </fieldset>
+
+<!--FIRM INFO -->
+
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Firm info</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+             <label class="sba-c-label" for="naics">NAICS code</label>
+              <input class="sba-c-input" type="text" id="naics">
+            </li>
+          </ul>
+        </fieldset>
+
+<!--OFFER INFO -->
+
+        <fieldset class="sba-c-facet-set sba-c-fieldset sba-c-fieldset--inputs">
+          <legend class="sba-c-facet-set__legend">Offer info</legend>
+          <ul class="sba-c-unstyled-list">
+            <li>
+              <label class="sba-c-label" for="code">Code</label>
+              <select id="code">
+                <option value="">Select one...</option>
+                <option value="code 1">Offer Incomplete</option>
+                <option value="code 2">Offer Not Suitable 8(a) Program</option>
+                <option value="code 3">Adverse Impact </option>
+                <option value="code 4">Solicitation Previously Issued </option>
+                <option value="code 5">Offer Canceled or Withdrawn </option>
+                <option value="code 6">Offer Exceeds Threshold Amounts </option>
+                <option value="code 7">Offer Accepted </option>
+                <option value="code 8">Void Duplicate </option>
+              </select>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="sba-l-sm-col--12 sba-l-md-col--golden-lg sba-l-lg-col--9 sba-u-padding-x--2 sba-u-lg-padding-left--6">
+      <div class="sba-u-display--flex sba-u-justify-content--between">
+        <h2 class="sba-u-font-size--h3">Showing 3 requirements</h2>
+        <div>
+          <label for="sort" class="sba-u-visibility--screen-reader">Sort by</label>
+          <select name="" id="sort">
+            <option value="">Sort by…</option>
+            <option value="">Relevance</option>
+            <option value="">Next action due: Earliest</option>
+            <option value="">Next action due: Latest</option>
+            <option value="">Firm name: Ascending</option>
+            <option value="">Firm name: Descending</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sba-c-facet-pills sba-u-margin-bottom--3">
+        <span class="sba-c-facet-pill">
+          Screening
+          <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+        </span>
+        <span class="sba-c-facet-pill">
+          Preponderance
+          <button class="sba-c-facet-pill__close-button" title="Close">X</button>
+        </span>
+      </div>
+
+
+  <div class="sba-c-card sba-u-padding--2" id="card_1">
+    <h2 class="sba-u-margin--0 sba-u-font-size--h3"><a href="#">DHS System Maintenance</a> <span class="sba-u-color--gray sba-u-font-weight--normal ">(38291283)</span></h2>
+    <div class="sba-l-row">
+      <div class="sba-l-col--6 sba-u-padding-right--2">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>Agency:</strong>
+          <span class="sba-u-color--gray">Homeland Security</span>
+        </p>
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>Type:</strong>
+          <span class="sba-u-color--gray">Sole-Source</span>
+        </p>
+      </div>
+      <div class="sba-l-col--6 sba-u-padding-right--2">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>Code:</strong>
+          <span class="sba-u-color--gray">Offer Incomplete</span>
+        </p>
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>NAICS:</strong>
+          <span class="sba-u-color--gray">234876</span>
+        </p>
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+        <strong>Associated firm(s):</strong>
+        <span class="sba-u-color--gray">Yes</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sba-c-card sba-u-padding--2" id="card_2">
+    <h2 class="sba-u-margin--0 sba-u-font-size--h3"><a href="#">Vehicle Inspections</a> <span class="sba-u-color--gray sba-u-font-weight--normal ">(382939201)</span></h2>
+    <div class="sba-l-row">
+      <div class="sba-l-col--6 sba-u-padding-right--2">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>Agency:</strong>
+          <span class="sba-u-color--gray">Verterans Affiars (VA)</span>
+        </p>
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>Type:</strong>
+          <span class="sba-u-color--gray">Sole-Source</span>
+        </p>
+      </div>
+      <div class="sba-l-col--6 sba-u-padding-right--2">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>Code:</strong>
+          <span class="sba-u-color--gray">Offer Incomplete</span>
+        </p>
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>NAICS:</strong>
+          <span class="sba-u-color--gray">--</span>
+        </p>
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+        <strong>Associated firm(s):</strong>
+        <span class="sba-u-color--gray">No</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sba-c-card sba-u-padding--2" id="card_3">
+    <h2 class="sba-u-margin--0 sba-u-font-size--h3"><a href="#">March cleaning</a> <span class="sba-u-color--gray sba-u-font-weight--normal ">(987654321)</span></h2>
+    <div class="sba-l-row">
+      <div class="sba-l-col--6 sba-u-padding-right--2">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>Agency:</strong>
+          <span class="sba-u-color--gray">Selective Service System</span>
+        </p>
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>Type:</strong>
+          <span class="sba-u-color--gray">Sole-Source</span>
+        </p>
+      </div>
+      <div class="sba-l-col--6 sba-u-padding-right--2">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>Code:</strong>
+          <span class="sba-u-color--gray">--</span>
+        </p>
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>NAICS:</strong>
+          <span class="sba-u-color--gray">--</span>
+        </p>
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+        <strong>Associated firm(s):</strong>
+        <span class="sba-u-color--gray">No</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sba-c-card sba-u-padding--2" id="card_4">
+    <h2 class="sba-u-margin--0 sba-u-font-size--h3"><a href="#">Catering</a> <span class="sba-u-color--gray sba-u-font-weight--normal ">(4939291)</span></h2>
+    <div class="sba-l-row">
+      <div class="sba-l-col--6 sba-u-padding-right--2">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>Agency:</strong>
+          <span class="sba-u-color--gray">Workers Compensation Programs Office</span>
+        </p>
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>Type:</strong>
+          <span class="sba-u-color--gray">Sole-Source</span>
+        </p>
+      </div>
+      <div class="sba-l-col--6 sba-u-padding-right--2">
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>Code:</strong>
+          <span class="sba-u-color--gray">Offer Incomplete</span>
+        </p>
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+          <strong>NAICS:</strong>
+          <span class="sba-u-color--gray">234876</span>
+        </p>
+        <p class="sba-u-margin--0 sba-u-font-size--small">
+        <strong>Associated firm(s):</strong>
+        <span class="sba-u-color--gray">Yes</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  
+
+
+  <div class="sba-l-container">
+    <script>
+  $(function() {
+    $('.expander-view-more-trigger').click(function () {
+      $(this).toggleClass("expander-view-more-hidden");
+    });
+  })
+</script>
+<div class="usa-one-whole">
+  <a class="return_to_top" href="#top">Return to top</a>
+</div>
+
+  </div>
+
+  <footer class="usa-footer usa-footer-medium" id="footer" role="contentinfo">
+  <div class="usa-grid"></div>
+  <div class="footer-feedback">
+    <div class="usa-grid-full">
+      <span>Your experience is important to us. Please email us at</span>&nbsp;
+      <a class="feedback" href="mailto:certify@sba.gov">certify@sba.gov</a>&nbsp;
+      <span>with comments or suggestions.</span>
+    </div>
+  </div>
+  <div class="usa-footer-primary-section">
+    <div class="usa-grid-full">
+      <nav class="usa-footer-nav">
+        <ul class="usa-unstyled-list">
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="http://sba.gov/contracting" target="_blank"> SBA.gov/contracting</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="http://whitehouse.gov/" target="_blank"> WhiteHouse.gov</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="http://regulations.gov/" target="_blank">Regulations.gov</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="https://business.usa.gov/" target="_blank">  BusinessUSA.gov</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="http://usa.gov/" target="_blank">  USA.gov</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid-full">
+      <div class="usa-footer-logo usa-width-one-half">
+        <a href="http://www.sba.gov" target="_blank">
+          <img alt="U.S. Small Business Administration logo" width="300px" src="../../../assets/img/sba_logo_new-191eb2c929ca03c3c5659b4b9b2e2edcbf64a61ba710768f5636d26824600a7d.png" />
+        </a>
+      </div>
+      <div class="usa-footer-contact-links usa-width-one-half">
+        <a class="usa-link-facebook" href="https://www.facebook.com/SBAgov" target="_blank" title="Follow certify.SBA.gov on facebook!"></a>
+        <a class="usa-link-twitter" href="https://www.twitter.com/sbagov" target="_blank" title="Follow certify.SBA.gov on twitter!"></a>
+        <a class="usa-link-youtube" href="https://www.youtube.com/c/sbagov" target="_blank" title="Follow certify.SBA.gov on YouTube!"></a>
+        <address></address>
+        <h3 class="usa-footer-contact-heading">Contact SBA</h3>
+        <a href="mailto:answerdesk@sba.gov">answerdesk@sba.gov</a>
+      </div>
+    </div>
+  </div>
+  <div class="usa-footer-primary-section">
+    <div class="usa-grid-full">
+      <span class="usa-text-small usa-disclaimer-stage">Version: 2.2.8.build_1489332101_g0926420</span>
+    </div>
+  </div>
+</footer>
+
+
+  <div class="note-popup">
+  <a href="#" id="note-popup-toggle" class="note-popup__toggle">
+    <header class="note-popup__header">
+      <h4 class="note-popup__heading">New SBA Note</h4>
+      <button type="button" id="note-popup-close" class="note-popup__close">Close</button>
+    </header>
+  </a>
+  <form action="" id="new-note-form" class="new-note-form">
+    <fieldset class="questions">
+      <legend class="usa-sr-only">New Note</legend>
+      <label for="note_subject">Title</label>
+      <input type="text" id="note_subject">
+      <label for="note">Note</label>
+      <textarea name="" id="note"></textarea>
+    </fieldset>
+
+    <fieldset class="question tags">
+      <h4>Tags</h4>
+        <div class="usa-width-one-third">
+          <ul class="tag-selection-list">
+            <li>
+              <input id="note-tag--BOS-Analysis" type="checkbox" name="note-tags" value="BOS Analysis">
+              <label for="note-tag--BOS-Analysis">BOS Analysis</label>
+            </li>
+            <li>
+              <input id="note-tag--Ownership" type="checkbox" name="note-tags" value="Ownership">
+              <label for="note-tag--Ownership">Ownership</label>
+            </li>
+            <li>
+              <input id="note-tag--Control" type="checkbox" name="note-tags" value="Control">
+              <label for="note-tag--Control">Control</label>
+            </li>
+
+          </ul>
+        </div>
+        <div class="usa-width-one-third">
+          <ul class="tag-selection-list">
+            <li>
+              <input id="note-tag--Size" type="checkbox" name="note-tags" value="Size">
+              <label for="note-tag--Size">Size</label>
+            </li>
+            <li>
+              <input id="note-tag--Business-Development" type="checkbox" name="note-tags" value="Business Development">
+              <label for="note-tag--Business-Development">Business Development</label>
+            </li>
+            <li>
+              <input id="note-tag--Character" type="checkbox" name="note-tags" value="Character">
+              <label for="note-tag--Character">Character</label>
+            </li>
+          </ul>
+        </div>
+        <div class="usa-width-one-third">
+          <ul class="tag-selection-list">
+            <li>
+              <input id="note-tag--Economic-Disadvantage" type="checkbox" name="note-tags" value="Economic Disadvantage">
+              <label for="note-tag--Economic-Disadvantage">Economic Disadvantage</label>
+            </li>
+            <li>
+              <input id="note-tag--Social-Disadvantage" type="checkbox" name="note-tags" value="Social Disadvantage">
+              <label for="note-tag--Social-Disadvantage">Social Disadvantage</label>
+            </li>
+            <li>
+              <input id="note-tag--Potential-for-Success" type="checkbox" name="note-tags" value="Potential for Success">
+              <label for="note-tag--Potential-for-Success">Potential for Success</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <button type="submit">Add SBA note</button>
+  </form>
+</div>
+
+
+  </body>
+</html>

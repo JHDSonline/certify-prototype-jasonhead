@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+  <title>Certify Prototype Jason Head</title>
+<meta name="viewport" content="width=device-width">
+<meta name="robots" content="noindex">
+
+
+
+
+<link rel="stylesheet" href="/certify-prototype-jasonhead/assets/stylesheets/application.css">
+<link rel="stylesheet" href="/certify-prototype-jasonhead/assets/cds.css">
+<script src="/certify-prototype-jasonhead/assets/javascripts/application.js"></script>
+<script src="/certify-prototype-jasonhead/assets/cds.js"></script>
+<meta name="robots" content="noindex">
+<style>
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse svg {
+        fill: #0071bc;
+        width: 24px;
+        height: 24px;
+        pointer-events: none; }
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse:hover {
+        background-color: #ffffff;!important
+    }
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse:hover svg {
+        fill: #112e51; }
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse[disabled] svg {
+        fill: #d6d7d9; }
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse .sba-c-task-panel__toggle--small {
+        height: 30px;
+        width: 30px; }
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse .sba-c-task-panel__toggle--small svg {
+        width: 20px;
+        height: 20px; }
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse .sba-c-task-panel__toggle--small + .sba-c-task-panel__content {
+        right: -2rem;
+        top: 4.75rem; }
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse .sba-c-task-panel__toggle--big {
+        height: auto;
+        padding: 0.8rem 1.6rem;
+        width: auto; }
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse .sba-c-task-panel__toggle--big svg {
+        fill: #0071bc;
+        width: 28px; }
+
+    .sba-c-task-panel .sba-c-task-panel__toggle--inverse .sba-c-task-panel__toggle--big + .sba-c-task-panel__content {
+        right: 0; }
+
+    .sba-c-task-panel__toggle--vertical {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg); }
+
+    .sba-c-task-panel__content hr {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #0071bc;
+        border-bottom: none;
+        margin: 0 2rem; }
+
+    .sba-c-task-panel__menu-header {
+        margin: .8rem 2rem;
+        text-transform: none; }
+
+    .sba-c-task-panel__content.sba-c-task-panel__content--has-tabs {
+        width: 32rem; }
+    .sba-c-task-panel__content.sba-c-task-panel__content--has-tabs:after {
+        border-bottom-color: #f1f1f1; }
+
+    .sba-c-task-panel .sba-c-tabs-wrapper {
+        background-color: #f1f1f1;
+        border-bottom: 1px solid #d6d7d9; }
+
+    .sba-c-task-panel .sba-c-tabs__list {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding-top: 1.6rem;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem; }
+
+    .sba-c-task-panel .sba-c-tabs__link, .sba-c-task-panel .nav__dropdown-toggle {
+        font-size: 1.2rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem; }
+
+    .sba-c-task-panel .sba-c-tabs__link.current::before, .sba-c-task-panel .current.nav__dropdown-toggle::before {
+        height: 2px; }
+
+    .sba-c-task-panel .sba-c-tabs__tab-content {
+        border: 0; }
+
+    .sba-c-task-panel__toggle--inverse, .sba-c-button-group .sba-c-task-panel__toggle--inverse[type="submit"],
+    .sba-c-task-panel__toggle--inverse:visited,
+    .sba-c-button-group .sba-c-task-panel__toggle--inverse[type="submit"]:visited {
+        background-color: white;
+        color: #0071bc; }
+    .sba-c-task-panel__toggle--inverse:focus, .sba-c-button-group .sba-c-task-panel__toggle--inverse[type="submit"]:focus, .sba-c-task-panel__toggle--inverse:hover, .sba-c-button-group .sba-c-task-panel__toggle--inverse[type="submit"]:hover,
+    .sba-c-task-panel__toggle--inverse:visited:focus,
+    .sba-c-task-panel__toggle--inverse:visited:hover {
+        background-color: white;
+        border-color: #205493;
+        color: #205493; }
+    .sba-c-task-panel__toggle--inverse:active, .sba-c-button-group .sba-c-task-panel__toggle--inverse[type="submit"]:active,
+    .sba-c-task-panel__toggle--inverse:visited:active {
+        border-color: #112e51;
+        color: #112e51; }
+    .hide{
+        display: none;
+    }
+
+        .new-note-close,
+        .new-note-close:active,
+        .new-note-close:hover {
+        background-color: transparent;
+        background-image: url("/certify-prototype-jasonhead/assets/uswds/img/close.png");
+        background-image: url("/certify-prototype-jasonhead/assets/uswds/img/close.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        height: 26px;
+        position: absolute;
+        right: 9rem;
+        text-indent: 33px;
+        top: 8rem;
+        width: 26px;
+    }
+
+    .new-note-close-footer,
+    .new-note-close-footer:active,
+    .new-note-close-footer:hover {
+        background-color: transparent;
+        background-image: url("/certify-prototype-jasonhead/assets/uswds/img/close.png");
+        background-image: url("/certify-prototype-jasonhead/assets/uswds/img/close.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        height: 26px;
+        position: absolute;
+        right: 9rem;
+        text-indent: 33px;
+        bottom: 1.5rem;
+        width: 26px;
+    }
+    .card__footer{
+        text-align: right;
+        padding: 3rem 3rem;
+    }
+
+    .card.current:after{
+        color: #0071bc;
+        text-decoration: none;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0.7rem;
+        background-color: #0071bc;
+        width: 100%;
+        /*padding-bottom: 1rem;*/
+        margin-bottom: -1px;
+
+    }
+    #body-tabs1 .sba-c-tabs__link,#body-tabs1 .sba-c-tabs__link:hover,#body-tabs1 .sba-c-tabs__link:visited{
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    #body-tabs1 .sba-c-tabs__link.current{
+        background-color: #ffffff;
+    }
+    .masthead__tertiary-heading {
+        font-size: 25px;
+        line-height: 1em;
+        margin-top: 4px;
+        display: block;
+    }
+</style>
+</head>
+<body class="public mainscreen ">
+<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+<header class="sba-c-masthead" style="margin: 0;">
+
+  <div class="usa-banner">
+  <div class="usa-accordion">
+    <header class="usa-banner-header">
+      <div class="usa-grid-full">
+        <img alt="U.S. flag" src="../../../../assets/uswds/img/us_flag_small.png" />
+        <p>An official website of the United States government</p>
+        <button aria-controls="gov-banner" aria-expanded="false" class="usa-accordion-button usa-banner-button">
+          <span class="usa-banner-button-text">Here's how you know</span>
+        </button>
+      </div>
+    </header>
+    <div aria-hidden="true" class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img alt="Dot gov" class="usa-banner-icon usa-media_block-img" src="../../../../assets/uswds/img/icon-dot-gov.svg" />
+        <div class="usa-media_block-body">
+          <p><strong>The .gov means it’s official.</strong>
+            <br />Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img alt="SSL" class="usa-banner-icon usa-media_block-img" src="../../../../assets/uswds/img/icon-https.svg" />
+        <div class="usa-media_block-body"><p>This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The <strong>https://</strong> means all transmitted data is encrypted &nbsp;— in other words, any information or browsing history that you provide is transmitted securely.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="sba-c-mobile-header">
+  <div class="sba-c-mobile-header__logo-container">
+    <a href="/certify-prototype-jasonhead/index.html">
+      <img alt="certify.SBA.gov logo" class="sba-c-mobile-header__logo" src="../../../../assets/img/certify-sba-gov-logo_on-dark.png" />
+    </a>
+  </div>
+  <ul class="sba-c-mobile-header__list">
+    <li class="sba-c-mobile-header__list-item">
+      <button class="sba-c-button sba-c-button--icon-only sba-c-button--transparent sba-js-visibility-trigger sba-js-search-button" type="button" aria-expanded="false" aria-controls="topnav-search" title="Search">
+        <svg aria-hidden="true" class="sba-c-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#search"></use>
+        </svg>
+      </button>
+    </li>
+    <li class="sba-c-mobile-header__list-item">
+      <span class="sba-c-badge sba-c-badge--warn sba-c-badge--generic notifications-pip"></span>
+      <button class="sba-c-mobile-header__toggle sba-c-button sba-c-button--icon-only sba-c-button--transparent sba-js-visibility-trigger sba-js-notifications-toggle" id="" type="button" aria-expanded="false" aria-controls="topnav-notifications-drawer" title="Notifications">
+        <svg aria-hidden="true" class="sba-c-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#bell"></use>
+        </svg>
+      </button>
+    </li>
+  </ul>
+  <button type="button" class="sba-c-mobile-header__button" id="mobile_menu_button" aria-controls="top_navigation">Menu</button>
+</div>
+
+
+  
+<!--<nav id="top_navigation" class="sba-c-topnav" role="navigation">-->
+  <!--<div class="sba-c-topnav__inner sba-u-padding-x&#45;&#45;4">-->
+    <!--<a href="/certify-prototype-jasonhead/index.html" class="sba-c-topnav__logo-link">-->
+      <!--<img class="sba-c-topnav__logo" alt="certify.SBA.gov logo" src="../../../../assets/img/certify-sba-gov-logo_on-dark.png" />-->
+    <!--</a>-->
+
+    <!--<button class="sba-c-button sba-c-button&#45;&#45;transparent sba-c-topnav__close" id="close_menu_button">-->
+      <!--<svg aria-hidden="true" class="sba-c-icon">-->
+        <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#times"></use>-->
+      <!--</svg><span class="sba-u-visibility&#45;&#45;screen-reader">Close menu</span>-->
+    <!--</button>-->
+
+    <!--<ul class="sba-c-topnav__list sba-c-topnav__list&#45;&#45;left-side">-->
+      <!---->
+      <!--<li class="sba-c-topnav__list-item  current ">-->
+        <!---->
+        <!--<a class="sba-c-topnav__link" style="padding: 1.6rem 1.6rem; href="dashboard.html">Dashboard</a>-->
+        <!---->
+      <!--</li>-->
+      <!---->
+    <!--</ul>-->
+
+    <!--<ul class="sba-c-topnav__list sba-c-topnav__list&#45;&#45;right-side">-->
+      <!---->
+
+      <!---->
+        <!---->
+        <!--<li class="sba-c-topnav__list-item sba-c-topnav__list-item&#45;&#45;notifications " aria-role="region" aria-live="polite">-->
+          <!--<span class="sba-c-badge sba-c-badge&#45;&#45;warn sba-c-badge&#45;&#45;generic notifications-pip" title="You have new notifications"></span>-->
+          <!--<button class="sba-c-topnav__subnav-toggle sba-c-button sba-c-button&#45;&#45;icon-only sba-c-button&#45;&#45;transparent sba-js-visibility-trigger sba-js-notifications-toggle" style="padding: 1.6rem 1.6rem; type="button" aria-expanded="false" aria-controls="topnav-notifications-drawer" title="Notifications">-->
+             <!--Notifications-->
+          <!--</button>-->
+
+        <!--</li>-->
+        <!---->
+      <!---->
+        <!---->
+        <!--<li class="sba-c-topnav__list-item ">-->
+          <!--<a class="sba-c-topnav__link" style="padding: 1.6rem 1.6rem;" href="javascript:void(0);">Help</a>-->
+        <!--</li>-->
+        <!---->
+      <!---->
+        <!---->
+          <!--<li class="sba-c-topnav__list-item sba-c-topnav__list-item&#45;&#45;notifications ">-->
+            <!--<button class="sba-c-topnav__subnav-toggle sba-c-button sba-c-button&#45;&#45;icon-only sba-c-button&#45;&#45;transparent sba-js-visibility-trigger sba-js-notifications-toggle" style="padding: 1.6rem 1.6rem; type="button" aria-expanded="false" aria-controls="topnav-JohnDoe">-->
+              <!--<svg aria-hidden="true" class="sba-c-icon">-->
+              <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#user"></use>-->
+            <!--</svg> John Doe-->
+            <!--</button>-->
+            <!--<ul id="topnav-JohnDoe" class="sba-c-topnav__subnav" hidden>-->
+              <!---->
+              <!--<li class="sba-c-topnav__subnav-item">-->
+                <!--<a href="javascript:void(0);" class="sba-c-topnav__subnav__link" style="padding: 1.6rem 1.6rem;">Settings</a>-->
+              <!--</li>-->
+              <!---->
+              <!--<li class="sba-c-topnav__subnav-item">-->
+                <!--<a href="my-account.html" class="sba-c-topnav__subnav__link" style="padding: 1.6rem 1.6rem;">My Account</a>-->
+              <!--</li>-->
+              <!---->
+              <!--<li class="sba-c-topnav__subnav-item">-->
+                <!--<a href="javascript:void(0);" class="sba-c-topnav__subnav__link" style="padding: 1.6rem 1.6rem;">Log Out</a>-->
+              <!--</li>-->
+              <!---->
+            <!--</ul>-->
+          <!--</li>-->
+        <!---->
+      <!---->
+    <!--</ul>-->
+  <!--</div>-->
+<!--</nav>-->
+
+
+<nav id="top_navigation" class="sba-c-topnav" role="navigation">
+  <div class="sba-c-topnav__inner">
+    <a href="/certify-prototype-jasonhead/index.html" class="sba-c-topnav__logo-link">
+      <img class="sba-c-topnav__logo" alt="certify.SBA.gov logo" src="../../../../assets/img/certify-sba-gov-logo_on-dark.png" />
+    </a>
+
+    <button class="sba-c-button sba-c-button--transparent sba-c-topnav__close" id="close_menu_button">
+      <svg aria-hidden="true" class="sba-c-icon">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#times"></use>
+      </svg><span class="sba-u-visibility--screen-reader">Close menu</span>
+    </button>
+
+    <ul class="sba-c-topnav__list sba-c-topnav__list--left-side">
+      
+      <li class="sba-c-topnav__list-item  current ">
+        
+    <a class="sba-c-topnav__link" href="dashboard.html">Dashboard</a>
+    
+    </li>
+    
+    </ul>
+
+    <ul class="sba-c-topnav__list sba-c-topnav__list--right-side">
+      
+
+      
+      
+    <li class="sba-c-topnav__list-item sba-c-topnav__list-item--notifications " aria-role="region" aria-live="polite">
+      <span class="sba-c-badge sba-c-badge--warn sba-c-badge--generic notifications-pip" title="You have new notifications"></span>
+      <button class="sba-c-topnav__subnav-toggle sba-c-button sba-c-button--icon-only sba-c-button--transparent sba-js-visibility-trigger sba-js-notifications-toggle" type="button" aria-expanded="false" aria-controls="topnav-notifications-drawer" title="Notifications">
+        <svg aria-hidden="true" class="sba-c-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/certify-prototype-jasonhead/assets/svg-sprite/sprite.svg#bell"></use>
+        </svg>
+      </button>
+    </li>
+    
+    
+      
+    <li class="sba-c-topnav__list-item ">
+      <a class="sba-c-topnav__link" href="javascript:void(0);">Help</a>
+    </li>
+    
+    
+      
+      <li class="sba-c-topnav__list-item ">
+        <button class="sba-c-topnav__subnav-toggle sba-js-visibility-trigger" type="button" aria-expanded="false" aria-controls="topnav-JohnDoe">
+        <span>John Doe</span>
+        </button>
+        <ul id="topnav-JohnDoe" class="sba-c-topnav__subnav" hidden>
+        
+      <li class="sba-c-topnav__subnav-item">
+        <a href="javascript:void(0);" class="sba-c-topnav__subnav__link">Settings</a>
+      </li>
+      
+      <li class="sba-c-topnav__subnav-item">
+        <a href="my-account.html" class="sba-c-topnav__subnav__link">My Account</a>
+      </li>
+      
+      <li class="sba-c-topnav__subnav-item">
+        <a href="javascript:void(0);" class="sba-c-topnav__subnav__link">Log Out</a>
+      </li>
+      
+    </ul>
+    </li>
+    
+    
+    </ul>
+  </div>
+</nav>
+
+
+  <div class="sba-c-top-nav__search-outer-container" id="topnav-search" hidden>
+  <div class="sba-c-top-nav__search-container" >
+    <div class="sba-l-container">
+      <form class="sba-c-top-nav__search-form" role="search">
+        <label class="sba-u-visibility--screen-reader" for="topnav_search_query">Search small</label>
+        <input class="sba-c-input" id="topnav_search_query" type="search" name="topnav_search_query" placeholder="Search firms">
+        <button class="sba-c-button sba-c-button--transparent" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+  <div id="topnav-notifications-drawer" hidden>
+  <div class="sba-c-top-nav__notifications-drawer-outer-container sba-l-container">
+    <div class="sba-c-top-nav__notifications-drawer-container">
+      <div class="sba-c-top-nav__notifications-drawer">
+        <ul class="sba-c-top-nav__notifications-drawer__list" tabindex="0">
+          <li class="sba-c-top-nav__notifications-drawer__list-item">
+            <a href="#" class="sba-c-top-nav__notifications-drawer__link">
+              <p class="sba-c-top-nav__notifications-drawer__message">Mike’s Garage added a contributor to its 8(a) Initial Application.</p>
+              <p class="sba-c-top-nav__notifications-drawer__timestamp">July 13, 2018 2:18pm</p>
+            </a>
+          </li>
+          <li class="sba-c-top-nav__notifications-drawer__list-item">
+            <a href="#" class="sba-c-top-nav__notifications-drawer__link">
+              <p class="sba-c-top-nav__notifications-drawer__message">Terrycloth, LLC submitted information for its 8(a) Initial Application.</p>
+              <p class="sba-c-top-nav__notifications-drawer__timestamp">July 13, 2018 2:15pm</p>
+            </a>
+          </li>
+          <li class="sba-c-top-nav__notifications-drawer__list-item">
+            <a href="#" class="sba-c-top-nav__notifications-drawer__link">
+              <p class="sba-c-top-nav__notifications-drawer__message">Please review the 8(a) Initial Application for Hammertime, LLC. </p>
+              <p class="sba-c-top-nav__notifications-drawer__timestamp">July 13, 2018 2:03pm</p>
+            </a>
+          </li>
+          <li class="sba-c-top-nav__notifications-drawer__list-item">
+            <a href="#" class="sba-c-top-nav__notifications-drawer__link">
+              <p class="sba-c-top-nav__notifications-drawer__message">Please review the 8(a) Initial Application for MASTERWERKS. </p>
+              <p class="sba-c-top-nav__notifications-drawer__timestamp">July 13, 2018 1:11pm</p>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="sba-c-top-nav__notifications-drawer__view-all">View all notifications</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- This the content in the gray area-->
+  
+
+
+
+
+  <!-- Tabs -->
+  
+
+
+
+</header>
+
+
+
+
+<div class="sba-l-container">
+  <div class="sba-l-row">
+    <div class="sba-l-col--12 sba-u-padding-x--0">
+      <div class="certify-page-header" style="margin-bottom: 0px;">
+        <div class="certify-page-header__primary">
+          
+          <h1>Dashboard</h1>
+        </div>
+        
+      </div>
+
+      
+    </div>
+  </div>
+  <div class="sba-l-row">
+    <!--<h1>Dashboard</h1>-->
+<div class="sba-l-col--12 sba-u-padding-x--0">
+  <div class="table-header">
+    <div class="table-info">
+      <p><strong></strong></p>
+    </div>
+    <div class="usa-search usa-search-small sba-u-margin-bottom--2">
+      <h3>Search all firms</h3>
+    </div>
+  </div>
+  <div class="table-header">
+    <div class="table-info">
+      <p><strong></strong></p>
+    </div>
+    <form class="usa-search usa-search-small">
+      <div role="search">
+        <label class="usa-sr-only" for="search-field-small">Search documents</label>
+        <input id="search-field-small" type="search" name="search" placeholder="Search documents table">
+        <button type="submit">
+          <span class="usa-sr-only">Search</span>
+        </button>
+      </div>
+    </form>
+  </div>
+
+<section class="dashboard-section">
+  <header class="dashboard-section__header">
+    <h2 class="dashboard-section__heading">Unassigned Cases</h2>
+  </header>
+  <table>
+    <thead>
+      <tr>
+        <th>Date Submitted</th>
+        <th>Type</th>
+        <th>Applicant Firm</th>
+        <th>Applicant Firm Location</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>08/29/17</td>
+        <td>Initial</td>
+        <td>
+          <a href="#">Televares Software Development</a> <br>
+          <small>Social Disadvantage: Preponderance of evidence<br>
+          Legal Structure: LLC <br>
+          Entity Ownership: Yes <br>
+          Owners: 2</small>
+        </td>
+        <td>Seattle, WA</td>
+        <td><a href="assign-case.html">Assign</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="dashboard-section">
+  <header class="dashboard-section__header">
+    <h2 class="dashboard-section__heading">My Current Workload</h2>
+  </header>
+  <table id="workload">
+    <thead>
+      <tr>
+        <th>Firm</th>
+        <th>Type</th>
+        <th>Status</th>
+        <th>Due Date</th>
+        <th>Currently with <!-- DEV NOTES: SORT BY NAME --></th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <th>
+          <a href="#">The Gravel Depot</a>
+          <br>
+          <small>Firm Owner: Rose Johnson<br>
+          Phone: 817-324-8392</small>
+        </th>
+        <td>
+          Initial
+        </td>
+        <td>
+          <strong>Processing</strong> <br>
+          <small><strong>BOS Recommendation: <span class="usa-color-green"> Eligible</span></strong></small> <br>
+        </td>
+        <td>
+          09/05/17 <br>
+          <small>5 days left</small>
+        </td>
+        <td><strong>Sent by:</strong> Tim Glimert (CODS)</td>
+      </tr>
+
+      <tr>
+        <th>
+          <a href="#">Hamilton Forge</a>
+          <br>
+          <small>Firm Owner: Frank Peters<br>
+          Phone: 817-324-8392</small>
+        </th>
+        <td>
+          Initial
+        </td>
+        <td>
+          <strong>Processing</strong> <br>
+          <small><strong>BOS Recommendation: <span class="usa-color-red"> Ineligible</span></strong></small> <br>
+        </td>
+        <td>
+          09/10/17 <br>
+          <small>10 days left</small>
+        </td>
+        <td>
+          <strong>Currently with:</strong>  Alexandra Bosh (OGC)</td>
+      </tr>
+
+    </tbody>
+  </table>
+  <a href="../all-cases/8a.htmld" class="usa-button usa-button-big">View all cases</a>
+</section>
+</div>
+<!-- This script will mimic the interaction we want to see -->
+<script>
+  $(document).ready(function() {
+    $('#workload').DataTable( {
+      "aaSorting": [],
+      "info":     false,
+      "paging":   false,
+      "searching":   false
+    } );
+    $("#workload").removeClass('dataTable');
+  });
+</script>
+
+  </div>
+</div>
+<script>
+    $(function() {
+        $('.expander-view-more-trigger').click(function () {
+            $(this).toggleClass("expander-view-more-hidden");
+        });
+    })
+</script>
+<div class="sba-l-container">
+  <script>
+  $(function() {
+    $('.expander-view-more-trigger').click(function () {
+      $(this).toggleClass("expander-view-more-hidden");
+    });
+  })
+</script>
+<div class="usa-one-whole">
+  <a class="return_to_top" href="#top">Return to top</a>
+</div>
+
+</div>
+
+<footer class="usa-footer usa-footer-medium" id="footer" role="contentinfo">
+  <div class="usa-grid"></div>
+  <div class="footer-feedback">
+    <div class="usa-grid-full">
+      <span>Your experience is important to us. Please email us at</span>&nbsp;
+      <a class="feedback" href="mailto:certify@sba.gov">certify@sba.gov</a>&nbsp;
+      <span>with comments or suggestions.</span>
+    </div>
+  </div>
+  <div class="usa-footer-primary-section">
+    <div class="usa-grid-full">
+      <nav class="usa-footer-nav">
+        <ul class="usa-unstyled-list">
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="http://sba.gov/contracting" target="_blank"> SBA.gov/contracting</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="http://whitehouse.gov/" target="_blank"> WhiteHouse.gov</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="http://regulations.gov/" target="_blank">Regulations.gov</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="https://business.usa.gov/" target="_blank">  BusinessUSA.gov</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="http://usa.gov/" target="_blank">  USA.gov</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid-full">
+      <div class="usa-footer-logo usa-width-one-half">
+        <a href="http://www.sba.gov" target="_blank">
+          <img alt="U.S. Small Business Administration logo" width="300px" src="../../../../assets/img/sba_logo_new-191eb2c929ca03c3c5659b4b9b2e2edcbf64a61ba710768f5636d26824600a7d.png" />
+        </a>
+      </div>
+      <div class="usa-footer-contact-links usa-width-one-half">
+        <a class="usa-link-facebook" href="https://www.facebook.com/SBAgov" target="_blank" title="Follow certify.SBA.gov on facebook!"></a>
+        <a class="usa-link-twitter" href="https://www.twitter.com/sbagov" target="_blank" title="Follow certify.SBA.gov on twitter!"></a>
+        <a class="usa-link-youtube" href="https://www.youtube.com/c/sbagov" target="_blank" title="Follow certify.SBA.gov on YouTube!"></a>
+        <address></address>
+        <h3 class="usa-footer-contact-heading">Contact SBA</h3>
+        <a href="mailto:answerdesk@sba.gov">answerdesk@sba.gov</a>
+      </div>
+    </div>
+  </div>
+  <div class="usa-footer-primary-section">
+    <div class="usa-grid-full">
+      <span class="usa-text-small usa-disclaimer-stage">Version: 2.2.8.build_1489332101_g0926420</span>
+    </div>
+  </div>
+</footer>
+
+
+<div class="note-popup">
+  <a href="#" id="note-popup-toggle" class="note-popup__toggle">
+    <header class="note-popup__header">
+      <h4 class="note-popup__heading">New SBA Note</h4>
+      <button type="button" id="note-popup-close" class="note-popup__close">Close</button>
+    </header>
+  </a>
+  <form action="" id="new-note-form" class="new-note-form">
+    <fieldset class="questions">
+      <legend class="usa-sr-only">New Note</legend>
+      <label for="note_subject">Title</label>
+      <input type="text" id="note_subject">
+      <label for="note">Note</label>
+      <textarea name="" id="note"></textarea>
+    </fieldset>
+
+    <fieldset class="question tags">
+      <h4>Tags</h4>
+        <div class="usa-width-one-third">
+          <ul class="tag-selection-list">
+            <li>
+              <input id="note-tag--BOS-Analysis" type="checkbox" name="note-tags" value="BOS Analysis">
+              <label for="note-tag--BOS-Analysis">BOS Analysis</label>
+            </li>
+            <li>
+              <input id="note-tag--Ownership" type="checkbox" name="note-tags" value="Ownership">
+              <label for="note-tag--Ownership">Ownership</label>
+            </li>
+            <li>
+              <input id="note-tag--Control" type="checkbox" name="note-tags" value="Control">
+              <label for="note-tag--Control">Control</label>
+            </li>
+
+          </ul>
+        </div>
+        <div class="usa-width-one-third">
+          <ul class="tag-selection-list">
+            <li>
+              <input id="note-tag--Size" type="checkbox" name="note-tags" value="Size">
+              <label for="note-tag--Size">Size</label>
+            </li>
+            <li>
+              <input id="note-tag--Business-Development" type="checkbox" name="note-tags" value="Business Development">
+              <label for="note-tag--Business-Development">Business Development</label>
+            </li>
+            <li>
+              <input id="note-tag--Character" type="checkbox" name="note-tags" value="Character">
+              <label for="note-tag--Character">Character</label>
+            </li>
+          </ul>
+        </div>
+        <div class="usa-width-one-third">
+          <ul class="tag-selection-list">
+            <li>
+              <input id="note-tag--Economic-Disadvantage" type="checkbox" name="note-tags" value="Economic Disadvantage">
+              <label for="note-tag--Economic-Disadvantage">Economic Disadvantage</label>
+            </li>
+            <li>
+              <input id="note-tag--Social-Disadvantage" type="checkbox" name="note-tags" value="Social Disadvantage">
+              <label for="note-tag--Social-Disadvantage">Social Disadvantage</label>
+            </li>
+            <li>
+              <input id="note-tag--Potential-for-Success" type="checkbox" name="note-tags" value="Potential for Success">
+              <label for="note-tag--Potential-for-Success">Potential for Success</label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <button type="submit">Add SBA note</button>
+  </form>
+</div>
+
+
+</body>
+</html>
