@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7e4f2eda-0071-453d-b4ba-3676d3ae4a90" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only-alt_cards-v2.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/2019/01/APP-4301/certify.SBA.gov.htm" afterDir="false" />
@@ -44,6 +48,16 @@
       <change beforePath="$PROJECT_DIR$/assets/stylesheets/prototype/components/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/stylesheets/prototype/components/_cards.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/stylesheets/prototype/certify-overrides/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/stylesheets/prototype/certify-overrides/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed.xml" beforeDir="false" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -4526,6 +4540,7 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/update_jekyll.sh">
@@ -4541,23 +4556,46 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="800">
               <caret line="14631" column="18" selection-start-line="14631" selection-start-column="18" selection-end-line="14631" selection-end-column="18" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="431">
               <caret line="14593" column="11" selection-start-line="14593" selection-start-column="1" selection-end-line="14593" selection-end-column="11" />
+=======
+        <entry file="file://$PROJECT_DIR$/Gemfile-backup">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="28" selection-end-column="3" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/assets/stylesheets/prototype/components/_cards.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1429" />
+=======
+        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+            </state>
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
           </provider>
         </entry>
       </file>
@@ -4565,6 +4603,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
       <find>.sba-c-tabs__link.current:before, .current.nav__dropdown-toggle:before</find>
       <find>.sba-c-tabs__link.</find>
       <find>.sba-c-tabs</find>
@@ -4594,15 +4633,51 @@
       <find>onclick=&quot;sendSectionRequest(1506, 36)&quot;&gt;&lt;a id=&quot;eight_a_eligibility_show_content&quot; href=&quot;javascript:void(0);&quot;</find>
       <find>card-se</find>
       <find>card-set--</find>
+=======
+      <find>.card-</find>
+      <find>card-set</find>
+      <find>sba-l-</find>
+      <find>sba-l</find>
+      <find>33%</find>
+      <find>scss</find>
+      <find>nav-width</find>
+      <find>spacer</find>
+      <find>space</find>
+      <find>sba-u-margin-x</find>
+      <find>nav-w</find>
+      <find>1.6rem</find>
+      <find>sba-u</find>
+      <find>.ico</find>
+      <find>favicon</find>
+      <find>general-info</find>
+      <find>business.html</find>
+      <find>firms</find>
+      <find>hide_case_masthead</find>
+      <find>firm_view:</find>
+      <find>new_sba</find>
+      <find>card-set--3col</find>
+      <find>halve</find>
+      <find>halv</find>
+      <find>flex-direction</find>
+      <find>card</find>
+      <find>flex-wrap</find>
+      <find>flex</find>
+      <find>halves</find>
+      <find>rb-inotify</find>
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
     </findStrings>
     <replaceStrings>
       <replace>Ricky X</replace>
+      <replace>xlink:href=&quot;{{ site.baseurl }}/assets/svg-sprite/sprite.svg#angle-down&quot;</replace>
+      <replace>xlink:href=&quot;{{ site.baseurl }}/assets/svg-sprite/sprite.svg#download&quot;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -4611,11 +4686,16 @@
     </option>
   </component>
   <component name="GithubDefaultAccount">
+<<<<<<< HEAD
     <option name="defaultAccountId" value="c378ff9b-8789-450d-8f32-c41450079144" />
+=======
+    <option name="defaultAccountId" value="c2f07cb7-033c-47ff-9824-55f4a47ee195" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/_includes/masthead_sections/_top_nav_overwiew_alt.html" />
         <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/all-cases-cards/8a.html" />
         <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/all-cases/wosb.html" />
@@ -4667,6 +4747,59 @@
         <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/index.html" />
         <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/index.html" />
         <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only-alt_cards-v2.html" />
+=======
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-wosb.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html" />
+        <option value="$PROJECT_DIR$/_includes/_masthead--SBA-Landing-Nav.html" />
+        <option value="$PROJECT_DIR$/_includes/masthead_sections/_SBA-Landing-new_default.html" />
+        <option value="$PROJECT_DIR$/2019/01/APP-4301/certify.SBA.gov.htm" />
+        <option value="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301-Backup.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only-alt_cards.html" />
+        <option value="$PROJECT_DIR$/_includes/cards/_data-dictionary.html" />
+        <option value="$PROJECT_DIR$/_includes/_SBA-Landing-New-Nav.html" />
+        <option value="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301-backup.html" />
+        <option value="$PROJECT_DIR$/_layouts/layout--SBA-Landing-Nav.html" />
+        <option value="$PROJECT_DIR$/_data/_data-dictionary.yml" />
+        <option value="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301-original-data.html" />
+        <option value="$PROJECT_DIR$/_data/tab_set/application-overview--sba.yml" />
+        <option value="$PROJECT_DIR$/_data/_table-test-swagger-spec.yaml" />
+        <option value="$PROJECT_DIR$/_data/_test-table-openapi-formate.yaml" />
+        <option value="$PROJECT_DIR$/_data/data-dictionary-4301--data.yml" />
+        <option value="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301.html" />
+        <option value="$PROJECT_DIR$/assets/cds.css" />
+        <option value="$PROJECT_DIR$/assets/stylesheets/certify/certify.scss" />
+        <option value="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301--1col.html" />
+        <option value="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301--1col-actions.html" />
+        <option value="$PROJECT_DIR$/2019/01/APP-4301/index.html" />
+        <option value="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301--3col.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-hubzone.html" />
+        <option value="$PROJECT_DIR$/2019/02/APP-4321/manage-contributors/index.html" />
+        <option value="$PROJECT_DIR$/2017/08/contributor/dashboard.html" />
+        <option value="$PROJECT_DIR$/2018/09/application-overview/business.html" />
+        <option value="$PROJECT_DIR$/2019/02/APP-4321/manage-contributors/overview.html" />
+        <option value="$PROJECT_DIR$/_data/top_nav/firm-current.yml" />
+        <option value="$PROJECT_DIR$/_layouts/layout--fullpage.html" />
+        <option value="$PROJECT_DIR$/_layouts/default.html" />
+        <option value="$PROJECT_DIR$/_layouts/default-firm.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/index.html" />
+        <option value="$PROJECT_DIR$/_data/prototypes.yml" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/index.html" />
+        <option value="$PROJECT_DIR$/assets/stylesheets/prototype/components/_cards.scss" />
+        <option value="$PROJECT_DIR$/assets/stylesheets/application.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/assets/.sprockets-manifest-ca190c3521c8f07817047191dcde37d6.json" />
+        <option value="$PROJECT_DIR$/2019/02/APP-4321/manage-contributors/manage-contributors.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/stylesheets/prototype/certify-overrides/style.scss" />
+        <option value="$PROJECT_DIR$/gems installed on Enquizit" />
+        <option value="$PROJECT_DIR$/gems-installed om personal" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/Gemfile-backup" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
       </list>
     </option>
   </component>
@@ -4684,10 +4817,11 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="32" />
     <option name="y" value="23" />
-    <option name="width" value="3840" />
-    <option name="height" value="2137" />
+    <option name="width" value="1920" />
+    <option name="height" value="1177" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -4706,6 +4840,7 @@
             <path>
               <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
               <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="2018" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -4852,6 +4987,9 @@
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
               <item name="application.scss" type="620a8d5e:NestingTreeNode" />
+=======
+              <item name="_site" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
             </path>
           </expand>
           <select />
@@ -4862,12 +5000,32 @@
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="directory" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+=======
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="js.last.introduce.type" value="VAR" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="node.js.selected.package.tslint" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -4875,15 +5033,26 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="xpath.settings" />
+<<<<<<< HEAD
+=======
+    <property name="settings.editor.splitter.proportion" value="0.13706478" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/_includes/_analyst_global_nav.html" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2019/01/APP-4301" />
       <recent name="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/delete" />
       <recent name="$PROJECT_DIR$/2018/12/dashboard-serch-overview/dashboards" />
       <recent name="$PROJECT_DIR$/2018/12/dashboard-serch-overview/business-profile" />
       <recent name="$PROJECT_DIR$/2018/12/dashboard-serch-overview" />
-      <recent name="$PROJECT_DIR$/2018/12/APP-3331/change-email" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile" />
+      <recent name="$PROJECT_DIR$/_layouts" />
+      <recent name="$PROJECT_DIR$/_data/top_nav" />
+      <recent name="$PROJECT_DIR$/2018/09/application-overview" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/2018/11/read-only-subquestionnaire" />
@@ -4917,9 +5086,6 @@
       <option name="PARAMETERS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_top_nav.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/certify-prototype/_includes/masthead_sections/_top_nav.html">
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -4928,7 +5094,7 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
@@ -4938,10 +5104,12 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/_site/package.json" />
+    <configuration name="postinstall start build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
+        <script value="postinstall" />
+        <script value="start" />
         <script value="build" />
       </scripts>
       <node-interpreter value="project" />
@@ -4958,15 +5126,32 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Bash.update_jekyll.sh" />
-        <item itemvalue="npm.build (1)" />
-        <item itemvalue="npm.postinstall" />
         <item itemvalue="npm.build" />
-        <item itemvalue="JavaScript Debug._top_nav.html" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.postinstall" />
+        <item itemvalue="npm.postinstall start build" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myConnectionType" value="NONE" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",YAML_SHOW_RESOLVED_ALIAS_VALUES" />
   </component>
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
@@ -5025,6 +5210,7 @@
       <workItem from="1548811877579" duration="7374000" />
       <workItem from="1548827495135" duration="1193000" />
       <workItem from="1548829869369" duration="492000" />
+<<<<<<< HEAD
       <workItem from="1548830388163" duration="1029000" />
       <workItem from="1549681902504" duration="2355000" />
       <workItem from="1549685430278" duration="253000" />
@@ -5033,11 +5219,60 @@
       <workItem from="1550007068442" duration="376000" />
       <workItem from="1550009064997" duration="104000" />
       <workItem from="1550009180504" duration="9350000" />
+=======
+      <workItem from="1548830388163" duration="3054000" />
+      <workItem from="1548834357979" duration="81000" />
+      <workItem from="1548834451331" duration="859000" />
+      <workItem from="1548835904883" duration="425000" />
+      <workItem from="1548953375247" duration="4173000" />
+      <workItem from="1548957736278" duration="3870000" />
+      <workItem from="1549055696989" duration="3697000" />
+      <workItem from="1549060209550" duration="70000" />
+      <workItem from="1549060372030" duration="25000" />
+      <workItem from="1549061433832" duration="49012000" />
+      <workItem from="1549147364374" duration="420000" />
+      <workItem from="1549147806177" duration="1625000" />
+      <workItem from="1549153952541" duration="2807000" />
+      <workItem from="1549158489694" duration="366000" />
+      <workItem from="1549158926619" duration="734000" />
+      <workItem from="1549159857353" duration="378000" />
+      <workItem from="1549160262896" duration="320000" />
+      <workItem from="1549160605864" duration="5311000" />
+      <workItem from="1549166189994" duration="8508000" />
+      <workItem from="1549175120309" duration="1634000" />
+      <workItem from="1549177254367" duration="886000" />
+      <workItem from="1549178164165" duration="726000" />
+      <workItem from="1549179243609" duration="1329000" />
+      <workItem from="1549180600431" duration="24000" />
+      <workItem from="1549203185307" duration="407000" />
+      <workItem from="1549204456869" duration="995000" />
+      <workItem from="1549205578279" duration="105000" />
+      <workItem from="1549211625026" duration="7000" />
+      <workItem from="1549386103251" duration="761000" />
+      <workItem from="1549392607661" duration="2609000" />
+      <workItem from="1549397073638" duration="13407000" />
+      <workItem from="1549463273879" duration="2105000" />
+      <workItem from="1549478623683" duration="22406000" />
+      <workItem from="1549563844115" duration="7125000" />
+      <workItem from="1549572244352" duration="1374000" />
+      <workItem from="1549632683685" duration="5240000" />
+      <workItem from="1549646491018" duration="378000" />
+      <workItem from="1549646889326" duration="2648000" />
+      <workItem from="1549655155057" duration="2640000" />
+      <workItem from="1549669244683" duration="5629000" />
+      <workItem from="1549684069692" duration="653000" />
+      <workItem from="1549685512286" duration="3029000" />
+      <workItem from="1549901148126" duration="5818000" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="218963000" />
+=======
+    <option name="totallyTimeSpent" value="370769000" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -5049,8 +5284,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="3840" height="2137" extended-state="0" />
+    <frame x="-3" y="23" width="1920" height="1177" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" x="1505" y="77" width="830" height="2029" id="Project" order="0" sideWeight="0.82821494" visible="true" weight="0.16719326" />
       <window_info id="Structure" order="1" sideWeight="0.27626136" side_tool="true" weight="0.21733437" />
       <window_info id="Favorites" order="2" sideWeight="0.32331902" side_tool="true" weight="0.16692996" />
@@ -5092,6 +5328,50 @@
       <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.32987142" />
       <window_info anchor="bottom" id="Inspection Results" order="12" sideWeight="0.49960724" weight="0.32922623" />
       <window_info anchor="bottom" auto_hide="true" x="3917" y="495" width="859" height="1176" id="Terminal" order="13" sideWeight="0.50196385" side_tool="true" type="WINDOWED" visible="true" weight="0.40413997" />
+=======
+      <window_info content_ui="combo" x="1505" y="77" width="830" height="2029" id="Project" order="0" sideWeight="0.81268734" visible="true" weight="0.20010532" />
+      <window_info id="Structure" order="1" sideWeight="0.18731269" side_tool="true" weight="0.20057607" />
+      <window_info id="Favorites" order="2" sideWeight="0.18587361" side_tool="true" weight="0.14770932" />
+      <window_info id="npm" order="3" sideWeight="0.18731269" side_tool="true" weight="0.20057607" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49986908" weight="0.32817182" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49698874" weight="0.3871129" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3996004" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.57816184" weight="0.32817182" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.33416584" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5545955" weight="0.32517484" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.44540456" side_tool="true" weight="0.32517484" />
+      <window_info anchor="bottom" id="GitHub Pull Requests" order="10" weight="0.32967034" />
+      <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.32987142" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" sideWeight="0.49960724" weight="0.32922623" />
+      <window_info active="true" anchor="bottom" auto_hide="true" x="-1440" y="345" width="1440" height="855" id="Terminal" maximized="true" order="13" sideWeight="0.50196385" side_tool="true" type="WINDOWED" visible="true" weight="0.40413997" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Swagger UI" order="3" weight="0.3299105" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" x="1505" y="77" width="830" height="2029" id="Project" order="0" sideWeight="0.81268734" visible="true" weight="0.20057607" />
+      <window_info id="Structure" order="1" sideWeight="0.18731269" side_tool="true" weight="0.20057607" />
+      <window_info id="Favorites" order="2" sideWeight="0.18587361" side_tool="true" weight="0.14770932" />
+      <window_info id="npm" order="3" sideWeight="0.18731269" side_tool="true" weight="0.20057607" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49986908" weight="0.32817182" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49698874" weight="0.3871129" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3996004" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.57816184" weight="0.32817182" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.33416584" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5545955" weight="0.32517484" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.44540456" side_tool="true" weight="0.32517484" />
+      <window_info anchor="bottom" id="GitHub Pull Requests" order="10" weight="0.32967034" />
+      <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.32987142" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" sideWeight="0.49960724" weight="0.32922623" />
+      <window_info active="true" anchor="bottom" auto_hide="true" x="1568" y="69" width="2100" height="2044" id="Terminal" order="13" sideWeight="0.50196385" side_tool="true" type="WINDOWED" visible="true" weight="0.40413997" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -5118,11 +5398,23 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="BEK_SORT_TYPE" value="1" />
               <option name="RECENTLY_FILTERED_USER_GROUPS">
                 <collection />
               </option>
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
               </option>
               <option name="COLUMN_ORDER">
                 <list>
@@ -5141,7 +5433,13 @@
       <map>
         <entry key="Branch">
           <value>
-            <list />
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
         <entry key="User">
@@ -5158,6 +5456,7 @@
       <path value="$PROJECT_DIR$/certify-prototype-jasonhead" />
     </ignored-roots>
   </component>
+<<<<<<< HEAD
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
@@ -5598,8 +5897,326 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="14631" column="18" selection-start-line="14631" selection-start-column="18" selection-end-line="14631" selection-end-column="18" />
+=======
+  <component name="WindowStateProjectService">
+    <state width="1345" height="585" key="Git.Branch.Popup" />
+    <state width="1345" height="585" key="Git.Branch.Popup/3840.2160/3840.2160/3840.2400/2560.1440" />
+    <state width="1345" height="585" key="Git.Branch.Popup@3840.2160" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+        <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/prototypes.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1627">
+          <caret line="183" column="4" selection-start-line="183" selection-start-column="4" selection-end-line="183" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301--1col.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="152" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-backup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/assets/cds.js" />
+    <entry file="file://$PROJECT_DIR$/_site/assets/stylesheets/prototype/certify-overrides/style.scss" />
+    <entry file="file://$PROJECT_DIR$/_site/feed.xml" />
+    <entry file="file://$PROJECT_DIR$/assets/uswds/stylesheets/components/_accordions.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-328">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feed.xml" />
+    <entry file="file://$PROJECT_DIR$/assets/.sprockets-manifest-ca190c3521c8f07817047191dcde37d6.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" column="72" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/prototype/base/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/2019/02/APP-4321/manage-contributors/manage-contributors.html" />
+    <entry file="file://$PROJECT_DIR$/.sass-cache/22ef8b1f392e96685313193d7472845c7533b0fe/_cards.scssc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="395" column="30" lean-forward="true" selection-start-line="395" selection-start-column="30" selection-end-line="395" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/prototype/components/_alerts.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/assets/stylesheets/application.css" />
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/prototype/base/_utilities.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/components/styleguide.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascripts/init.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/cds-stuff.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/cds.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/cds.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="8907" column="38" lean-forward="true" selection-start-line="8907" selection-start-column="38" selection-end-line="8907" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/uswds/stylesheets/lib/css3/_flex-box.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/uswds/stylesheets/lib/settings/_grid.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/uswds/stylesheets/uswds.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/uswds/stylesheets/_all.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/uswds/stylesheets/lib/_bourbon-deprecated-upcoming.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1314">
+          <caret line="377" column="7" selection-start-line="377" selection-start-column="3" selection-end-line="377" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/uswds/stylesheets/lib/_bourbon.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/certify/certify.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="2225" column="12" selection-start-line="2225" selection-start-column="12" selection-end-line="2225" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/prototype/certify-overrides/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/prototype/components/_cards.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="161" column="1" selection-start-line="118" selection-end-line="161" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019/02/APP-4321/manage-contributors/manage-contributors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2235">
+          <caret line="149" column="34" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="960">
+            <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gems installed on Enquizit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update_jekyll.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gems-installed om personal">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/certify_design_system_gem-1.19.0/code.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/404.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/failed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ruby-version">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile-backup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="28" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="MarkdownNavigator.LinkMap.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="MarkdownNavigator.Profiles.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>SBA Prototype</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
