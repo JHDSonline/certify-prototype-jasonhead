@@ -5,6 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7e4f2eda-0071-453d-b4ba-3676d3ae4a90" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only-alt_cards-v2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/01/APP-4301/certify.SBA.gov.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301--1col-actions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301--1col.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301--2col.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301--3col.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301-backup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301-original-data-backup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301-original-data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/01/APP-4301/data-dictionary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/01/APP-4301/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/02/APP-4321/manage-contributors/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/02/APP-4321/manage-contributors/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/02/APP-4321/manage-contributors/manage-contributors-old.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/02/APP-4321/manage-contributors/manage-contributors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2019/02/APP-4321/manage-contributors/overview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/_data-dictionary.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/data-dictionary-4301--data.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/prototypes.yml.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_data/top_nav/firm-current.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/_SBA-Landing-New-Nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/_masthead--SBA-Landing-Nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/cards/_data-dictionary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_includes/masthead_sections/_SBA-Landing-new_default.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/default-firm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/layout--SBA-Landing-Nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only-alt_cards.html" beforeDir="false" afterPath="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only-alt_cards.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only.html" beforeDir="false" afterPath="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html" beforeDir="false" afterPath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-hubzone.html" beforeDir="false" afterPath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-hubzone.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2018/12/dashboard-search-overview/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2018/12/dashboard-search-overview/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/prototypes.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/prototypes.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/_head--overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/_head--overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/masthead_sections/_top_nav_new_default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/masthead_sections/_top_nav_new_default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/stylesheets/prototype/components/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/stylesheets/prototype/components/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+=======
       <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -13,6 +57,7 @@
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/stylesheets/prototype/certify-overrides/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/stylesheets/prototype/certify-overrides/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feed.xml" beforeDir="false" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -4495,31 +4540,62 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/update_jekyll.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_site/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="800">
+              <caret line="14631" column="18" selection-start-line="14631" selection-start-column="18" selection-end-line="14631" selection-end-column="18" />
+=======
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
               <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="431">
+              <caret line="14593" column="11" selection-start-line="14593" selection-start-column="1" selection-end-line="14593" selection-end-column="11" />
+=======
         <entry file="file://$PROJECT_DIR$/Gemfile-backup">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="28" selection-end-column="3" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/assets/stylesheets/prototype/components/_cards.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1429" />
+=======
         <entry file="file://$PROJECT_DIR$/Gemfile.lock">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
             </state>
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
           </provider>
         </entry>
       </file>
@@ -4527,6 +4603,37 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
+      <find>.sba-c-tabs__link.current:before, .current.nav__dropdown-toggle:before</find>
+      <find>.sba-c-tabs__link.</find>
+      <find>.sba-c-tabs</find>
+      <find>cds.js</find>
+      <find>#2e8540;</find>
+      <find>$color-green</find>
+      <find>#2e8540</find>
+      <find>background-color:</find>
+      <find>sba-c-topnav</find>
+      <find>workspace.xml</find>
+      <find>application-section</find>
+      <find>layout--</find>
+      <find>lead_text</find>
+      <find>class=&quot;card&quot;</find>
+      <find>cds-gh-pages</find>
+      <find>close_8a_detail</find>
+      <find>letter of intent to terminate</find>
+      <find>firm overview</find>
+      <find>organization</find>
+      <find>firm-overview</find>
+      <find>firm-overview.html</find>
+      <find>overview</find>
+      <find>email</find>
+      <find>ASMPP</find>
+      <find>analyst review</find>
+      <find>char</find>
+      <find>onclick=&quot;sendSectionRequest(1506, 36)&quot;&gt;&lt;a id=&quot;eight_a_eligibility_show_content&quot; href=&quot;javascript:void(0);&quot;</find>
+      <find>card-se</find>
+      <find>card-set--</find>
+=======
       <find>.card-</find>
       <find>card-set</find>
       <find>sba-l-</find>
@@ -4557,6 +4664,7 @@
       <find>flex</find>
       <find>halves</find>
       <find>rb-inotify</find>
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
     </findStrings>
     <replaceStrings>
       <replace>Ricky X</replace>
@@ -4578,11 +4686,68 @@
     </option>
   </component>
   <component name="GithubDefaultAccount">
+<<<<<<< HEAD
+    <option name="defaultAccountId" value="c378ff9b-8789-450d-8f32-c41450079144" />
+=======
     <option name="defaultAccountId" value="c2f07cb7-033c-47ff-9824-55f4a47ee195" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/_includes/masthead_sections/_top_nav_overwiew_alt.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/all-cases-cards/8a.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/all-cases/wosb.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/all-cases/mpp.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/all-cases/8a-future.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/all-cases/8a.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only-qa.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/recommendation1.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/messages.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/firm-documents.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/analyst-documents.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/notes.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/activity-log.html" />
+        <option value="$PROJECT_DIR$/_includes/_masthead--overview.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/dashboards/supervisor-dashboard.html" />
+        <option value="$PROJECT_DIR$/_includes/_taskbar--overview.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only-alt_cards.html" />
+        <option value="$PROJECT_DIR$/_data/tab_set/business-profile-12192018noact.yml" />
+        <option value="$PROJECT_DIR$/_includes/_disclaimer.html" />
+        <option value="$PROJECT_DIR$/_includes/masthead_sections/_masthead_content-qa-layout.html" />
+        <option value="$PROJECT_DIR$/_layouts/layout--overview.html" />
+        <option value="$PROJECT_DIR$/_includes/masthead_sections/_tabs.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/business-profile/business-profile.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/business-profile/business-profile-suspended.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/index.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/business-profile/business-profile-no-activity.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-serch-overview/dashboards/analyst-dashboard.html" />
+        <option value="$PROJECT_DIR$/_includes/masthead_sections/_top_nav.html" />
+        <option value="$PROJECT_DIR$/_includes/masthead_sections/_top_nav_overview_alt.html" />
+        <option value="$PROJECT_DIR$/_includes/masthead_sections/_mobile-header.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/1.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/dashboards/analyst-dashboard.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-bizbtn-hubzone.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-alt.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/8a/business-profile-8a.html" />
+        <option value="$PROJECT_DIR$/_data/tab_set/business-profile-12192018.yml" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-asmpp.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-wosb.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-hubzone.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile.html" />
+        <option value="$PROJECT_DIR$/feed.xml" />
+        <option value="$PROJECT_DIR$/_includes/_head--overview.html" />
+        <option value="$PROJECT_DIR$/_includes/masthead_sections/_top_nav_new_default.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/index.html" />
+        <option value="$PROJECT_DIR$/2019/02/APP-4321/manage-contributors/index.html" />
+        <option value="$PROJECT_DIR$/_data/prototypes.yml" />
+        <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/index.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/index.html" />
+        <option value="$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only-alt_cards-v2.html" />
+=======
         <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-wosb.html" />
         <option value="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html" />
         <option value="$PROJECT_DIR$/_includes/_masthead--SBA-Landing-Nav.html" />
@@ -4634,6 +4799,7 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/Gemfile-backup" />
         <option value="$PROJECT_DIR$/Gemfile" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
       </list>
     </option>
   </component>
@@ -4674,7 +4840,156 @@
             <path>
               <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
               <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="04" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="04" type="462c0819:PsiDirectoryNode" />
+              <item name="servicing-bos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="04" type="462c0819:PsiDirectoryNode" />
+              <item name="servicing-bos" type="462c0819:PsiDirectoryNode" />
+              <item name="servicing-bos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="11" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="11" type="462c0819:PsiDirectoryNode" />
+              <item name="read-only-subquestionnaire" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="12" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="12" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-search-overview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2018" type="462c0819:PsiDirectoryNode" />
+              <item name="12" type="462c0819:PsiDirectoryNode" />
+              <item name="dashboard-search-overview" type="462c0819:PsiDirectoryNode" />
+              <item name="business-profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2019" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2019" type="462c0819:PsiDirectoryNode" />
+              <item name="01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2019" type="462c0819:PsiDirectoryNode" />
+              <item name="01" type="462c0819:PsiDirectoryNode" />
+              <item name="APP-4301" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2019" type="462c0819:PsiDirectoryNode" />
+              <item name="02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2019" type="462c0819:PsiDirectoryNode" />
+              <item name="02" type="462c0819:PsiDirectoryNode" />
+              <item name="APP-4321" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="2019" type="462c0819:PsiDirectoryNode" />
+              <item name="02" type="462c0819:PsiDirectoryNode" />
+              <item name="APP-4321" type="462c0819:PsiDirectoryNode" />
+              <item name="manage-contributors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
               <item name="_site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="_site" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="_site" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+              <item name="prototype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+              <item name="prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="certify-prototype-jasonhead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="certify-prototype-jasonhead" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+              <item name="application.scss" type="620a8d5e:NestingTreeNode" />
+=======
+              <item name="_site" type="462c0819:PsiDirectoryNode" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
             </path>
           </expand>
           <select />
@@ -4688,6 +5003,12 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+=======
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="js.last.introduce.type" value="VAR" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -4704,6 +5025,7 @@
     <property name="node.js.selected.package.eslint" value="" />
     <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.selected.package.standard" value="" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
     <property name="node.js.selected.package.stylelint" value="" />
     <property name="node.js.selected.package.tslint" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -4711,7 +5033,10 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="xpath.settings" />
+<<<<<<< HEAD
+=======
     <property name="settings.editor.splitter.proportion" value="0.13706478" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/_includes/_analyst_global_nav.html" />
   </component>
   <component name="RecentsManager">
@@ -4728,6 +5053,13 @@
       <recent name="$PROJECT_DIR$/_layouts" />
       <recent name="$PROJECT_DIR$/_data/top_nav" />
       <recent name="$PROJECT_DIR$/2018/09/application-overview" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2018/11/read-only-subquestionnaire" />
+      <recent name="$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile" />
+      <recent name="$PROJECT_DIR$/2018/12/dashboard-search-overview/8a" />
+      <recent name="$PROJECT_DIR$/2018/12/dashboard-serch-overview/business-profile" />
+      <recent name="$PROJECT_DIR$/_data/tab_set" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -4878,6 +5210,16 @@
       <workItem from="1548811877579" duration="7374000" />
       <workItem from="1548827495135" duration="1193000" />
       <workItem from="1548829869369" duration="492000" />
+<<<<<<< HEAD
+      <workItem from="1548830388163" duration="1029000" />
+      <workItem from="1549681902504" duration="2355000" />
+      <workItem from="1549685430278" duration="253000" />
+      <workItem from="1549689814210" duration="816000" />
+      <workItem from="1549728122693" duration="1518000" />
+      <workItem from="1550007068442" duration="376000" />
+      <workItem from="1550009064997" duration="104000" />
+      <workItem from="1550009180504" duration="9350000" />
+=======
       <workItem from="1548830388163" duration="3054000" />
       <workItem from="1548834357979" duration="81000" />
       <workItem from="1548834451331" duration="859000" />
@@ -4921,11 +5263,16 @@
       <workItem from="1549684069692" duration="653000" />
       <workItem from="1549685512286" duration="3029000" />
       <workItem from="1549901148126" duration="5818000" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="218963000" />
+=======
     <option name="totallyTimeSpent" value="370769000" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -4939,6 +5286,49 @@
   <component name="ToolWindowManager">
     <frame x="-3" y="23" width="1920" height="1177" extended-state="6" />
     <layout>
+<<<<<<< HEAD
+      <window_info content_ui="combo" x="1505" y="77" width="830" height="2029" id="Project" order="0" sideWeight="0.82821494" visible="true" weight="0.16719326" />
+      <window_info id="Structure" order="1" sideWeight="0.27626136" side_tool="true" weight="0.21733437" />
+      <window_info id="Favorites" order="2" sideWeight="0.32331902" side_tool="true" weight="0.16692996" />
+      <window_info id="npm" order="3" sideWeight="0.17178503" side_tool="true" weight="0.54186416" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917082" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49803615" visible="true" weight="0.3021978" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.5786891" weight="0.32821497" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.55564284" weight="0.3253359" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.44435716" side_tool="true" weight="0.3262691" />
+      <window_info anchor="bottom" id="GitHub Pull Requests" order="10" weight="0.32967034" />
+      <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.32987142" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.32967034" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" auto_hide="true" x="1076" y="45" width="1579" height="1155" id="Terminal" order="3" sideWeight="0.50196385" side_tool="true" weight="0.36308584" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" x="1505" y="77" width="830" height="2029" id="Project" order="0" sideWeight="0.8136863" visible="true" weight="0.20057607" />
+      <window_info id="Structure" order="1" sideWeight="0.18631369" side_tool="true" weight="0.1484992" />
+      <window_info id="Favorites" order="2" sideWeight="0.18587361" side_tool="true" weight="0.14770932" />
+      <window_info id="npm" order="3" sideWeight="0.18587361" side_tool="true" weight="0.14770932" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49986908" weight="0.32817182" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49763033" weight="0.3016983" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3996004" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.57846236" weight="0.32817182" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.33416584" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.555029" weight="0.32517484" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50236964" side_tool="true" weight="0.3016983" />
+      <window_info anchor="bottom" id="GitHub Pull Requests" order="10" weight="0.32967034" />
+      <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.32987142" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" sideWeight="0.49960724" weight="0.32922623" />
+      <window_info anchor="bottom" auto_hide="true" x="3917" y="495" width="859" height="1176" id="Terminal" order="13" sideWeight="0.50196385" side_tool="true" type="WINDOWED" visible="true" weight="0.40413997" />
+=======
       <window_info content_ui="combo" x="1505" y="77" width="830" height="2029" id="Project" order="0" sideWeight="0.81268734" visible="true" weight="0.20010532" />
       <window_info id="Structure" order="1" sideWeight="0.18731269" side_tool="true" weight="0.20057607" />
       <window_info id="Favorites" order="2" sideWeight="0.18587361" side_tool="true" weight="0.14770932" />
@@ -4981,6 +5371,7 @@
       <window_info anchor="bottom" id="SVN Repositories" order="11" weight="0.32987142" />
       <window_info anchor="bottom" id="Inspection Results" order="12" sideWeight="0.49960724" weight="0.32922623" />
       <window_info active="true" anchor="bottom" auto_hide="true" x="1568" y="69" width="2100" height="2044" id="Terminal" order="13" sideWeight="0.50196385" side_tool="true" type="WINDOWED" visible="true" weight="0.40413997" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -5065,6 +5456,448 @@
       <path value="$PROJECT_DIR$/certify-prototype-jasonhead" />
     </ignored-roots>
   </component>
+<<<<<<< HEAD
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/requirements/search.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/requirements/new.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/requirements/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/requirements/firms-new.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/requirements/firms.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/requirements/documents-new.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/requirements/documents.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-alt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1138">
+          <caret line="135" column="52" lean-forward="true" selection-start-line="135" selection-start-column="46" selection-end-line="135" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="561" column="22" selection-start-line="560" selection-end-line="1104" selection-end-column="18" />
+          <folding>
+            <element signature="e#32514#72318#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-asmpp-backup.html" />
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-wosb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="152" column="71" selection-start-line="152" selection-start-column="71" selection-end-line="152" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-hubzone.html" />
+    <entry file="file://$PROJECT_DIR$/_data/tab_set/business-profile-12192018.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-asmpp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="95" column="14" selection-start-line="95" selection-start-column="14" selection-end-line="95" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#article#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#article#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#article#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#article#0;n#!!top" />
+            <element signature="n#div#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#article#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/depends">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8461" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/depends">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gems on enquizit">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/failed.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ruby-version">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/masthead_sections/_SBA-Landing-new_default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="79" lean-forward="true" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#nav#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/masthead_sections/_masthead_content-qa-layout.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_masthead--SBA-Landing-Nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#header#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/masthead_sections/_top_nav_overview_alt.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/dashboards/analyst-dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/masthead_sections/_top_nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="8" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/masthead_sections/_top_nav_new_default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1852">
+          <caret line="152" column="16" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_masthead--overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#header#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_head--overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/layout--overview.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019/02/APP-4321/manage-contributors/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/prototypes.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="872">
+          <caret line="173" column="25" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only-alt_cards.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/11/read-only-subquestionnaire/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019/02/APP-4321/manage-contributors/manage-contributors.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/12/dashboard-search-overview/business-profile/business-profile-8a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="111" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2018/11/read-only-subquestionnaire/read-only-alt_cards-v2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="1200" column="6" selection-start-line="1200" selection-start-column="6" selection-end-line="1200" selection-end-column="6" />
+          <folding>
+            <element signature="e#2505#9974#0" />
+            <element signature="e#2766#2806#0" expanded="true" />
+            <element signature="e#2935#2956#0" expanded="true" />
+            <element signature="e#3126#3147#0" expanded="true" />
+            <element signature="e#3229#5420#0" />
+            <element signature="e#3327#3352#0" expanded="true" />
+            <element signature="e#3421#3758#0" />
+            <element signature="e#3803#4139#0" />
+            <element signature="e#4184#4517#0" />
+            <element signature="e#4562#4970#0" />
+            <element signature="e#5015#5373#0" />
+            <element signature="e#5461#7084#0" />
+            <element signature="e#5559#5584#0" expanded="true" />
+            <element signature="e#7125#7750#0" />
+            <element signature="e#7223#7248#0" expanded="true" />
+            <element signature="e#7791#8883#0" />
+            <element signature="e#7889#7914#0" expanded="true" />
+            <element signature="e#2639#3347#0" />
+            <element signature="e#10223#26178#0" />
+            <element signature="e#11269#25020#0" />
+            <element signature="e#11546#11586#0" expanded="true" />
+            <element signature="e#11716#11737#0" expanded="true" />
+            <element signature="e#11904#11925#0" expanded="true" />
+            <element signature="e#12113#12138#0" expanded="true" />
+            <element signature="e#15093#15118#0" expanded="true" />
+            <element signature="e#17627#17652#0" expanded="true" />
+            <element signature="e#11262#11930#0" />
+            <element signature="e#28578#28618#0" expanded="true" />
+            <element signature="e#28739#28760#0" expanded="true" />
+            <element signature="e#28907#28928#0" expanded="true" />
+            <element signature="e#27434#28102#0" />
+            <element signature="e#30112#30152#0" expanded="true" />
+            <element signature="e#30273#30294#0" expanded="true" />
+            <element signature="e#30453#30474#0" expanded="true" />
+            <element signature="e#31026#31694#0" />
+            <element signature="e#32700#33845#0" />
+            <element signature="e#33023#33063#0" expanded="true" />
+            <element signature="e#33182#33203#0" expanded="true" />
+            <element signature="e#33346#33367#0" expanded="true" />
+            <element signature="e#34461#35129#0" />
+            <element signature="e#35107#35899#0" />
+            <element signature="e#35932#87660#0" />
+            <element signature="e#36011#87551#0" />
+            <element signature="e#36287#36327#0" expanded="true" />
+            <element signature="e#36187#87519#0" />
+            <element signature="e#36446#36467#0" expanded="true" />
+            <element signature="e#36567#87191#0" />
+            <element signature="e#36640#37460#0" />
+            <element signature="e#36981#37007#0" expanded="true" />
+            <element signature="e#37590#37634#0" expanded="true" />
+            <element signature="e#37553#74105#0" />
+            <element signature="e#37676#74062#0" />
+            <element signature="e#37769#37792#0" expanded="true" />
+            <element signature="e#37751#74015#0" />
+            <element signature="e#37842#38362#0" />
+            <element signature="e#37895#37920#0" expanded="true" />
+            <element signature="e#38411#38966#0" />
+            <element signature="e#38464#38489#0" expanded="true" />
+            <element signature="e#39015#39654#0" />
+            <element signature="e#39068#39093#0" expanded="true" />
+            <element signature="e#39703#40335#0" />
+            <element signature="e#39756#39781#0" expanded="true" />
+            <element signature="e#40384#41495#0" />
+            <element signature="e#40437#40462#0" expanded="true" />
+            <element signature="e#41544#42138#0" />
+            <element signature="e#41597#41622#0" expanded="true" />
+            <element signature="e#42187#43604#0" />
+            <element signature="e#42240#42265#0" expanded="true" />
+            <element signature="e#43653#44210#0" />
+            <element signature="e#43706#43731#0" expanded="true" />
+            <element signature="e#44259#46196#0" />
+            <element signature="e#44312#44337#0" expanded="true" />
+            <element signature="e#46245#47329#0" />
+            <element signature="e#46298#46323#0" expanded="true" />
+            <element signature="e#47378#48010#0" />
+            <element signature="e#47431#47456#0" expanded="true" />
+            <element signature="e#48059#48652#0" />
+            <element signature="e#48112#48137#0" expanded="true" />
+            <element signature="e#48701#49839#0" />
+            <element signature="e#48754#48779#0" expanded="true" />
+            <element signature="e#49888#51496#0" />
+            <element signature="e#49941#49966#0" expanded="true" />
+            <element signature="e#51545#52165#0" />
+            <element signature="e#51598#51623#0" expanded="true" />
+            <element signature="e#52214#52878#0" />
+            <element signature="e#52267#52292#0" expanded="true" />
+            <element signature="e#52927#55579#0" />
+            <element signature="e#52980#53005#0" expanded="true" />
+            <element signature="e#53073#53462#0" />
+            <element signature="e#53515#53882#0" />
+            <element signature="e#53935#54304#0" />
+            <element signature="e#55628#58762#0" />
+            <element signature="e#55681#55706#0" expanded="true" />
+            <element signature="e#58811#59587#0" />
+            <element signature="e#58864#58889#0" expanded="true" />
+            <element signature="e#59636#60284#0" />
+            <element signature="e#59689#59714#0" expanded="true" />
+            <element signature="e#60333#62341#0" />
+            <element signature="e#60386#60411#0" expanded="true" />
+            <element signature="e#62390#64169#0" />
+            <element signature="e#62443#62468#0" expanded="true" />
+            <element signature="e#64218#66118#0" />
+            <element signature="e#64271#64296#0" expanded="true" />
+            <element signature="e#66167#66739#0" />
+            <element signature="e#66220#66245#0" expanded="true" />
+            <element signature="e#66788#67756#0" />
+            <element signature="e#66841#66866#0" expanded="true" />
+            <element signature="e#67805#69295#0" />
+            <element signature="e#67858#67883#0" expanded="true" />
+            <element signature="e#69344#69915#0" />
+            <element signature="e#69397#69422#0" expanded="true" />
+            <element signature="e#69430#69435#0" expanded="true" />
+            <element signature="e#69499#69860#0" />
+            <element signature="e#69964#70802#0" />
+            <element signature="e#70017#70042#0" expanded="true" />
+            <element signature="e#70851#71677#0" />
+            <element signature="e#70904#70929#0" expanded="true" />
+            <element signature="e#71726#72701#0" />
+            <element signature="e#71779#71804#0" expanded="true" />
+            <element signature="e#72750#73344#0" />
+            <element signature="e#72803#72828#0" expanded="true" />
+            <element signature="e#73393#73964#0" />
+            <element signature="e#73446#73471#0" expanded="true" />
+            <element signature="e#73544#73909#0" />
+            <element signature="e#74181#74225#0" expanded="true" />
+            <element signature="e#74144#87152#0" />
+            <element signature="e#74267#87109#0" />
+            <element signature="e#74342#87010#0" />
+            <element signature="e#74428#86062#0" />
+            <element signature="e#74508#81761#0" />
+            <element signature="e#74597#79861#0" />
+            <element signature="e#76113#76118#0" expanded="true" />
+            <element signature="e#79918#81702#0" />
+            <element signature="e#81814#86007#0" />
+            <element signature="e#81903#85948#0" />
+            <element signature="e#82807#82812#0" expanded="true" />
+            <element signature="e#86111#86959#0" />
+            <element signature="e#86191#86904#0" />
+            <element signature="e#38111#38779#0" />
+            <element signature="e#91085#94009#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019/01/APP-4301/data-dictionary-4301--1col.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update_jekyll.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="14593" column="11" selection-start-line="14593" selection-start-column="1" selection-end-line="14593" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/prototype/components/_cards.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1429" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="14631" column="18" selection-start-line="14631" selection-start-column="18" selection-end-line="14631" selection-end-column="18" />
+=======
   <component name="WindowStateProjectService">
     <state width="1345" height="585" key="Git.Branch.Popup" />
     <state width="1345" height="585" key="Git.Branch.Popup/3840.2160/3840.2160/3840.2400/2560.1440" />
@@ -5336,6 +6169,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+>>>>>>> e5dd09628454949480bb8e872057ad6b46d24b84
         </state>
       </provider>
     </entry>
